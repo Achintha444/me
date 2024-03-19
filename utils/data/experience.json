@@ -4,7 +4,7 @@
         {   
             "title": [
                 "WSO2",
-                "Software Engineer (UI/UX, Front-end)",
+                "Senior Software Engineer (UI/UX, Front-end)",
                 "May 2022 - Present"
             ],
             "content": [
@@ -14,7 +14,7 @@
                 },
                 {
                     "title": "My Responsibilities",
-                    "body": "At WSO2, I am working with the identity access management team. My primary responsibilities include front-end development and UI/UX design for the company's products, namely Identity Server and Asgardeo. Additionally, I provide assistance to the team on Flutter-related matters and actively engage in discussions. For development and design tasks, I primarily utilize React JS, Figma, Next JS and Flutter.",
+                    "body": "At WSO2, I am working with the identity access management team. My primary responsibilities include front-end development and UI/UX design for the company's products, namely Identity Server and Asgardeo. Additionally, I provide assistance to the team on Flutter-related matters and actively engage in discussions. For development and design tasks, I primarily utilize React JS, Figma, Flutter and Android.",
                     "presentations": [
                         {
                             "link": "https://www.youtube.com/embed/0GZfKLJE85U?si=1DgOm099bewnYwQz"
@@ -23,7 +23,13 @@
                 },
                 {
                     "title": "My Accomplishments",
-                    "body": "During my tenure, I have contributed significantly to enhancing the user experience of our two products, Identity Server and Asgardeo. Additionally, in the early stages of my employment, I successfully designed and developed a complete website to showcase a newly developed B2B feature. This project involved utilizing a technology that I had not previously worked with. The application I created for this purpose is currently employed by the company to demonstrate the B2B feature. I take pride in successfully completing this task."
+                    "body": "Notably, I played a crucial role as both a front-end developer and designer in bringing new features like “B2B Organization Management” to completion as part of the team responsible for the successful release of the latest version of Identity Server, WSO2 IS 7.0. Currently, I am leading the development of an Android SDK for WSO2 IS and Asgardeo. Furthermore, I initiated efforts to integrate Flutter applications with WSO2 IS/Asgardeo, expanding our capabilities. My consistent dedication and contributions were recognized when I was ranked in the top 20% of the company in the first half of 2023. ",
+                    "links": [
+                        {
+                            "title": "Key features of the new WSO2 Identity Server 7.0",
+                            "link": "https://wso2.com/library/blogs/7-key-features-of-wso2-identity-server-7-every-application-and-api-developer-should-know/"
+                        }
+                    ]
                 },
                 {
                     "title": "Challenges Faced",

@@ -114,11 +114,17 @@
                 },
                 {
                     "title": "Accomplishments",
-                    "body": "The main achievement that we received was the recognition given by a distinguished Sri Lankan television channel Sirasa TV. This recognition highlighted the project's significance and potential impact. A link to the program's video is provided below."
+                    "body": "Recently the project obtained a Patent Cooperation Treaty (PCT) with an International Search Report (ISR) indicating novelty in 100% of its claims, and currently it’s getting prepared for the commercialization by the IntelliSense Lab"
                 },
                 {
                     "title": "More Information",
                     "body": "For a comprehensive exploration of project details, I encourage you to watch the videos below. The second video, while in Sinhala, offers detailed insights into the project's development and features.",
+                    "links": [
+                        {
+                            "title": "More Information about the Patent Cooperation Treaty and commercialization of the product.",
+                            "link": "https://uom.lk/sites/default/files/news_letter/july%20-%20august%202023.pdf"
+                        }
+                    ],
                     "presentations": [
                         {
                             "link": "https://www.youtube.com/embed/bPJwYzVxxr4"
