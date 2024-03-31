@@ -20,6 +20,8 @@ export default function MyWritings({ data }) {
 
         setMediumArticles(res.slice(from, to));
 
+        console.log(res.slice(from, to))
+
     }, [ setMediumArticles ]);
 
     useEffect(() => {
@@ -52,14 +54,16 @@ export default function MyWritings({ data }) {
 
 function SingleArticle({ article }) {
 
+    let imageUrl: string = article.description.match(/<img[^>]+src="([^">]+)"/)[1];
+
     return (
         <Link href={ article.link } target="_blank" rel="noopener">
             <ImageListItem
-                key={ article.thumbnail }
+                key={ imageUrl }
                 style={ { cursor: "pointer" } }>
                 <img
-                    src={ article.thumbnail }
-                    alt={ article.thumbnail }
+                    src={ imageUrl }
+                    alt={ imageUrl }
                     loading="lazy"
                     style={ { mixBlendMode : "multiply" } }
                 />
