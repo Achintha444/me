@@ -4,19 +4,11 @@
         "firstPara": [
             {
                 "key": "me-1",
-                "body": "Hello everyone! I am a highly motivated and hardworking individual with a strong passion for exploring the fascinating areas of Computer Science, particularly Front End Development and UI/UX Designing. I thrive on challenges and love to create intuitive and visually captivating user experiences."
+                "body": "Hello everyone! My name is Achintha Isuru, and I am passionate about front-end development and UI/UX design. Beyond these interests, I am also curious about psychology and its profound impact on human behaviour and decision-making. This diverse range of interests drives me to approach problem-solving from a unique and empathetic perspective, understanding the needs and aspirations of users and development teams alike. My ultimate life goal is to create something exceptional that my father would one day be truly proud of."
             },
             {
                 "key": "me-2",
-                "body": "Beyond technology, I have a deep curiosity for psychology and its profound impact on human behaviour and decision-making. This diverse interest drives me to approach problem-solving from a unique and empathetic perspective, understanding users' and development teams' needs and aspirations."
-            },
-            {
-                "key": "me-3",
-                "body": "Throughout my journey, I strive to leave a lasting positive impact on my professional and personal pursuits. My life goal is to create something exceptional, that my father would one day be truly proud of."
-            },
-            {
-                "key": "me-4",
-                "body": "Let's connect and embark on an exciting journey of knowledge, growth, and creativity. Together, let's contribute to shaping a brighter and more empathetic world through technology."
+                "body": "I am always open to new opportunities and challenges, so please feel free to reach out to me if you would like to collaborate or chat about anything!"
             }
         ],
         "fistImages": [
@@ -45,7 +37,7 @@
                         ],
                         "content": [
                             {
-                                "body": "I embarked on the Google UX Design Professional Certificate journey to gain firsthand experience and knowledge in UX designing. This comprehensive program has allowed me to immerse myself in the world of UX design, delving deeply into its nuances. Through the course, I've gained insights into the fundamental aspects of the design process, including user empathy, pain point definition, ideation of solutions, wireframing and prototyping, as well as testing and iterative design. I am currently following this course."
+                                "body": "Currently I am taking the Google UX Design Professional Certificate course to gain firsthand experience and knowledge in UX designing. This comprehensive program has allowed me to learn in-depth about UX design. Through the course, I've gained insights into the fundamental aspects of the design process, including user empathy, pain point definition, ideation of solutions, wireframing and prototyping, as well as testing and iterative design."
                             }
                         ]
                     },
@@ -59,13 +51,13 @@
                             {
                                 "body": [
                                     {
-                                        "body": "My academic journey culminated at the University of Moratuwa's Department of Computer Science and Engineering, Sri Lanka. This esteemed institution honed my skills and knowledge, granting me a Bachelor of Science in Engineering with a specialization in Computer Science & Engineering. While excelling in my studies, I concurrently engaged in enriching extracurricular pursuits."
+                                        "body": "I earned my bachelor's degree from the University of Moratuwa's Department of Computer Science and Engineering in Sri Lanka. Alongside my studies, I actively participated in extracurricular activities to enhance soft skills such as teamwork and communication."
                                     },
                                     {
-                                        "body": "During my time, I actively participated in extracurricular activities, enhancing my holistic learning experience. I represented my university as the goalkeeper for the soccer team, fostering teamwork and athletic prowess on the field. As a dedicated member of the Rotaract Club of the University of Moratuwa, I contributed to the public relations team, engaging in initiatives that nurtured community bonds and social responsibility."
+                                        "body": "During my time at the university, I represented the university as the goalkeeper for the soccer team, showcasing my commitment to teamwork and leadership. Additionally, I was a dedicated member of the Rotaract Club of the University of Moratuwa, where I contributed to the public relations team."
                                     },
                                     {
-                                        "body": "This balance between academic excellence and active involvement enriched my university years, fostering a well-rounded skill set and a sense of camaraderie with my peers."
+                                        "body": "This balance between academic achievement and active involvement in extracurricular activities enriched my university experience, equipping me with a well-rounded skill set and a strong sense of camaraderie with my peers."
                                     }
                                 ],
                                 "images": [

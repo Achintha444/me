@@ -24,7 +24,8 @@ export const appTheme = responsiveFontSizes(createTheme({
             fontFamily: "Minipax-Regular"
         },
         body2: {
-            fontFamily: "SpaceGrotesk-Regular"
+            fontFamily: "SpaceGrotesk-Regular",
+            fontSize: "1rem"
         },
         button: {
             fontFamily: "SpaceGrotesk-Regular",
