@@ -1,9 +1,9 @@
 {
+    "title": {
+        "title": "Achintha Isuru",
+        "link": "/"
+    },
     "content": [
-        {
-            "title" : "Home",
-            "link" : "/"
-        },
         {
             "title" : "About",
             "link" : "/aboutMe"

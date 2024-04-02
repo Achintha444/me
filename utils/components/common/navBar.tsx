@@ -22,23 +22,28 @@ const drawerWidth = 240;
 
 export default function NavBar(props: Props) {
     const { window } = props;
-    const [mobileOpen, setMobileOpen] = React.useState(false);
+    const [ mobileOpen, setMobileOpen ] = React.useState(false);
 
     const handleDrawerToggle = () => {
         setMobileOpen(!mobileOpen);
     };
 
     const drawer = (
-        <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
+        <Box onClick={ handleDrawerToggle } sx={ { textAlign: "center" } }>
             <Divider />
             <List>
-                {navItemsConfig.content.map((item) => (
-                    <ListItem key={item.title} disablePadding>
-                        <ListItemButton sx={{ textAlign: "center" }} href={item.link} target={item.target ? item.target : "_self"}>
-                            <ListItemText primary={item.title} />
+                <ListItem key={ navItemsConfig.title.title } disablePadding>
+                    <ListItemButton sx={ { textAlign: "center" } } href={ navItemsConfig.title.link }>
+                        <ListItemText primary={ navItemsConfig.title.title } />
+                    </ListItemButton>
+                </ListItem>
+                { navItemsConfig.content.map((item) => (
+                    <ListItem key={ item.title } disablePadding>
+                        <ListItemButton sx={ { textAlign: "center" } } href={ item.link } target={ item.target ? item.target : "_self" }>
+                            <ListItemText primary={ item.title } />
                         </ListItemButton>
                     </ListItem>
-                ))}
+                )) }
             </List>
         </Box>
     );
@@ -46,54 +51,63 @@ export default function NavBar(props: Props) {
     const container = window !== undefined ? () => window().document.body : undefined;
 
     return (
-        <Box sx={{ display: "flex" }}>
-            <AppBar component="nav" elevation={0} sx={{
-                '--AppBar-borderWidth': '1px',
-                borderBottom: 'var(--AppBar-borderWidth) solid',
-                borderColor: 'divider'
-            }}>
+        <Box sx={ { display: "flex" } }>
+            <AppBar
+                component="nav"
+                elevation={ 0 }
+                sx={ {
+                    "--AppBar-borderWidth": "1px",
+                    borderBottom: "var(--AppBar-borderWidth) solid",
+                    borderColor: "divider"
+                } }>
                 <Toolbar>
-                    <Typography
-                        variant="h6"
-                        component="div"
-                        sx={{ flexGrow: 1, display: { xs: "none", sm: "block" } }}
-                    >
-                    </Typography>
-                    <Box sx={{ display: { xs: "none", sm: "block" } }}>
-                        {navItemsConfig.content.map((item) => (
-                            <Button key={item.title} sx={{ color: "#242424" }} href={item.link} target={item.target ? item.target : "_self"}>
-                                {item.title}
+                    <Box sx={ { flexGrow: 1, display: { xs: "none", sm: "block" } } }>
+                        <Button key="name" href={ navItemsConfig.title.link } target="_self">
+                            <Typography
+                                variant="h6"
+                                component="div"
+                                color="text.primary"
+                                textTransform="unset"
+                            >
+                                { navItemsConfig.title.title }
+                            </Typography>
+                        </Button>
+                    </Box>
+                    <Box sx={ { display: { xs: "none", sm: "block" } } }>
+                        { navItemsConfig.content.map((item) => (
+                            <Button key={ item.title } sx={ { color: "#242424" } } href={ item.link } target={ item.target ? item.target : "_self" }>
+                                { item.title }
                             </Button>
-                        ))}
+                        )) }
                     </Box>
                     <IconButton
                         color="inherit"
                         aria-label="open drawer"
                         edge="end"
-                        onClick={handleDrawerToggle}
-                        sx={{ mr: 2, display: { sm: "none" } }}>
+                        onClick={ handleDrawerToggle }
+                        sx={ { mr: 2, display: { sm: "none" } } }>
                         <MenuIcon />
                     </IconButton>
                 </Toolbar>
             </AppBar>
             <Box component="nav">
                 <Drawer
-                    container={container}
+                    container={ container }
                     variant="temporary"
-                    open={mobileOpen}
-                    onClose={handleDrawerToggle}
-                    ModalProps={{
-                        keepMounted: true, // Better open performance on mobile.
-                    }}
-                    sx={{
+                    open={ mobileOpen }
+                    onClose={ handleDrawerToggle }
+                    ModalProps={ {
+                        keepMounted: true // Better open performance on mobile.
+                    } }
+                    sx={ {
                         display: { xs: "block", sm: "none" },
-                        "& .MuiDrawer-paper": { boxSizing: "border-box", width: drawerWidth },
-                    }}
+                        "& .MuiDrawer-paper": { boxSizing: "border-box", width: drawerWidth }
+                    } }
                 >
-                    {drawer}
+                    { drawer }
                 </Drawer>
             </Box>
-            <Box sx={{ p: 4 }}>
+            <Box sx={ { p: 4 } }>
             </Box>
         </Box>
     );
