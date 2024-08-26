@@ -6,12 +6,12 @@ export default function LittleBitAboutMe({ data }) {
     return (
         <>
             <br />
-            <SubSectionTitle data={ data } />
+            <SubSectionTitle key="little-title" data={ data } />
             <br />
             {
                 data.content.map((contentDesc) => (
                     <>
-                        <DescriptionList list={ contentDesc.content } />
+                        <DescriptionList key={ contentDesc.alt } list={ contentDesc.content } />
                         <br />
                     </>
                 ))

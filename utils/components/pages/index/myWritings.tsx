@@ -20,8 +20,6 @@ export default function MyWritings({ data }) {
 
         setMediumArticles(res.slice(from, to));
 
-        console.log(res.slice(from, to))
-
     }, [ setMediumArticles ]);
 
     useEffect(() => {

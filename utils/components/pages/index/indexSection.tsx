@@ -14,17 +14,17 @@ function IndexSection({ content }) {
                 content.map((singleContent) => {
                     switch (singleContent.id) {
                         case 0:
-                            return <NameDetails data= { singleContent } />;
+                            return <NameDetails key="name" data= { singleContent } />;
                         case 1:
-                            return <LittleBitAboutMe data= { singleContent } />;
+                            return <LittleBitAboutMe key="me" data= { singleContent } />;
                         case 2:
-                            return <MyInterests data= { singleContent } />;
+                            return <MyInterests key="interests" data= { singleContent } />;
                         case 3:
-                            return <Projects data= { singleContent } />;
+                            return <Projects key="projects" data= { singleContent } />;
                         case 4:
-                            return <MyWritings data= { singleContent } />;
+                            return <MyWritings key="writings" data= { singleContent } />;
                         case 5:
-                            return <Contact data= { singleContent } />;
+                            return <Contact key="contact" data= { singleContent } />;
                         default:
                             break;
                     }

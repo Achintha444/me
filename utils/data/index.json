@@ -32,15 +32,17 @@
         },
         {
             "id": 1,
-            "title": "Little bit about me...",
+            "title": "A little bit about me...",
             "content": [
                 {
                     "content": [
                         {
-                            "body": "Hello everyone! My name is Achintha Isuru, and I am passionate about front-end development and UI/UX design. Beyond these interests, I am also curious about psychology and its profound impact on human behaviour and decision-making. This diverse range of interests drives me to approach problem-solving from a unique and empathetic perspective, understanding the needs and aspirations of users and development teams alike. My ultimate life goal is to create something exceptional that my father would one day be truly proud of."
+                            "body": "Hello everyone! My name is Achintha Isuru, and I am a front-end developer and UI/UX designer. Apart from my usual studies, I have self-studied psychology and its impact on human behavior and decision-making, and I apply this knowledge when designing user interfaces and experiences. My ultimate life goal is to create something exceptional that my father would one day be truly proud of.",
+                            "alt": "little-bit-about-me-1"
                         },
                         {
-                            "body": "I am always open to new opportunities and challenges, so please feel free to reach out to me if you would like to collaborate or chat about anything!"
+                            "body": "I am always open to new opportunities and challenges, so please feel free to reach out to me if you would like to collaborate or chat about anything!",
+                            "alt": "little-bit-about-me-2"
                         }
                     ]
                 }
@@ -150,32 +152,32 @@
             "icons": [
                 {
                     "image": "/images/contact-icons-svg/top-email.svg",
-                    "alt": "achintha isuru - 1",
+                    "alt": "email",
                     "link": "mailto:achinthaisuru97@gmail.com"
                 },
                 {
                     "image": "/images/contact-icons-svg/top-in.svg",
-                    "alt": "achintha isuru - 1",
+                    "alt": "linkedin",
                     "link": "http://linkedin.com/in/achintha-isuru"
                 },
                 {
                     "image": "/images/contact-icons-svg/top-stack.svg",
-                    "alt": "achintha isuru - 1",
+                    "alt": "stackoverflow",
                     "link": "https://stackoverflow.com/users/10601286/achintha-isuru"
                 },
                 {
                     "image": "/images/contact-icons-svg/top-youtube.svg",
-                    "alt": "achintha isuru - 1",
+                    "alt": "youtube",
                     "link": "https://www.youtube.com/channel/UCgoNBM-Ay-jVnzaZjUy9x_A"
                 },
                 {
                     "image": "/images/contact-icons-svg/top-medium.svg",
-                    "alt": "achintha isuru - 1",
+                    "alt": "medium",
                     "link": "https://medium.com/@achinthaisuru444"
                 },
                 {
                     "image": "/images/contact-icons-svg/top-github.svg",
-                    "alt": "achintha isuru - 1",
+                    "alt": "github",
                     "link": "https://github.com/Achintha444"
                 }
             ]

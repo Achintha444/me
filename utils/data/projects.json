@@ -24,43 +24,43 @@
             "content": [
                 {
                     "title": "Overview",
-                    "body": "We've all used ATMs at some point in our lives. Most of the time, we find that the garbage cans at ATM locations are overflowing with meaningless receipts that consumers have requested. That is what inspired me to work on this design project. As a result, I created a completely new user interface that would limit the amount of unnecessary receipts issued. An experiment was carried out to validate the design. This investigation concluded that by employing this design, we can cut receipt printing by roughly 50%. This is a huge benefit because we are simply changing the interface to reduce this amount, which means there is no additional expense to execute this design, making this solution incredibly scalable, sustainable, and low risk."
+                    "body": "We've all used ATMs at some point in our lives. Most of the time, we find that the garbage cans at ATM locations are overflowing with meaningless receipts that consumers have requested. That is what inspired me to work on this design project. As a result, I created a completely new user interface that would limit the amount of unnecessary receipts issued. An experiment was carried out to validate the design. This experiment concluded that by using this design, we can reduce receipt wastage by roughly 50%. This is a huge benefit because we are simply changing the interface to reduce this amount, which means there is no additional expense to execute this design, making this solution incredibly scalable, sustainable, and low risk."
                 },
                 {
                     "title": "Process",
-                    "body": "The initial step in this project was to consider how I would change the current interface such that it would encourage the user to skip the receipt rather than priniting it. To achieve this I replaced the 'Yes/No' interface with an interface which makes use of Fitts' and von Restroff's laws. After that, I ran a little test to validate the design. This experiment involved 153 participants. According to the findings of this experiment, we can cut receipt printing by roughly half.",
+                    "body": "The initial step in this project was to consider how I would change the current interface such that it would encourage the user to skip the receipt rather than printing it, when they do not require it. To achieve this I replaced the 'Yes/No' interface with an interface which makes use of Fitts' and von Restroff's laws. After that, I ran an experiment to validate the design. This experiment involved 153 participants and according to the findings of this experiment, we can reduce receipt printing by roughly 50%.",
                     "images": [
                         {
                             "image": "/images/projects/ATM/atm-org.png",
-                            "alt": "achintha isuru - 1"
+                            "alt": "atm-1"
                         },
                         {
                             "image": "/images/projects/ATM/atm-prop.png",
-                            "alt": "achintha isuru - 1"
+                            "alt": "atm-2"
                         }
                     ]
                 },
                 {
                     "title": "Accomplishments",
-                    "body": "I competed in two contests: the 'Stanford Design Challenge' organised by Stanford University in the United States and the 'IET 150 & Beyond' hosted by the Sri Lankan IET Young Professionals chapter. Despite failing to reach the finals of the first competition, I was able to win the second by successfully utilizing the feedback I received.",
+                    "body": "I competed in two competitions: the 'Stanford Design Challenge' organized by the Stanford University in the United States and the 'IET 150 & Beyond' hosted by the Sri Lankan IET Young Professionals chapter. Despite failing to reach the finals of the first competition, I was able to win the second competition by successfully utilizing the feedback I received.",
                     "images": [
                         {
                             "image": "/images/projects/ATM/accom-1.jpg",
-                            "alt": "achintha isuru - 1"
+                            "alt": "atm-3"
                         },
                         {
                             "image": "/images/projects/ATM/accom-2.jpg",
-                            "alt": "achintha isuru - 1"
+                            "alt": "atm-4"
                         },
                         {
                             "image": "/images/projects/ATM/accom-3.jpg",
-                            "alt": "achintha isuru - 1"
+                            "alt": "atm-5"
                         }
                     ]
                 },
                 {
                     "title": "View Presentation",
-                    "body": "The presentation that follows goes into great detail regarding the project. For further information, please see the presentation.",
+                    "body": "The presentation that follows goes into great detail regarding the project. For further information, you can refer to this presentation.",
                     "presentations": [
                         {
                             "link": "https://www.canva.com/design/DAEl9KetVkQ/view?embed"
@@ -92,25 +92,25 @@
             "content": [
                 {
                     "title": "Overview",
-                    "body": "The FABVIS (Vision-Based Fabric Defect Detection) project, is a pioneering creation by the Intellisense Lab within the Department of Computer Science and Engineering at the University of Moratuwa, Sri Lanka. My role focused on designing a web dashboard to streamline efficient configuration and provide access to the fabric detection system's settings to the textile engineers."
+                    "body": "The FABVIS (Vision-Based Fabric Defect Detection) project, is a pioneering creation by the Intellisense Lab within the Department of Computer Science and Engineering at the University of Moratuwa, Sri Lanka. In this project my role was focused on designing the web dashboard to streamline efficient configuration and provide access to the fabric detection system's settings to the textile engineers."
                 },
                 {
                     "title": "Process",
-                    "body": "This project started with a thorough exploration of the role of technology in the textile industry. Through collaboration with industry peers, I gained valuable insights that guided me to make design decisions. First of all, I developed a comprehensive wireframe for the website, which, upon stakeholder approval, provided the foundation for the design. After that, I designed a digital prototype of the website and gave the prototype to the development team.",
+                    "body": "This project started with a thorough exploration of the role of technology in the textile industry. Through collaboration with industry peers, I gained valuable insights that guided me to make design decisions. First of all, I developed a comprehensive wireframe for the website, which, upon th stakeholders approval, provided the foundation for the design. After that, I designed a digital prototype of the website and hand over the prototype to the development team.",
                     "images": [
                         {
                             "image": "/images/projects/fabvis/fabvis-2.png",
-                            "alt": "achintha isuru - 1"
+                            "alt": "fabvis-1"
                         },
                         {
                             "image": "/images/projects/fabvis/fabvis-3.png",
-                            "alt": "achintha isuru - 1"
+                            "alt": "fabvis-2"
                         }
                     ]
                 },
                 {
                     "title": "Challenges Faced",
-                    "body": "One of the main challenges I faced was the strict time frame of the project. To address this, I employed strategic milestone planning and consistent stakeholder engagement. Regular feedback loops ensured design iterations aligned seamlessly with evolving needs, leading to a punctual project completion."
+                    "body": "One of the main challenges I faced was the strict time frame of the project. To address this, I used milestone planning and consistent stakeholder engagement. Regular feedback loops ensured design iterations aligned with the stakeholders needs, leading to a punctual project completion."
                 },
                 {
                     "title": "Accomplishments",
@@ -159,19 +159,19 @@
             "content": [
                 {
                     "title": "Overview",
-                    "body": "A well-maintained road network is an important component of long-term urban development. Researchers have proposed smartphone-based crowdsourced applications as a low-cost effective approach to obtaining frequent road surface quality updates over the last few years. The values show large fluctuations over the conditions under which the road data was collected, which is one of the key drawbacks of these applications. Through this project, we created a road roughness monitoring platform based on passenger cars that can generate reliable findings while minimizing the impact of variables such as car type, smartphone model, or location. Among the features of the created system include automatic travel detection, the ability to use any smartphone in any location with or without an active internet connection, combining information from various sources, and viewing them on a virtual map. This study also proposes a complete system to identify and classify road anomalies from crowd-sensed smartphone data adjusting to different vehicle speeds and other characteristics. A set of field tests were carried out to evaluate the proposed system and the results show that the proposed solution is effective in predicting accurate International Roughness Index (IRI) values and road anomalies after reducing the effect of these varying factors."
+                    "body": "A well-maintained road network is an important component of long-term urban development of a country. Researchers have proposed smartphone-based crowdsourced applications as a low-cost effective approach to obtaining frequent road surface quality updates over the last few years. The values show large fluctuations over the conditions under which the road data was collected, which is one of the key drawbacks of these applications. Through this project, we created a road roughness monitoring platform based on passenger cars that can generate reliable findings while minimizing the impact of variables such as car type, smartphone model, or location. Among the features of the created system include automatic travel detection, the ability to use any smartphone in any location with or without an active internet connection, combining information from various sources, and viewing them on a virtual map. This study also proposes a complete system to identify and classify road anomalies from crowd-sensed smartphone data adjusting to different vehicle speeds and other characteristics. A set of field tests were carried out to evaluate the proposed system and the results show that the proposed solution is effective in predicting accurate International Roughness Index (IRI) values and road anomalies after reducing the effect of these varying factors."
                 },
                 {
                     "title": "Process",
-                    "body": "As the first step, we had to design a mobile application for gathering traffic data. To generate ideas for this, we examined previous map-based mobile applications. Next, we created a prototype of the mobile application, starting with some wireframes. Afterwards, we utilized Android to develop the application. We conducted testing on the mobile application and made adjustments based on the results. Due to resource constraints, we were only able to perform a few basic user tests of the application. Following that phase, we developed the web application and the machine learning model to display the results. While I primarily focused on developing the mobile application, my partner took the lead in developing the majority of the web dashboard and the machine learning model."
+                    "body": "As the first step, we had to design a mobile application for gathering traffic data. To generate ideas for this, we examined previous map-based mobile applications. Next, we created a prototype of the mobile application, starting with some wireframes. Afterwards, we used Android to develop the application. While this is phase is moving on, the machine learning model to calculate the IRI value was also been developed as well. We conducted testing on the mobile application and made adjustments based on the results. Due to resource constraints, we were only able to perform a few basic user tests of the application. Following that phase, we developed the web application to display the results. While I primarily focused on developing the mobile application, my partner took the lead in developing the majority of the web dashboard and the machine learning model."
                 },
                 {
                     "title": "Challenges Faced",
-                    "body": "During the project, we encountered several challenges. The first hurdle was the insufficient amount of data available for training the machine learning model. To address this challenge, we employed appropriate pre-processing techniques and, when feasible, applied fuzzy logic inference. Another problem was that the initial version of the mobile application significantly drained the user's battery. To mitigate this, we reduced the rate of data collection through the mobile application. While there were numerous other challenges along the way, we effectively tackled them and managed to complete the project within the specified timeframe."
+                    "body": "During the project, we encountered several challenges. The first hurdle was the insufficient amount of data available for training the machine learning model. To address this challenge, we employed appropriate pre-processing techniques and, when feasible, applied fuzzy logic inference. Another problem was that the initial version of the mobile application significantly drained the user's battery. To mitigate this, we reduced the rate of data collection through the mobile application. While there were numerous other challenges along the way, we effectively tackled them and managed to complete the project within the specified time frame."
                 },
                 {
                     "title": "Accomplishments",
-                    "body": "Based on this project, we submitted two research papers. The first is to the International Journal of Intelligent Transportation System Research, with the title 'Measuring Road Roughness through Crowdsourcing while Minimizing the Conditional Effects' The other is titled 'Identification of Road Surface Anomalies Using Crowdsourced Smartphone Sensor Data' and will be presented at ICTer 2022. We also took part in the Stanford University, USA, Longevity Design Challenge.",
+                    "body": "Based on this project, we submitted two research papers. The first is to the 'International Journal of Intelligent Transportation System Research', with the title 'Measuring Road Roughness through Crowdsourcing while Minimizing the Conditional Effects' The other is titled 'Identification of Road Surface Anomalies Using Crowdsourced Smartphone Sensor Data' and is presented at ICTer 2022. We also took part in the Stanford University, USA, Longevity Design Challenge.",
                     "links": [
                         {
                             "title": "Measuring Road Roughness through Crowdsourcing while Minimizing the Conditional Effects - Research Paper",
@@ -185,7 +185,7 @@
                 },
                 {
                     "title": "View Presentation",
-                    "body": "The presentation that follows goes into great detail regarding the project. For further information, please see the presentation.",
+                    "body": "The presentation that follows goes into great detail regarding the project. For further information of this project, you can refer to this presentation.",
                     "presentations": [
                         {
                             "link": "https://www.canva.com/design/DAE6rPJ63x8/view?embed"
@@ -224,15 +224,15 @@
                     "images": [
                         {
                             "image": "/images/projects/organic/organic-1.png",
-                            "alt": "achintha isuru - 1"
+                            "alt": "organic-1"
                         },
                         {
                             "image": "/images/projects/organic/organic-2.png",
-                            "alt": "achintha isuru - 1"
+                            "alt": "organic-2"
                         },
                         {
                             "image": "/images/projects/organic/organic-3.png",
-                            "alt": "achintha isuru - 1"
+                            "alt": "organic-3"
                         }
                     ]
                 },
