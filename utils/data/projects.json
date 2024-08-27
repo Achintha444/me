@@ -216,7 +216,7 @@
             "content": [
                 {
                     "title": "Overview",
-                    "body": "Organic Chemistry Conversions is a smartphone game designed to improve the organic chemistry skills of college students. This engaging game comprises 100 levels, each challenging players to drag and drop the appropriate chemicals into corresponding slots. Successful combinations unlock the next level, allowing players to enjoy the game while improving their knowledge."
+                    "body": "Organic Chemistry Conversions is a smartphone game designed to improve the organic chemistry skills of college students. This engaging game comprises 100 levels, each challenging the players to drag and drop the appropriate chemicals into corresponding slots. Successful combinations unlock the next level, allowing players to enjoy the game while improving their knowledge."
                 },
                 {
                     "title": "Process",
@@ -278,11 +278,11 @@
             "content": [
                 {
                     "title": "Overview",
-                    "body": "Data privacy deals with the sensitive information of individuals and has become a major topic in modern society. Although the practicability of mobile apps has become an essential part of the routines of many people, consumers are increasingly concerned about their data privacy. Most of the time, these privacy policies that are used to collect and share data are lengthy and complex to understand. Therefore, a common user finds it hard to understand before agreeing to the privacy policy terms. This project propose an approach to convey privacy policies in a way that a common user can comprehend."
+                    "body": "Data privacy deals with the sensitive information of individuals and has become a major topic in modern society. Although the practicality of mobile apps has become an essential part of the routines of all most everyone. Consumers are increasingly concerned about their data privacy. Most of the time, these privacy policies that are used to collect and share data that are lengthy and complex to understand. Therefore, a common user finds it hard to understand before agreeing to the privacy policy terms. This project propose an approach to convey privacy policies in a way that a common user can comprehend."
                 },
                 {
                     "title": "Process",
-                    "body": "First, we conducted a few interviews with industry professionals to gain a better grasp of the problem at hand and to generate suggestions for categorising privacy policies so that users may better comprehend them better. Then, using the information gathered from the interviews and research papers, we developed the ten categories. Following that, we created a chat bot mobile application so that consumers could communicate with the bot about their privacy concerns. For example, if a user wants to know a company's data reservation policy, they may easily communicate with that bot and obtain such information."
+                    "body": "First, we conducted a few interviews with industry professionals to gain a better understanding of the problem at hand and to generate suggestions for categorising privacy policies so that users may better comprehend them better. Then, using the information gathered from the interviews and research papers, we developed the ten categories. Following that, we created a chat bot mobile application so that consumers could communicate with the bot about their privacy concerns. For example, if a user wants to know a company's data reservation policy, they may easily communicate with that bot and obtain such information."
                 },
                 {
                     "title": "Challenges Faced",
@@ -300,7 +300,7 @@
                 },
                 {
                     "title": "View Presentation",
-                    "body": "The presentation that follows goes into great detail regarding the project. For further information, please see the presentation.",
+                    "body": "The presentation that follows goes into great detail regarding the project. For further information, you can refer to this presentation.",
                     "presentations": [
                         {
                             "link": "https://docs.google.com/presentation/d/e/2PACX-1vTYZcDDZMk_eAtqXuZvpGX4GP7-xAh-TmaO0jLsPb6U_TIsozRqezWq0FhMil68MNQr2DJaKJIspTha/embed?start=true&loop=false&delayms=30000"
@@ -320,7 +320,7 @@
                         "CS 4472 Mobile Computing - Project",
                         "Oct 2021 - Dec 2021"
                     ],
-                    "body": "As part of the 'CS 4472 Mobile Computing' course, I contributed to the 'Bubble Detector Mobile Application' project, aimed at replacing less secure methods of store entry logging during the COVID-19 pandemic with a safer and more efficient solution. Through a mobile application, we introduced a modern approach to mitigate health risks, eliminating the need for manual entry or QR code scanning. Leveraging Figma for design, Flutter for development, and Firebase for data management, we successfully created a user-friendly and contactless system that not only enhances safety measures but also showcases the potential of technology to address real-world challenges effectively. This project not only advanced my technical proficiency but also deepened my understanding of technology's role in promoting public health in unprecedented circumstances.",
+                    "body": "As part of the 'CS 4472 Mobile Computing' module, I contributed to the 'Bubble Detector Mobile Application' project, aimed at replacing less secure methods of store entry logging during the COVID-19 pandemic with a safer and more efficient solution. Through a mobile application, we introduced a modern approach to mitigate health risks, eliminating the need for manual entry or QR code scanning. Leveraging Figma for design, Flutter for development, and Firebase for data management, we successfully developed a user-friendly and contactless system that not only enhances safety measures but also showcases the potential of technology to address real-world challenges effectively. This project not only advanced my technical proficiency but also deepened my understanding of technology's role in promoting public health in unprecedented circumstances.",
                     "presentations": [
                         {
                             "link": "https://www.youtube.com/embed/ZeWIGfQCypc"
