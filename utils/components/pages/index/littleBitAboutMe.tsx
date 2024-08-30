@@ -10,10 +10,10 @@ export default function LittleBitAboutMe({ data }) {
             <br />
             {
                 data.content.map((contentDesc) => (
-                    <>
-                        <DescriptionList key={ contentDesc.alt } list={ contentDesc.content } />
+                    <span key={ contentDesc.key }>
+                        <DescriptionList list={ contentDesc.content } />
                         <br />
-                    </>
+                    </span>
                 ))
             }
             <CommonDivider />

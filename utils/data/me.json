@@ -14,15 +14,15 @@
         "fistImages": [
             {
                 "image": "/images/me/me-1.jpg",
-                "alt": "achintha isuru - 7"
+                "alt": "achintha-7"
             },
             {
                 "image": "/images/me/me-2.jpg",
-                "alt": "achintha isuru - 8"
+                "alt": "achintha-8"
             },
             {
                 "image": "/images/me/me-3.jpg",
-                "alt": "achintha isuru - 9"
+                "alt": "achintha-9"
             }
         ],
         "contentDetails": [
@@ -63,15 +63,15 @@
                                 "images": [
                                     {
                                         "image": "/images/me/uni-1.jpg",
-                                        "alt": "achintha isuru - 4"
+                                        "alt": "achintha-4"
                                     },
                                     {
                                         "image": "/images/me/uni-2.jpg",
-                                        "alt": "achintha isuru - 5"
+                                        "alt": "achintha-5"
                                     },
                                     {
                                         "image": "/images/me/uni-3.jpg",
-                                        "alt": "achintha isuru - 6"
+                                        "alt": "achintha-6"
                                     }
                                 ]
                             }
@@ -96,8 +96,34 @@
                 ]
             },
             {
-                "title": "Hosted Sessions",
+                "title": "Conducted Sessions",
                 "content": [
+                    {
+                        "title": [
+                            "Mastering Secure React Development for Enterprise",
+                            "Organised by WSO2 IAM team to the Department of Computer Science and Engineering, University of Moratuwa, Sri Lanka undergraduates",
+                            "Aug 2024"
+                        ],
+                        "content": [
+                            {
+                                "body": [
+                                    {
+                                        "body": "I had the opportunity to present a session on how to create and secure React applications, representing the WSO2 IAM team, to the third-year students at the Department of Computer Science & Engineering, University of Moratuwa Joining me from the the IAM team at WSO2, were my colleagues Dasuni Geeganage, Savindi Waduge & Jayashakthi Perera. Together, we covered topics like, how to set up a simple React application, basic IAM concepts & how to add login to that application using Asgardeo."
+                                    }
+                                ],
+                                "images": [
+                                    {
+                                        "image": "/images/me/me-session-1.webp",
+                                        "alt": "achintha-session-1"
+                                    },
+                                    {
+                                        "image": "/images/me/me-session-2.webp",
+                                        "alt": "achintha-session-2"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
                     {
                         "title": [
                             "Introduction to Basics of UI Designing (Sinhala)",
@@ -153,19 +179,19 @@
                                 "images": [
                                     {
                                         "image": "/images/me/soccer-1.jpg",
-                                        "alt": "achintha isuru - 10"
+                                        "alt": "achintha-10"
                                     },
                                     {
                                         "image": "/images/me/soccer-2.jpg",
-                                        "alt": "achintha isuru - 11"
+                                        "alt": "achintha-11"
                                     },
                                     {
                                         "image": "/images/me/soccer-3.jpg",
-                                        "alt": "achintha isuru - 12"
+                                        "alt": "achintha-12"
                                     },
                                     {
                                         "image": "/images/me/soccer-4.jpg",
-                                        "alt": "achintha isuru - 13"
+                                        "alt": "achintha-13"
                                     }
                                 ]
                             }
@@ -194,15 +220,15 @@
                                 "images": [
                                     {
                                         "image": "/images/me/rot-1.jpg",
-                                        "alt": "achintha isuru - 14"
+                                        "alt": "achintha-14"
                                     },
                                     {
                                         "image": "/images/me/rot-2.jpg",
-                                        "alt": "achintha isuru - 15"
+                                        "alt": "achintha-15"
                                     },
                                     {
                                         "image": "/images/me/rot-3.jpg",
-                                        "alt": "achintha isuru - 16"
+                                        "alt": "achintha-16"
                                     }
                                 ]
                                 

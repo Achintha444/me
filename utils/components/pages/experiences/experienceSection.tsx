@@ -1,24 +1,15 @@
 import PropTypes from "prop-types";
+import ExperienceOverview from "./experienceOverview";
 import CommonDivider from "../../common/commonDivider";
 import DescriptionList from "../../common/descriptionList";
-import ExperienceOverview from "./experienceOverview";
 
 function Experiences({ experiences }) {
-
-    return (
-        <>
-            {
-                experiences.map((experience) => <SingleExperience experience={experience} />)
-            }
-        </>
-
-    );
-
+    return experiences.map((experience) => <SingleExperience experience={ experience } />);
 }
 
 Experiences.propTypes = {
     experiences: PropTypes.arrayOf(PropTypes.object)
-}
+};
 
 function SingleExperience({ experience }) {
 
@@ -26,9 +17,9 @@ function SingleExperience({ experience }) {
         <>
             <br />
             <ExperienceOverview
-               title={experience.title} />
+                title={ experience.title } />
             <br />
-            <DescriptionList list={experience.content} />
+            <DescriptionList list={ experience.content } />
 
             <CommonDivider />
         </>

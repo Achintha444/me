@@ -2,20 +2,24 @@
     "pageTitle": "Projects",
     "projects": [
         {
+            "key": "atm",
             "name": "A New User Interface Concept for ATM’s to Reduce Receipt Wastage",
             "role": "UI/UX Designer",
             "overview": [
                 {
                     "title": "Duration",
-                    "body": "2021 Jan - 2021 Aug"
+                    "body": "2021 Jan - 2021 Aug",
+                    "key": "duration"
                 },
                 {
                     "title": "Sector",
-                    "body": "Urban Development"
+                    "body": "Urban Development",
+                    "key": "sector"
                 },
                 {
                     "title": "My Role",
-                    "body": "UI/UX Designer"
+                    "body": "UI/UX Designer",
+                    "key": "role"
                 }
             ],
             "image": "https://images.unsplash.com/photo-1631528754981-dcbce4d4d652?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2671&q=80",
@@ -24,7 +28,8 @@
             "content": [
                 {
                     "title": "Overview",
-                    "body": "We've all used ATMs at some point in our lives. Most of the time, we find that the garbage cans at ATM locations are overflowing with meaningless receipts that consumers have requested. That is what inspired me to work on this design project. As a result, I created a completely new user interface that would limit the amount of unnecessary receipts issued. An experiment was carried out to validate the design. This experiment concluded that by using this design, we can reduce receipt wastage by roughly 50%. This is a huge benefit because we are simply changing the interface to reduce this amount, which means there is no additional expense to execute this design, making this solution incredibly scalable, sustainable, and low risk."
+                    "body": "We've all used ATMs at some point in our lives. Most of the time, we find that the garbage cans at ATM locations are overflowing with meaningless receipts that consumers have requested. That is what inspired me to work on this design project. As a result, I created a completely new user interface that would limit the amount of unnecessary receipts issued. An experiment was carried out to validate the design. This experiment concluded that by using this design, we can reduce receipt wastage by roughly 50%. This is a huge benefit because we are simply changing the interface to reduce this amount, which means there is no additional expense to execute this design, making this solution incredibly scalable, sustainable, and low risk.",
+                    "key": "overview"
                 },
                 {
                     "title": "Process",
@@ -32,13 +37,14 @@
                     "images": [
                         {
                             "image": "/images/projects/ATM/atm-org.png",
-                            "alt": "atm-1"
+                            "key": "atm-1"
                         },
                         {
                             "image": "/images/projects/ATM/atm-prop.png",
-                            "alt": "atm-2"
+                            "key": "atm-2"
                         }
-                    ]
+                    ],
+                    "key": "process"
                 },
                 {
                     "title": "Accomplishments",
@@ -46,17 +52,18 @@
                     "images": [
                         {
                             "image": "/images/projects/ATM/accom-1.jpg",
-                            "alt": "atm-3"
+                            "key": "atm-3"
                         },
                         {
                             "image": "/images/projects/ATM/accom-2.jpg",
-                            "alt": "atm-4"
+                            "key": "atm-4"
                         },
                         {
                             "image": "/images/projects/ATM/accom-3.jpg",
-                            "alt": "atm-5"
+                            "key": "atm-5"
                         }
-                    ]
+                    ],
+                    "key": "accomplishments"
                 },
                 {
                     "title": "View Presentation",
@@ -65,34 +72,40 @@
                         {
                             "link": "https://www.canva.com/design/DAEl9KetVkQ/view?embed"
                         }
-                    ]
+                    ],
+                    "key": "presentation"
                 }
             ]
         },
         {
+            "key": "fabvis",
             "name": "FabVis",
             "role": "UI/UX Designer",
             "overview": [
                 {
                     "title": "Duration",
-                    "body": "2021 Jun – 2021 Sep"
+                    "body": "2021 Jun – 2021 Sep",
+                    "key": "duration"
                 },
                 {
                     "title": "Sector",
-                    "body": "Textile"
+                    "body": "Textile",
+                    "key": "sector"
                 },
                 {
                     "title": "My Role",
-                    "body": "UI/UX Designer"
+                    "body": "UI/UX Designer",
+                    "key": "role"
                 }
             ],
             "image": "https://images.unsplash.com/photo-1609709295948-17d77cb2a69b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1288&q=80",
+            "cols": 3,
             "rows": 2,
-            "cols": 2,
             "content": [
                 {
                     "title": "Overview",
-                    "body": "The FABVIS (Vision-Based Fabric Defect Detection) project, is a pioneering creation by the Intellisense Lab within the Department of Computer Science and Engineering at the University of Moratuwa, Sri Lanka. In this project my role was focused on designing the web dashboard to streamline efficient configuration and provide access to the fabric detection system's settings to the textile engineers."
+                    "body": "The FABVIS (Vision-Based Fabric Defect Detection) project, is a pioneering creation by the Intellisense Lab within the Department of Computer Science and Engineering at the University of Moratuwa, Sri Lanka. In this project my role was focused on designing the web dashboard to streamline efficient configuration and provide access to the fabric detection system's settings to the textile engineers.",
+                    "key": "overview"
                 },
                 {
                     "title": "Process",
@@ -100,17 +113,19 @@
                     "images": [
                         {
                             "image": "/images/projects/fabvis/fabvis-2.png",
-                            "alt": "fabvis-1"
+                            "key": "fabvis-1"
                         },
                         {
                             "image": "/images/projects/fabvis/fabvis-3.png",
-                            "alt": "fabvis-2"
+                            "key": "fabvis-2"
                         }
-                    ]
+                    ],
+                    "key": "process"
                 },
                 {
                     "title": "Challenges Faced",
-                    "body": "One of the main challenges I faced was the strict time frame of the project. To address this, I used milestone planning and consistent stakeholder engagement. Regular feedback loops ensured design iterations aligned with the stakeholders needs, leading to a punctual project completion."
+                    "body": "One of the main challenges I faced was the strict time frame of the project. To address this, I used milestone planning and consistent stakeholder engagement. Regular feedback loops ensured design iterations aligned with the stakeholders needs, leading to a punctual project completion.",
+                    "key": "challenges"
                 },
                 {
                     "title": "Accomplishments",
@@ -120,7 +135,8 @@
                             "title": "More Information about the Patent Cooperation Treaty and commercialization of the product.",
                             "link": "https://uom.lk/sites/default/files/news_letter/july%20-%20august%202023.pdf"
                         }
-                    ]
+                    ],
+                    "key": "accomplishments"
                 },
                 {
                     "title": "More Information",
@@ -132,42 +148,50 @@
                         {
                             "link": "https://www.youtube.com/embed/GwylMWO-FOI"
                         }
-                    ]
+                    ],
+                    "key": "more-info"
                 }
             ]
         },
         {
+            "key": "iri",
             "name": "International Roughness Index (IRI) Calculation of Sri Lankan Roads Using Crowdsourcing Techniques",
             "role": "Mobile Application Developer and UI/UX Designer",
             "overview": [
                 {
                     "title": "Duration",
-                    "body": "2021 Apr – 2022 Mar"
+                    "body": "2021 Apr – 2022 Mar",
+                    "key": "duration"
                 },
                 {
                     "title": "Sector",
-                    "body": "Urban Development"
+                    "body": "Urban Development",
+                    "key": "sector"
                 },
                 {
                     "title": "My Role",
-                    "body": "Mobile Application Developer and UI/UX Designer"
+                    "body": "Mobile Application Developer and UI/UX Designer",
+                    "key": "role"
                 }
             ],
             "image": "https://images.unsplash.com/photo-1515445702422-3a80ccfdb236?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1287&q=80",
-            "cols": 2,
+            "cols": 1,
             "rows": 2,
             "content": [
                 {
                     "title": "Overview",
-                    "body": "A well-maintained road network is an important component of long-term urban development of a country. Researchers have proposed smartphone-based crowdsourced applications as a low-cost effective approach to obtaining frequent road surface quality updates over the last few years. The values show large fluctuations over the conditions under which the road data was collected, which is one of the key drawbacks of these applications. Through this project, we created a road roughness monitoring platform based on passenger cars that can generate reliable findings while minimizing the impact of variables such as car type, smartphone model, or location. Among the features of the created system include automatic travel detection, the ability to use any smartphone in any location with or without an active internet connection, combining information from various sources, and viewing them on a virtual map. This study also proposes a complete system to identify and classify road anomalies from crowd-sensed smartphone data adjusting to different vehicle speeds and other characteristics. A set of field tests were carried out to evaluate the proposed system and the results show that the proposed solution is effective in predicting accurate International Roughness Index (IRI) values and road anomalies after reducing the effect of these varying factors."
+                    "body": "A well-maintained road network is an important component of long-term urban development of a country. Researchers have proposed smartphone-based crowdsourced applications as a low-cost effective approach to obtaining frequent road surface quality updates over the last few years. The values show large fluctuations over the conditions under which the road data was collected, which is one of the key drawbacks of these applications. Through this project, we created a road roughness monitoring platform based on passenger cars that can generate reliable findings while minimizing the impact of variables such as car type, smartphone model, or location. Among the features of the created system include automatic travel detection, the ability to use any smartphone in any location with or without an active internet connection, combining information from various sources, and viewing them on a virtual map. This study also proposes a complete system to identify and classify road anomalies from crowd-sensed smartphone data adjusting to different vehicle speeds and other characteristics. A set of field tests were carried out to evaluate the proposed system and the results show that the proposed solution is effective in predicting accurate International Roughness Index (IRI) values and road anomalies after reducing the effect of these varying factors.",
+                    "key": "overview"
                 },
                 {
                     "title": "Process",
-                    "body": "As the first step, we had to design a mobile application for gathering traffic data. To generate ideas for this, we examined previous map-based mobile applications. Next, we created a prototype of the mobile application, starting with some wireframes. Afterwards, we used Android to develop the application. While this is phase is moving on, the machine learning model to calculate the IRI value was also been developed as well. We conducted testing on the mobile application and made adjustments based on the results. Due to resource constraints, we were only able to perform a few basic user tests of the application. Following that phase, we developed the web application to display the results. While I primarily focused on developing the mobile application, my partner took the lead in developing the majority of the web dashboard and the machine learning model."
+                    "body": "As the first step, we had to design a mobile application for gathering traffic data. To generate ideas for this, we examined previous map-based mobile applications. Next, we created a prototype of the mobile application, starting with some wireframes. Afterwards, we used Android to develop the application. While this is phase is moving on, the machine learning model to calculate the IRI value was also been developed as well. We conducted testing on the mobile application and made adjustments based on the results. Due to resource constraints, we were only able to perform a few basic user tests of the application. Following that phase, we developed the web application to display the results. While I primarily focused on developing the mobile application, my partner took the lead in developing the majority of the web dashboard and the machine learning model.",
+                    "key": "process"
                 },
                 {
                     "title": "Challenges Faced",
-                    "body": "During the project, we encountered several challenges. The first hurdle was the insufficient amount of data available for training the machine learning model. To address this challenge, we employed appropriate pre-processing techniques and, when feasible, applied fuzzy logic inference. Another problem was that the initial version of the mobile application significantly drained the user's battery. To mitigate this, we reduced the rate of data collection through the mobile application. While there were numerous other challenges along the way, we effectively tackled them and managed to complete the project within the specified time frame."
+                    "body": "During the project, we encountered several challenges. The first hurdle was the insufficient amount of data available for training the machine learning model. To address this challenge, we employed appropriate pre-processing techniques and, when feasible, applied fuzzy logic inference. Another problem was that the initial version of the mobile application significantly drained the user's battery. To mitigate this, we reduced the rate of data collection through the mobile application. While there were numerous other challenges along the way, we effectively tackled them and managed to complete the project within the specified time frame.",
+                    "key": "challenges"
                 },
                 {
                     "title": "Accomplishments",
@@ -181,7 +205,8 @@
                             "title": "Identification of Road Surface Anomalies Using Crowdsourced Smartphone Sensor Data - Research Paper",
                             "link": "https://ieeexplore.ieee.org/document/10024097"
                         }
-                    ]
+                    ],
+                    "key": "accomplishments"
                 },
                 {
                     "title": "View Presentation",
@@ -190,33 +215,40 @@
                         {
                             "link": "https://www.canva.com/design/DAE6rPJ63x8/view?embed"
                         }
-                    ]
+                    ],
+                    "key": "presentation"
                 }
             ]
         },
         {
+            "key": "organic",
             "name": "Organic Chemistry Conversions",
             "role": "UI/UX Designer",
             "overview": [
                 {
                     "title": "Duration",
-                    "body": "2021 Feb"
+                    "body": "2021 Feb",
+                    "key": "duration"
                 },
                 {
                     "title": "Sector",
-                    "body": "Education"
+                    "body": "Education",
+                    "key": "sector"
                 },
                 {
                     "title": "My Role",
-                    "body": "UI/UX Designer"
+                    "body": "UI/UX Designer",
+                    "key": "role"
                 }
             ],
             "image": "https://images.unsplash.com/photo-1554475901-4538ddfbccc2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2672&q=80",
-            "cols": 2,
+            "cols": 1,
+            "rows": 2,
             "content": [
                 {
                     "title": "Overview",
-                    "body": "Organic Chemistry Conversions is a smartphone game designed to improve the organic chemistry skills of college students. This engaging game comprises 100 levels, each challenging the players to drag and drop the appropriate chemicals into corresponding slots. Successful combinations unlock the next level, allowing players to enjoy the game while improving their knowledge."
+                    "body": "Organic Chemistry Conversions is a smartphone game designed to improve the organic chemistry skills of college students. This engaging game comprises 100 levels, each challenging the players to drag and drop the appropriate chemicals into corresponding slots. Successful combinations unlock the next level, allowing players to enjoy the game while improving their knowledge.",
+                    "key": "overview"
                 },
                 {
                     "title": "Process",
@@ -224,25 +256,28 @@
                     "images": [
                         {
                             "image": "/images/projects/organic/organic-1.png",
-                            "alt": "organic-1"
+                            "key": "organic-1"
                         },
                         {
                             "image": "/images/projects/organic/organic-2.png",
-                            "alt": "organic-2"
+                            "key": "organic-2"
                         },
                         {
                             "image": "/images/projects/organic/organic-3.png",
-                            "alt": "organic-3"
+                            "key": "organic-3"
                         }
-                    ]
+                    ],
+                    "key": "process"
                 },
                 {
                     "title": "Challenges Faced",
-                    "body": "A main challenge I encountered was stepping into the realm of game development for the first time. This new experience required a comprehensive preliminary study. I delved into the intricacies of game creation, examining development processes and the essential considerations a designer must weigh while shaping a game."
+                    "body": "A main challenge I encountered was stepping into the realm of game development for the first time. This new experience required a comprehensive preliminary study. I delved into the intricacies of game creation, examining development processes and the essential considerations a designer must weigh while shaping a game.",
+                    "key": "challenges"
                 },
                 {
                     "title": "Accomplishments",
-                    "body": "While certain constraints limited our application's launch exclusively to Android users, the outcome was better than expected. The application got exceptional reviews, achieving a rating of 4.6/5.0 with over 1,000 downloads in the Google Play store in a relatively brief span. These accomplishments were attained with minimal marketing efforts, emphasising the application's appeal and impact."
+                    "body": "While certain constraints limited our application's launch exclusively to Android users, the outcome was better than expected. The application got exceptional reviews, achieving a rating of 4.6/5.0 with over 1,000 downloads in the Google Play store in a relatively brief span. These accomplishments were attained with minimal marketing efforts, emphasizing the application's appeal and impact.",
+                    "key": "accomplishments"
                 },
                 {
                     "title": "View application",
@@ -251,42 +286,50 @@
                             "title": "Click on this link to view the `Organic Chemistry Conversions` application",
                             "link": "https://play.google.com/store/apps/details?id=com.RioraInnovations.OrganicChemistryTranslations"
                         }
-                    ]
+                    ],
+                    "key": "application"
                 }
             ]
         },
         {
+            "key": "privacy",
             "name": "Automated Categorization of Privacy Policies Based on User Perspective",
             "role": "Mobile Application Developer and UI/UX Designer",
             "overview": [
                 {
                     "title": "Duration",
-                    "body": "2021 Jun - 2021 Nov"
+                    "body": "2021 Jun - 2021 Nov",
+                    "key": "duration"
                 },
                 {
                     "title": "Sector",
-                    "body": "Data Privacy"
+                    "body": "Data Privacy",
+                    "key": "sector"
                 },
                 {
                     "title": "My Role",
-                    "body": "Mobile Application Developer and UI/UX Designer"
+                    "body": "Mobile Application Developer and UI/UX Designer",
+                    "key": "role"
                 }
             ],
             "image": "https://images.unsplash.com/photo-1595666944516-bbb485958fb5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3444&q=80",
-            "cols": 2,
+            "cols": 3,
             "rows": 2,
             "content": [
                 {
                     "title": "Overview",
-                    "body": "Data privacy deals with the sensitive information of individuals and has become a major topic in modern society. Although the practicality of mobile apps has become an essential part of the routines of all most everyone. Consumers are increasingly concerned about their data privacy. Most of the time, these privacy policies that are used to collect and share data that are lengthy and complex to understand. Therefore, a common user finds it hard to understand before agreeing to the privacy policy terms. This project propose an approach to convey privacy policies in a way that a common user can comprehend."
+                    "body": "Data privacy deals with the sensitive information of individuals and has become a major topic in modern society. keyhough the practicality of mobile apps has become an essential part of the routines of all most everyone. Consumers are increasingly concerned about their data privacy. Most of the time, these privacy policies that are used to collect and share data that are lengthy and complex to understand. Therefore, a common user finds it hard to understand before agreeing to the privacy policy terms. This project propose an approach to convey privacy policies in a way that a common user can comprehend.",
+                    "key": "overview"
                 },
                 {
                     "title": "Process",
-                    "body": "First, we conducted a few interviews with industry professionals to gain a better understanding of the problem at hand and to generate suggestions for categorising privacy policies so that users may better comprehend them better. Then, using the information gathered from the interviews and research papers, we developed the ten categories. Following that, we created a chat bot mobile application so that consumers could communicate with the bot about their privacy concerns. For example, if a user wants to know a company's data reservation policy, they may easily communicate with that bot and obtain such information."
+                    "body": "First, we conducted a few interviews with industry professionals to gain a better understanding of the problem at hand and to generate suggestions for categorising privacy policies so that users may better comprehend them better. Then, using the information gathered from the interviews and research papers, we developed the ten categories. Following that, we created a chat bot mobile application so that consumers could communicate with the bot about their privacy concerns. For example, if a user wants to know a company's data reservation policy, they may easily communicate with that bot and obtain such information.",
+                    "key": "process"
                 },
                 {
                     "title": "Challenges Faced",
-                    "body": "The main challenge we faced was holding the interview sessions because I was still in my third year of university at the time and the professionals who came to the interviews had vast knowledge and expertise in the industry. We overcame this obstacle by working together and correctly preparing the interview sessions. Personally this was a huge experience for me."
+                    "body": "The main challenge we faced was holding the interview sessions because I was still in my third year of university at the time and the professionals who came to the interviews had vast knowledge and expertise in the industry. We overcame this obstacle by working together and correctly preparing the interview sessions. Personally this was a huge experience for me.",
+                    "key": "challenges"
                 },
                 {
                     "title": "Accomplishments",
@@ -296,7 +339,8 @@
                             "title": "Automated Categorization of Privacy Policies Based on User Perspective - Research Paper",
                             "link": "https://ieeexplore.ieee.org/document/9606158"
                         }
-                    ]
+                    ],
+                    "key": "accomplishments"
                 },
                 {
                     "title": "View Presentation",
@@ -305,14 +349,16 @@
                         {
                             "link": "https://docs.google.com/presentation/d/e/2PACX-1vTYZcDDZMk_eAtqXuZvpGX4GP7-xAh-TmaO0jLsPb6U_TIsozRqezWq0FhMil68MNQr2DJaKJIspTha/embed?start=true&loop=false&delayms=30000"
                         }
-                    ]
+                    ],
+                    "key": "presentation"
                 }
             ]
         },
         {
+            "key": "other",
             "name": "Other Projects",
             "image": "https://images.unsplash.com/photo-1455849318743-b2233052fcff?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3569&q=80",
-            "cols": 2,
+            "cols": 4,
             "content": [
                 {
                     "title": [
@@ -320,12 +366,13 @@
                         "CS 4472 Mobile Computing - Project",
                         "Oct 2021 - Dec 2021"
                     ],
-                    "body": "As part of the 'CS 4472 Mobile Computing' module, I contributed to the 'Bubble Detector Mobile Application' project, aimed at replacing less secure methods of store entry logging during the COVID-19 pandemic with a safer and more efficient solution. Through a mobile application, we introduced a modern approach to mitigate health risks, eliminating the need for manual entry or QR code scanning. Leveraging Figma for design, Flutter for development, and Firebase for data management, we successfully developed a user-friendly and contactless system that not only enhances safety measures but also showcases the potential of technology to address real-world challenges effectively. This project not only advanced my technical proficiency but also deepened my understanding of technology's role in promoting public health in unprecedented circumstances.",
+                    "body": "As part of the 'CS 4472 Mobile Computing' module, I contributed to the 'Bubble Detector Mobile Application' project, aimed at replacing less secure methods of store entry logging during the COVID-19 pandemic with a safer and more efficient solution. Through a mobile application, we introduced a modern approach to mitigate hekeyh risks, eliminating the need for manual entry or QR code scanning. Leveraging Figma for design, Flutter for development, and Firebase for data management, we successfully developed a user-friendly and contactless system that not only enhances safety measures but also showcases the potential of technology to address real-world challenges effectively. This project not only advanced my technical proficiency but also deepened my understanding of technology's role in promoting public hekeyh in unprecedented circumstances.",
                     "presentations": [
                         {
                             "link": "https://www.youtube.com/embed/ZeWIGfQCypc"
                         }
-                    ]
+                    ],
+                    "key": "bubble"
                 },
                 {
                     "title": [
@@ -344,7 +391,8 @@
                         {
                             "link": "https://www.youtube.com/embed/vHXmxZdZzCI"
                         }
-                    ]
+                    ],
+                    "key": "obd"
                 },
                 {
                     "title": [
@@ -358,7 +406,8 @@
                             "title": "Download the application",
                             "link": "https://play.google.com/store/apps/details?id=ait.gpa_cal"
                         }
-                    ]
+                    ],
+                    "key": "gpa"
                 }
             ]
         }

@@ -11,10 +11,10 @@ export default function MyInterests({ data }) {
             <br />
             {
                 data.interests.map((interest) => (
-                    <>
+                    <span key={ interest.key }>
                         <Interest interest={ interest } />
                         <br />
-                    </>
+                    </span>
                 ))
             }
             <CommonDivider />

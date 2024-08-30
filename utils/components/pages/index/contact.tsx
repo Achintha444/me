@@ -9,22 +9,19 @@ export default function Contact({ data }) {
             <br />
             <SubSectionTitle data={ data } />
             <br />
-
             {
                 data.content.map((contentDesc) => (
-                    <>
+                    <span key={ contentDesc.key }>
                         <DescriptionList list={ contentDesc.content } />
                         <br />
-                    </>
+                    </span>
                 ))
             }
-
             <Stack direction="row" spacing={ 0 } justifyContent="center">
                 {
-                    data.icons.map((icon) => <SingleContact key={ icon.alt } icon={ icon } />)
+                    data.icons.map((icon) => <SingleContact key={ icon.key } icon={ icon } />)
                 }
             </Stack>
-
             <CommonDivider />
         </>
     );

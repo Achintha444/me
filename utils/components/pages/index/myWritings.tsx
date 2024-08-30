@@ -1,5 +1,5 @@
 import { ArrowCircleRight } from "@mui/icons-material";
-import { IconButton, ImageList, ImageListItem, ImageListItemBar, Typography } from "@mui/material";
+import { IconButton, ImageList, ImageListItem, ImageListItemBar } from "@mui/material";
 import Link from "next/link";
 import { useCallback, useEffect, useState } from "react";
 import mediumApiCall from "../../../controller/apiCall/mediumApiCall";
@@ -18,7 +18,7 @@ export default function MyWritings({ data }) {
         const from = randomNumberGenerator(res?.length - 3);
         const to = from + 3;
 
-        setMediumArticles(res.slice(from, to));
+        setMediumArticles(res?.slice(from, to));
 
     }, [ setMediumArticles ]);
 
@@ -52,7 +52,7 @@ export default function MyWritings({ data }) {
 
 function SingleArticle({ article }) {
 
-    let imageUrl: string = article.description.match(/<img[^>]+src="([^">]+)"/)[1];
+    const imageUrl: string = article.description.match(/<img[^>]+src="([^">]+)"/)[1];
 
     return (
         <Link href={ article.link } target="_blank" rel="noopener">

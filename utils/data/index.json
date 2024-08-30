@@ -38,13 +38,14 @@
                     "content": [
                         {
                             "body": "Hello everyone! My name is Achintha Isuru, and I am a front-end developer and UI/UX designer. Apart from my usual studies, I have self-studied psychology and its impact on human behavior and decision-making, and I apply this knowledge when designing user interfaces and experiences. My ultimate life goal is to create something exceptional that my father would one day be truly proud of.",
-                            "alt": "little-bit-about-me-1"
+                            "key": "little-bit-about-me-1"
                         },
                         {
                             "body": "I am always open to new opportunities and challenges, so please feel free to reach out to me if you would like to collaborate or chat about anything!",
-                            "alt": "little-bit-about-me-2"
+                            "key": "little-bit-about-me-2"
                         }
-                    ]
+                    ],
+                    "key": "little-bit-about-me"
                 }
             ]
         },
@@ -54,57 +55,70 @@
             "interests": [
                 {
                     "title": "Fields",
+                    "key": "fields",
                     "color": "success",
                     "interests": [
                         {
-                            "title": "UI/UX Designing"
+                            "title": "UI/UX Designing",
+                            "key": "ui-ux-designing"
                         },
                         {
-                            "title": "Front-end Development "
+                            "title": "Front-end Development ",
+                            "key": "front-end-development"
                         }
                     ]
                 },
                 {
                     "title": "Development Tools and Techologies",
+                    "key": "development-tools-and-technologies",
                     "color": "default",
                     "interests": [
                         {
                             "title": "Next.JS",
-                            "imageUrl": "https://seeklogo.com/images/N/next-js-logo-8FCFF51DD2-seeklogo.com.png"
+                            "imageUrl": "https://seeklogo.com/images/N/next-js-logo-8FCFF51DD2-seeklogo.com.png",
+                            "key": "next-js"
                         },
                         {
                             "title": "React JS",
-                            "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgVF1dospej2VMDF0sb-TuNCYudETDT6UKVQ&usqp=CAU"
+                            "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgVF1dospej2VMDF0sb-TuNCYudETDT6UKVQ&usqp=CAU",
+                            "key": "react-js"
                         },
                         {
                             "title": "Flutter",
-                            "imageUrl": "https://pixlok.com/wp-content/uploads/2021/05/flutter-logo-768x768.jpg"
+                            "imageUrl": "https://raw.githubusercontent.com/flutter/website/master/src/_assets/image/flutter-logomark-320px.png",
+                            "key": "flutter"
                         },
                         {
                             "title": "Android",
-                            "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Android_robot.svg/872px-Android_robot.svg.png"
+                            "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Android_robot.svg/872px-Android_robot.svg.png",
+                            "key": "android"
                         },
                         {
                             "title": "Java",
-                            "imageUrl": "https://www.svgrepo.com/show/303388/java-4-logo.svg"
+                            "imageUrl": "https://www.svgrepo.com/show/303388/java-4-logo.svg",
+                            "key": "java"
                         }
                     ]
                 },
                 {
                     "title": "Design Tools",
                     "color": "default",
+                    "key": "design-tools",
                     "interests": [
                         {
                             "title": "Figma",
-                            "imageUrl": "https://s3-alpha.figma.com/hub/file/697598809/ce5e0bb3-16b9-4d88-9bca-7d237fe725a8-cover.png"
+                            "imageUrl": "https://s3-alpha.figma.com/hub/file/697598809/ce5e0bb3-16b9-4d88-9bca-7d237fe725a8-cover.png",
+                            "key": "figma"
                         },
                         {
                             "title": "Adobe XD",
-                            "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Adobe_XD_CC_icon.svg/1200px-Adobe_XD_CC_icon.svg.png"
+                            "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Adobe_XD_CC_icon.svg/1200px-Adobe_XD_CC_icon.svg.png",
+                            "key": "adobe-xd"
                         },
                         {
                             "title": "Adobe Photoshop",
-                            "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Adobe_Photoshop_CC_icon.svg/1200px-Adobe_Photoshop_CC_icon.svg.png"
+                            "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Adobe_Photoshop_CC_icon.svg/1200px-Adobe_Photoshop_CC_icon.svg.png",
+                            "key": "adobe-photoshop"
                         }
                     ]
                 }
@@ -113,7 +127,8 @@
                 {
                     "content": [
                         {
-                            "body": "A highly motivated and hardworking individual with a keen interest in learning more about Computer Science especially in the area of Front End Development and UI/UX designing. Also has a passion for learning psychology as well. My life goal is to do something that my dad one day would be proud of."
+                            "body": "A highly motivated and hardworking individual with a keen interest in learning more about Computer Science especially in the area of Front End Development and UI/UX designing. Also has a passion for learning psychology as well. My life goal is to do something that my dad one day would be proud of.",
+                            "key": "my-interests-1"
                         }
                     ]
                 }
@@ -144,40 +159,42 @@
                 {
                     "content": [
                         {
-                            "body": "Please feel free to contact me via any of the platforms listed below."
+                            "body": "Please feel free to contact me via any of the platforms listed below.",
+                            "key": "contact-me-1"
                         }
-                    ]
+                    ],
+                    "key": "contact-me"
                 }
             ],
             "icons": [
                 {
                     "image": "/images/contact-icons-svg/top-email.svg",
-                    "alt": "email",
+                    "key": "email",
                     "link": "mailto:achinthaisuru97@gmail.com"
                 },
                 {
                     "image": "/images/contact-icons-svg/top-in.svg",
-                    "alt": "linkedin",
+                    "key": "linkedin",
                     "link": "http://linkedin.com/in/achintha-isuru"
                 },
                 {
                     "image": "/images/contact-icons-svg/top-stack.svg",
-                    "alt": "stackoverflow",
+                    "key": "stackoverflow",
                     "link": "https://stackoverflow.com/users/10601286/achintha-isuru"
                 },
                 {
                     "image": "/images/contact-icons-svg/top-youtube.svg",
-                    "alt": "youtube",
+                    "key": "youtube",
                     "link": "https://www.youtube.com/channel/UCgoNBM-Ay-jVnzaZjUy9x_A"
                 },
                 {
                     "image": "/images/contact-icons-svg/top-medium.svg",
-                    "alt": "medium",
+                    "key": "medium",
                     "link": "https://medium.com/@achinthaisuru444"
                 },
                 {
                     "image": "/images/contact-icons-svg/top-github.svg",
-                    "alt": "github",
+                    "key": "github",
                     "link": "https://github.com/Achintha444"
                 }
             ]

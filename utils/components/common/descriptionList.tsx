@@ -8,12 +8,16 @@ function DescriptionList({ list }) {
     return (
         <Stack spacing={ 3 }>
             {
-                list.map((item) => (<DescriptionListItem
-                    title={ item.title }
-                    body={ item.body }
-                    links={ item.links }
-                    images={ item.images }
-                    presentations={ item.presentations } />))
+                list.map((item) => (
+                    <DescriptionListItem
+                        key={ item.key }
+                        title={ item?.title }
+                        body={ item?.body }
+                        links={ item?.links }
+                        images={ item?.images }
+                        presentations={ item?.presentations } 
+                    />
+                ))
             }
         </Stack>
     );
@@ -63,11 +67,15 @@ function DescriptionListItem({ title, body, links, images, presentations }) {
                     ?
                     (<List dense disablePadding>
                         {
-                            links.map((item) => (<ListItem alignItems="flex-start" disableGutters>
-                                <Typography variant="body2" color="text.secondary">
-                                    <a href={ item.link } target="_blank" rel="noreferrer"><u><i>{ item.title }</i></u></a>
-                                </Typography>
-                            </ListItem>))
+                            links.map((item) => (
+                                <ListItem key={ item.title } alignItems="flex-start" disableGutters>
+                                    <Typography variant="body2" color="text.secondary">
+                                        <a href={ item.link } target="_blank" rel="noreferrer">
+                                            <u><i>{ item.title }</i></u>
+                                        </a>
+                                    </Typography>
+                                </ListItem>
+                            ))
                         }
                     </List>)
                     : null
@@ -75,24 +83,32 @@ function DescriptionListItem({ title, body, links, images, presentations }) {
 
             {
                 images
-                    ? (<div style={ { marginTop: "3px" } }>
-                        <ImageListComponent imageList={ images } />
-                    </div>)
-                    : null
+                    ? (
+                        <div style={ { marginTop: "3px" } }>
+                            <ImageListComponent imageList={ images } />
+                        </div>
+                    ): null
             }
             {
                 presentations
-                    ? (<List dense disablePadding>
-                        {
-                            presentations.map((presentation) => (<ListItem alignItems="center" disableGutters>
-                                <iframe loading="lazy" src={ presentation.link } allowFullScreen allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen" width="100%" style={ { height: "60vh" } } />
-                            </ListItem>))
-                        }
-                    </List>)
-
-
-
-                    : null
+                    ? (
+                        <List dense disablePadding>
+                            {
+                                presentations.map((presentation) => (
+                                    <ListItem key={ presentation.link } alignItems="center" disableGutters>
+                                        <iframe 
+                                            loading="lazy" 
+                                            src={ presentation.link } 
+                                            allowFullScreen 
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen" 
+                                            width="100%" 
+                                            style={ { height: "60vh" } }
+                                        />
+                                    </ListItem>
+                                ))
+                            }
+                        </List>
+                    ) : null
             }
 
         </Stack >
