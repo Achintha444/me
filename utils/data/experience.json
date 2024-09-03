@@ -14,7 +14,7 @@
                 },
                 {
                     "title": "My Responsibilities",
-                    "body": "At WSO2, I am working with the identity access management team. My primary responsibilities include front-end development and UI/UX design for the company's products, namely Identity Server and Asgardeo. For development and design tasks, I primarily utilize React JS, Figma, Flutter and Android.",
+                    "body": "At WSO2, I am working with the identity access management team. My primary responsibilities include front-end development and UI/UX design for the company's products, namely Identity Server and Asgardeo. For development and design tasks, I primarily utilize React JS, Next Js, Figma, Flutter and Android.",
                     "presentations": [
                         {
                             "link": "https://www.youtube.com/embed/0GZfKLJE85U?si=1DgOm099bewnYwQz"
@@ -23,17 +23,93 @@
                 },
                 {
                     "title": "My Accomplishments",
-                    "body": "Notably, I played a crucial role as both a front-end developer and designer in bringing new features like “B2B Organization Management” to completion as part of the team responsible for the successful release of the latest version of Identity Server, WSO2 IS 7.0. Currently, I am leading the development of an Android SDK for WSO2 IS and Asgardeo. Furthermore, I initiated efforts to integrate Flutter applications with WSO2 IS/Asgardeo, expanding our capabilities. My consistent dedication and contributions were recognized when I was ranked in the top 20% of the company in the first half of 2023. ",
+                    "body": [
+                        {
+                            "body": "Notably, I played a crucial role as both a front-end developer and designer in bringing new features like “B2B Organization Management” to life as part of the team responsible for the successful release of the latest version of Identity Server, WSO2 IS 7.0. Currently, I am leading the development of an Android SDK for WSO2 IS and Asgardeo. I also initiated efforts to integrate Flutter applications with WSO2 IS/Asgardeo, further expanding our capabilities. Recently, I developed an Android SDK to integrate Asgardeo with Android applications, utilizing the new feature 'App Native Authentication.'"
+                        },
+                        {
+                            "body": "Also I got an oppunity to present a session on 'Mastering Secure React Development for Enterprise' for the the undergraduates at Department of Computer Science and Engineering, University of Moratuwa, Sri Lanka.. In this session, I discussed the best practices for developing secure React applications for enterprise use cases. I also shared insights on how to implement secure authentication and authorization mechanisms in React applications using Asgardeo."
+                        },
+                        {
+                            "body": "My consistent dedication and contributions were recognized when I was ranked in the top 20% of the company in the first half of 2023. I was also presented as a Rockstar of H1 2024 for articles I wrote on the key features of the new WSO2 Identity Server 7.0 and Asgardeo."
+                        }
+                    ],
+                    "images": [
+                        {
+                            "image": "/images/me/me-session-1.webp",
+                            "alt": "achintha-session-1"
+                        },
+                        {
+                            "image": "/images/me/me-session-2.webp",
+                            "alt": "achintha-session-2"
+                        }
+                    ],
                     "links": [
+                        {
+                            "title": "Asgardeo Android SDK",
+                            "link": "https://github.com/asgardeo/mobile-ui-sdks"
+                        },
                         {
                             "title": "Key features of the new WSO2 Identity Server 7.0",
                             "link": "https://wso2.com/library/blogs/7-key-features-of-wso2-identity-server-7-every-application-and-api-developer-should-know/"
+                        },
+                        {
+                            "title": "Try out Asgardeo",
+                            "link": "https://wso2.com/asgardeo/"
                         }
                     ]
                 },
                 {
                     "title": "Challenges Faced",
                     "body": "One of the main challenges I faced at WSO2 was adapting to the company's fast-paced work environment and the complexity of the products. However, with the support of my team members and the resources provided by the company, I was able to overcome these challenges and grow both professionally and personally."
+                }
+            ]
+        },
+        {   
+            "title": [
+                "Riora Innovations",
+                "UI/UX Designer (Part-time)",
+                "Feb 2021"
+            ],
+            "place": "Department of Computer Science & Engineering, University of Moratuwa",
+            "position": "Visiting Instructor",
+            "duration": "Jul 2023 - Nov 2023 & Feb 2022 - Apr 2022",
+            "content": [
+                {
+                    "title": "Organization’s Activities",
+                    "body": "Riora Innovations is a software development company based in Sri Lanka that specializes in mobile application development. The company is known for its innovative solutions and commitment to delivering high-quality products to its clients."
+                },
+                {
+                    "title": "My Responsibilities",
+                    "body": "As a part-time UI/UX designer at Riora Innovations, I mainly involed on one of their projects called 'Organic Chemistry Conversions' game. My primary responsibilities were to design the user interface and user experience of the game. For design tasks, I primarily utilized Figma.",
+                    "images": [
+                        {
+                            "image": "/images/projects/organic/organic-1.png",
+                            "key": "organic-1"
+                        },
+                        {
+                            "image": "/images/projects/organic/organic-2.png",
+                            "key": "organic-2"
+                        },
+                        {
+                            "image": "/images/projects/organic/organic-3.png",
+                            "key": "organic-3"
+                        }
+                    ],
+                    "links": [
+                        {
+                            "title": "View more details of the project 'Organic Chemistry Conversions'",
+                            "link": "projects/Organic%20Chemistry%20Conversions"
+                        }
+                    ]
+                },
+                {
+                    "title": "My Accomplishments",
+                    "body": "While certain constraints limited our application's launch exclusively to Android users, the outcome was better than expected. The application got exceptional reviews, achieving a rating of 4.6/5.0 with over 1,000 downloads in the Google Play store in a relatively brief span. These accomplishments were attained with minimal marketing efforts, emphasizing the application's appeal and impact."
+                },
+                {
+                    "title": "Challenges Faced",
+                    "body": "A main challenge I encountered was stepping into the realm of game development for the first time. This new experience required a comprehensive preliminary study. I delved into the intricacies of game creation, examining development processes and the essential considerations a designer must weigh while shaping a game."
                 }
             ]
         },
@@ -87,7 +163,13 @@
                 },
                 {
                     "title": "My Accomplishments",
-                    "body": "During my time at Fcode Labs, I was able to make significant contributions to the development of 'Workmate'. I played a key role in the design and development of the application, ensuring that it met the needs and expectations of users. Additionally, I was able to enhance my skills in mobile application development and UI/UX design, which have proven to be invaluable in my career."
+                    "body": "During my time at Fcode Labs, I was able to make significant contributions to the development of 'Workmate'. I played a key role in the design and development of the application, ensuring that it met the needs and expectations of users. Additionally, I was able to enhance my skills in mobile application development and UI/UX design, which have proven to be invaluable in my career.",
+                    "links": [
+                        {
+                            "title": "Workmate Pro by Fcode Labs",
+                            "link": "https://www.youtube.com/watch?v=5VPcJP5fuEE"
+                        }
+                    ]
                 },
                 {
                     "title": "Challenges Faced",

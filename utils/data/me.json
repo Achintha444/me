@@ -101,7 +101,7 @@
                     {
                         "title": [
                             "Mastering Secure React Development for Enterprise",
-                            "Organised by WSO2 IAM team to the Department of Computer Science and Engineering, University of Moratuwa, Sri Lanka undergraduates",
+                            "Organised by WSO2 IAM team to the undergraduates at Department of Computer Science and Engineering, University of Moratuwa, Sri Lanka.",
                             "Aug 2024"
                         ],
                         "content": [
@@ -119,6 +119,33 @@
                                     {
                                         "image": "/images/me/me-session-2.webp",
                                         "alt": "achintha-session-2"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "title": [
+                            "Introduction to Basics of UI Designing",
+                            "For the undergraduates at Department of Computer Science and Engineering, University of Moratuwa, Sri Lanka.",
+                            "July 2024"
+                        ],
+                        "content": [
+                            {
+                                "body": [
+                                    {
+                                        "body": "In July 2024, I had the privilege of hosting a session titled 'Introduction to the Basics of UI Design' for the undergraduates at the Department of Computer Science and Engineering, University of Moratuwa, Sri Lanka."
+                                    },
+                                    {
+                                        "body": "This session provided participants with insights into the fundamentals of UI design. By sharing key concepts and practical strategies, attendees gained valuable knowledge in the field of user interface design, enhancing their skill sets in this domain. We also discussed some interesting concepts, such as 'The Best Interface is No Interface.'"
+                                    },
+                                    {
+                                        "body": "It was an honour to contribute to this educational initiative that catered to both the learning and professional growth of participants."
+                                    }
+                                ],
+                                "presentations": [
+                                    {
+                                        "link": "https://www.youtube.com/embed/DKi7bLo_dWk?si=jcxZUVTjAmlOrK92"
                                     }
                                 ]
                             }
