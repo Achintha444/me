@@ -13,15 +13,15 @@
         ],
         "fistImages": [
             {
-                "image": "/images/me/me-1.jpg",
+                "image": "/images/me/me-1.webp",
                 "alt": "achintha-7"
             },
             {
-                "image": "/images/me/me-2.jpg",
+                "image": "/images/me/me-2.webp",
                 "alt": "achintha-8"
             },
             {
-                "image": "/images/me/me-3.jpg",
+                "image": "/images/me/me-3.webp",
                 "alt": "achintha-9"
             }
         ],
@@ -62,15 +62,15 @@
                                 ],
                                 "images": [
                                     {
-                                        "image": "/images/me/uni-1.jpg",
+                                        "image": "/images/me/uni-1.webp",
                                         "alt": "achintha-4"
                                     },
                                     {
-                                        "image": "/images/me/uni-2.jpg",
+                                        "image": "/images/me/uni-2.webp",
                                         "alt": "achintha-5"
                                     },
                                     {
-                                        "image": "/images/me/uni-3.jpg",
+                                        "image": "/images/me/uni-3.webp",
                                         "alt": "achintha-6"
                                     }
                                 ]
@@ -205,19 +205,19 @@
                                 ],
                                 "images": [
                                     {
-                                        "image": "/images/me/soccer-1.jpg",
+                                        "image": "/images/me/soccer-1.webp",
                                         "alt": "achintha-10"
                                     },
                                     {
-                                        "image": "/images/me/soccer-2.jpg",
+                                        "image": "/images/me/soccer-2.webp",
                                         "alt": "achintha-11"
                                     },
                                     {
-                                        "image": "/images/me/soccer-3.jpg",
+                                        "image": "/images/me/soccer-3.webp",
                                         "alt": "achintha-12"
                                     },
                                     {
-                                        "image": "/images/me/soccer-4.jpg",
+                                        "image": "/images/me/soccer-4.webp",
                                         "alt": "achintha-13"
                                     }
                                 ]
@@ -246,15 +246,15 @@
                                 ],
                                 "images": [
                                     {
-                                        "image": "/images/me/rot-1.jpg",
+                                        "image": "/images/me/rot-1.webp",
                                         "alt": "achintha-14"
                                     },
                                     {
-                                        "image": "/images/me/rot-2.jpg",
+                                        "image": "/images/me/rot-2.webp",
                                         "alt": "achintha-15"
                                     },
                                     {
-                                        "image": "/images/me/rot-3.jpg",
+                                        "image": "/images/me/rot-3.webp",
                                         "alt": "achintha-16"
                                     }
                                 ]
@@ -271,19 +271,19 @@
                                 "body": "Cooking is a passion of mine. During my free hours, I experiment with various recipes sourced from online platforms. I take great pleasure in the art of creating dishes that amaze the taste buds ( Not sure if they do all the time though! 😉 ). My favourite dishes are my waffles and dhosi. ",
                                 "images": [
                                     {
-                                        "image": "/images/me/cooking-1.jpeg",
+                                        "image": "/images/me/cooking-1.webp",
                                         "alt": "cooking - 1"
                                     },
                                     {
-                                        "image": "/images/me/cooking-2.jpeg",
+                                        "image": "/images/me/cooking-2.webp",
                                         "alt": "cooking - 2"
                                     },
                                     {
-                                        "image": "/images/me/cooking-3.jpeg",
+                                        "image": "/images/me/cooking-3.webp",
                                         "alt": "cooking - 3"
                                     },
                                     {
-                                        "image": "/images/me/cooking-4.jpeg",
+                                        "image": "/images/me/cooking-4.webp",
                                         "alt": "cooking - 4"
                                     }
                                 ]

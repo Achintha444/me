@@ -36,11 +36,11 @@
                     "body": "The initial step in this project was to consider how I would change the current interface such that it would encourage the user to skip the receipt rather than printing it, when they do not require it. To achieve this I replaced the 'Yes/No' interface with an interface which makes use of Fitts' and von Restroff's laws. After that, I ran an experiment to validate the design. This experiment involved 153 participants and according to the findings of this experiment, we can reduce receipt printing by roughly 50%.",
                     "images": [
                         {
-                            "image": "/images/projects/ATM/atm-org.png",
+                            "image": "/images/projects/ATM/atm-org.webp",
                             "key": "atm-1"
                         },
                         {
-                            "image": "/images/projects/ATM/atm-prop.png",
+                            "image": "/images/projects/ATM/atm-prop.webp",
                             "key": "atm-2"
                         }
                     ],
@@ -51,15 +51,15 @@
                     "body": "I competed in two competitions: the 'Stanford Design Challenge' organized by the Stanford University in the United States and the 'IET 150 & Beyond' hosted by the Sri Lankan IET Young Professionals chapter. Despite failing to reach the finals of the first competition, I was able to win the second competition by successfully utilizing the feedback I received.",
                     "images": [
                         {
-                            "image": "/images/projects/ATM/accom-1.jpg",
+                            "image": "/images/projects/ATM/accom-1.webp",
                             "key": "atm-3"
                         },
                         {
-                            "image": "/images/projects/ATM/accom-2.jpg",
+                            "image": "/images/projects/ATM/accom-2.webp",
                             "key": "atm-4"
                         },
                         {
-                            "image": "/images/projects/ATM/accom-3.jpg",
+                            "image": "/images/projects/ATM/accom-3.webp",
                             "key": "atm-5"
                         }
                     ],
@@ -112,11 +112,11 @@
                     "body": "This project started with a thorough exploration of the role of technology in the textile industry. Through collaboration with industry peers, I gained valuable insights that guided me to make design decisions. First of all, I developed a comprehensive wireframe for the website, which, upon th stakeholders approval, provided the foundation for the design. After that, I designed a digital prototype of the website and hand over the prototype to the development team.",
                     "images": [
                         {
-                            "image": "/images/projects/fabvis/fabvis-2.png",
+                            "image": "/images/projects/fabvis/fabvis-2.webp",
                             "key": "fabvis-1"
                         },
                         {
-                            "image": "/images/projects/fabvis/fabvis-3.png",
+                            "image": "/images/projects/fabvis/fabvis-3.webp",
                             "key": "fabvis-2"
                         }
                     ],
@@ -255,15 +255,15 @@
                     "body": "Starting on this project, I began by analysing the user interface (UI) and user experience (UX) of popular level-based games such as Angry Birds, gathering insights into the design landscape. Subsequently, I created a paper wireframe as an initial conceptual representation of the game's interface. I then translated this wireframe into a digital prototype using Figma. Yellow was selected as the primary colour because of its representation of inventiveness, a crucial asset for students tackling organic chemistry problems. Following stakeholder presentations, the prototype transitioned to the development phase.",
                     "images": [
                         {
-                            "image": "/images/projects/organic/organic-1.png",
+                            "image": "/images/projects/organic/organic-1.webp",
                             "key": "organic-1"
                         },
                         {
-                            "image": "/images/projects/organic/organic-2.png",
+                            "image": "/images/projects/organic/organic-2.webp",
                             "key": "organic-2"
                         },
                         {
-                            "image": "/images/projects/organic/organic-3.png",
+                            "image": "/images/projects/organic/organic-3.webp",
                             "key": "organic-3"
                         }
                     ],

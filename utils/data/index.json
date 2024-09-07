@@ -75,7 +75,7 @@
                     "interests": [
                         {
                             "title": "Next.JS",
-                            "imageUrl": "https://seeklogo.com/images/N/next-js-logo-8FCFF51DD2-seeklogo.com.png",
+                            "imageUrl": "https://seeklogo.com/images/N/next-js-logo-8FCFF51DD2-seeklogo.com.webp",
                             "key": "next-js"
                         },
                         {
@@ -85,12 +85,12 @@
                         },
                         {
                             "title": "Flutter",
-                            "imageUrl": "https://raw.githubusercontent.com/flutter/website/master/src/_assets/image/flutter-logomark-320px.png",
+                            "imageUrl": "https://raw.githubusercontent.com/flutter/website/master/src/_assets/image/flutter-logomark-320px.webp",
                             "key": "flutter"
                         },
                         {
                             "title": "Android",
-                            "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Android_robot.svg/872px-Android_robot.svg.png",
+                            "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Android_robot.svg/872px-Android_robot.svg.webp",
                             "key": "android"
                         },
                         {
@@ -107,17 +107,17 @@
                     "interests": [
                         {
                             "title": "Figma",
-                            "imageUrl": "https://s3-alpha.figma.com/hub/file/697598809/ce5e0bb3-16b9-4d88-9bca-7d237fe725a8-cover.png",
+                            "imageUrl": "https://s3-alpha.figma.com/hub/file/697598809/ce5e0bb3-16b9-4d88-9bca-7d237fe725a8-cover.webp",
                             "key": "figma"
                         },
                         {
                             "title": "Adobe XD",
-                            "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Adobe_XD_CC_icon.svg/1200px-Adobe_XD_CC_icon.svg.png",
+                            "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Adobe_XD_CC_icon.svg/1200px-Adobe_XD_CC_icon.svg.webp",
                             "key": "adobe-xd"
                         },
                         {
                             "title": "Adobe Photoshop",
-                            "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Adobe_Photoshop_CC_icon.svg/1200px-Adobe_Photoshop_CC_icon.svg.png",
+                            "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Adobe_Photoshop_CC_icon.svg/1200px-Adobe_Photoshop_CC_icon.svg.webp",
                             "key": "adobe-photoshop"
                         }
                     ]

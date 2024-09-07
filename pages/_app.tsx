@@ -12,7 +12,7 @@ function MyApp(prop) {
         <>
             <Head>
                 <title>Achintha Isuru</title>
-                <link rel="shortcut icon" href="/favicon.png" />
+                <link rel="shortcut icon" href="/favicon.webp" />
             </Head>
             <ThemeProvider theme={ appTheme }>
                 <CssBaseline enableColorScheme />
