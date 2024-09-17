@@ -1,4 +1,4 @@
-import { blue, pink } from "@mui/material/colors";
+import { pink } from "@mui/material/colors";
 import { createTheme, responsiveFontSizes } from "@mui/material/styles";
 
 export const appTheme = responsiveFontSizes(createTheme({
@@ -10,7 +10,7 @@ export const appTheme = responsiveFontSizes(createTheme({
         secondary: pink,
         text: {
             primary: "#242424",
-            secondary: "#667080",
+            secondary: "#667080"
         },
         divider: "#000000",
         background: {
@@ -50,7 +50,7 @@ export const appTheme = responsiveFontSizes(createTheme({
 
         h6: {
             fontFamily: "Minipax-SemiBold"
-        },
+        }
     },
     components: {
         MuiAvatar: {
@@ -67,12 +67,12 @@ export const appTheme = responsiveFontSizes(createTheme({
         MuiAvatarGroup: {
             defaultProps: {
                 spacing: "small",
-                variant : "circular",
+                variant : "circular"
             },
             styleOverrides : {
                 root : {
-                    position : "relative",
-                    left : "0px"
+                    left : "0px",
+                    position : "relative"
                 }
             }
         }

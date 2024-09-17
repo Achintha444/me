@@ -34,8 +34,11 @@ function Interest({ interest }) {
                 } }>
                 { interest.title }
             </Typography>
-            <Stack direction="column" spacing={ 0.5 }>
-                {
+            <Stack
+                //spacing={ { xs: 1, sm: 2 } }
+                direction="row"
+                sx={ { flexWrap: "wrap", rowGap: "8px", columnGap: "8px" } }
+            >                {
                     interest.interests.map(
                         (interestDetails) => (
                             <Chip

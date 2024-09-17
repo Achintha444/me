@@ -22,7 +22,7 @@
                     "key": "role"
                 }
             ],
-            "image": "https://images.unsplash.com/photo-1631528754981-dcbce4d4d652?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2671&q=80",
+            "image": "images/projects/project-atm.webp",
             "cols": 4,
             "rows": 2,
             "content": [
@@ -98,7 +98,7 @@
                     "key": "role"
                 }
             ],
-            "image": "https://images.unsplash.com/photo-1609709295948-17d77cb2a69b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1288&q=80",
+            "image": "images/projects/project-fabvis.webp",
             "cols": 3,
             "rows": 2,
             "content": [
@@ -174,7 +174,7 @@
                     "key": "role"
                 }
             ],
-            "image": "https://images.unsplash.com/photo-1515445702422-3a80ccfdb236?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1287&q=80",
+            "image":  "images/projects/project-iri.webp",
             "cols": 1,
             "rows": 2,
             "content": [
@@ -241,7 +241,7 @@
                     "key": "role"
                 }
             ],
-            "image": "https://images.unsplash.com/photo-1554475901-4538ddfbccc2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2672&q=80",
+            "image":  "images/projects/project-organic.webp",
             "cols": 1,
             "rows": 2,
             "content": [
@@ -312,7 +312,7 @@
                     "key": "role"
                 }
             ],
-            "image": "https://images.unsplash.com/photo-1595666944516-bbb485958fb5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3444&q=80",
+            "image":  "images/projects/project-privacy.webp",
             "cols": 3,
             "rows": 2,
             "content": [
@@ -357,7 +357,7 @@
         {
             "key": "other",
             "name": "Other Projects",
-            "image": "https://images.unsplash.com/photo-1455849318743-b2233052fcff?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3569&q=80",
+            "image":  "images/projects/project-passion.webp",
             "cols": 4,
             "content": [
                 {

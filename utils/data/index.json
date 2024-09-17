@@ -75,27 +75,27 @@
                     "interests": [
                         {
                             "title": "Next.JS",
-                            "imageUrl": "https://seeklogo.com/images/N/next-js-logo-8FCFF51DD2-seeklogo.com.webp",
+                            "imageUrl": "images/index/interests/next-js.webp",
                             "key": "next-js"
                         },
                         {
                             "title": "React JS",
-                            "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgVF1dospej2VMDF0sb-TuNCYudETDT6UKVQ&usqp=CAU",
+                            "imageUrl":  "images/index/interests/react-js.webp",
                             "key": "react-js"
                         },
                         {
                             "title": "Flutter",
-                            "imageUrl": "https://raw.githubusercontent.com/flutter/website/master/src/_assets/image/flutter-logomark-320px.webp",
+                            "imageUrl":  "images/index/interests/flutter.webp",
                             "key": "flutter"
                         },
                         {
                             "title": "Android",
-                            "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Android_robot.svg/872px-Android_robot.svg.webp",
+                            "imageUrl":  "images/index/interests/android.webp",
                             "key": "android"
                         },
                         {
                             "title": "Java",
-                            "imageUrl": "https://www.svgrepo.com/show/303388/java-4-logo.svg",
+                            "imageUrl":  "images/index/interests/java.webp",
                             "key": "java"
                         }
                     ]
@@ -107,17 +107,17 @@
                     "interests": [
                         {
                             "title": "Figma",
-                            "imageUrl": "https://s3-alpha.figma.com/hub/file/697598809/ce5e0bb3-16b9-4d88-9bca-7d237fe725a8-cover.webp",
+                            "imageUrl":  "images/index/interests/figma.webp",
                             "key": "figma"
                         },
                         {
                             "title": "Adobe XD",
-                            "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Adobe_XD_CC_icon.svg/1200px-Adobe_XD_CC_icon.svg.webp",
+                            "imageUrl":  "images/index/interests/adobe-xd.webp",
                             "key": "adobe-xd"
                         },
                         {
                             "title": "Adobe Photoshop",
-                            "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Adobe_Photoshop_CC_icon.svg/1200px-Adobe_Photoshop_CC_icon.svg.webp",
+                            "imageUrl":  "images/index/interests/adobe-photoshop.webp",
                             "key": "adobe-photoshop"
                         }
                     ]

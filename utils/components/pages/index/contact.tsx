@@ -17,7 +17,7 @@ export default function Contact({ data }) {
                     </span>
                 ))
             }
-            <Stack direction="row" spacing={ 0 } justifyContent="center">
+            <Stack direction="row" spacing={ 0 } justifyContent="center" sx={ { flexWrap: "wrap" } }>
                 {
                     data.icons.map((icon) => <SingleContact key={ icon.key } icon={ icon } />)
                 }
@@ -30,7 +30,7 @@ export default function Contact({ data }) {
 function SingleContact({ icon }) {
     return (
         <Button href={ icon.link } target="_blank">
-            <Avatar alt={ icon.alt } src={ icon.image } />
+            <Avatar alt={ icon.alt } src={ icon.image } sx={ { height: "80px", width: "80px" } } />
         </Button>
     );
 }

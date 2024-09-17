@@ -30,7 +30,7 @@ export default function MyWritings({ data }) {
 
     return (
 
-        mediumArticles
+        mediumArticles?.length > 0
             ? (
                 <>
                     <br />
