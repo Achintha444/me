@@ -4,6 +4,7 @@ import ImageList from "@mui/material/ImageList";
 import ImageListItem from "@mui/material/ImageListItem";
 import Link from "next/link";
 import { useState } from "react";
+import styles from "./projectSection.module.css";
 
 export default function ProjectSection({ projects }) {
 
@@ -51,8 +52,8 @@ function ProjectCard({ project }) {
                 <img
                     { ...srcset(project.image, 1100, project.rows, project.cols) }
                     alt={ project.name }
+                    className={ styles["project-image"] }
                     loading="lazy"
-                    style={ { mixBlendMode: "multiply" } }
                 />
                 {
                     showTitle

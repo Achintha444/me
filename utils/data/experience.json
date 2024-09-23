@@ -4,20 +4,23 @@
         {   
             "title": [
                 "WSO2",
-                "Senior Software Engineer (UI/UX, Front-end)",
-                "May 2022 - Present"
+                "Front-end Developer/UI-UX Designer",
+                "May 2022 - Sep 2024"
             ],
             "content": [
                 {
                     "title": "Organization’s Activities",
-                    "body": "WSO2 is an open-source technology provider founded in 2005. It delivers software and cloud solutions that provide foundational technologies for application development and identity and access management. Their main products are Identity Server, Choreo and Ballerina."
+                    "body": "WSO2 is an open-source technology provider founded in 2005. It delivers software and cloud solutions that provide foundational technologies for application development and identity and access management. Their main products are Identity Server, Asgardeo, Choreo and Ballerina."
                 },
                 {
                     "title": "My Responsibilities",
-                    "body": "At WSO2, I am working with the identity access management team. My primary responsibilities include front-end development and UI/UX design for the company's products, namely Identity Server and Asgardeo. For development and design tasks, I primarily utilize React JS, Next Js, Figma, Flutter and Android.",
+                    "body": "During my time as a Front-end Developer/UI-UX Designer at WSO2, I worked with the Identity Access Management team. My primary responsibilities included front-end development and UI/UX design for the company's products, namely Identity Server and Asgardeo. For development and design tasks, I primarily utilized React JS, Next JS, Flutter, Android and Figma.",
                     "presentations": [
                         {
                             "link": "https://www.youtube.com/embed/0GZfKLJE85U?si=1DgOm099bewnYwQz"
+                        },
+                        {
+                            "link": "https://www.youtube.com/embed/FFDhYh9hAt4?si=9VBdNtCRSw-3AUO7"
                         }
                     ]
                 },
@@ -25,13 +28,13 @@
                     "title": "My Accomplishments",
                     "body": [
                         {
-                            "body": "Notably, I played a crucial role as both a front-end developer and designer in bringing new features like “B2B Organization Management” to life as part of the team responsible for the successful release of the latest version of Identity Server, WSO2 IS 7.0. Currently, I am leading the development of an Android SDK for WSO2 IS and Asgardeo. I also initiated efforts to integrate Flutter applications with WSO2 IS/Asgardeo, further expanding our capabilities. Recently, I developed an Android SDK to integrate Asgardeo with Android applications, utilizing the new feature 'App Native Authentication.'"
+                            "body": "I was actively involved in the development of the latest features in WSO2 Identity Server version 7.0, where I contributed to developing the front end for features like 'API Authorization' using React JS. Additionally, I developed the latest Asgardeo-Android SDK, enabling Asgardeo (Identity as a Service) integration through 'app-native authentication' for Android applications. I also recently redesigned Asgardeo's home page and user registration flow."
                         },
                         {
-                            "body": "Also I got an oppunity to present a session on 'Mastering Secure React Development for Enterprise' for the the undergraduates at Department of Computer Science and Engineering, University of Moratuwa, Sri Lanka.. In this session, I discussed the best practices for developing secure React applications for enterprise use cases. I also shared insights on how to implement secure authentication and authorization mechanisms in React applications using Asgardeo."
+                            "body": "Also I got an opportunity to present a session on 'Mastering Secure React Development for Enterprise' for the the undergraduates at Department of Computer Science and Engineering, University of Moratuwa, Sri Lanka. In this session, I discussed the best practices for developing secure React applications for enterprise use cases. I also shared insights on how to implement secure authentication and authorization mechanisms in React applications using Asgardeo."
                         },
                         {
-                            "body": "My consistent dedication and contributions were recognized when I was ranked in the top 20% of the company in the first half of 2023. I was also presented as a Rockstar of H1 2024 for articles I wrote on the key features of the new WSO2 Identity Server 7.0 and Asgardeo."
+                            "body": "During my time at WSO2, I was recognized as part of the top 20% of employees and acknowledged as one of the 'Rockstars' for my contributions to the tech landscape, particularly for my Medium articles highlighting the new Asgardeo-Android SDK."
                         }
                     ],
                     "images": [
@@ -48,6 +51,10 @@
                         {
                             "title": "Asgardeo Android SDK",
                             "link": "https://github.com/asgardeo/mobile-ui-sdks"
+                        },
+                        {
+                            "title": "API Authorization feature of Asardeo",
+                            "link": "https://wso2.com/asgardeo/docs/guides/authorization/api-authorization/api-authorization/"
                         },
                         {
                             "title": "Key features of the new WSO2 Identity Server 7.0",

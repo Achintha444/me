@@ -1,0 +1,13 @@
+.project-image {
+    -webkit-filter: grayscale(72%);
+    filter: grayscale(72%);
+    mix-blend-mode: multiply;
+    transition: all 0.3s ease-in-out;
+}
+
+.project-image:hover {
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+    mix-blend-mode: multiply;
+    transition: all 0.3s ease-in-out;
+}

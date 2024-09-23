@@ -1,16 +1,14 @@
 import { List, ListItem, Stack, Typography } from "@mui/material";
 import PropTypes from "prop-types";
-import BodyList from "./bodyList";
 import ImageListComponent from "./imageListComponent";
 import ExperienceOverview from "../pages/experiences/experienceOverview";
 
-function DescriptionList({ list }) {
-
+function BodyList({ list }) {
     return (
         <Stack spacing={ 3 }>
             {
                 list.map((item) => (
-                    <DescriptionListItem
+                    <BodyListItem
                         key={ item.key }
                         title={ item?.title }
                         body={ item?.body }
@@ -24,20 +22,20 @@ function DescriptionList({ list }) {
     );
 }
 
-DescriptionList.propTypes = {
+BodyList.propTypes = {
     list: PropTypes.arrayOf(PropTypes.object)
 };
 
-export default DescriptionList;
+export default BodyList;
 
-function DescriptionListItem({ title, body, links, images, presentations }) {
+function BodyListItem({ title, body, links, images, presentations }) {
 
     return (
         <Stack spacing={ 0.8 }>
             {
                 title
                     ? (typeof title === "string") 
-                        ? <Typography variant="h6" color="text.primary"> { title } </Typography>
+                        ? <Typography variant="body1" color="text.primary"> { title } </Typography>
                         : <ExperienceOverview title={ title } />
                     : null
             }
@@ -54,8 +52,19 @@ function DescriptionListItem({ title, body, links, images, presentations }) {
                             </Typography>
                         )
                         : (
-                            <Stack spacing={ 3 }>
-                                <BodyList list={ body } />
+                            <Stack spacing={ 2 }>
+                                {
+                                    body.map((para) => (
+                                        <Typography 
+                                            key={ para.body }
+                                            variant="body2" 
+                                            color="text.secondary" 
+                                            sx={ title ? null : { marginTop: "-10px" } }
+                                        >
+                                            { para.body }
+                                        </Typography>
+                                    ))
+                                }
                             </Stack>
                         )
                     : null
@@ -78,7 +87,6 @@ function DescriptionListItem({ title, body, links, images, presentations }) {
                     </List>)
                     : null
             }
-
             {
                 images
                     ? (
@@ -113,7 +121,7 @@ function DescriptionListItem({ title, body, links, images, presentations }) {
     );
 }
 
-DescriptionListItem.propTypes = {
-    title: PropTypes.string,
-    body: PropTypes.string
+BodyListItem.propTypes = {
+    body: PropTypes.string,
+    title: PropTypes.string
 };
