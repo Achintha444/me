@@ -13,6 +13,10 @@
             "link" : "/projects"
         },
         {
+            "title" : "Feature Ideas",
+            "link" : "/feature-ideas"
+        },
+        {
             "title" : "Experiences",
             "link" : "/experiences"
         },

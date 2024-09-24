@@ -1,0 +1,13 @@
+.feature-idea-image {
+    -webkit-filter: grayscale(72%);
+    filter: grayscale(72%);
+    mix-blend-mode: multiply;
+    transition: all 0.3s ease-in-out;
+}
+
+.feature-idea-image:hover {
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+    mix-blend-mode: multiply;
+    transition: all 0.3s ease-in-out;
+}
