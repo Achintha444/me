@@ -518,6 +518,10 @@
                         {
                             "title": "Download the application",
                             "link": "https://play.google.com/store/apps/details?id=ait.gpa_cal"
+                        },
+                        {
+                            "title": "View the source code",
+                            "link": "https://github.com/Achintha444/gpa_cal"
                         }
                     ],
                     "key": "gpa"
