@@ -391,13 +391,27 @@
                                 {
                                     "image": "/images/projects/asgardeo-homepage/asgardeo-homepage-4.webp",
                                     "key": "asgardeo-homepage-4"
-                                },
+                                }
+                            ],
+                            "key": "prototyping"
+                        },
+                        {
+                            "images": [
                                 {
                                     "image": "/images/projects/asgardeo-homepage/asgardeo-homepage-5.webp",
                                     "key": "asgardeo-homepage-5"
                                 }
                             ],
-                            "key": "prototyping"
+                            "key": "prototyping-1"
+                        },
+                        {
+                            "images": [
+                                {
+                                    "image": "/images/projects/asgardeo-homepage/asgardeo-homepage-6.webp",
+                                    "key": "asgardeo-homepage-6"
+                                }
+                            ],
+                            "key": "prototyping-2"
                         }
                     ],
                     "key": "process"
