@@ -23,8 +23,8 @@
                 }
             ],
             "image": "images/projects/project-atm.webp",
-            "cols": 4,
-            "rows": 1,
+            "cols": 2,
+            "rows": 1.5,
             "content": [
                 {
                     "title": "Overview",
@@ -100,7 +100,7 @@
             ],
             "image": "images/projects/project-fabvis.webp",
             "cols":1,
-            "rows": 1,
+            "rows": 1.5,
             "content": [
                 {
                     "title": "Overview",
@@ -175,7 +175,8 @@
                 }
             ],
             "image":  "images/projects/project-iri.webp",
-            "rows": 1,
+            "cols": 1,
+            "rows": 1.5,
             "content": [
                 {
                     "title": "Overview",
@@ -242,7 +243,7 @@
             ],
             "image":  "images/projects/project-organic.webp",
             "cols": 2,
-            "rows": 1,
+            "rows": 1.5,
             "content": [
                 {
                     "title": "Overview",
@@ -312,8 +313,8 @@
                 }
             ],
             "image":  "images/projects/project-asgardeo-homepage.webp",
-            "cols": 3,
-            "rows": 1,
+            "cols": 2,
+            "rows": 1.5,
             "content": [
                 {
                     "title": "Overview",
@@ -419,6 +420,128 @@
             ]
         },
         {
+            "key": "streamify",
+            "name": "Streamify: Information Dashboard",
+            "role": "UI/UX Designer & Front-end Developer",
+            "overview": [
+                {
+                    "title": "Duration",
+                    "body": "2024 Sep - Present",
+                    "key": "duration"
+                },
+                {
+                    "title": "Sector",
+                    "body": "Data Visualization",
+                    "key": "sector"
+                },
+                {
+                    "title": "My Role",
+                    "body": "UI/UX Designer & Front-end Developer",
+                    "key": "role"
+                }
+            ],
+            "image":  "images/projects/project-streamify.webp",
+            "cols": 1,
+            "rows": 1.5,
+            "content": [
+                {
+                    "title": "Overview",
+                    "body": [
+                        {
+                            "body": "This project was started to learn about designing and development of responsive information dashboards. The dashboard will be built using React.js and Material-UI. The dashboard is used to visualize the data from the server and provide a user-friendly interface for the users to interact with the data. This will be a single page application, with the following features:",
+                            "key": "overview-1"
+                        },
+                        {
+                            "body": "1. User authentication",
+                            "key": "feature-1"
+                        },
+                        {
+                            "body": "2. Data visualization using charts and graphs",
+                            "key": "feature-2"
+                        },
+                        {
+                            "body": "3. User-friendly interface for the users to interact with the data",
+                            "key": "feature-3"
+                        },
+                        {
+                            "body": "4. Responsive design for different screen sizes",
+                            "key": "feature-4"  
+                        },
+                        {
+                            "body": "As always the project will be started with an initial design phase. The design phase will be discussed in the next steps.",
+                            "key": "overview-2"
+                        }
+
+                    ],
+                    "key": "overview"
+                },
+                {
+                    "title": "Process",
+                    "body": [
+                        {
+                            "title": "Wireframing",
+                            "body": [
+                                {
+                                    "body": "Since the project was started as a personal learning project no user research was done as the goal was the project on to polish my skills on designing and development of responsive information dashboards. The wireframing steps will be discussed in the next steps."
+                                },
+                                {
+                                    "body": "I used Excalidraw to create wireframes, mainly due to its simplicity and ease of use. It allows me to quickly sketch out ideas and concepts, making it an invaluable tool for brainstorming and collaboration."
+                                },
+                                {
+                                    "body": "As the first I designed the sitemap for the dashboard. The site map is a visual representation of the website's structure and layout. It helps to understand the relationship between different pages and sections of the website."
+                                },
+                                {
+                                    "body": "Then before moving in to Excalidraw, I scribbled some paper wireframes to get a better understanding of the layout and design of the dashboard."
+                                },
+                                {
+                                    "body": "After that, I started designing the wireframes for the dashboard. The wireframes were designed for both desktop and mobile devices. The wireframes were designed to be responsive and to adapt to different screen sizes."
+                                }
+                            ],
+                            "images": [
+                                {
+                                    "image": "/images/projects/streamify/streamify-3.webp",
+                                    "key": "streamify-3"
+                                },
+                                {
+                                    "image": "/images/projects/streamify/streamify-4.webp",
+                                    "key": "streamify-4"
+                                }
+                            ],
+                            "key": "wireframing"
+                        },
+                        {
+                            "images": [
+                                {
+                                    "image": "/images/projects/streamify/streamify-2.webp",
+                                    "key": "streamify-1"
+                                }
+                            ],
+                            "key": "wireframing-1"
+                        },
+                        {
+                            "images": [
+                                {
+                                    "image": "/images/projects/streamify/streamify-2.webp",
+                                    "key": "streamify-2"
+                                }
+                            ],
+                            "key": "wireframing-1"
+                        },
+                        {
+                            "title": "Prototyping & Development",
+                            "body": [
+                                {
+                                    "body": "This part of the project is still in progress. These steps will be updated once the project is completed."
+                                }
+                            ],
+                            "key": "prototyping"
+                        }
+                    ],
+                    "key": "process"
+                }
+            ]
+        },
+        {
             "key": "privacy",
             "name": "Automated Categorization of Privacy Policies Based on User Perspective",
             "role": "Mobile Application Developer and UI/UX Designer",
@@ -440,7 +563,8 @@
                 }
             ],
             "image":  "images/projects/project-privacy.webp",
-            "rows": 1,
+            "cols": 1,
+            "rows": 1.5,
             "content": [
                 {
                     "title": "Overview",
@@ -484,8 +608,8 @@
             "key": "other",
             "name": "Other Projects",
             "image":  "images/projects/project-passion.webp",
-            "cols": 4,
-            "rows": 1,
+            "cols": 2,
+            "rows": 1.5,
             "content": [
                 {
                     "title": [

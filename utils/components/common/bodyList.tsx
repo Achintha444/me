@@ -90,7 +90,7 @@ function BodyListItem({ title, body, links, images, presentations }) {
             {
                 images
                     ? (
-                        <div style={ { marginTop: "3px" } }>
+                        <div style={ !title ? null : { marginTop: "3px" } }>
                             <ImageListComponent imageList={ images } />
                         </div>
                     ): null

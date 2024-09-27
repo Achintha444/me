@@ -63,7 +63,7 @@ function DescriptionListItem({ title, body, links, images, presentations }) {
             {
                 links
                     ?
-                    (<List dense disablePadding>
+                    (<List dense disablePadding sx={ title ? null : { marginTop: "-10px" } }>
                         {
                             links.map((item) => (
                                 <ListItem key={ item.title } alignItems="flex-start" disableGutters>
@@ -82,7 +82,7 @@ function DescriptionListItem({ title, body, links, images, presentations }) {
             {
                 images
                     ? (
-                        <div style={ { marginTop: "3px" } }>
+                        <div style={ !title ? null : { marginTop: "3px" } }>
                             <ImageListComponent imageList={ images } />
                         </div>
                     ): null
