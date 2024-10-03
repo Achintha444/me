@@ -498,16 +498,22 @@
                                 }
                             ],
                             "images": [
-                                {
-                                    "image": "/images/projects/streamify/streamify-3.webp",
-                                    "key": "streamify-3"
-                                },
+
                                 {
                                     "image": "/images/projects/streamify/streamify-4.webp",
                                     "key": "streamify-4"
                                 }
                             ],
                             "key": "wireframing"
+                        },
+                        {
+                            "images": [
+                                {
+                                    "image": "/images/projects/streamify/streamify-4.webp",
+                                    "key": "streamify-4"
+                                }
+                            ],
+                            "key": "wireframing-3"
                         },
                         {
                             "images": [
@@ -525,7 +531,7 @@
                                     "key": "streamify-2"
                                 }
                             ],
-                            "key": "wireframing-1"
+                            "key": "wireframing-2"
                         },
                         {
                             "title": "Prototyping",
@@ -541,13 +547,18 @@
                                 {
                                     "image": "/images/projects/streamify/streamify-5.webp",
                                     "key": "streamify-5"
-                                },
+                                }
+                            ],
+                            "key": "prototyping"
+                        },
+                        {
+                            "images": [
                                 {
                                     "image": "/images/projects/streamify/streamify-6.webp",
                                     "key": "streamify-6"
                                 }
                             ],
-                            "key": "prototyping"
+                            "key": "prototyping-1"
                         },
                         {
                             "title": "Development",
