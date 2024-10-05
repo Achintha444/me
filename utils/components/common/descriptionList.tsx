@@ -54,7 +54,7 @@ function DescriptionListItem({ title, body, links, images, presentations }) {
                             </Typography>
                         )
                         : (
-                            <Stack spacing={ 3 }>
+                            <Stack spacing={ 3 } >
                                 <BodyList list={ body } />
                             </Stack>
                         )
@@ -62,8 +62,7 @@ function DescriptionListItem({ title, body, links, images, presentations }) {
             }
             {
                 links
-                    ?
-                    (<List dense disablePadding sx={ title ? null : { marginTop: "-10px" } }>
+                    ? (<List dense sx={ title ? null : { marginTop: "-10px" } }>
                         {
                             links.map((item) => (
                                 <ListItem key={ item.title } alignItems="flex-start" disableGutters>
@@ -78,7 +77,6 @@ function DescriptionListItem({ title, body, links, images, presentations }) {
                     </List>)
                     : null
             }
-
             {
                 images
                     ? (

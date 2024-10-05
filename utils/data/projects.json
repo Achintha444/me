@@ -27,24 +27,76 @@
             "rows": 1.5,
             "content": [
                 {
-                    "title": "Overview",
-                    "body": "We've all used ATMs at some point in our lives. Most of the time, we find that the garbage cans at ATM locations are overflowing with meaningless receipts that consumers have requested. That is what inspired me to work on this design project. As a result, I created a completely new user interface that would limit the amount of unnecessary receipts issued. An experiment was carried out to validate the design. This experiment concluded that by using this design, we can reduce receipt wastage by roughly 50%. This is a huge benefit because we are simply changing the interface to reduce this amount, which means there is no additional expense to execute this design, making this solution incredibly scalable, sustainable, and low risk.",
+                    "title": "Project Goals and Objectives",
+                    "body": "We've all used ATMs at some point in our lives. Most of the time, we find that the garbage cans at ATM locations are overflowing with meaningless receipts that consumers have requested. That is what inspired me to work on this design project. The objective of this project is to reduce receipt wastage at ATMs by designing a new user interface that would limit the amount of unnecessary receipts issued.",
+                    "images": [
+                        {
+                            "image": "/images/projects/ATM/accom-4.webp",
+                            "key": "atm-4"
+                        }
+                    ],
                     "key": "overview"
                 },
                 {
-                    "title": "Process",
-                    "body": "The initial step in this project was to consider how I would change the current interface such that it would encourage the user to skip the receipt rather than printing it, when they do not require it. To achieve this I replaced the 'Yes/No' interface with an interface which makes use of Fitts' and von Restroff's laws. After that, I ran an experiment to validate the design. This experiment involved 153 participants and according to the findings of this experiment, we can reduce receipt printing by roughly 50%.",
-                    "images": [
+                    "title": "Process Followed",
+                    "body": [
                         {
-                            "image": "/images/projects/ATM/atm-org.webp",
-                            "key": "atm-1"
+                            "title": "Research",
+                            "body": "First, I conducted research to understand why people are printing excess receipts, even when they don not need them. This search lead to a research done by the University of Sussex, where it mentioned that the typical questions like 'Do you want a receipt?' YES/NO are susceptible to acquiescence bias, which is a cognitive bias that causes people to answer 'yes' to questions that they would not have answered 'yes' to if they were not asked. This is because people tend to avoid saying 'no' to requests, even if they don't want to.",
+                            "links": [
+                                {
+                                    "title": "Read the research paper here",
+                                    "link": "https://journals.sagepub.com/doi/abs/10.1177/0022022103260380?journalCode=jcca"
+                                },
+                                {
+                                    "link": "https://www.qualtrics.com/blog/avoiding-the-yes-bias/",
+                                    "title": "Read more about acquiescence bias here"
+                                }
+                            ],
+                            "key": "research"
                         },
                         {
-                            "image": "/images/projects/ATM/atm-prop.webp",
-                            "key": "atm-2"
+                            "title": "Solution Design",
+                            "body": "After the research, I designed a new user interface to avoid acquiescence bias. The new interface would be in the default state of receipt is not issued, and the user would only be able to request a receipt if they explicitly choose to do so, by making use Fitts' and von Restroff's laws. You can view the solution below.",
+                            "images": [
+                                {
+                                    "image": "/images/projects/ATM/atm-org.webp",
+                                    "key": "atm-1"
+                                },
+                                {
+                                    "image": "/images/projects/ATM/atm-prop.webp",
+                                    "key": "atm-2"
+                                }
+                            ],
+                            "key": "solution"
+                        },
+                        {
+                            "title": "User Testing",
+                            "body": [
+                                {
+                                    "body": "After the solution design, I wanted to test the design. But with the Covid pandemic and tighter regulations within banks, I was not able to run a mock version of our solution on an actual ATM machine. Instead, I created a web-based simulation in order to collect data on user behavior. Although the web simulation does not actually “print” a receipt and the user might be biased by this information, but we can assume this bias affects both original and new interfaces equally. Hence given the circumstances, the results of the web simulation are still valid."
+                                },
+                                {
+                                    "body": "In the test every user who visits the website will get the same set of interfaces in the same order similar to a regular ATM transaction, except for the new interface, a user has a 50% probability of seeing either the proposed new interface or the original interface. Also several restrictions were done to make sure a user completed the test only once."
+                                },
+                                {
+                                    "body": "153 users participated in the test, and you can view the test from below. The results show that 52% of users who encountered the original interface requested a receipt whereas only 26% of the users who encountered the new interface did the same. This means that 74% of the users rejected receipt in the new interface. This is a significant improvement from the original interface."
+                                }
+                            ],
+                            "images": [
+                                {
+                                    "image": "/images/projects/ATM/accom-6.webp",
+                                    "key": "atm-6"
+                                }
+                            ],
+                            "key": "testing"
                         }
                     ],
                     "key": "process"
+                },
+                {
+                    "title": "Outcome",
+                    "body": "With the above result we can conclude that the proposed solution is effective in reducing the number of users requesting receipts. This is because the new interface is designed to avoid acquiescence bias by making the receipt request an explicit action. Also this solution cost-effective and sustainable compared to alternatives like `SMS receipts` and `Email receipts`. More details about this can be found in the presentation below."
                 },
                 {
                     "title": "Accomplishments",
