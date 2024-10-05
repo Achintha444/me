@@ -155,21 +155,74 @@
             "rows": 1.5,
             "content": [
                 {
-                    "title": "Overview",
-                    "body": "The FABVIS (Vision-Based Fabric Defect Detection) project, is a pioneering creation by the Intellisense Lab within the Department of Computer Science and Engineering at the University of Moratuwa, Sri Lanka. In this project my role was focused on designing the web dashboard to streamline efficient configuration and provide access to the fabric detection system's settings to the textile engineers.",
+                    "title": "Project Goals and Objectives",
+                    "body": "The FABVIS (Vision-Based Fabric Defect Detection) project, is a pioneering creation by the Intellisense Lab within the Department of Computer Science and Engineering at the University of Moratuwa, Sri Lanka. The main goal of this project to automate the defect finding process in the textile industry. The project aims to provide a solution that can be integrated into existing textile manufacturing processes to improve efficiency and reduce costs.",
                     "key": "overview"
                 },
                 {
+                    "title": "My Role",
+                    "body": " In this project my role was focused on designing the web dashboard to streamline efficient configuration and provide access to the fabric detection system's settings to the textile engineers.",
+                    "key": "role"
+                },
+                {
                     "title": "Process",
-                    "body": "This project started with a thorough exploration of the role of technology in the textile industry. Through collaboration with industry peers, I gained valuable insights that guided me to make design decisions. First of all, I developed a comprehensive wireframe for the website, which, upon th stakeholders approval, provided the foundation for the design. After that, I designed a digital prototype of the website and hand over the prototype to the development team.",
-                    "images": [
+                    "body": [
                         {
-                            "image": "/images/projects/fabvis/fabvis-2.webp",
-                            "key": "fabvis-1"
+                            "title": "Research",
+                            "body": "The first step in the project was to conduct research on the textile industry and the current methods used for defect detection. This research helped me to understand the challenges faced by the industry and understand the requirements of the end-users.",
+                            "key": "research"
                         },
                         {
-                            "image": "/images/projects/fabvis/fabvis-3.webp",
-                            "key": "fabvis-2"
+                            "title": "Wireframing",
+                            "body": "After the research phase, I created wireframes for the web dashboard. The wireframes helped me to visualize the layout and structure of the dashboard and identify areas where the user interface could be improved. After getting the stakholders approval, I moved on to the next phase of the project."
+                        },
+                        {
+                            "title": "Design Iterations",
+                            "body": "Before finalizing the final design, we had a few design iterations. After each iteration, we gathered feedback from the stakeholders and made necessary changes to the design. This process helped us to create a design that met the requirements of the end-users and was visually appealing.",
+                            "images": [
+                                {
+                                    "image": "/images/projects/fabvis/fabvis-1.webp",
+                                    "key": "fabvis-4"
+                                },
+                                {
+                                    "image": "/images/projects/fabvis/fabvis-4.webp",
+                                    "key": "fabvis-5"
+                                },
+                                {
+                                    "image": "/images/projects/fabvis/fabvis-5.webp",
+                                    "key": "fabvis-6"
+                                },
+                                {
+                                    "image": "/images/projects/fabvis/fabvis-6.webp",
+                                    "key": "fabvis-7"
+                                }
+                            ],
+                            "key": "design"
+                        },
+                        {
+                            "title": "Design",
+                            "body": "The next phase of the project was to design the web dashboard. I used the Figma design tool to create a visually appealing and user-friendly interface. The design included a clean and simple layout, intuitive navigation, and clear typography. I also included interactive elements such as buttons and dropdown menus to make the dashboard more interactive.",
+                            "images": [
+                                {
+                                    "image": "/images/projects/fabvis/fabvis-2.webp",
+                                    "key": "fabvis-1"
+                                },
+                                {
+                                    "image": "/images/projects/fabvis/fabvis-3.webp",
+                                    "key": "fabvis-2"
+                                }
+                            ],
+                            "key": "design"
+                        }
+                    ],
+                    "images": [
+                        {
+                            "image": "/images/projects/fabvis/fabvis-7.webp",
+                            "key": "fabvis-7"
+                        },
+                        {
+                            "image": "/images/projects/fabvis/fabvis-8.webp",
+                            "key": "fabvis-8"
                         }
                     ],
                     "key": "process"
@@ -181,7 +234,7 @@
                 },
                 {
                     "title": "Accomplishments",
-                    "body": "Recently the project obtained a Patent Cooperation Treaty (PCT) with an International Search Report (ISR) indicating novelty in 100% of its claims, and currently it’s getting prepared for the commercialization by the IntelliSense Lab",
+                    "body": "Recently the project obtained a Patent Cooperation Treaty (PCT) with an International Search Report (ISR) indicating novelty in 100% of its claims, and currently it’s getting prepared for the commercialization by the IntelliSense Lab.",
                     "links": [
                         {
                             "title": "More Information about the Patent Cooperation Treaty and commercialization of the product.",
