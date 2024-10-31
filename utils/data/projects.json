@@ -326,6 +326,68 @@
             ]
         },
         {
+            "key": "advanced_column_row",
+            "name": "Advanced Column Row :  Flutter Package",
+            "role": "Flutter Developer",
+            "overview": [
+                {
+                    "title": "Duration",
+                    "body": "2024 Oct",
+                    "key": "duration"
+                },
+                {
+                    "title": "Sector",
+                    "body": "Mobile Application Development",
+                    "key": "sector"
+                },
+                {
+                    "title": "My Role",
+                    "body": "Flutter Developer",
+                    "key": "role"
+                }
+            ],
+            "image":  "images/projects/project-advanced_column_row.webp",
+            "cols": 1,
+            "rows": 1.5,
+            "content": [
+                {
+                    "title": "Project Goals and Objectives",
+                    "body": "Advanced Column Row is a Flutter package that improves the default Column and Row widgets by adding customization options, such as padding, gap widgets, decoration, alignment, and other flexible properties. This package helps you build more visually appealing and flexible layouts in Flutter.",
+                    "key": "overview"
+                },
+                {
+                    "title": "Process",
+                    "body": [
+                        {
+                            "title": "Research",
+                            "body": "Before starting the project, I had to do some research to understand the current state of the Flutter ecosystem and the needs of developers. I looked at existing packages and libraries that provide similar functionality and analyzed their pros and cons. By doing that , I was able to identify the features and customization options that I wanted to include in my package.",
+                            "key": "research"
+                        },
+                        {
+                            "title": "Development",
+                            "body": "After the research phase, I started developing the package. I used Dart, the programming language used by Flutter, to write the code. I also used the Flutter framework to build the UI components and integrate them with the package. I made sure to test the package thoroughly to ensure that it works as expected and is stable.",
+                            "key": "development"
+                        }
+                    ]
+                },
+                {
+                    "title": "Challenges Faced",
+                    "body": "I always wanted to publish a Flutter package, but I was unsure of how to do it. I had to learn how to use the pub.dev platform and understand the process of publishing a package. I also had to make sure that my package was well-documented and easy to use for other developers. I had to spend a lot of time and effort to make sure that my package was ready for publication.",
+                    "key": "challenges"
+                },
+                {
+                    "title": "View package",
+                    "links": [
+                        {
+                            "title": "Click on this link to view the `Advanced Column Row` package",
+                            "link": "https://pub.dev/packages/advanced_column_row"
+                        }
+                    ],
+                    "key": "package"
+                }
+            ]
+        },
+        {
             "key": "organic",
             "name": "Organic Chemistry Conversions",
             "role": "UI/UX Designer",
@@ -347,7 +409,7 @@
                 }
             ],
             "image":  "images/projects/project-organic.webp",
-            "cols": 2,
+            "cols": 1,
             "rows": 1.5,
             "content": [
                 {
