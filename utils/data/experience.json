@@ -85,15 +85,7 @@
                 },
                 {
                     "title": "My Responsibilities",
-                    "body": "Currently I am leading the UI/UX design efforts of the application. Currently we are in the wireframing"
-                },
-                {
-                    "title": "My Accomplishments",
-                    "body": "I was actively involved in the development of the latest features in WSO2 Identity Server version 7.0, where I contributed to developing the front end for features like 'API Authorization' using React JS. Additionally, I developed the latest Asgardeo-Android SDK, enabling Asgardeo (Identity as a Service) integration through 'app-native authentication' for Android applications. I also recently redesigned Asgardeo's home page and user registration flow."
-                },
-                {
-                    "title": "Challenges Faced",
-                    "body": "One of the main challenges I faced at WSO2 was adapting to the company's fast-paced work environment and the complexity of the products. However, with the support of my team members and the resources provided by the company, I was able to overcome these challenges and grow both professionally and personally."
+                    "body": "Currently I am leading the UI/UX design efforts of the application. Currently we are in the wireframing which involves mapping out user journeys, designing layouts of the app, and ensuring that each feature meets the users’ needs. "
                 }
             ]
         },
@@ -106,15 +98,11 @@
             "content": [
                 {
                     "title": "Organization’s Activities",
-                    "body": "WSO2 is an open-source technology provider founded in 2005. It delivers software and cloud solutions that provide foundational technologies for application development and identity and access management. Their main products are Identity Server, Asgardeo, Choreo and Ballerina."
+                    "body": "Sakura Speak AI is a startup that is developing an AI-powered mobile application that helps users to learn Japanese language. Practice beginner-friendly conversations without pressure - you can make mistakes freely and get instant feedback."
                 },
                 {
                     "title": "My Responsibilities",
-                    "body": "During my time as a Front-end Developer/UI-UX Designer at WSO2, I worked with the Identity Access Management team. My primary responsibilities included front-end development and UI/UX design for the company's products, namely Identity Server and Asgardeo. For development and design tasks, I primarily utilized React JS, Next JS, Flutter, Android and Figma."
-                },
-                {
-                    "title": "My Accomplishments",
-                    "body": "I was actively involved in the development of the latest features in WSO2 Identity Server version 7.0, where I contributed to developing the front end for features like 'API Authorization' using React JS. Additionally, I developed the latest Asgardeo-Android SDK, enabling Asgardeo (Identity as a Service) integration through 'app-native authentication' for Android applications. I also recently redesigned Asgardeo's home page and user registration flow.",
+                    "body": "My main responsibility was to resolve the deployment issue with the initial alpha test version of Sakura Speak(developed using React Native[Expo]), a Japanese language learning app focused on interactive speaking exercises, on the Apple App Store. This issue was successfully fixed, allowing the app to be published for alpha testing. Additionally, I improved the app’s user interface design to create a more polished and user-friendly experience, optimizing it for users.",
                     "links": [
                         {
                             "title": "Test the initial version of the Sakura Speak AI app",
@@ -124,7 +112,7 @@
                 },
                 {
                     "title": "Challenges Faced",
-                    "body": "One of the main challenges I faced at WSO2 was adapting to the company's fast-paced work environment and the complexity of the products. However, with the support of my team members and the resources provided by the company, I was able to overcome these challenges and grow both professionally and personally."
+                    "body": "One of the main challenges I faced was that I hadn’t used React Native and Expo before, so I had to learn the technology while developing the application. I successfully overcame this by diving into the tech and applying it effectively to build the app."
                 }
             ]
         },
