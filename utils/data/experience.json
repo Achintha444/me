@@ -74,13 +74,69 @@
         },
         {   
             "title": [
+                "Chrono (New Startup)",
+                "Freelance UI-UX Designer",
+                "Oct 2024 - Present"
+            ],
+            "content": [
+                {
+                    "title": "Organization’s Activities",
+                    "body": "Chrono is newly started startup that is developing an Appointment Booking System."
+                },
+                {
+                    "title": "My Responsibilities",
+                    "body": "Currently I am leading the UI/UX design efforts of the application. Currently we are in the wireframing"
+                },
+                {
+                    "title": "My Accomplishments",
+                    "body": "I was actively involved in the development of the latest features in WSO2 Identity Server version 7.0, where I contributed to developing the front end for features like 'API Authorization' using React JS. Additionally, I developed the latest Asgardeo-Android SDK, enabling Asgardeo (Identity as a Service) integration through 'app-native authentication' for Android applications. I also recently redesigned Asgardeo's home page and user registration flow."
+                },
+                {
+                    "title": "Challenges Faced",
+                    "body": "One of the main challenges I faced at WSO2 was adapting to the company's fast-paced work environment and the complexity of the products. However, with the support of my team members and the resources provided by the company, I was able to overcome these challenges and grow both professionally and personally."
+                }
+            ]
+        },
+        {   
+            "title": [
+                "Sakura Speak AI",
+                "Freelance Mobile Application Developer",
+                "Sep 2024 - Oct 2024"
+            ],
+            "content": [
+                {
+                    "title": "Organization’s Activities",
+                    "body": "WSO2 is an open-source technology provider founded in 2005. It delivers software and cloud solutions that provide foundational technologies for application development and identity and access management. Their main products are Identity Server, Asgardeo, Choreo and Ballerina."
+                },
+                {
+                    "title": "My Responsibilities",
+                    "body": "During my time as a Front-end Developer/UI-UX Designer at WSO2, I worked with the Identity Access Management team. My primary responsibilities included front-end development and UI/UX design for the company's products, namely Identity Server and Asgardeo. For development and design tasks, I primarily utilized React JS, Next JS, Flutter, Android and Figma."
+                },
+                {
+                    "title": "My Accomplishments",
+                    "body": "I was actively involved in the development of the latest features in WSO2 Identity Server version 7.0, where I contributed to developing the front end for features like 'API Authorization' using React JS. Additionally, I developed the latest Asgardeo-Android SDK, enabling Asgardeo (Identity as a Service) integration through 'app-native authentication' for Android applications. I also recently redesigned Asgardeo's home page and user registration flow.",
+                    "links": [
+                        {
+                            "title": "Test the initial version of the Sakura Speak AI app",
+                            "link": "https://sakuraspeak.app/"
+                        }
+                    ]
+                },
+                {
+                    "title": "Challenges Faced",
+                    "body": "One of the main challenges I faced at WSO2 was adapting to the company's fast-paced work environment and the complexity of the products. However, with the support of my team members and the resources provided by the company, I was able to overcome these challenges and grow both professionally and personally."
+                }
+            ]
+        },
+        {   
+            "title": [
                 "Riora Innovations",
                 "UI/UX Designer (Part-time)",
                 "Feb 2021"
             ],
-            "place": "Department of Computer Science & Engineering, University of Moratuwa",
-            "position": "Visiting Instructor",
-            "duration": "Jul 2023 - Nov 2023 & Feb 2022 - Apr 2022",
+            "place": "Riora Innovations",
+            "position": "UI/UX Designer",
+            "duration": "Feb 2021",
             "content": [
                 {
                     "title": "Organization’s Activities",
