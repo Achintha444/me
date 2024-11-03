@@ -188,6 +188,11 @@
                     "link": "https://www.youtube.com/channel/UCgoNBM-Ay-jVnzaZjUy9x_A"
                 },
                 {
+                    "image": "/images/contact-icons-svg/top-X.svg",
+                    "key": "youtube",
+                    "link": "https://x.com/AchinthaIs47441"
+                },
+                {
                     "image": "/images/contact-icons-svg/top-medium.svg",
                     "key": "medium",
                     "link": "https://medium.com/@achinthaisuru444"
