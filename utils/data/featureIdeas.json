@@ -88,6 +88,94 @@
                     "key": "more-info"
                 }
             ]
+        },
+        {
+            "key": "group",
+            "name": "Windows/macOS New Feature — “Groups in Taskbar/Dock””",
+            "image": "images/feature-ideas/feature-idea-group.webp",
+            "cols": 4,
+            "rows": 2,
+            "content": [
+                {
+                    "title": "Overview",
+                    "body": "I have been using WhatsApp for quite a while now, and recently, I left my office WhatsApp group as I was leaving the company. When I sent my “Goodbye message” and exited the group, I could not receive the well-wishes that others sent. This got me thinking: why isn’t there a feature for this? Introducing such a feature would enable people to interact in a more meaningful way. So, here is my analysis of this “Goodbye Message” feature.",
+                    "key": "overview"
+                },
+                {
+                    "title": "Process",
+                    "body": [
+                        {
+                            "title": "User Research",
+                            "body": [
+                                {
+                                    "body": "The first step in this process was to conduct user research. I reached out to my friends and colleagues to understand their experience with WhatsApp groups and their feelings about leaving a group. I also asked them to share their thoughts on the “Goodbye Message” feature."
+                                },
+                                {
+                                    "body": "Then I created user personas to represent the different types of users who might benefit from this feature. After that I create user stories to understand the user's journey and pain points."
+                                },
+                                {
+                                    "body": "After that I created a user flow or a user journey map to understand the possible scenarios and the user's actions."
+                                }
+                            ],
+                            "images": [
+                                {
+                                    "image": "/images/feature-ideas/goodbye-feature/goodbye-1.webp",
+                                    "key": "goodbye-1"
+                                }
+                            ],
+                            "links": [
+                                {
+                                    "title": "More Information about this user research",
+                                    "link": "https://medium.com/@achinthaisuru444/whatsapp-new-feature-goodbye-message-74b780d7ba73"
+                                }
+                            ],
+                            "key": "user-research"
+                        },
+                        {
+                            "title": "Wireframing",
+                            "body": [
+                                {
+                                    "body": "From the information gathered from the user research, I created wireframes to visualize the user journey and identify areas for improvement. For this I used Excalidraw because it is a free tool that allows me to quickly and easily create wireframes"
+                                }
+                            ],
+                            "images": [
+                                {
+                                    "image": "/images/feature-ideas/goodbye-feature/goodbye-2.webp",
+                                    "key": "goodbye-2"
+                                }
+                            ],
+                            "key": "wireframing"
+                        },
+                        {
+                            "title": "Prototyping",
+                            "body": [
+                                {
+                                    "body": "I used Figma to create a high-fidelity prototype of the solution."
+                                }
+                            ],
+                            "images": [
+                                {
+                                    "image": "/images/feature-ideas/goodbye-feature/goodbye-3.webp",
+                                    "key": "goodbye-3"
+                                }
+                            ],
+                            "key": "prototyping"
+                        }
+                    ],
+                    "key": "process"
+                },
+                {
+                    "title": "For More Information",
+                    "body": "I have written a detailed blog post about this new feature idea, which you can read from the link below.",
+                    "links": [
+                        {
+                            "title": "Read the blog post",
+                            "link": "https://medium.com/design-bootcamp/whatsapp-new-feature-goodbye-message-74b780d7ba73b "
+                        }
+                    ],
+                    "key": "more-info"
+                }
+            ]
         }
     ]
 }
