@@ -98,7 +98,7 @@
             "content": [
                 {
                     "title": "Overview",
-                    "body": "I have been using WhatsApp for quite a while now, and recently, I left my office WhatsApp group as I was leaving the company. When I sent my “Goodbye message” and exited the group, I could not receive the well-wishes that others sent. This got me thinking: why isn’t there a feature for this? Introducing such a feature would enable people to interact in a more meaningful way. So, here is my analysis of this “Goodbye Message” feature.",
+                    "body": "I have been using both Windows and macOS for a long time, and recently, while using my smartphone, I noticed something interesting. On a smartphone, you can create folders on the homepage by grouping apps together, making the screen look cleaner and more organized. This got me thinking — why don’t we have a similar feature for the Windows taskbar and macOS dock? (Following the Jacobs Law). So, here’s my analysis of this potential “Groups in Taskbar/Dock” feature.",
                     "key": "overview"
                 },
                 {
@@ -108,7 +108,7 @@
                             "title": "User Research",
                             "body": [
                                 {
-                                    "body": "The first step in this process was to conduct user research. I reached out to my friends and colleagues to understand their experience with WhatsApp groups and their feelings about leaving a group. I also asked them to share their thoughts on the “Goodbye Message” feature."
+                                    "body": "As always, the first step of this design process was to do a user research. I started by searching for information about how users currently organize their taskbar and dock, and I found that many users use shortcuts to organize their taskbar and dock. This led me to the idea of creating a new feature that allows users to create groups on their taskbar and dock, similar to how they can create folders on their smartphone homepage."
                                 },
                                 {
                                     "body": "Then I created user personas to represent the different types of users who might benefit from this feature. After that I create user stories to understand the user's journey and pain points."
@@ -119,14 +119,14 @@
                             ],
                             "images": [
                                 {
-                                    "image": "/images/feature-ideas/goodbye-feature/goodbye-1.webp",
+                                    "image": "/images/feature-ideas/group-feature/group-1.webp",
                                     "key": "goodbye-1"
                                 }
                             ],
                             "links": [
                                 {
                                     "title": "More Information about this user research",
-                                    "link": "https://medium.com/@achinthaisuru444/whatsapp-new-feature-goodbye-message-74b780d7ba73"
+                                    "link": "https://achinthaisuru444.medium.com/windows-macos-new-feature-groups-in-taskbar-dock-620aaa8bfe67"
                                 }
                             ],
                             "key": "user-research"
@@ -140,26 +140,11 @@
                             ],
                             "images": [
                                 {
-                                    "image": "/images/feature-ideas/goodbye-feature/goodbye-2.webp",
+                                    "image": "/images/feature-ideas/group-feature/group-2.webp",
                                     "key": "goodbye-2"
                                 }
                             ],
                             "key": "wireframing"
-                        },
-                        {
-                            "title": "Prototyping",
-                            "body": [
-                                {
-                                    "body": "I used Figma to create a high-fidelity prototype of the solution."
-                                }
-                            ],
-                            "images": [
-                                {
-                                    "image": "/images/feature-ideas/goodbye-feature/goodbye-3.webp",
-                                    "key": "goodbye-3"
-                                }
-                            ],
-                            "key": "prototyping"
                         }
                     ],
                     "key": "process"
@@ -170,7 +155,7 @@
                     "links": [
                         {
                             "title": "Read the blog post",
-                            "link": "https://medium.com/design-bootcamp/whatsapp-new-feature-goodbye-message-74b780d7ba73b "
+                            "link": "https://achinthaisuru444.medium.com/windows-macos-new-feature-groups-in-taskbar-dock-620aaa8bfe67"
                         }
                     ],
                     "key": "more-info"
