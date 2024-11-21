@@ -9,6 +9,10 @@
             ],
             "content": [
                 {
+                    "title": "Technology Stack",
+                    "body": "React JS, Figma, Next JS, Flutter, Android, Cypress E2E Test"
+                },
+                {
                     "title": "Organization’s Activities",
                     "body": "WSO2 is an open-source technology provider founded in 2005. It delivers software and cloud solutions that provide foundational technologies for application development and identity and access management. Their main products are Identity Server, Asgardeo, Choreo and Ballerina."
                 },
@@ -74,18 +78,22 @@
         },
         {   
             "title": [
-                "Chrono (New Startup)",
-                "Freelance UI-UX Designer",
+                "Khrono (New Startup)",
+                "Freelance Front-end Developer/UI-UX Designer:",
                 "Oct 2024 - Present"
             ],
             "content": [
                 {
+                    "title": "Technology Stack",
+                    "body": "Figma, Excalidraw, React, React Native"
+                },
+                {
                     "title": "Organization’s Activities",
-                    "body": "Chrono is newly started startup that is developing an Appointment Booking System."
+                    "body": "Khrono is newly started startup that is developing an Appointment Booking System."
                 },
                 {
                     "title": "My Responsibilities",
-                    "body": "Currently I am leading the UI/UX design efforts of the application. Currently we are in the wireframing which involves mapping out user journeys, designing layouts of the app, and ensuring that each feature meets the users’ needs. "
+                    "body": "Currently I am leading the UI/UX design efforts of the application. Currently we are in the wireframing which involves mapping out user journeys, designing layouts of the app, and ensuring that each feature meets the users’ needs. Additionally, I am developing features for the Khrono mobile app (React Native) and web dashboard (React) like authentication"
                 }
             ]
         },
@@ -96,6 +104,10 @@
                 "Sep 2024 - Oct 2024"
             ],
             "content": [
+                {
+                    "title": "Technology Stack",
+                    "body": "Expo, React Native, Android, iOS"
+                },
                 {
                     "title": "Organization’s Activities",
                     "body": "Sakura Speak AI is a startup that is developing an AI-powered mobile application that helps users to learn Japanese language. Practice beginner-friendly conversations without pressure - you can make mistakes freely and get instant feedback."
@@ -126,6 +138,10 @@
             "position": "UI/UX Designer",
             "duration": "Feb 2021",
             "content": [
+                {
+                    "title": "Technology Stack",
+                    "body": "Figma, Excalidraw"
+                },
                 {
                     "title": "Organization’s Activities",
                     "body": "Riora Innovations is a software development company based in Sri Lanka that specializes in mobile application development. The company is known for its innovative solutions and commitment to delivering high-quality products to its clients."
@@ -205,6 +221,10 @@
             ],
             "content": [
                 {
+                    "title": "Technology Stack",
+                    "body": "Flutter, Figma, React"
+                },
+                {
                     "title": "Organization’s Activities",
                     "body": "Fcode Labs is a software development company based in Sri Lanka that specializes in mobile application development, web development, and UI/UX design. The company is known for its innovative solutions and commitment to delivering high-quality products to its clients."
                 },
@@ -235,6 +255,10 @@
                 "Jul 2020 - Oct 2020"
             ],
             "content": [
+                {
+                    "title": "Technology Stack",
+                    "body": "Adobe XD, Adobe Photoshop"
+                },
                 {
                     "title": "Organization’s Activities",
                     "body": "Sieve is a Singapore-based company with a primary mission of empowering consumers to make informed decisions concerning their digital privacy."
