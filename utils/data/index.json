@@ -32,12 +32,16 @@
         },
         {
             "id": 1,
+            "title": "~~ Bridging Design and Development ~~"
+        },
+        {
+            "id": 2,
             "title": "A little bit about me...",
             "content": [
                 {
                     "content": [
                         {
-                            "body": "Hello everyone! My name is Achintha Isuru, and I am a front-end developer and UI/UX designer. Apart from my usual studies, I have self-studied psychology and its impact on human behavior and decision-making, and I apply this knowledge when designing user interfaces and experiences. My ultimate life goal is to create something exceptional that my father would one day be truly proud of.",
+                            "body": "Apart from my usual studies, I have self-studied psychology and its impact on human behavior and decision-making, and I apply this knowledge when designing user interfaces and experiences. My ultimate life goal is to create something exceptional that my father would one day be truly proud of.",
                             "key": "little-bit-about-me-1"
                         },
                         {
@@ -50,7 +54,7 @@
             ]
         },
         {
-            "id": 2,
+            "id": 3,
             "title": "My Interests...",
             "interests": [
                 {
@@ -135,7 +139,7 @@
             ]
         },
         {
-            "id": 3,
+            "id": 4,
             "title": "Recent Projects...",
             "titleLink" : {
                 "text": "View All",
@@ -144,7 +148,7 @@
             "comments": "This will make use of the projects.json data"
         },
         {
-            "id": 4,
+            "id": 5,
             "title": "My Writings...",
             "titleLink" : {
                 "text": "Read More",
@@ -153,7 +157,7 @@
             }
         },
         {
-            "id": 5,
+            "id": 6,
             "title": "Contact Me",
             "content": [
                 {
