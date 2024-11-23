@@ -1,5 +1,5 @@
 {
-    "pageTitle": "Who am I ?",
+    "pageTitle": "Bridging Design and Development",
     "content": {
         "firstPara": [
             {
@@ -258,7 +258,6 @@
                                         "alt": "achintha-16"
                                     }
                                 ]
-                                
                             }
                         ]
                     },
@@ -292,6 +291,58 @@
                     }
                 ]
             }
-        ]
+        ],
+        "contact": {
+            "id": 6,
+            "title": "Contact Me",
+            "content": [
+                {
+                    "content": [
+                        {
+                            "body": "Please feel free to contact me via any of the platforms listed below.",
+                            "key": "contact-me-1"
+                        }
+                    ],
+                    "key": "contact-me"
+                }
+            ],
+            "icons": [
+                {
+                    "image": "/images/contact-icons-svg/top-email.svg",
+                    "key": "email",
+                    "link": "mailto:achinthaisuru97@gmail.com"
+                },
+                {
+                    "image": "/images/contact-icons-svg/top-in.svg",
+                    "key": "linkedin",
+                    "link": "http://linkedin.com/in/achintha-isuru"
+                },
+                {
+                    "image": "/images/contact-icons-svg/top-stack.svg",
+                    "key": "stackoverflow",
+                    "link": "https://stackoverflow.com/users/10601286/achintha-isuru"
+                },
+                {
+                    "image": "/images/contact-icons-svg/top-youtube.svg",
+                    "key": "youtube",
+                    "link": "https://www.youtube.com/channel/UCgoNBM-Ay-jVnzaZjUy9x_A"
+                },
+                {
+                    "image": "/images/contact-icons-svg/top-X.svg",
+                    "key": "youtube",
+                    "link": "https://x.com/AchinthaIs47441"
+                },
+                {
+                    "image": "/images/contact-icons-svg/top-medium.svg",
+                    "key": "medium",
+                    "link": "https://medium.com/@achinthaisuru444"
+                },
+                {
+                    "image": "/images/contact-icons-svg/top-github.svg",
+                    "key": "github",
+                    "link": "https://github.com/Achintha444"
+                }
+            ]
+        }
     }
 }

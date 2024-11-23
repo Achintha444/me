@@ -32,21 +32,25 @@
         },
         {
             "id": 1,
-            "title": "~~ Bridging Design and Development ~~"
+            "title": "Bridging Design and Development"
         },
         {
             "id": 2,
-            "title": "A little bit about me...",
+            "title": "Bridging Design and Development...",
             "content": [
                 {
                     "content": [
                         {
-                            "body": "Apart from my usual studies, I have self-studied psychology and its impact on human behavior and decision-making, and I apply this knowledge when designing user interfaces and experiences. My ultimate life goal is to create something exceptional that my father would one day be truly proud of.",
+                            "body": "Bridging design and development has always been my focus. Apart from my usual studies, I have spent time self-studying psychology to better understand how human behavior and decision-making influence user experiences. I try to apply this knowledge to create designs that truly connect with people.",
                             "key": "little-bit-about-me-1"
                         },
                         {
-                            "body": "I am always open to new opportunities and challenges, so please feel free to reach out to me if you would like to collaborate or chat about anything!",
+                            "body": "My ultimate life goal is to build something exceptional—something that would make my father genuinely proud.",
                             "key": "little-bit-about-me-2"
+                        },
+                        {
+                            "body": "I am always open to new opportunities and challenges, so feel free to reach out if you’d like to collaborate or just chat!",
+                            "key": "little-bit-about-me-3"
                         }
                     ],
                     "key": "little-bit-about-me"
@@ -158,7 +162,7 @@
         },
         {
             "id": 6,
-            "title": "Contact Me",
+            "title": "Contact Me...",
             "content": [
                 {
                     "content": [

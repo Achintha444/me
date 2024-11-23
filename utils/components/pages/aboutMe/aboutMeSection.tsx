@@ -4,25 +4,28 @@ import CommonDivider from "../../common/commonDivider";
 import DescriptionList from "../../common/descriptionList";
 import ImageListComponent from "../../common/imageListComponent";
 import ExperienceOverview from "../experiences/experienceOverview";
+import Contact from "../index/contact";
 
 function AboutMeSection({ content }) {
 
     return (
-        <>  
-            <Stack spacing={ 3 }>
+        <>
+            <Stack spacing={3}>
                 {
-                    content.firstPara.map((para) => <FirstPara key={ para.key } para={ para.body } /> )
+                    content.firstPara.map((para) => <FirstPara key={para.key} para={para.body} />)
                 }
             </Stack>
 
-            <ImageListComponent imageList={ content.fistImages } />
+            <ImageListComponent imageList={content.fistImages} />
 
             <CommonDivider />
 
             {
                 content.contentDetails.map(
-                    (singleContent) => <SingleContent key={ singleContent.title } content={ singleContent } />)
+                    (singleContent) => <SingleContent key={singleContent.title} content={singleContent} />)
             }
+
+            <Contact key="contact-me" data={content.contact} />;
         </>
 
     );
@@ -39,10 +42,10 @@ function FirstPara({ para }) {
         <Typography
             variant="body2"
             color="text.secondary"
-            sx={ {
+            sx={{
                 fontWeight: "normal"
-            } }>
-            { para }
+            }}>
+            {para}
         </Typography>
     );
 }
@@ -53,15 +56,15 @@ function SingleContent({ content }) {
         <>
             <br />
             <Typography variant="h4" color="text.primary">
-                { content.title }
+                {content.title}
             </Typography>
             <br />
             {
                 content.content.map((contentDesc) => (
                     <>
-                        <ExperienceOverview title={ contentDesc.title } />
+                        <ExperienceOverview title={contentDesc.title} />
                         <br />
-                        <DescriptionList list={ contentDesc.content } />
+                        <DescriptionList list={contentDesc.content} />
                         <br />
                     </>
                 ))

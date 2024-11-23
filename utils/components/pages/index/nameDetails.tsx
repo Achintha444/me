@@ -5,8 +5,6 @@ import { TypeAnimation } from "react-type-animation";
 import styles from "../../../../styles/Home.module.css";
 import { Time, getTime } from "../../../functions/common";
 import CommonDivider from "../../common/commonDivider";
-import SubSectionTitle from "../../common/subSectionTitle";
-import { title } from "process";
 
 export default function NameDetails({ data }) {
 

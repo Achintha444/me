@@ -16,8 +16,8 @@ function IndexSection({ content }) {
                     switch (singleContent.id) {
                         case 0:
                             return <NameDetails key="name" data={ singleContent } />;
-                        case 1:
-                            return <Phrase key="name" data={ singleContent } />;
+                        // case 1:
+                        //     return <Phrase key="name" data={ singleContent } />;
                         case 2:
                             return <LittleBitAboutMe key="me" data={ singleContent } />;
                         case 3:
