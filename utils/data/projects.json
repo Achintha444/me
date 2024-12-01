@@ -756,15 +756,6 @@
                             "key": "prototyping"
                         },
                         {
-                            "images": [
-                                {
-                                    "image": "/images/projects/streamify/streamify-6.webp",
-                                    "key": "streamify-6"
-                                }
-                            ],
-                            "key": "prototyping-1"
-                        },
-                        {
                             "title": "Development",
                             "body": [
                                 {
