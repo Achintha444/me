@@ -174,7 +174,21 @@
                         },
                         {
                             "title": "Wireframing",
-                            "body": "After the research phase, I created wireframes for the web dashboard. The wireframes helped me to visualize the layout and structure of the dashboard and identify areas where the user interface could be improved. After getting the stakholders approval, I moved on to the next phase of the project."
+                            "body": "After the research phase, I created wireframes for the web dashboard. The wireframes helped me to visualize the layout and structure of the dashboard and identify areas where the user interface could be improved. After getting the stakholders approval, I moved on to the next phase of the project.",
+                            "images": [
+                                {
+                                    "image": "/images/projects/fabvis/fabvis-9.webp",
+                                    "key": "fabvis-9"
+                                },
+                                {
+                                    "image": "/images/projects/fabvis/fabvis-10.webp",
+                                    "key": "fabvis-10"
+                                },
+                                {
+                                    "image": "/images/projects/fabvis/fabvis-11.webp",
+                                    "key": "fabvis-11"
+                                }
+                            ]
                         },
                         {
                             "title": "Design Iterations",
