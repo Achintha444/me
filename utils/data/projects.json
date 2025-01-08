@@ -758,13 +758,17 @@
                                     "body": "This part of the project is still in progress. But to practise agile methodologies I decided to develop each interface that I designed in the wireframes. For prototyping I used Figma, mainly due to its simplicity and ease of use. It allows me to quickly create interactive prototypes and to test the user experience."
                                 },
                                 {
-                                    "body": "Currently I have mocked up the login interface. The rest of the interfaces will be mocked up in the next steps."
+                                    "body": "Currently I have mocked up the login interface and the overview interface. The rest of the interfaces will be mocked up in the next steps."
                                 }
                             ],
                             "images": [
                                 {
                                     "image": "/images/projects/streamify/streamify-5.webp",
                                     "key": "streamify-5"
+                                },
+                                {
+                                    "image": "/images/projects/streamify/streamify-7.webp",
+                                    "key": "streamify-7"
                                 }
                             ],
                             "key": "prototyping"
