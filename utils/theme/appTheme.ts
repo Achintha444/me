@@ -21,10 +21,12 @@ export const appTheme = responsiveFontSizes(createTheme({
     },
     typography: {
         body1: {
-            fontFamily: "BioRhyme-Light"
+            fontFamily: "BioRhyme-Light",
+            fontSize: "1.2rem"
         },
         body2: {
-            fontFamily: "Cabin-Regular"
+            fontFamily: "Cabin-Regular",
+            fontSize: "1.1rem"
         },
         button: {
             fontFamily: "Cabin-Regular"
@@ -47,7 +49,8 @@ export const appTheme = responsiveFontSizes(createTheme({
         },
 
         h6: {
-            fontFamily: "BioRhyme-Light"
+            fontFamily: "BioRhyme-Light",
+            fontSize: "1.4rem"
         }
     },
     components: {

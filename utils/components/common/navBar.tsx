@@ -68,7 +68,7 @@ export default function NavBar(props: Props) {
                         ))}
                     </Box>
                     <IconButton
-                        color="inherit"
+                        color="primary"
                         aria-label="open drawer"
                         edge="end"
                         onClick={handleDrawerToggle}
