@@ -777,7 +777,10 @@
                             "title": "Development",
                             "body": [
                                 {
-                                    "body": "As mentioned above, prototyping and development will be done in parallel. For the development part, I am using React.js and Material-UI. The dashboard is built using React.js and Material-UI. This site will be hosted in Vercel"
+                                    "body": "As mentioned above, prototyping and development will be done in parallel. For the development part, I am using React.js and Material-UI. The dashboard is built using React.js and Material-UI. This site will be hosted in Vercel."
+                                },
+                                {
+                                    "body": "Note: Since this is a demo application, you can use the following credentials to log in. Use 'test@streamify.com' as the username and 'Test@123' as the password."
                                 }
                             ],
                             "links": [
