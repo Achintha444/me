@@ -727,15 +727,6 @@
                         {
                             "images": [
                                 {
-                                    "image": "/images/projects/streamify/streamify-4.webp",
-                                    "key": "streamify-4"
-                                }
-                            ],
-                            "key": "wireframing-3"
-                        },
-                        {
-                            "images": [
-                                {
                                     "image": "/images/projects/streamify/streamify-1.webp",
                                     "key": "streamify-1"
                                 }
@@ -761,6 +752,9 @@
                                     "body": "Currently I have mocked up the login interface and the overview interface. The rest of the interfaces will be mocked up in the next steps."
                                 }
                             ],
+                            "key": "prototyping"
+                        },
+                        {
                             "images": [
                                 {
                                     "image": "/images/projects/streamify/streamify-5.webp",
@@ -771,7 +765,20 @@
                                     "key": "streamify-7"
                                 }
                             ],
-                            "key": "prototyping"
+                            "key": "prototyping-1"
+                        },
+                        {
+                            "images": [
+                                {
+                                    "image": "/images/projects/streamify/streamify-8.webp",
+                                    "key": "streamify-5"
+                                },
+                                {
+                                    "image": "/images/projects/streamify/streamify-9.webp",
+                                    "key": "streamify-7"
+                                }
+                            ],
+                            "key": "prototyping-2"
                         },
                         {
                             "title": "Development",
