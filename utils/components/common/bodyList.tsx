@@ -46,7 +46,6 @@ function BodyListItem({ title, body, links, images, presentations }) {
                             <Typography 
                                 variant="body2" 
                                 color="text.secondary" 
-                                sx={ title ? null : { marginTop: "-10px" } }
                             >
                                 { body }
                             </Typography>
@@ -58,8 +57,7 @@ function BodyListItem({ title, body, links, images, presentations }) {
                                         <Typography 
                                             key={ para.body }
                                             variant="body2" 
-                                            color="text.secondary" 
-                                            sx={ title ? null : { marginTop: "-10px" } }
+                                            color="text.secondary"
                                         >
                                             { para.body }
                                         </Typography>

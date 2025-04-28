@@ -3,6 +3,90 @@
     "experiences": [
         {   
             "title": [
+                "Vertify Technologies",
+                "Front-end Developer/UI-UX Designer",
+                "Oct 2024 - Present"
+            ],
+            "content": [
+                {
+                    "title": "Technology Stack",
+                    "body": "React JS, Tailwind CSS, GitHub Actions, Figma"
+                },
+                {
+                    "title": "Organization’s Activities",
+                    "body": "Vertify technologies is a startup based in Sri Lanka, whihch is currently developing the countries first appointment booking platform for businesses and individuals. I am a part of the team that is developing this platform from scratch."
+                },
+                {
+                    "title": "My Responsibilities",
+                    "body": [
+                        {
+                            "body": "Developed and currently maintaining the company website using React, Tailwind CSS, and Aceternity UI."
+                        },
+                        {
+                            "body": "Implemented a CI/CD pipeline with GitHub Actions for the deployment of the application to AWS. Led the UI/UX design for the company’s inaugural product, 'Khrono', Sri Lanka's first appointment booking system."
+                        },
+                        {
+                            "body": "Leading the front-end code reviews for Khrono, covering both the React Native mobile app and the React web dashboard"
+                        }
+                    ],
+                    "links": [
+                        {
+                            "title": "Visit Vertify Technologies Webpage",
+                            "link": "https://www.v-tfy.com/"
+                        }
+                    ]
+                },
+                {
+                    "title": "My Accomplishments",
+                    "body": [
+                        {
+                            "body": "I designed the UI/UX design of the Khrono mobile application. I also implemented the authentication feature for the web dashboard of “Khrono”, using Asgardeo with React. I am also leading the front-end code reviews for Khrono, covering both the React Native mobile app and the React web dashboard."
+                        },
+                        {
+                            "body": "Also I am leading the front-end code reviews for Khrono, covering both the React Native mobile app and the React web dashboard."
+                        }
+                    ]
+                },
+                {
+                    "title": "Challenges Faced",
+                    "body": "This was the first time I got this many responsibilities in my profession career and I am considering this as a learning oppurtunity to continue to learn and grow my self."
+                }
+            ]
+        },
+        {   
+            "title": [
+                "KAST",
+                "Senior Mobile Developer",
+                "Dec 2024 - Present"
+            ],
+            "content": [
+                {
+                    "title": "Technology Stack",
+                    "body": "Flutter, Figma"
+                },
+                {
+                    "title": "Organization’s Activities",
+                    "body": "KAST is a crytpo based startup which is backed by the Solana Founders, where we are currently developing and maintaing an internet banking like system for for crypto currencies like Solana, Ethereum, etc."
+                },
+                {
+                    "title": "My Responsibilities",
+                    "body": [
+                        {
+                            "body": "Leading the development of the design revamping effort of the company's main application, KAST Crypto Wallet, which has over 200K+ downloads across both Apple App Store and Google Play Store. I collaborate closely with the design team to develop a pixel-perfect UI."
+                        },
+                        {
+                            "body": "• Implementing features like 'debit card buying' and 'debit card shipping' using the 'clean architecture' for KAST Crypto Wallet application."
+                        }
+                    ]
+                },
+                {
+                    "title": "My Accomplishments",
+                    "body": "I am currently leading the development of the design revamping effort of the company's main application, KAST Crypto Wallet, which has over 200K+ downloads across both Apple App Store and Google Play Store. I collaborate closely with the design team to develop a pixel-perfect UI."
+                }
+            ]
+        },
+        {   
+            "title": [
                 "WSO2",
                 "Front-end Developer/UI-UX Designer",
                 "May 2022 - Sep 2024"
