@@ -1,6 +1,134 @@
 {
     "pageTitle": "Projects",
     "projects": [
+                {
+            "key": "asgardeo-homepage",
+            "name": "Redesign of Asgardeo Homepage and User Registration Flow",
+            "role": "UI/UX Designer",
+            "overview": [
+                {
+                    "title": "Duration",
+                    "body": "2024 Jun - 2024 Aug",
+                    "key": "duration"
+                },
+                {
+                    "title": "Sector",
+                    "body": "Identity and Access Management : Asgardeo(WSO2)",
+                    "key": "sector"
+                },
+                {
+                    "title": "My Role",
+                    "body": "UI/UX Designer",
+                    "key": "role"
+                }
+            ],
+            "image": "images/projects/project-asgardeo-homepage.webp",
+            "cols": 2,
+            "rows": 1.5,
+            "content": [
+                {
+                    "title": "Overview",
+                    "body": "During my time at WSO2 I got the oppurtunity to work on the redesign of the Asgardeo homepage and user registration flow. The goal of this project was to improve the user experience and make it easier for users to sign up and start using the platform. ",
+                    "key": "overview"
+                },
+                {
+                    "title": "Process",
+                    "body": [
+                        {
+                            "title": "User Research",
+                            "body": [
+                                {
+                                    "body": "Before starting the design process, I conducted user research to understand the needs and pain points of our users. To do that I first create a set of personas and then conducted surveys and interviews with users to gather feedback on the current homepage and user registration flow."
+                                },
+                                {
+                                    "body": "After gathering the feedback, I created a set of user journeys to visualize the user flow and identify areas for improvement. Other than that I also created a set of user stories to understand the user needs and goals."
+                                }
+                            ],
+                            "images": [
+                                {
+                                    "image": "/images/projects/asgardeo-homepage/asgardeo-homepage-1.webp",
+                                    "key": "asgardeo-homepage-1"
+                                }
+                            ],
+                            "key": "user-research"
+                        },
+                        {
+                            "title": "Visual Research",
+                            "body": [
+                                {
+                                    "body": "To create a design that resonates with our users, I conducted visual research to understand the current design trends and what our users are interested in. I created a mood board to gather inspiration and then created a set of design concepts to test different design directions."
+                                },
+                                {
+                                    "body": "After that I also researched the competitors to understand their design and user experience. This helped me to identify areas where we could differentiate ourselves and create a unique design."
+                                },
+                                {
+                                    "body": "Then I created an information architecture to organize the content and functionality of the website. This helped me to create a clear and intuitive navigation and layout."
+                                },
+                                {
+                                    "body": "Finally, I created a site map to visualize the structure of the website and ensure that all the pages were connected and accessible."
+                                }
+                            ],
+                            "images": [
+                                {
+                                    "image": "/images/projects/asgardeo-homepage/asgardeo-homepage-2.webp",
+                                    "key": "asgardeo-homepage-2"
+                                }
+                            ],
+                            "key": "visual-research"
+                        },
+                        {
+                            "title": "Wireframing",
+                            "body": [
+                                {
+                                    "body": "I used Excalidraw to create wireframes, mainly due to its simplicity and ease of use. It allows me to quickly sketch out ideas and concepts, making it an invaluable tool for brainstorming and collaboration."
+                                }
+                            ],
+                            "images": [
+                                {
+                                    "image": "/images/projects/asgardeo-homepage/asgardeo-homepage-3.webp",
+                                    "key": "asgardeo-homepage-3"
+                                }
+                            ],
+                            "key": "wireframing"
+                        },
+                        {
+                            "title": "Prototyping",
+                            "body": [
+                                {
+                                    "body": "I used Figma to create a high-fidelity prototype of the website. The prototype was used to test the usability of the website and to gather feedback from the stakeholders. Few sample of the prototype are shown below."
+                                }
+                            ],
+                            "images": [
+                                {
+                                    "image": "/images/projects/asgardeo-homepage/asgardeo-homepage-4.webp",
+                                    "key": "asgardeo-homepage-4"
+                                }
+                            ],
+                            "key": "prototyping"
+                        },
+                        {
+                            "images": [
+                                {
+                                    "image": "/images/projects/asgardeo-homepage/asgardeo-homepage-5.webp",
+                                    "key": "asgardeo-homepage-5"
+                                }
+                            ],
+                            "key": "prototyping-1"
+                        },
+                        {
+                            "images": [
+                                {
+                                    "image": "/images/projects/asgardeo-homepage/asgardeo-homepage-6.webp",
+                                    "key": "asgardeo-homepage-6"
+                                }
+                            ],
+                            "key": "prototyping-2"
+                        }
+                    ],
+                    "key": "process"
+                }
+            ]
+        },
         {
             "key": "atm",
             "name": "A New User Interface Concept for ATM’s to Reduce Receipt Wastage",
@@ -129,134 +257,6 @@
                 }
             ]
         },
-                {
-            "key": "asgardeo-homepage",
-            "name": "Redesign of Asgardeo Homepage and User Registration Flow",
-            "role": "UI/UX Designer",
-            "overview": [
-                {
-                    "title": "Duration",
-                    "body": "2024 Jun - 2024 Aug",
-                    "key": "duration"
-                },
-                {
-                    "title": "Sector",
-                    "body": "Identity and Access Management : Asgardeo(WSO2)",
-                    "key": "sector"
-                },
-                {
-                    "title": "My Role",
-                    "body": "UI/UX Designer",
-                    "key": "role"
-                }
-            ],
-            "image":  "images/projects/project-asgardeo-homepage.webp",
-            "cols": 2,
-            "rows": 1.5,
-            "content": [
-                {
-                    "title": "Overview",
-                    "body": "During my time at WSO2 I got the oppurtunity to work on the redesign of the Asgardeo homepage and user registration flow. The goal of this project was to improve the user experience and make it easier for users to sign up and start using the platform. ",
-                    "key": "overview"
-                },
-                {
-                    "title": "Process",
-                    "body": [
-                        {
-                            "title": "User Research",
-                            "body": [
-                                {
-                                    "body": "Before starting the design process, I conducted user research to understand the needs and pain points of our users. To do that I first create a set of personas and then conducted surveys and interviews with users to gather feedback on the current homepage and user registration flow."
-                                },
-                                {
-                                    "body": "After gathering the feedback, I created a set of user journeys to visualize the user flow and identify areas for improvement. Other than that I also created a set of user stories to understand the user needs and goals."
-                                }
-                            ],
-                            "images": [
-                                {
-                                    "image": "/images/projects/asgardeo-homepage/asgardeo-homepage-1.webp",
-                                    "key": "asgardeo-homepage-1"
-                                }
-                            ],
-                            "key": "user-research"
-                        },
-                        {
-                            "title": "Visual Research",
-                            "body": [
-                                {
-                                    "body": "To create a design that resonates with our users, I conducted visual research to understand the current design trends and what our users are interested in. I created a mood board to gather inspiration and then created a set of design concepts to test different design directions."
-                                },
-                                {
-                                    "body": "After that I also researched the competitors to understand their design and user experience. This helped me to identify areas where we could differentiate ourselves and create a unique design."
-                                },
-                                {
-                                    "body": "Then I created an information architecture to organize the content and functionality of the website. This helped me to create a clear and intuitive navigation and layout."
-                                },
-                                {
-                                    "body": "Finally, I created a site map to visualize the structure of the website and ensure that all the pages were connected and accessible."
-                                }
-                            ],
-                            "images": [
-                                {
-                                    "image": "/images/projects/asgardeo-homepage/asgardeo-homepage-2.webp",
-                                    "key": "asgardeo-homepage-2"
-                                }
-                            ],
-                            "key": "visual-research"
-                        },
-                        {
-                            "title": "Wireframing",
-                            "body": [
-                                {
-                                    "body": "I used Excalidraw to create wireframes, mainly due to its simplicity and ease of use. It allows me to quickly sketch out ideas and concepts, making it an invaluable tool for brainstorming and collaboration."
-                                }
-                            ],
-                            "images": [
-                                {
-                                    "image": "/images/projects/asgardeo-homepage/asgardeo-homepage-3.webp",
-                                    "key": "asgardeo-homepage-3"
-                                }
-                            ],
-                            "key": "wireframing"
-                        },
-                        {
-                            "title": "Prototyping",
-                            "body": [
-                                {
-                                    "body": "I used Figma to create a high-fidelity prototype of the website. The prototype was used to test the usability of the website and to gather feedback from the stakeholders. Few sample of the prototype are shown below."
-                                }
-                            ],
-                            "images": [
-                                {
-                                    "image": "/images/projects/asgardeo-homepage/asgardeo-homepage-4.webp",
-                                    "key": "asgardeo-homepage-4"
-                                }
-                            ],
-                            "key": "prototyping"
-                        },
-                        {
-                            "images": [
-                                {
-                                    "image": "/images/projects/asgardeo-homepage/asgardeo-homepage-5.webp",
-                                    "key": "asgardeo-homepage-5"
-                                }
-                            ],
-                            "key": "prototyping-1"
-                        },
-                        {
-                            "images": [
-                                {
-                                    "image": "/images/projects/asgardeo-homepage/asgardeo-homepage-6.webp",
-                                    "key": "asgardeo-homepage-6"
-                                }
-                            ],
-                            "key": "prototyping-2"
-                        }
-                    ],
-                    "key": "process"
-                }
-            ]
-        },
         {
             "key": "fabvis",
             "name": "FabVis",
@@ -279,7 +279,7 @@
                 }
             ],
             "image": "images/projects/project-fabvis.webp",
-            "cols":1,
+            "cols": 1,
             "rows": 1.5,
             "content": [
                 {
@@ -421,7 +421,7 @@
                     "key": "role"
                 }
             ],
-            "image":  "images/projects/project-iri.webp",
+            "image": "images/projects/project-iri.webp",
             "cols": 1,
             "rows": 1.5,
             "content": [
@@ -488,7 +488,7 @@
                     "key": "role"
                 }
             ],
-            "image":  "images/projects/project-advanced_column_row.webp",
+            "image": "images/projects/project-advanced_column_row.webp",
             "cols": 1,
             "rows": 1.5,
             "content": [
@@ -550,7 +550,7 @@
                     "key": "role"
                 }
             ],
-            "image":  "images/projects/project-organic.webp",
+            "image": "images/projects/project-organic.webp",
             "cols": 1,
             "rows": 1.5,
             "content": [
@@ -658,7 +658,7 @@
                     "key": "role"
                 }
             ],
-            "image":  "images/projects/project-streamify.webp",
+            "image": "images/projects/project-streamify.webp",
             "cols": 1,
             "rows": 1.5,
             "content": [
@@ -683,13 +683,12 @@
                         },
                         {
                             "body": "4. Responsive design for different screen sizes",
-                            "key": "feature-4"  
+                            "key": "feature-4"
                         },
                         {
                             "body": "As always the project will be started with an initial design phase. The design phase will be discussed in the next steps.",
                             "key": "overview-2"
                         }
-
                     ],
                     "key": "overview"
                 },
@@ -716,7 +715,6 @@
                                 }
                             ],
                             "images": [
-
                                 {
                                     "image": "/images/projects/streamify/streamify-4.webp",
                                     "key": "streamify-4"
@@ -824,7 +822,7 @@
                     "key": "role"
                 }
             ],
-            "image":  "images/projects/project-privacy.webp",
+            "image": "images/projects/project-privacy.webp",
             "cols": 1,
             "rows": 1.5,
             "content": [
@@ -869,7 +867,7 @@
         {
             "key": "other",
             "name": "Other Projects",
-            "image":  "images/projects/project-passion.webp",
+            "image": "images/projects/project-passion.webp",
             "cols": 2,
             "rows": 1.5,
             "content": [
