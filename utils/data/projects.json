@@ -1,7 +1,7 @@
 {
     "pageTitle": "Projects",
     "projects": [
-                {
+        {
             "key": "asgardeo-homepage",
             "name": "Redesign of Asgardeo Homepage and User Registration Flow",
             "role": "UI/UX Designer",
@@ -151,7 +151,7 @@
                 }
             ],
             "image": "images/projects/project-atm.webp",
-            "cols": 2,
+            "cols": 1,
             "rows": 1.5,
             "content": [
                 {
@@ -251,6 +251,99 @@
                     "presentations": [
                         {
                             "link": "https://www.canva.com/design/DAEl9KetVkQ/view?embed"
+                        }
+                    ],
+                    "key": "presentation"
+                }
+            ]
+        },
+        {
+            "key": "branding_login_ai",
+            "name": "Branding and Login AI for Asgardeo",
+            "role": "UI/UX Designer",
+            "overview": [
+                {
+                    "title": "Duration",
+                    "body": "2024 Apr - 2024 Aug",
+                    "key": "duration"
+                },
+                {
+                    "title": "Sector",
+                    "body": "Identity and Access Management",
+                    "key": "sector"
+                },
+                {
+                    "title": "My Role",
+                    "body": "UI/UX Designer",
+                    "key": "role"
+                }
+            ],
+            "image": "images/projects/project-branding_and_login_ai.webp",
+            "cols": 1,
+            "rows": 1.5,
+            "content": [
+                {
+                    "title": "Project Goals and Objectives",
+                    "body": "I was a part of the design team behind Asgardeo's first AI features —'Login Flow AI' and 'Branding AI.' The goal was to create a seamless and personalized user experience by using AI to predict user preferences and tailor the login process and retrive the branding information accordingly from their company website.",
+                    "images": [
+                        {
+                            "image": "/images/projects/branding_and_login/branding_and_login-2.webp",
+                            "key": "aibl-1"
+                        },
+                        {
+                            "image": "/images/projects/branding_and_login/branding_and_login-1.webp",
+                            "key": "aibl-1"
+                        }
+                    ],
+                    "links": [
+                        {
+                            "title": "Login Flow AI",
+                            "link": "https://wso2.com/asgardeo/docs/guides/authentication/login-flow-ai/"
+                        },
+                        {
+                            "title": "Branding AI",
+                            "link": "https://wso2.com/asgardeo/docs/guides/branding/branding-ai/"
+                        }
+                    ],
+                    "key": "overview"
+                },
+                {
+                    "title": "Process Followed",
+                    "body": [
+                        {
+                            "title": "Research",
+                            "body": "One of my main responsibilities was to conduct research on the current state of AI in user experience design. I looked at existing AI-powered applications like Samsung AI and Apple AI and analyzed their user interfaces and user experiences. This helped me to identify the best practices and trends in AI design, and how can we bring a similar experience to an identity and access management platform.",
+                            "key": "research"
+                        },
+                        {
+                            "title": "User Stories and User Journeys",
+                            "body": "After the research, I worked on creating the user stories and user journeys for the AI features. I collaborated with the development team to understand the technical limitations and possibilities of the AI features. This helped us to create a design that was feasible and aligned with the technical capabilities of the platform.",
+                            "key": "user-stories"
+                        },
+                        {
+                            "title": "Wireframing and Prototyping",
+                            "body": "The team which comprises of developers and lead designer worked on creating the wireframes and prototypes for the AI features. We used Excalidraw to create the wireframes and Figma to create the prototypes. The prototypes were used to test the usability of the AI features and to gather feedback from the internal stakeholders.",
+                            "key": "user-stories"
+                        }
+                    ],
+                    "key": "process"
+                },
+                {
+                    "title": "Outcome",
+                    "body": "These features were the first of their kind in the identity and access management industry, and they were well received by the users. The team was able to deliver the features on time and within the budget."
+                },
+                {
+                    "title": "View Presentation",
+                    "body": "These features were presented in the WSO2 Con 2024. The presentation that follows goes into great detail regarding the project. For further information, you can refer to this presentation.",
+                    "links": [
+                        {
+                            "title": "It's Time to Go Platformless!",
+                            "link": "https://wso2.com/library/conference/2024/05/its-time-to-go-platformless/"
+                        }
+                    ],
+                    "presentations": [
+                        {
+                            "link": "https://www.youtube.com/embed/aiZXExd3tjo?si=VQHjSIkunf0DtHFn&amp;start=2597"
                         }
                     ],
                     "key": "presentation"
