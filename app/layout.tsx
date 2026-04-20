@@ -70,6 +70,11 @@ export const metadata: Metadata = {
     creator: "@AchinthaIs47441",
   },
   robots: { index: true, follow: true },
+  icons: {
+    icon: [{ url: "/favicon.webp", type: "image/webp" }],
+    shortcut: "/favicon.webp",
+    apple: "/favicon.webp",
+  },
 };
 
 /**

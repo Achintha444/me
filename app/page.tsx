@@ -7,7 +7,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Achintha Isuru — Front-end Developer & UI/UX Designer",
+  title: "Achintha Isuru — Bridging Design and Development",
   description:
     "Portfolio of Achintha Isuru — bridging design and development with Flutter, React, and Next.js.",
 };
