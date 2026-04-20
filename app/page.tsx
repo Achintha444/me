@@ -1,6 +1,7 @@
 import { HeroSceneWrapper } from "@/components/HeroSceneWrapper";
 import { ScrollReveal } from "@/components/ScrollReveal";
 import { getIndexData, getProjectsData } from "@/lib/content";
+import { getMediumPosts } from "@/lib/medium";
 import type { ContactIcon } from "@/lib/types";
 import type { Metadata } from "next";
 import Image from "next/image";
@@ -25,18 +26,23 @@ const TECH_STACK = [
 /** Maximum number of projects shown on the home page. */
 const RECENT_PROJECTS_LIMIT = 3;
 
+/** Maximum number of blog posts shown on the home page. */
+const RECENT_POSTS_LIMIT = 3;
+
 /**
  * Home page — server component.
- * Renders the hero, about snippet, recent projects, and contact sections.
- * Hover states are applied via CSS utility classes (no JS event handlers).
+ * Renders the hero, about snippet, recent projects, recent writing, and
+ * contact sections. Hover states are applied via CSS utility classes.
  */
-export default function HomePage() {
+export default async function HomePage() {
   const indexData = getIndexData();
   const projectsData = getProjectsData();
+  const allPosts = await getMediumPosts();
 
   const aboutSection = indexData.content.find((s) => s.id === 2);
   const contactSection = indexData.content.find((s) => s.id === 6);
   const recentProjects = projectsData.projects.slice(0, RECENT_PROJECTS_LIMIT);
+  const recentPosts = allPosts.slice(0, RECENT_POSTS_LIMIT);
 
   const contactIcons = contactSection?.icons as ContactIcon[] | undefined;
 
@@ -498,6 +504,182 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* ── Recent Writing ──────────────────────────────────────────────── */}
+      {recentPosts.length > 0 && (
+        <section
+          aria-labelledby="writing-heading"
+          style={{
+            paddingBlock: "var(--section-py)",
+            borderBottom: "1px solid var(--color-ink-faint)",
+          }}
+        >
+          <div className="container-content">
+            <div
+              style={{
+                display: "flex",
+                alignItems: "baseline",
+                justifyContent: "space-between",
+                marginBottom: "var(--space-8)",
+                flexWrap: "wrap",
+                gap: "var(--space-2)",
+              }}
+            >
+              <ScrollReveal>
+                <div>
+                  <p
+                    style={{
+                      fontFamily: "var(--font-mono)",
+                      fontSize: "var(--text-xs)",
+                      color: "var(--color-ink-muted)",
+                      textTransform: "uppercase",
+                      letterSpacing: "0.12em",
+                      marginBottom: "0.5rem",
+                    }}
+                  >
+                    Writing
+                  </p>
+                  <h2
+                    id="writing-heading"
+                    style={{
+                      fontFamily: "var(--font-display)",
+                      fontSize: "var(--text-3xl)",
+                      color: "var(--color-ink)",
+                      fontWeight: 400,
+                    }}
+                  >
+                    From the Blog
+                  </h2>
+                </div>
+              </ScrollReveal>
+
+              <ScrollReveal delay={80}>
+                <Link
+                  href="/blog"
+                  className="hover-accent"
+                  style={{
+                    fontFamily: "var(--font-body)",
+                    fontSize: "var(--text-sm)",
+                    color: "var(--color-accent)",
+                    fontWeight: 500,
+                    textDecorationLine: "underline",
+                    textDecorationColor: "var(--color-accent)",
+                    textUnderlineOffset: "4px",
+                  }}
+                >
+                  View all →
+                </Link>
+              </ScrollReveal>
+            </div>
+
+            <ul
+              role="list"
+              aria-label="Recent blog posts"
+              className="blog-grid"
+            >
+              {recentPosts.map((post, i) => (
+                <li key={post.url}>
+                  <ScrollReveal delay={i * 80}>
+                    <a
+                      href={post.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="project-card"
+                      aria-label={`Read "${post.title}" on Medium`}
+                      style={{
+                        display: "block",
+                        border: "1px solid var(--color-ink-faint)",
+                        borderRadius: "var(--radius-lg)",
+                        overflow: "hidden",
+                        backgroundColor: "var(--color-paper-raised)",
+                        textDecoration: "none",
+                        color: "inherit",
+                        height: "100%",
+                      }}
+                    >
+                      {post.heroImage && (
+                        <div
+                          style={{
+                            position: "relative",
+                            aspectRatio: "16/9",
+                            backgroundColor: "var(--color-accent-dim)",
+                            overflow: "hidden",
+                          }}
+                        >
+                          <Image
+                            src={post.heroImage}
+                            alt={post.title}
+                            fill
+                            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                            style={{ objectFit: "cover" }}
+                          />
+                        </div>
+                      )}
+                      <div style={{ padding: "var(--space-4)" }}>
+                        <div
+                          style={{
+                            display: "flex",
+                            alignItems: "center",
+                            gap: "var(--space-2)",
+                            marginBottom: "0.5rem",
+                            flexWrap: "wrap",
+                          }}
+                        >
+                          <span
+                            style={{
+                              fontFamily: "var(--font-mono)",
+                              fontSize: "var(--text-xs)",
+                              color: "var(--color-accent)",
+                              textTransform: "uppercase",
+                              letterSpacing: "0.08em",
+                            }}
+                          >
+                            Medium
+                          </span>
+                          {post.publishedFormatted && (
+                            <>
+                              <span
+                                aria-hidden="true"
+                                style={{
+                                  color: "var(--color-ink-faint)",
+                                  fontSize: "var(--text-xs)",
+                                }}
+                              >
+                                ·
+                              </span>
+                              <time
+                                dateTime={post.publishedAt}
+                                style={{
+                                  fontFamily: "var(--font-mono)",
+                                  fontSize: "var(--text-xs)",
+                                  color: "var(--color-ink-muted)",
+                                }}
+                              >
+                                {post.publishedFormatted}
+                              </time>
+                            </>
+                          )}
+                        </div>
+                        <h3
+                          style={{
+                            fontFamily: "var(--font-display)",
+                            fontSize: "var(--text-xl)",
+                            color: "var(--color-ink)",
+                            fontWeight: 400,
+                            lineHeight: 1.3,
+                          }}
+                        >
+                          {post.title}
+                        </h3>
+                      </div>
+                    </a>
+                  </ScrollReveal>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </section>
+      )}
 
       {/* ── Contact ───────────────────────────────────────────────────── */}
       <section
