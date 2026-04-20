@@ -1,0 +1,1023 @@
+{
+    "pageTitle": "Projects",
+    "projects": [
+        {
+            "key": "asgardeo-homepage",
+            "name": "Redesign of Asgardeo Homepage and User Registration Flow",
+            "role": "UI/UX Designer",
+            "overview": [
+                {
+                    "title": "Duration",
+                    "body": "2024 Jun - 2024 Aug",
+                    "key": "duration"
+                },
+                {
+                    "title": "Sector",
+                    "body": "Identity and Access Management : Asgardeo(WSO2)",
+                    "key": "sector"
+                },
+                {
+                    "title": "My Role",
+                    "body": "UI/UX Designer",
+                    "key": "role"
+                }
+            ],
+            "image": "images/projects/project-asgardeo-homepage.webp",
+            "cols": 2,
+            "rows": 1.5,
+            "content": [
+                {
+                    "title": "Overview",
+                    "body": "During my time at WSO2 I got the oppurtunity to work on the redesign of the Asgardeo homepage and user registration flow. The goal of this project was to improve the user experience and make it easier for users to sign up and start using the platform. ",
+                    "key": "overview"
+                },
+                {
+                    "title": "Process",
+                    "body": [
+                        {
+                            "title": "User Research",
+                            "body": [
+                                {
+                                    "body": "Before starting the design process, I conducted user research to understand the needs and pain points of our users. To do that I first create a set of personas and then conducted surveys and interviews with users to gather feedback on the current homepage and user registration flow."
+                                },
+                                {
+                                    "body": "After gathering the feedback, I created a set of user journeys to visualize the user flow and identify areas for improvement. Other than that I also created a set of user stories to understand the user needs and goals."
+                                }
+                            ],
+                            "images": [
+                                {
+                                    "image": "/images/projects/asgardeo-homepage/asgardeo-homepage-1.webp",
+                                    "key": "asgardeo-homepage-1"
+                                }
+                            ],
+                            "key": "user-research"
+                        },
+                        {
+                            "title": "Visual Research",
+                            "body": [
+                                {
+                                    "body": "To create a design that resonates with our users, I conducted visual research to understand the current design trends and what our users are interested in. I created a mood board to gather inspiration and then created a set of design concepts to test different design directions."
+                                },
+                                {
+                                    "body": "After that I also researched the competitors to understand their design and user experience. This helped me to identify areas where we could differentiate ourselves and create a unique design."
+                                },
+                                {
+                                    "body": "Then I created an information architecture to organize the content and functionality of the website. This helped me to create a clear and intuitive navigation and layout."
+                                },
+                                {
+                                    "body": "Finally, I created a site map to visualize the structure of the website and ensure that all the pages were connected and accessible."
+                                }
+                            ],
+                            "images": [
+                                {
+                                    "image": "/images/projects/asgardeo-homepage/asgardeo-homepage-2.webp",
+                                    "key": "asgardeo-homepage-2"
+                                }
+                            ],
+                            "key": "visual-research"
+                        },
+                        {
+                            "title": "Wireframing",
+                            "body": [
+                                {
+                                    "body": "I used Excalidraw to create wireframes, mainly due to its simplicity and ease of use. It allows me to quickly sketch out ideas and concepts, making it an invaluable tool for brainstorming and collaboration."
+                                }
+                            ],
+                            "images": [
+                                {
+                                    "image": "/images/projects/asgardeo-homepage/asgardeo-homepage-3.webp",
+                                    "key": "asgardeo-homepage-3"
+                                }
+                            ],
+                            "key": "wireframing"
+                        },
+                        {
+                            "title": "Prototyping",
+                            "body": [
+                                {
+                                    "body": "I used Figma to create a high-fidelity prototype of the website. The prototype was used to test the usability of the website and to gather feedback from the stakeholders. Few sample of the prototype are shown below."
+                                }
+                            ],
+                            "images": [
+                                {
+                                    "image": "/images/projects/asgardeo-homepage/asgardeo-homepage-4.webp",
+                                    "key": "asgardeo-homepage-4"
+                                }
+                            ],
+                            "key": "prototyping"
+                        },
+                        {
+                            "images": [
+                                {
+                                    "image": "/images/projects/asgardeo-homepage/asgardeo-homepage-5.webp",
+                                    "key": "asgardeo-homepage-5"
+                                }
+                            ],
+                            "key": "prototyping-1"
+                        },
+                        {
+                            "images": [
+                                {
+                                    "image": "/images/projects/asgardeo-homepage/asgardeo-homepage-6.webp",
+                                    "key": "asgardeo-homepage-6"
+                                }
+                            ],
+                            "key": "prototyping-2"
+                        }
+                    ],
+                    "key": "process"
+                }
+            ]
+        },
+        {
+            "key": "atm",
+            "name": "A New User Interface Concept for ATM’s to Reduce Receipt Wastage",
+            "role": "UI/UX Designer",
+            "overview": [
+                {
+                    "title": "Duration",
+                    "body": "2021 Jan - 2021 Aug",
+                    "key": "duration"
+                },
+                {
+                    "title": "Sector",
+                    "body": "Urban Development",
+                    "key": "sector"
+                },
+                {
+                    "title": "My Role",
+                    "body": "UI/UX Designer",
+                    "key": "role"
+                }
+            ],
+            "image": "images/projects/project-atm.webp",
+            "cols": 1,
+            "rows": 1.5,
+            "content": [
+                {
+                    "title": "Project Goals and Objectives",
+                    "body": "We've all used ATMs at some point in our lives. Most of the time, we find that the garbage cans at ATM locations are overflowing with meaningless receipts that consumers have requested. That is what inspired me to work on this design project. The objective of this project is to reduce receipt wastage at ATMs by designing a new user interface that would limit the amount of unnecessary receipts issued.",
+                    "images": [
+                        {
+                            "image": "/images/projects/ATM/accom-4.webp",
+                            "key": "atm-4"
+                        }
+                    ],
+                    "key": "overview"
+                },
+                {
+                    "title": "Process Followed",
+                    "body": [
+                        {
+                            "title": "Research",
+                            "body": "First, I conducted research to understand why people are printing excess receipts, even when they don not need them. This search lead to a research done by the University of Sussex, where it mentioned that the typical questions like 'Do you want a receipt?' YES/NO are susceptible to acquiescence bias, which is a cognitive bias that causes people to answer 'yes' to questions that they would not have answered 'yes' to if they were not asked. This is because people tend to avoid saying 'no' to requests, even if they don't want to.",
+                            "links": [
+                                {
+                                    "title": "Read the research paper here",
+                                    "link": "https://journals.sagepub.com/doi/abs/10.1177/0022022103260380?journalCode=jcca"
+                                },
+                                {
+                                    "link": "https://www.qualtrics.com/blog/avoiding-the-yes-bias/",
+                                    "title": "Read more about acquiescence bias here"
+                                }
+                            ],
+                            "key": "research"
+                        },
+                        {
+                            "title": "Solution Design",
+                            "body": "After the research, I designed a new user interface to avoid acquiescence bias. The new interface would be in the default state of receipt is not issued, and the user would only be able to request a receipt if they explicitly choose to do so, by making use Fitts' and von Restroff's laws. You can view the solution below.",
+                            "images": [
+                                {
+                                    "image": "/images/projects/ATM/atm-org.webp",
+                                    "key": "atm-1"
+                                },
+                                {
+                                    "image": "/images/projects/ATM/atm-prop.webp",
+                                    "key": "atm-2"
+                                }
+                            ],
+                            "key": "solution"
+                        },
+                        {
+                            "title": "User Testing",
+                            "body": [
+                                {
+                                    "body": "After the solution design, I wanted to test the design. But with the Covid pandemic and tighter regulations within banks, I was not able to run a mock version of our solution on an actual ATM machine. Instead, I created a web-based simulation in order to collect data on user behavior. Although the web simulation does not actually “print” a receipt and the user might be biased by this information, but we can assume this bias affects both original and new interfaces equally. Hence given the circumstances, the results of the web simulation are still valid."
+                                },
+                                {
+                                    "body": "In the test every user who visits the website will get the same set of interfaces in the same order similar to a regular ATM transaction, except for the new interface, a user has a 50% probability of seeing either the proposed new interface or the original interface. Also several restrictions were done to make sure a user completed the test only once."
+                                },
+                                {
+                                    "body": "153 users participated in the test, and you can view the test from below. The results show that 52% of users who encountered the original interface requested a receipt whereas only 26% of the users who encountered the new interface did the same. This means that 74% of the users rejected receipt in the new interface. This is a significant improvement from the original interface."
+                                }
+                            ],
+                            "images": [
+                                {
+                                    "image": "/images/projects/ATM/accom-6.webp",
+                                    "key": "atm-6"
+                                }
+                            ],
+                            "key": "testing"
+                        }
+                    ],
+                    "key": "process"
+                },
+                {
+                    "title": "Outcome",
+                    "body": "With the above result we can conclude that the proposed solution is effective in reducing the number of users requesting receipts. This is because the new interface is designed to avoid acquiescence bias by making the receipt request an explicit action. Also this solution cost-effective and sustainable compared to alternatives like `SMS receipts` and `Email receipts`. More details about this can be found in the presentation below."
+                },
+                {
+                    "title": "Accomplishments",
+                    "body": "I competed in two competitions: the 'Stanford Design Challenge' organized by the Stanford University in the United States and the 'IET 150 & Beyond' hosted by the Sri Lankan IET Young Professionals chapter. Despite failing to reach the finals of the first competition, I was able to win the second competition by successfully utilizing the feedback I received.",
+                    "images": [
+                        {
+                            "image": "/images/projects/ATM/accom-1.webp",
+                            "key": "atm-3"
+                        },
+                        {
+                            "image": "/images/projects/ATM/accom-2.webp",
+                            "key": "atm-4"
+                        },
+                        {
+                            "image": "/images/projects/ATM/accom-3.webp",
+                            "key": "atm-5"
+                        }
+                    ],
+                    "key": "accomplishments"
+                },
+                {
+                    "title": "View Presentation",
+                    "body": "The presentation that follows goes into great detail regarding the project. For further information, you can refer to this presentation.",
+                    "presentations": [
+                        {
+                            "link": "https://www.canva.com/design/DAEl9KetVkQ/view?embed"
+                        }
+                    ],
+                    "key": "presentation"
+                }
+            ]
+        },
+        {
+            "key": "branding_login_ai",
+            "name": "Branding and Login AI for Asgardeo",
+            "role": "UI/UX Designer",
+            "overview": [
+                {
+                    "title": "Duration",
+                    "body": "2024 Apr - 2024 Aug",
+                    "key": "duration"
+                },
+                {
+                    "title": "Sector",
+                    "body": "Identity and Access Management",
+                    "key": "sector"
+                },
+                {
+                    "title": "My Role",
+                    "body": "UI/UX Designer",
+                    "key": "role"
+                }
+            ],
+            "image": "images/projects/project-branding_and_login_ai.webp",
+            "cols": 1,
+            "rows": 1.5,
+            "content": [
+                {
+                    "title": "Project Goals and Objectives",
+                    "body": "I was a part of the design team behind Asgardeo's first AI features —'Login Flow AI' and 'Branding AI.' The goal was to create a seamless and personalized user experience by using AI to predict user preferences and tailor the login process and retrive the branding information accordingly from their company website.",
+                    "images": [
+                        {
+                            "image": "/images/projects/branding_and_login/branding_and_login-2.webp",
+                            "key": "aibl-1"
+                        },
+                        {
+                            "image": "/images/projects/branding_and_login/branding_and_login-1.webp",
+                            "key": "aibl-1"
+                        }
+                    ],
+                    "links": [
+                        {
+                            "title": "Login Flow AI",
+                            "link": "https://wso2.com/asgardeo/docs/guides/authentication/login-flow-ai/"
+                        },
+                        {
+                            "title": "Branding AI",
+                            "link": "https://wso2.com/asgardeo/docs/guides/branding/branding-ai/"
+                        }
+                    ],
+                    "key": "overview"
+                },
+                {
+                    "title": "Process Followed",
+                    "body": [
+                        {
+                            "title": "Research",
+                            "body": "One of my main responsibilities was to conduct research on the current state of AI in user experience design. I looked at existing AI-powered applications like Samsung AI and Apple AI and analyzed their user interfaces and user experiences. This helped me to identify the best practices and trends in AI design, and how can we bring a similar experience to an identity and access management platform.",
+                            "key": "research"
+                        },
+                        {
+                            "title": "User Stories and User Journeys",
+                            "body": "After the research, I worked on creating the user stories and user journeys for the AI features. I collaborated with the development team to understand the technical limitations and possibilities of the AI features. This helped us to create a design that was feasible and aligned with the technical capabilities of the platform.",
+                            "key": "user-stories"
+                        },
+                        {
+                            "title": "Wireframing and Prototyping",
+                            "body": "The team which comprises of developers and lead designer worked on creating the wireframes and prototypes for the AI features. We used Excalidraw to create the wireframes and Figma to create the prototypes. The prototypes were used to test the usability of the AI features and to gather feedback from the internal stakeholders.",
+                            "key": "user-stories"
+                        }
+                    ],
+                    "key": "process"
+                },
+                {
+                    "title": "Outcome",
+                    "body": "These features were the first of their kind in the identity and access management industry, and they were well received by the users. The team was able to deliver the features on time and within the budget."
+                },
+                {
+                    "title": "View Presentation",
+                    "body": "These features were presented in the WSO2 Con 2024. The presentation that follows goes into great detail regarding the project. For further information, you can refer to this presentation.",
+                    "links": [
+                        {
+                            "title": "It's Time to Go Platformless!",
+                            "link": "https://wso2.com/library/conference/2024/05/its-time-to-go-platformless/"
+                        }
+                    ],
+                    "presentations": [
+                        {
+                            "link": "https://www.youtube.com/embed/aiZXExd3tjo?si=VQHjSIkunf0DtHFn&amp;start=2597"
+                        }
+                    ],
+                    "key": "presentation"
+                }
+            ]
+        },
+        {
+            "key": "fabvis",
+            "name": "FabVis",
+            "role": "UI/UX Designer",
+            "overview": [
+                {
+                    "title": "Duration",
+                    "body": "2021 Jun – 2021 Sep",
+                    "key": "duration"
+                },
+                {
+                    "title": "Sector",
+                    "body": "Textile",
+                    "key": "sector"
+                },
+                {
+                    "title": "My Role",
+                    "body": "UI/UX Designer",
+                    "key": "role"
+                }
+            ],
+            "image": "images/projects/project-fabvis.webp",
+            "cols": 1,
+            "rows": 1.5,
+            "content": [
+                {
+                    "title": "Project Goals and Objectives",
+                    "body": "The FABVIS (Vision-Based Fabric Defect Detection) project, is a pioneering creation by the Intellisense Lab within the Department of Computer Science and Engineering at the University of Moratuwa, Sri Lanka. The main goal of this project to automate the defect finding process in the textile industry. The project aims to provide a solution that can be integrated into existing textile manufacturing processes to improve efficiency and reduce costs.",
+                    "key": "overview"
+                },
+                {
+                    "title": "My Role",
+                    "body": " In this project my role was focused on designing the web dashboard to streamline efficient configuration and provide access to the fabric detection system's settings to the textile engineers.",
+                    "key": "role"
+                },
+                {
+                    "title": "Process",
+                    "body": [
+                        {
+                            "title": "Research",
+                            "body": "The first step in the project was to conduct research on the textile industry and the current methods used for defect detection. This research helped me to understand the challenges faced by the industry and understand the requirements of the end-users.",
+                            "key": "research"
+                        },
+                        {
+                            "title": "Wireframing",
+                            "body": "After the research phase, I created wireframes for the web dashboard. The wireframes helped me to visualize the layout and structure of the dashboard and identify areas where the user interface could be improved. After getting the stakholders approval, I moved on to the next phase of the project.",
+                            "images": [
+                                {
+                                    "image": "/images/projects/fabvis/fabvis-9.webp",
+                                    "key": "fabvis-9"
+                                },
+                                {
+                                    "image": "/images/projects/fabvis/fabvis-10.webp",
+                                    "key": "fabvis-10"
+                                },
+                                {
+                                    "image": "/images/projects/fabvis/fabvis-11.webp",
+                                    "key": "fabvis-11"
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Design Iterations",
+                            "body": "Before finalizing the final design, we had a few design iterations. After each iteration, we gathered feedback from the stakeholders and made necessary changes to the design. This process helped us to create a design that met the requirements of the end-users and was visually appealing.",
+                            "images": [
+                                {
+                                    "image": "/images/projects/fabvis/fabvis-1.webp",
+                                    "key": "fabvis-4"
+                                },
+                                {
+                                    "image": "/images/projects/fabvis/fabvis-4.webp",
+                                    "key": "fabvis-5"
+                                },
+                                {
+                                    "image": "/images/projects/fabvis/fabvis-5.webp",
+                                    "key": "fabvis-6"
+                                },
+                                {
+                                    "image": "/images/projects/fabvis/fabvis-6.webp",
+                                    "key": "fabvis-7"
+                                }
+                            ],
+                            "key": "design"
+                        },
+                        {
+                            "title": "Design",
+                            "body": "The next phase of the project was to design the web dashboard. I used the Figma design tool to create a visually appealing and user-friendly interface. The design included a clean and simple layout, intuitive navigation, and clear typography. I also included interactive elements such as buttons and dropdown menus to make the dashboard more interactive.",
+                            "images": [
+                                {
+                                    "image": "/images/projects/fabvis/fabvis-2.webp",
+                                    "key": "fabvis-1"
+                                },
+                                {
+                                    "image": "/images/projects/fabvis/fabvis-3.webp",
+                                    "key": "fabvis-2"
+                                }
+                            ],
+                            "key": "design"
+                        }
+                    ],
+                    "images": [
+                        {
+                            "image": "/images/projects/fabvis/fabvis-7.webp",
+                            "key": "fabvis-7"
+                        },
+                        {
+                            "image": "/images/projects/fabvis/fabvis-8.webp",
+                            "key": "fabvis-8"
+                        }
+                    ],
+                    "key": "process"
+                },
+                {
+                    "title": "Challenges Faced",
+                    "body": "One of the main challenges I faced was the strict time frame of the project. To address this, I used milestone planning and consistent stakeholder engagement. Regular feedback loops ensured design iterations aligned with the stakeholders needs, leading to a punctual project completion.",
+                    "key": "challenges"
+                },
+                {
+                    "title": "Accomplishments",
+                    "body": "Recently the project obtained a Patent Cooperation Treaty (PCT) with an International Search Report (ISR) indicating novelty in 100% of its claims, and currently it’s getting prepared for the commercialization by the IntelliSense Lab.",
+                    "links": [
+                        {
+                            "title": "More Information about the Patent Cooperation Treaty and commercialization of the product.",
+                            "link": "https://uom.lk/sites/default/files/news_letter/july%20-%20august%202023.pdf"
+                        }
+                    ],
+                    "key": "accomplishments"
+                },
+                {
+                    "title": "More Information",
+                    "body": "For a comprehensive exploration of project details, I encourage you to watch the videos below. The second video, while in Sinhala, offers detailed insights into the project's development and features.",
+                    "presentations": [
+                        {
+                            "link": "https://www.youtube.com/embed/bPJwYzVxxr4"
+                        },
+                        {
+                            "link": "https://www.youtube.com/embed/GwylMWO-FOI"
+                        }
+                    ],
+                    "key": "more-info"
+                }
+            ]
+        },
+        {
+            "key": "iri",
+            "name": "International Roughness Index (IRI) Calculation of Sri Lankan Roads Using Crowdsourcing Techniques",
+            "role": "Mobile Application Developer and UI/UX Designer",
+            "overview": [
+                {
+                    "title": "Duration",
+                    "body": "2021 Apr – 2022 Mar",
+                    "key": "duration"
+                },
+                {
+                    "title": "Sector",
+                    "body": "Urban Development",
+                    "key": "sector"
+                },
+                {
+                    "title": "My Role",
+                    "body": "Mobile Application Developer and UI/UX Designer",
+                    "key": "role"
+                }
+            ],
+            "image": "images/projects/project-iri.webp",
+            "cols": 1,
+            "rows": 1.5,
+            "content": [
+                {
+                    "title": "Overview",
+                    "body": "A well-maintained road network is an important component of long-term urban development of a country. Researchers have proposed smartphone-based crowdsourced applications as a low-cost effective approach to obtaining frequent road surface quality updates over the last few years. The values show large fluctuations over the conditions under which the road data was collected, which is one of the key drawbacks of these applications. Through this project, we created a road roughness monitoring platform based on passenger cars that can generate reliable findings while minimizing the impact of variables such as car type, smartphone model, or location. Among the features of the created system include automatic travel detection, the ability to use any smartphone in any location with or without an active internet connection, combining information from various sources, and viewing them on a virtual map. This study also proposes a complete system to identify and classify road anomalies from crowd-sensed smartphone data adjusting to different vehicle speeds and other characteristics. A set of field tests were carried out to evaluate the proposed system and the results show that the proposed solution is effective in predicting accurate International Roughness Index (IRI) values and road anomalies after reducing the effect of these varying factors.",
+                    "key": "overview"
+                },
+                {
+                    "title": "Process",
+                    "body": "As the first step, we had to design a mobile application for gathering traffic data. To generate ideas for this, we examined previous map-based mobile applications. Next, we created a prototype of the mobile application, starting with some wireframes. Afterwards, we used Android to develop the application. While this is phase is moving on, the machine learning model to calculate the IRI value was also been developed as well. We conducted testing on the mobile application and made adjustments based on the results. Due to resource constraints, we were only able to perform a few basic user tests of the application. Following that phase, we developed the web application to display the results. While I primarily focused on developing the mobile application, my partner took the lead in developing the majority of the web dashboard and the machine learning model.",
+                    "key": "process"
+                },
+                {
+                    "title": "Challenges Faced",
+                    "body": "During the project, we encountered several challenges. The first hurdle was the insufficient amount of data available for training the machine learning model. To address this challenge, we employed appropriate pre-processing techniques and, when feasible, applied fuzzy logic inference. Another problem was that the initial version of the mobile application significantly drained the user's battery. To mitigate this, we reduced the rate of data collection through the mobile application. While there were numerous other challenges along the way, we effectively tackled them and managed to complete the project within the specified time frame.",
+                    "key": "challenges"
+                },
+                {
+                    "title": "Accomplishments",
+                    "body": "Based on this project, we submitted two research papers. The first is to the 'International Journal of Intelligent Transportation System Research', with the title 'Measuring Road Roughness through Crowdsourcing while Minimizing the Conditional Effects' The other is titled 'Identification of Road Surface Anomalies Using Crowdsourced Smartphone Sensor Data' and is presented at ICTer 2022. We also took part in the Stanford University, USA, Longevity Design Challenge.",
+                    "links": [
+                        {
+                            "title": "Measuring Road Roughness through Crowdsourcing while Minimizing the Conditional Effects - Research Paper",
+                            "link": "https://link.springer.com/article/10.1007/s13177-022-00312-6"
+                        },
+                        {
+                            "title": "Identification of Road Surface Anomalies Using Crowdsourced Smartphone Sensor Data - Research Paper",
+                            "link": "https://ieeexplore.ieee.org/document/10024097"
+                        }
+                    ],
+                    "key": "accomplishments"
+                },
+                {
+                    "title": "View Presentation",
+                    "body": "The presentation that follows goes into great detail regarding the project. For further information of this project, you can refer to this presentation.",
+                    "presentations": [
+                        {
+                            "link": "https://www.canva.com/design/DAE6rPJ63x8/view?embed"
+                        }
+                    ],
+                    "key": "presentation"
+                }
+            ]
+        },
+        {
+            "key": "advanced_column_row",
+            "name": "Advanced Column Row :  Flutter Package",
+            "role": "Flutter Developer",
+            "overview": [
+                {
+                    "title": "Duration",
+                    "body": "2024 Oct",
+                    "key": "duration"
+                },
+                {
+                    "title": "Sector",
+                    "body": "Mobile Application Development",
+                    "key": "sector"
+                },
+                {
+                    "title": "My Role",
+                    "body": "Flutter Developer",
+                    "key": "role"
+                }
+            ],
+            "image": "images/projects/project-advanced_column_row.webp",
+            "cols": 1,
+            "rows": 1.5,
+            "content": [
+                {
+                    "title": "Project Goals and Objectives",
+                    "body": "Advanced Column Row is a Flutter package that improves the default Column and Row widgets by adding customization options, such as padding, gap widgets, decoration, alignment, and other flexible properties. This package helps you build more visually appealing and flexible layouts in Flutter.",
+                    "key": "overview"
+                },
+                {
+                    "title": "Process",
+                    "body": [
+                        {
+                            "title": "Research",
+                            "body": "Before starting the project, I had to do some research to understand the current state of the Flutter ecosystem and the needs of developers. I looked at existing packages and libraries that provide similar functionality and analyzed their pros and cons. By doing that , I was able to identify the features and customization options that I wanted to include in my package.",
+                            "key": "research"
+                        },
+                        {
+                            "title": "Development",
+                            "body": "After the research phase, I started developing the package. I used Dart, the programming language used by Flutter, to write the code. I also used the Flutter framework to build the UI components and integrate them with the package. I made sure to test the package thoroughly to ensure that it works as expected and is stable.",
+                            "key": "development"
+                        }
+                    ]
+                },
+                {
+                    "title": "Challenges Faced",
+                    "body": "I always wanted to publish a Flutter package, but I was unsure of how to do it. I had to learn how to use the pub.dev platform and understand the process of publishing a package. I also had to make sure that my package was well-documented and easy to use for other developers. I had to spend a lot of time and effort to make sure that my package was ready for publication.",
+                    "key": "challenges"
+                },
+                {
+                    "title": "View package",
+                    "links": [
+                        {
+                            "title": "Click on this link to view the `Advanced Column Row` package",
+                            "link": "https://pub.dev/packages/advanced_column_row"
+                        }
+                    ],
+                    "key": "package"
+                }
+            ]
+        },
+        {
+            "key": "organic",
+            "name": "Organic Chemistry Conversions",
+            "role": "UI/UX Designer",
+            "overview": [
+                {
+                    "title": "Duration",
+                    "body": "2021 Feb",
+                    "key": "duration"
+                },
+                {
+                    "title": "Sector",
+                    "body": "Education",
+                    "key": "sector"
+                },
+                {
+                    "title": "My Role",
+                    "body": "UI/UX Designer",
+                    "key": "role"
+                }
+            ],
+            "image": "images/projects/project-organic.webp",
+            "cols": 1,
+            "rows": 1.5,
+            "content": [
+                {
+                    "title": "Project Goals and Objectives",
+                    "body": "Organic Chemistry Conversions is a smartphone game designed to improve the organic chemistry skills of college students. This engaging game comprises 100 levels, each challenging the players to drag and drop the appropriate chemicals into corresponding slots. Successful combinations unlock the next level, allowing players to enjoy the game while improving their knowledge on organic chemistry.",
+                    "key": "overview"
+                },
+                {
+                    "title": "My Role",
+                    "body": "In this project my role was focused on designing the game interfaces. First I created a paper wireframe, which I then translated into a digital prototype. The primary colour yellow was chosen because it symbolizes inventiveness, a key attribute required for students in solving organic chemistry problems.",
+                    "key": "role"
+                },
+                {
+                    "title": "Process",
+                    "body": [
+                        {
+                            "title": "Research",
+                            "body": "Before starting the project, I conducted research on the design of popular level-based games such as Angry Birds. This research helped me understand the design principles used in these games and user experience (UX) of these games, which I applied to the designing of Organic Chemistry Conversions.",
+                            "key": "research"
+                        },
+                        {
+                            "title": "Wireframing",
+                            "body": "I then created a paper wireframe as an initial conceptual representation of the game's interface. This wireframe was used to gather feedback from stakeholders and to refine the design. After that moved those into digital wireframes using Figma.",
+                            "key": "wireframing"
+                        },
+                        {
+                            "title": "Prototyping",
+                            "body": "After gathering feedback and refining the design, I created a digital prototype of the game using Figma. This prototype was used to test the game's functionality and to gather feedback from users. Following stakeholder presentations, the prototype transitioned to the development phase.",
+                            "key": "prototyping",
+                            "images": [
+                                {
+                                    "image": "/images/projects/organic/organic-1.webp",
+                                    "key": "organic-1"
+                                },
+                                {
+                                    "image": "/images/projects/organic/organic-2.webp",
+                                    "key": "organic-2"
+                                },
+                                {
+                                    "image": "/images/projects/organic/organic-3.webp",
+                                    "key": "organic-3"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "images": [
+                        {
+                            "image": "/images/projects/organic/organic-4.webp",
+                            "key": "organic-4"
+                        },
+                        {
+                            "image": "/images/projects/organic/organic-5.webp",
+                            "key": "organic-5"
+                        },
+                        {
+                            "image": "/images/projects/organic/organic-6.webp",
+                            "key": "organic-6"
+                        }
+                    ],
+                    "key": "process-1"
+                },
+                {
+                    "title": "Challenges Faced",
+                    "body": "The main challenge in designing the game's interface and user experience was that I had limited experience in this area. However, I was able to overcome these challenges by conducting research, gathering feedback, and refining the design by keeping the user's needs in mind and having an open line of communication with the stakeholders.",
+                    "key": "challenges"
+                },
+                {
+                    "title": "Accomplishments",
+                    "body": "While certain constraints limited our application's launch exclusively to Android users, the outcome was better than expected. The application got exceptional reviews, achieving a rating of 4.6/5.0 with over 1,000 downloads in the Google Play store in a relatively brief span. These accomplishments were attained with minimal marketing efforts, emphasizing the application's appeal and impact.",
+                    "key": "accomplishments"
+                },
+                {
+                    "title": "View application",
+                    "links": [
+                        {
+                            "title": "Click on this link to view the `Organic Chemistry Conversions` application",
+                            "link": "https://play.google.com/store/apps/details?id=com.RioraInnovations.OrganicChemistryTranslations"
+                        }
+                    ],
+                    "key": "application"
+                }
+            ]
+        },
+        {
+            "key": "streamify",
+            "name": "Streamify: Information Dashboard",
+            "role": "UI/UX Designer & Front-end Developer",
+            "overview": [
+                {
+                    "title": "Duration",
+                    "body": "2024 Sep - Present",
+                    "key": "duration"
+                },
+                {
+                    "title": "Sector",
+                    "body": "Data Visualization",
+                    "key": "sector"
+                },
+                {
+                    "title": "My Role",
+                    "body": "UI/UX Designer & Front-end Developer",
+                    "key": "role"
+                }
+            ],
+            "image": "images/projects/project-streamify.webp",
+            "cols": 1,
+            "rows": 1.5,
+            "content": [
+                {
+                    "title": "Overview",
+                    "body": [
+                        {
+                            "body": "This project was started to learn about designing and development of responsive information dashboards. The dashboard will be built using React.js and Material-UI. The dashboard is used to visualize the data from the server and provide a user-friendly interface for the users to interact with the data. This will be a single page application, with the following features:",
+                            "key": "overview-1"
+                        },
+                        {
+                            "body": "1. User authentication",
+                            "key": "feature-1"
+                        },
+                        {
+                            "body": "2. Data visualization using charts and graphs",
+                            "key": "feature-2"
+                        },
+                        {
+                            "body": "3. User-friendly interface for the users to interact with the data",
+                            "key": "feature-3"
+                        },
+                        {
+                            "body": "4. Responsive design for different screen sizes",
+                            "key": "feature-4"
+                        },
+                        {
+                            "body": "As always the project will be started with an initial design phase. The design phase will be discussed in the next steps.",
+                            "key": "overview-2"
+                        }
+                    ],
+                    "key": "overview"
+                },
+                {
+                    "title": "Process",
+                    "body": [
+                        {
+                            "title": "Wireframing",
+                            "body": [
+                                {
+                                    "body": "Since the project was started as a personal learning project no user research was done as the goal was the project on to polish my skills on designing and development of responsive information dashboards. The wireframing steps will be discussed in the next steps."
+                                },
+                                {
+                                    "body": "I used Excalidraw to create wireframes, mainly due to its simplicity and ease of use. It allows me to quickly sketch out ideas and concepts, making it an invaluable tool for brainstorming and collaboration."
+                                },
+                                {
+                                    "body": "As the first I designed the sitemap for the dashboard. The site map is a visual representation of the website's structure and layout. It helps to understand the relationship between different pages and sections of the website."
+                                },
+                                {
+                                    "body": "Then before moving in to Excalidraw, I scribbled some paper wireframes to get a better understanding of the layout and design of the dashboard."
+                                },
+                                {
+                                    "body": "After that, I started designing the wireframes for the dashboard. The wireframes were designed for both desktop and mobile devices. The wireframes were designed to be responsive and to adapt to different screen sizes."
+                                }
+                            ],
+                            "images": [
+                                {
+                                    "image": "/images/projects/streamify/streamify-4.webp",
+                                    "key": "streamify-4"
+                                }
+                            ],
+                            "key": "wireframing"
+                        },
+                        {
+                            "images": [
+                                {
+                                    "image": "/images/projects/streamify/streamify-1.webp",
+                                    "key": "streamify-1"
+                                }
+                            ],
+                            "key": "wireframing-1"
+                        },
+                        {
+                            "images": [
+                                {
+                                    "image": "/images/projects/streamify/streamify-2.webp",
+                                    "key": "streamify-2"
+                                }
+                            ],
+                            "key": "wireframing-2"
+                        },
+                        {
+                            "title": "Prototyping",
+                            "body": [
+                                {
+                                    "body": "This part of the project is still in progress. But to practise agile methodologies I decided to develop each interface that I designed in the wireframes. For prototyping I used Figma, mainly due to its simplicity and ease of use. It allows me to quickly create interactive prototypes and to test the user experience."
+                                },
+                                {
+                                    "body": "Currently I have mocked up the login interface and the overview interface. The rest of the interfaces will be mocked up in the next steps."
+                                }
+                            ],
+                            "key": "prototyping"
+                        },
+                        {
+                            "images": [
+                                {
+                                    "image": "/images/projects/streamify/streamify-5.webp",
+                                    "key": "streamify-5"
+                                },
+                                {
+                                    "image": "/images/projects/streamify/streamify-7.webp",
+                                    "key": "streamify-7"
+                                }
+                            ],
+                            "key": "prototyping-1"
+                        },
+                        {
+                            "images": [
+                                {
+                                    "image": "/images/projects/streamify/streamify-8.webp",
+                                    "key": "streamify-5"
+                                },
+                                {
+                                    "image": "/images/projects/streamify/streamify-9.webp",
+                                    "key": "streamify-7"
+                                }
+                            ],
+                            "key": "prototyping-2"
+                        },
+                        {
+                            "title": "Development",
+                            "body": [
+                                {
+                                    "body": "As mentioned above, prototyping and development will be done in parallel. For the development part, I am using React.js and Material-UI. The dashboard is built using React.js and Material-UI. This site will be hosted in Vercel."
+                                },
+                                {
+                                    "body": "Note: Since this is a demo application, you can use the following credentials to log in. Use 'test@streamify.com' as the username and 'Test@123' as the password."
+                                }
+                            ],
+                            "links": [
+                                {
+                                    "title": "View site",
+                                    "link": "https://streamify-gilt.vercel.app/"
+                                }
+                            ],
+                            "key": "development"
+                        }
+                    ],
+                    "key": "process"
+                }
+            ]
+        },
+        {
+            "key": "privacy",
+            "name": "Automated Categorization of Privacy Policies Based on User Perspective",
+            "role": "Mobile Application Developer and UI/UX Designer",
+            "overview": [
+                {
+                    "title": "Duration",
+                    "body": "2021 Jun - 2021 Nov",
+                    "key": "duration"
+                },
+                {
+                    "title": "Sector",
+                    "body": "Data Privacy",
+                    "key": "sector"
+                },
+                {
+                    "title": "My Role",
+                    "body": "Mobile Application Developer and UI/UX Designer",
+                    "key": "role"
+                }
+            ],
+            "image": "images/projects/project-privacy.webp",
+            "cols": 1,
+            "rows": 1.5,
+            "content": [
+                {
+                    "title": "Overview",
+                    "body": "Data privacy deals with the sensitive information of individuals and has become a major topic in modern society. keyhough the practicality of mobile apps has become an essential part of the routines of all most everyone. Consumers are increasingly concerned about their data privacy. Most of the time, these privacy policies that are used to collect and share data that are lengthy and complex to understand. Therefore, a common user finds it hard to understand before agreeing to the privacy policy terms. This project propose an approach to convey privacy policies in a way that a common user can comprehend.",
+                    "key": "overview"
+                },
+                {
+                    "title": "Process",
+                    "body": "First, we conducted a few interviews with industry professionals to gain a better understanding of the problem at hand and to generate suggestions for categorising privacy policies so that users may better comprehend them better. Then, using the information gathered from the interviews and research papers, we developed the ten categories. Following that, we created a chat bot mobile application so that consumers could communicate with the bot about their privacy concerns. For example, if a user wants to know a company's data reservation policy, they may easily communicate with that bot and obtain such information.",
+                    "key": "process"
+                },
+                {
+                    "title": "Challenges Faced",
+                    "body": "The main challenge we faced was holding the interview sessions because I was still in my third year of university at the time and the professionals who came to the interviews had vast knowledge and expertise in the industry. We overcame this obstacle by working together and correctly preparing the interview sessions. Personally this was a huge experience for me.",
+                    "key": "challenges"
+                },
+                {
+                    "title": "Accomplishments",
+                    "body": "Based on this study, we were able to successfully submit a research paper titled ‘Automated Categorization of Privacy Policies Based on User Perspective’ to the IEEE ICIAfS 2021: Information and Automation for Sustainability 2021.",
+                    "links": [
+                        {
+                            "title": "Automated Categorization of Privacy Policies Based on User Perspective - Research Paper",
+                            "link": "https://ieeexplore.ieee.org/document/9606158"
+                        }
+                    ],
+                    "key": "accomplishments"
+                },
+                {
+                    "title": "View Presentation",
+                    "body": "The presentation that follows goes into great detail regarding the project. For further information, you can refer to this presentation.",
+                    "presentations": [
+                        {
+                            "link": "https://docs.google.com/presentation/d/e/2PACX-1vTYZcDDZMk_eAtqXuZvpGX4GP7-xAh-TmaO0jLsPb6U_TIsozRqezWq0FhMil68MNQr2DJaKJIspTha/embed?start=true&loop=false&delayms=30000"
+                        }
+                    ],
+                    "key": "presentation"
+                }
+            ]
+        },
+        {
+            "key": "other",
+            "name": "Other Projects",
+            "image": "images/projects/project-passion.webp",
+            "cols": 2,
+            "rows": 1.5,
+            "content": [
+                {
+                    "title": [
+                        "Bubble Detector Mobile Application",
+                        "CS 4472 Mobile Computing - Project",
+                        "Oct 2021 - Dec 2021"
+                    ],
+                    "body": "As part of the 'CS 4472 Mobile Computing' module, I contributed to the 'Bubble Detector Mobile Application' project, aimed at replacing less secure methods of store entry logging during the COVID-19 pandemic with a safer and more efficient solution. Through a mobile application, we introduced a modern approach to mitigate hekeyh risks, eliminating the need for manual entry or QR code scanning. Leveraging Figma for design, Flutter for development, and Firebase for data management, we successfully developed a user-friendly and contactless system that not only enhances safety measures but also showcases the potential of technology to address real-world challenges effectively. This project not only advanced my technical proficiency but also deepened my understanding of technology's role in promoting public hekeyh in unprecedented circumstances.",
+                    "presentations": [
+                        {
+                            "link": "https://www.youtube.com/embed/ZeWIGfQCypc"
+                        }
+                    ],
+                    "key": "bubble"
+                },
+                {
+                    "title": [
+                        "OBD Fuel",
+                        "Part of the Undergraduate Final Year Project",
+                        "Jun 2021 - Dec 2021"
+                    ],
+                    "body": "'OBD Fuel' is an Android mobile application designed to offer users a comprehensive and user-friendly dashboard for seamlessly connecting and accessing results from their On-Board Diagnostics (OBD) device. With a focus on simplicity and effectiveness, this application empowers users to effortlessly monitor and analyze crucial data from their OBD device, enhancing their driving experience and overall vehicle management.",
+                    "links": [
+                        {
+                            "title": "Download the application",
+                            "link": "https://play.google.com/store/apps/details?id=com.mtdaps.obdfuel"
+                        }
+                    ],
+                    "presentations": [
+                        {
+                            "link": "https://www.youtube.com/embed/vHXmxZdZzCI"
+                        }
+                    ],
+                    "key": "obd"
+                },
+                {
+                    "title": [
+                        "GPA Cal",
+                        "A Pet Project",
+                        "Oct 2020 - Dec 2020"
+                    ],
+                    "body": "'GPA Cal' marks a significant milestone as it is my first application published on the Google Play Store. This app offers users a convenient means to effortlessly monitor and compute their Grade Point Average (GPA). Developed using Flutter, 'GPA Cal' streamlines GPA tracking, making academic performance assessment a user-friendly and efficient experience.",
+                    "links": [
+                        {
+                            "title": "Download the application",
+                            "link": "https://play.google.com/store/apps/details?id=ait.gpa_cal"
+                        },
+                        {
+                            "title": "View the source code",
+                            "link": "https://github.com/Achintha444/gpa_cal"
+                        }
+                    ],
+                    "key": "gpa"
+                }
+            ]
+        }
+    ]
+}

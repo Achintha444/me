@@ -1,0 +1,29 @@
+{
+    "title": {
+        "title": "Achintha Isuru",
+        "link": "/"
+    },
+    "content": [
+        {
+            "title" : "About",
+            "link" : "/aboutMe"
+        },
+        {
+            "title" : "Projects",
+            "link" : "/projects"
+        },
+        {
+            "title" : "Feature Ideas",
+            "link" : "/feature-ideas"
+        },
+        {
+            "title" : "Experiences",
+            "link" : "/experiences"
+        },
+        {
+            "title" : "Download CV",
+            "link" : "https://drive.google.com/file/d/14g3EqlEhuDKGFSL3x1lwHD5oCHBANBVF/view?usp=sharing",
+            "target" : "_blank"
+        }
+    ]
+}

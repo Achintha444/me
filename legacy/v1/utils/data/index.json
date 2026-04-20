@@ -1,0 +1,216 @@
+{
+    "content": [
+        {
+            "id": 0,
+            "content": [
+                {
+                    "body": "Hello ",
+                    "morningSalute": "Good Morning",
+                    "afternoonSalute": "Good Afternoon",
+                    "eveningSalute": "Good Evening"
+                },
+                {
+                    "body": "My name is"
+                },
+                {
+                    "body": "Achintha Isuru"
+                },
+                {
+                    "body": "I am a "
+                },
+                {
+                    "body": [
+                        "Front-end Developer",
+                        2000,
+                        "UI/UX Desginer",
+                        2000,
+                        "Mobile Application Developer",
+                        2000
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 1,
+            "title": "Bridging Design and Development"
+        },
+        {
+            "id": 2,
+            "title": "Bridging Design and Development...",
+            "content": [
+                {
+                    "content": [
+                        {
+                            "body": "Bridging design and development has always been my focus. Apart from my usual studies, I have spent time self-studying psychology to better understand how human behavior and decision-making influence user experiences. I try to apply this knowledge to create designs that truly connect with people.",
+                            "key": "little-bit-about-me-1"
+                        },
+                        {
+                            "body": "My ultimate life goal is to build something exceptional—something that would make my father genuinely proud.",
+                            "key": "little-bit-about-me-2"
+                        },
+                        {
+                            "body": "I am always open to new opportunities and challenges, so feel free to reach out if you’d like to collaborate or just chat!",
+                            "key": "little-bit-about-me-3"
+                        }
+                    ],
+                    "key": "little-bit-about-me"
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "title": "My Interests...",
+            "interests": [
+                {
+                    "title": "Fields",
+                    "key": "fields",
+                    "color": "success",
+                    "interests": [
+                        {
+                            "title": "UI/UX Designing",
+                            "key": "ui-ux-designing"
+                        },
+                        {
+                            "title": "Front-end Development ",
+                            "key": "front-end-development"
+                        }
+                    ]
+                },
+                {
+                    "title": "Development Tools and Techologies",
+                    "key": "development-tools-and-technologies",
+                    "color": "default",
+                    "interests": [
+                        {
+                            "title": "Next.JS",
+                            "imageUrl": "images/index/interests/next-js.webp",
+                            "key": "next-js"
+                        },
+                        {
+                            "title": "React JS",
+                            "imageUrl":  "images/index/interests/react-js.webp",
+                            "key": "react-js"
+                        },
+                        {
+                            "title": "Flutter",
+                            "imageUrl":  "images/index/interests/flutter.webp",
+                            "key": "flutter"
+                        },
+                        {
+                            "title": "Android",
+                            "imageUrl":  "images/index/interests/android.webp",
+                            "key": "android"
+                        },
+                        {
+                            "title": "Java",
+                            "imageUrl":  "images/index/interests/java.webp",
+                            "key": "java"
+                        }
+                    ]
+                },
+                {
+                    "title": "Design Tools",
+                    "color": "default",
+                    "key": "design-tools",
+                    "interests": [
+                        {
+                            "title": "Figma",
+                            "imageUrl":  "images/index/interests/figma.webp",
+                            "key": "figma"
+                        },
+                        {
+                            "title": "Adobe XD",
+                            "imageUrl":  "images/index/interests/adobe-xd.webp",
+                            "key": "adobe-xd"
+                        },
+                        {
+                            "title": "Adobe Photoshop",
+                            "imageUrl":  "images/index/interests/adobe-photoshop.webp",
+                            "key": "adobe-photoshop"
+                        }
+                    ]
+                }
+            ],
+            "content": [
+                {
+                    "content": [
+                        {
+                            "body": "A highly motivated and hardworking individual with a keen interest in learning more about Computer Science especially in the area of Front End Development and UI/UX designing. Also has a passion for learning psychology as well. My life goal is to do something that my dad one day would be proud of.",
+                            "key": "my-interests-1"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "title": "Recent Projects...",
+            "titleLink" : {
+                "text": "View All",
+                "link": "/projects"
+            },
+            "comments": "This will make use of the projects.json data"
+        },
+        {
+            "id": 5,
+            "title": "My Writings...",
+            "titleLink" : {
+                "text": "Read More",
+                "link": "https://medium.com/@achinthaisuru444",
+                "target": "_blank"
+            }
+        },
+        {
+            "id": 6,
+            "title": "Contact Me...",
+            "content": [
+                {
+                    "content": [
+                        {
+                            "body": "Please feel free to contact me via any of the platforms listed below.",
+                            "key": "contact-me-1"
+                        }
+                    ],
+                    "key": "contact-me"
+                }
+            ],
+            "icons": [
+                {
+                    "image": "/images/contact-icons-svg/top-email.svg",
+                    "key": "email",
+                    "link": "mailto:achinthaisuru97@gmail.com"
+                },
+                {
+                    "image": "/images/contact-icons-svg/top-in.svg",
+                    "key": "linkedin",
+                    "link": "http://linkedin.com/in/achintha-isuru"
+                },
+                {
+                    "image": "/images/contact-icons-svg/top-stack.svg",
+                    "key": "stackoverflow",
+                    "link": "https://stackoverflow.com/users/10601286/achintha-isuru"
+                },
+                {
+                    "image": "/images/contact-icons-svg/top-youtube.svg",
+                    "key": "youtube",
+                    "link": "https://www.youtube.com/channel/UCgoNBM-Ay-jVnzaZjUy9x_A"
+                },
+                {
+                    "image": "/images/contact-icons-svg/top-X.svg",
+                    "key": "youtube",
+                    "link": "https://x.com/AchinthaIs47441"
+                },
+                {
+                    "image": "/images/contact-icons-svg/top-medium.svg",
+                    "key": "medium",
+                    "link": "https://medium.com/@achinthaisuru444"
+                },
+                {
+                    "image": "/images/contact-icons-svg/top-github.svg",
+                    "key": "github",
+                    "link": "https://github.com/Achintha444"
+                }
+            ]
+        }
+    ]
+}

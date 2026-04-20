@@ -1,0 +1,348 @@
+{
+    "pageTitle": "Bridging Design and Development",
+    "content": {
+        "firstPara": [
+            {
+                "key": "me-1",
+                "body": "Hello everyone! My name is Achintha Isuru, and I am passionate about front-end development and UI/UX design. Beyond these interests, I am also curious about psychology and its profound impact on human behaviour and decision-making. This diverse range of interests drives me to approach problem-solving from a unique and empathetic perspective, understanding the needs and aspirations of users and development teams alike. My ultimate life goal is to create something exceptional that my father would one day be truly proud of."
+            },
+            {
+                "key": "me-2",
+                "body": "I am always open to new opportunities and challenges, so please feel free to reach out to me if you would like to collaborate or chat about anything!"
+            }
+        ],
+        "fistImages": [
+            {
+                "image": "/images/me/me-1.webp",
+                "alt": "achintha-7"
+            },
+            {
+                "image": "/images/me/me-2.webp",
+                "alt": "achintha-8"
+            },
+            {
+                "image": "/images/me/me-3.webp",
+                "alt": "achintha-9"
+            }
+        ],
+        "contentDetails": [
+            {
+                "title": "Education",
+                "content": [
+                    {
+                        "title": [
+                            "Google (through Coursera)",
+                            "Google UX Design Professional Certificate",
+                            "May 2022 - Present"
+                        ],
+                        "content": [
+                            {
+                                "body": "Currently I am taking the Google UX Design Professional Certificate course to gain firsthand experience and knowledge in UX designing. This comprehensive program has allowed me to learn in-depth about UX design. Through the course, I've gained insights into the fundamental aspects of the design process, including user empathy, pain point definition, ideation of solutions, wireframing and prototyping, as well as testing and iterative design."
+                            }
+                        ]
+                    },
+                    {
+                        "title": [
+                            "Department of Computer Science and Engineering, Faculty of Engineering, University of Moratuwa",
+                            "Bachelor of the Science of Engineering, Specialisation: Computer Science & Engineering",
+                            "Aug 2017 - Dec 2022"
+                        ],
+                        "content": [
+                            {
+                                "body": [
+                                    {
+                                        "body": "I earned my bachelor's degree from the University of Moratuwa's Department of Computer Science and Engineering in Sri Lanka. Alongside my studies, I actively participated in extracurricular activities to enhance soft skills such as teamwork and communication."
+                                    },
+                                    {
+                                        "body": "During my time at the university, I represented the university as the goalkeeper for the soccer team, showcasing my commitment to teamwork and leadership. Additionally, I was a dedicated member of the Rotaract Club of the University of Moratuwa, where I contributed to the public relations team."
+                                    },
+                                    {
+                                        "body": "This balance between academic achievement and active involvement in extracurricular activities enriched my university experience, equipping me with a well-rounded skill set and a strong sense of camaraderie with my peers."
+                                    }
+                                ],
+                                "images": [
+                                    {
+                                        "image": "/images/me/uni-1.webp",
+                                        "alt": "achintha-4"
+                                    },
+                                    {
+                                        "image": "/images/me/uni-2.webp",
+                                        "alt": "achintha-5"
+                                    },
+                                    {
+                                        "image": "/images/me/uni-3.webp",
+                                        "alt": "achintha-6"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "title": [
+                            "California Institute of the Art (through Coursera)",
+                            "UI/UX Specialization",
+                            "2020-2021"
+                        ],
+                        "content": [
+                            {
+                                "body": [
+                                    {
+                                        "body": "I completed the UI/UX Specialization offered by the California Institute of the Arts through Coursera to acquire knowledge beyond the scope of my bachelor's degree curriculum. Upon completing this course, I secured several freelancing opportunities, which played a crucial role in improving my skill set and boosting my confidence in the field. These experiences were instrumental in advancing my proficiency and expertise in UI/UX design."
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "title": "Conducted Sessions",
+                "content": [
+                    {
+                        "title": [
+                            "Mastering Secure React Development for Enterprise",
+                            "Organised by WSO2 IAM team to the undergraduates at Department of Computer Science and Engineering, University of Moratuwa, Sri Lanka.",
+                            "Aug 2024"
+                        ],
+                        "content": [
+                            {
+                                "body": [
+                                    {
+                                        "body": "I had the opportunity to present a session on how to create and secure React applications, representing the WSO2 IAM team, to the third-year students at the Department of Computer Science & Engineering, University of Moratuwa Joining me from the the IAM team at WSO2, were my colleagues Dasuni Geeganage, Savindi Waduge & Jayashakthi Perera. Together, we covered topics like, how to set up a simple React application, basic IAM concepts & how to add login to that application using Asgardeo."
+                                    }
+                                ],
+                                "images": [
+                                    {
+                                        "image": "/images/me/me-session-1.webp",
+                                        "alt": "achintha-session-1"
+                                    },
+                                    {
+                                        "image": "/images/me/me-session-2.webp",
+                                        "alt": "achintha-session-2"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "title": [
+                            "Introduction to Basics of UI Designing",
+                            "For the undergraduates at Department of Computer Science and Engineering, University of Moratuwa, Sri Lanka.",
+                            "July 2024"
+                        ],
+                        "content": [
+                            {
+                                "body": [
+                                    {
+                                        "body": "In July 2024, I had the privilege of hosting a session titled 'Introduction to the Basics of UI Design' for the undergraduates at the Department of Computer Science and Engineering, University of Moratuwa, Sri Lanka."
+                                    },
+                                    {
+                                        "body": "This session provided participants with insights into the fundamentals of UI design. By sharing key concepts and practical strategies, attendees gained valuable knowledge in the field of user interface design, enhancing their skill sets in this domain. We also discussed some interesting concepts, such as 'The Best Interface is No Interface.'"
+                                    },
+                                    {
+                                        "body": "It was an honour to contribute to this educational initiative that catered to both the learning and professional growth of participants."
+                                    }
+                                ],
+                                "presentations": [
+                                    {
+                                        "link": "https://www.youtube.com/embed/DKi7bLo_dWk?si=jcxZUVTjAmlOrK92"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "title": [
+                            "Introduction to Basics of UI Designing (Sinhala)",
+                            "Brain Wave Coaching session 2.0. Organized by the Society of Transport & Logistics University of Moratuwa, Sri Lanka",
+                            "Oct 2021"
+                        ],
+                        "content": [
+                            {
+                                "body": [
+                                    {
+                                        "body": "In October 2021, I had the privilege of hosting an engaging session titled 'Introduction to Basics of UI Designing' as part of the Brain Wave Coaching Session 2.0, organized by the Society of Transport & Logistics at the University of Moratuwa."
+                                    },
+                                    {
+                                        "body": "This session provided participants with insights into the fundamentals of UI designing, delivered in the Sinhala language. By sharing key concepts and practical strategies, attendees gained valuable insights into the world of user interface design, improving their skill sets of this domain."
+                                    },
+                                    {
+                                        "body": "It was an honour to contribute to this exceptional educational initiative that catered to both the learning and professional growth of participants."
+                                    }
+                                ],
+                                "presentations": [
+                                    {
+                                        "link": "https://www.youtube.com/embed/AryYVv2tmVw"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "title": "My Hobbies",
+                "content": [
+                    {
+                        "title": [
+                            "Playing Football"
+                        ],
+                        "content": [
+                            {
+                                "body": [
+                                    {
+                                        "body": "I am deeply passionate about football, and my love to play the sport led me to get the opportunity in university to gain firsthand experience on the field. It was all about pursuing my love for the game and enjoying every moment."
+                                    },
+                                    {
+                                        "body": "During my university career, I had the privilege of being part of the team that achieved the joint championship at the Sri Lanka University Games in 2019."
+                                    },
+                                    {
+                                        "body": "Playing football improved my athletic abilities and proved to be a platform for personal growth. It was an environment where I developed soft skills like teamwork, commitment, and dedication.These skills have proven invaluable in my professional journey, contributing to my success in the workplace."
+                                    },
+                                    {
+                                        "body": "Football has been more than just a sport for me; it has been a journey of self-discovery and resilience, shaping both my personal and professional life."
+                                    }
+                                ],
+                                "images": [
+                                    {
+                                        "image": "/images/me/soccer-1.webp",
+                                        "alt": "achintha-10"
+                                    },
+                                    {
+                                        "image": "/images/me/soccer-2.webp",
+                                        "alt": "achintha-11"
+                                    },
+                                    {
+                                        "image": "/images/me/soccer-3.webp",
+                                        "alt": "achintha-12"
+                                    },
+                                    {
+                                        "image": "/images/me/soccer-4.webp",
+                                        "alt": "achintha-13"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "title": [
+                            "Social Service"
+                        ],
+                        "content": [
+                            {
+                                "body": [
+                                    {
+                                        "body": "As an individual deeply committed to voluntary work, I have always wanted to give back to my community, inspired by my mother's battle with cancer during my childhood. Joining the Rotaract Club of the University of Moratuwa provided me with the perfect platform to fulfil this commitment."
+                                    },
+                                    {
+                                        "body": "One of the most unforgettable experiences of my life was working on a project for the university's Rotaract Club. We spent a day at the Dharma Chakra Child Foundation, where I had the privilege of bringing smiles to the faces of children who face daily adversities. It was an immensely gratifying experience to offer them a day of joy and happiness."
+                                    },
+                                    {
+                                        "body": "Beyond that, I contributed to the success of various other club projects, including 'I am Ready', 'Manusath Handa', and 'Ceylon Safari 2018', serving as a member of the organising committee. Additionally, I co-chaired the project 'First Round Workshop of Maestro'18', further enhancing my leadership and teamwork skills."
+                                    },
+                                    {
+                                        "body": "On a personal level, my involvement in Rotaract Club helped me nurture values like empathy and compassion, qualities that are invaluable for a designer. Through these experiences, I have grown both professionally and personally, reinforcing my belief in the power of volunteer work to create positive change."
+                                    }
+                                ],
+                                "images": [
+                                    {
+                                        "image": "/images/me/rot-1.webp",
+                                        "alt": "achintha-14"
+                                    },
+                                    {
+                                        "image": "/images/me/rot-2.webp",
+                                        "alt": "achintha-15"
+                                    },
+                                    {
+                                        "image": "/images/me/rot-3.webp",
+                                        "alt": "achintha-16"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "title": [
+                            "Cooking"
+                        ],
+                        "content": [
+                            {
+                                "body": "Cooking is a passion of mine. During my free hours, I experiment with various recipes sourced from online platforms. I take great pleasure in the art of creating dishes that amaze the taste buds ( Not sure if they do all the time though! 😉 ). My favourite dishes are my waffles and dhosi. ",
+                                "images": [
+                                    {
+                                        "image": "/images/me/cooking-1.webp",
+                                        "alt": "cooking - 1"
+                                    },
+                                    {
+                                        "image": "/images/me/cooking-2.webp",
+                                        "alt": "cooking - 2"
+                                    },
+                                    {
+                                        "image": "/images/me/cooking-3.webp",
+                                        "alt": "cooking - 3"
+                                    },
+                                    {
+                                        "image": "/images/me/cooking-4.webp",
+                                        "alt": "cooking - 4"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "contact": {
+            "id": 6,
+            "title": "Contact Me",
+            "content": [
+                {
+                    "content": [
+                        {
+                            "body": "Please feel free to contact me via any of the platforms listed below.",
+                            "key": "contact-me-1"
+                        }
+                    ],
+                    "key": "contact-me"
+                }
+            ],
+            "icons": [
+                {
+                    "image": "/images/contact-icons-svg/top-email.svg",
+                    "key": "email",
+                    "link": "mailto:achinthaisuru97@gmail.com"
+                },
+                {
+                    "image": "/images/contact-icons-svg/top-in.svg",
+                    "key": "linkedin",
+                    "link": "http://linkedin.com/in/achintha-isuru"
+                },
+                {
+                    "image": "/images/contact-icons-svg/top-stack.svg",
+                    "key": "stackoverflow",
+                    "link": "https://stackoverflow.com/users/10601286/achintha-isuru"
+                },
+                {
+                    "image": "/images/contact-icons-svg/top-youtube.svg",
+                    "key": "youtube",
+                    "link": "https://www.youtube.com/channel/UCgoNBM-Ay-jVnzaZjUy9x_A"
+                },
+                {
+                    "image": "/images/contact-icons-svg/top-X.svg",
+                    "key": "youtube",
+                    "link": "https://x.com/AchinthaIs47441"
+                },
+                {
+                    "image": "/images/contact-icons-svg/top-medium.svg",
+                    "key": "medium",
+                    "link": "https://medium.com/@achinthaisuru444"
+                },
+                {
+                    "image": "/images/contact-icons-svg/top-github.svg",
+                    "key": "github",
+                    "link": "https://github.com/Achintha444"
+                }
+            ]
+        }
+    }
+}
