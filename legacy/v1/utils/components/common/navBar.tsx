@@ -12,7 +12,7 @@ import ListItemText from "@mui/material/ListItemText";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import * as React from "react";
-import navItemsConfig from "../../../utils/data/navItems.json";
+import navItemsConfig from "../../data/navItems.json";
 
 interface Props {
     window?: () => Window;

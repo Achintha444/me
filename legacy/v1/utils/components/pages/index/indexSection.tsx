@@ -5,7 +5,7 @@ import MyWritings from "./myWritings";
 import NameDetails from "./nameDetails";
 import Phrase from "./Phrase";
 import Projects from "./projects";
-import LittleBitAboutMe from "../index/littleBitAboutMe";
+import LittleBitAboutMe from "./littleBitAboutMe";
 
 function IndexSection({ content }) {
 
