@@ -340,6 +340,29 @@ img {
   .nav-mobile-btn { display: flex !important; }
 }
 
+/* ─── Blog Grid ──────────────────────────────────────────────────────── */
+/*
+ * Mobile (default): single column.
+ * Desktop (≥1024px): 3 columns.
+ * Tablet (≥640px, <1024px): 2 columns as a graceful intermediate.
+ */
+.blog-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-4);
+  list-style: none;
+}
+@media (min-width: 640px) {
+  .blog-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 1024px) {
+  .blog-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 /* ─── Hero Two-Column Grid ───────────────────────────────────────────── */
 /*
  * Mobile (default): single column, canvas stacks below text.

@@ -93,12 +93,7 @@ export default async function BlogPage() {
             <ul
               role="list"
               aria-label="All blog posts"
-              style={{
-                display: "flex",
-                flexDirection: "column",
-                gap: "var(--space-4)",
-                listStyle: "none",
-              }}
+              className="blog-grid"
             >
               {posts.map((post, i) => (
                 <li key={post.url}>
@@ -149,6 +144,7 @@ export default async function BlogPage() {
                           style={{
                             padding: "var(--space-5)",
                             display: "flex",
+                            flexDirection: "column",
                             alignItems: "flex-start",
                             justifyContent: "space-between",
                             gap: "var(--space-4)",
@@ -257,10 +253,10 @@ export default async function BlogPage() {
                               color: "var(--color-accent)",
                               fontWeight: 500,
                               whiteSpace: "nowrap",
-                              alignSelf: "center",
+                              alignSelf: "end",
                             }}
                           >
-                            Read on Medium →
+                            Read on Medium ↗
                           </span>
                         </div>
                       </a>
