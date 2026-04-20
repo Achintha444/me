@@ -17,6 +17,10 @@
             "link" : "/feature-ideas"
         },
         {
+            "title" : "Blog",
+            "link" : "/blog"
+        },
+        {
             "title" : "Experiences",
             "link" : "/experiences"
         },
