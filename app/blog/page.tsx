@@ -266,11 +266,62 @@ export default async function BlogPage() {
               ))}
             </ul>
           )}
+
+          {posts.length > 0 && (
+            <ScrollReveal delay={80}>
+              <div
+                style={{
+                  marginTop: "var(--space-10)",
+                  paddingTop: "var(--space-8)",
+                  borderTop: "1px solid var(--color-ink-faint)",
+                  display: "flex",
+                  flexDirection: "column",
+                  alignItems: "center",
+                  gap: "var(--space-3)",
+                  textAlign: "center",
+                }}
+              >
+                <p
+                  style={{
+                    fontFamily: "var(--font-body)",
+                    fontSize: "var(--text-base)",
+                    color: "var(--color-ink-muted)",
+                    maxWidth: "48ch",
+                  }}
+                >
+                  Want to read more? I publish regularly on Medium.
+                </p>
+                <a
+                  href={MEDIUM_PROFILE_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover-accent-border"
+                  style={{
+                    display: "inline-flex",
+                    alignItems: "center",
+                    gap: "var(--space-1)",
+                    padding: "0.75rem 1.5rem",
+                    border: "1px solid var(--color-ink-faint)",
+                    borderRadius: "var(--radius-md)",
+                    fontFamily: "var(--font-body)",
+                    fontSize: "var(--text-sm)",
+                    color: "var(--color-ink)",
+                    fontWeight: 500,
+                  }}
+                >
+                  Read more on Medium ↗
+                </a>
+              </div>
+            </ScrollReveal>
+          )}
         </div>
       </section>
     </>
   );
 }
+
+/** Author's Medium profile URL — used for the "read more" CTA. */
+const MEDIUM_PROFILE_URL = "https://medium.com/@achinthaisuru444";
 
 /** Rendered when the feed returns zero posts or is unreachable. */
 function EmptyState() {
