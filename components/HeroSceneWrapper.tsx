@@ -132,12 +132,37 @@ export function HeroSceneWrapper() {
   const { resolved } = useTheme();
   const colors = themeColors[resolved];
 
+  console.log("[hero-wrapper] render", {
+    resolved,
+    wireframe: colors.wireframe,
+    solid: colors.solid,
+    seam: colors.seam,
+  });
+
   useEffect(() => {
     dispatch(resolveSceneState());
   }, []);
 
+  useEffect(() => {
+    console.log("[hero-wrapper] resolved changed ->", resolved);
+  }, [resolved]);
+
   if (state.status === "pending") return null;
   if (state.status === "fallback") return <HeroSceneFallback />;
 
-  return <HeroScene staticPose={state.staticPose} colors={colors} />;
+  /*
+   * `key={resolved}` remounts the whole Canvas on theme change. R3F's
+   * reconciler can leave WebGL materials in a stale state across theme
+   * flips (especially when a CSS view-transition is mid-flight, which
+   * desynchronises the WebGL frame from the React tree). Remounting is
+   * the only reliable way to guarantee fresh materials, lighting, and
+   * IBL environment matching the active theme.
+   */
+  return (
+    <HeroScene
+      key={resolved}
+      staticPose={state.staticPose}
+      colors={colors}
+    />
+  );
 }

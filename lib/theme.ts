@@ -86,6 +86,43 @@ export function applyThemeWithTransition(
   document.startViewTransition(() => applyTheme(resolved));
 }
 
+// ─── Shared store ─────────────────────────────────────────────────────────────
+/*
+ * Module-level observable so every useTheme() consumer sees the SAME state.
+ * Without this, each component that calls useTheme gets its own useState
+ * instance, and setPreference in one component never notifies others.
+ */
+
+export interface ThemeState {
+  preference: ThemePreference;
+  resolved: ResolvedTheme;
+}
+
+const DEFAULT_STATE: ThemeState = { preference: "system", resolved: "light" };
+
+let themeState: ThemeState = DEFAULT_STATE;
+const themeListeners = new Set<() => void>();
+
+export function getThemeState(): ThemeState {
+  return themeState;
+}
+
+export function getServerThemeState(): ThemeState {
+  return DEFAULT_STATE;
+}
+
+export function subscribeTheme(listener: () => void): () => void {
+  themeListeners.add(listener);
+  return () => {
+    themeListeners.delete(listener);
+  };
+}
+
+export function setThemeState(next: ThemeState): void {
+  themeState = next;
+  themeListeners.forEach((l) => l());
+}
+
 // ─── Three.js color map ───────────────────────────────────────────────────────
 
 export interface ThemeColors {

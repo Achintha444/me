@@ -1,6 +1,6 @@
 "use client";
 
-import { useCallback, useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useSyncExternalStore } from "react";
 import {
   type ThemePreference,
   type ResolvedTheme,
@@ -8,6 +8,10 @@ import {
   resolveTheme,
   applyTheme,
   applyThemeWithTransition,
+  getThemeState,
+  getServerThemeState,
+  setThemeState,
+  subscribeTheme,
 } from "@/lib/theme";
 
 interface UseThemeReturn {
@@ -16,54 +20,61 @@ interface UseThemeReturn {
   setPreference: (pref: ThemePreference, origin?: { x: number; y: number }) => void;
 }
 
-function readStoredPreference(): ThemePreference {
-  if (typeof window === "undefined") return "system";
-  const stored = localStorage.getItem(THEME_STORAGE_KEY);
-  return stored === "light" || stored === "dark" || stored === "system"
-    ? stored
-    : "system";
+let hydrated = false;
+
+/**
+ * Hydrates the module-level theme store from localStorage exactly once.
+ * Runs on first client mount; no-op on subsequent calls or on the server.
+ */
+function hydrateThemeStore() {
+  if (hydrated || typeof window === "undefined") return;
+  hydrated = true;
+  const stored = localStorage.getItem(THEME_STORAGE_KEY) as ThemePreference | null;
+  const pref: ThemePreference =
+    stored === "light" || stored === "dark" || stored === "system"
+      ? stored
+      : "system";
+  const res = resolveTheme(pref);
+  applyTheme(res);
+  setThemeState({ preference: pref, resolved: res });
 }
 
 /**
- * useTheme — client hook for reading and updating the theme preference.
+ * useTheme — reads and updates the shared theme state.
  *
- * Reads initial preference from localStorage on mount, persists on change,
- * subscribes to OS-level preference changes when in "system" mode.
- * Components that only need CSS theming do NOT need this hook — they
- * inherit colors from CSS custom properties on <html>.
+ * Backed by a module-level observable (see lib/theme.ts), so every consumer
+ * sees the same state and re-renders when any caller changes the preference.
+ * Components that only need CSS theming don't need this hook.
  */
 export function useTheme(): UseThemeReturn {
-  // Lazy initializers run only on the client after hydration.
-  const [preference, setPreferenceState] = useState<ThemePreference>(readStoredPreference);
-  const [resolved, setResolved] = useState<ResolvedTheme>(() =>
-    resolveTheme(readStoredPreference())
+  const state = useSyncExternalStore(
+    subscribeTheme,
+    getThemeState,
+    getServerThemeState
   );
 
-  // Sync the DOM once on mount (covers the case where ThemeScript set a
-  // different value than the SSR default before React hydrated).
-  const mountSynced = useRef(false);
+  const bootstrappedRef = useRef(false);
   useEffect(() => {
-    if (mountSynced.current) return;
-    mountSynced.current = true;
-    applyTheme(resolved);
-  }, [resolved]);
+    if (bootstrappedRef.current) return;
+    bootstrappedRef.current = true;
+    hydrateThemeStore();
+  }, []);
 
   useEffect(() => {
-    if (preference !== "system") return;
-
+    if (state.preference !== "system") return;
     const mq = window.matchMedia("(prefers-color-scheme: dark)");
     const handler = (e: MediaQueryListEvent) => {
       const res: ResolvedTheme = e.matches ? "dark" : "light";
       applyTheme(res);
-      setResolved(res);
+      setThemeState({ preference: "system", resolved: res });
     };
-
     mq.addEventListener("change", handler);
     return () => mq.removeEventListener("change", handler);
-  }, [preference]);
+  }, [state.preference]);
 
   const setPreference = useCallback(
     (pref: ThemePreference, origin?: { x: number; y: number }) => {
+      console.log("[theme] setPreference", { pref, origin });
       try {
         localStorage.setItem(THEME_STORAGE_KEY, pref);
       } catch {
@@ -75,11 +86,14 @@ export function useTheme(): UseThemeReturn {
       } else {
         applyTheme(res);
       }
-      setPreferenceState(pref);
-      setResolved(res);
+      setThemeState({ preference: pref, resolved: res });
     },
     []
   );
 
-  return { preference, resolved, setPreference };
+  return {
+    preference: state.preference,
+    resolved: state.resolved,
+    setPreference,
+  };
 }

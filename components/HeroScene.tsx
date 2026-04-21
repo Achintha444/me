@@ -1,7 +1,7 @@
 "use client";
 
-import { useRef, useMemo } from "react";
-import { Canvas, useFrame } from "@react-three/fiber";
+import { useRef, useMemo, useEffect } from "react";
+import { Canvas, useFrame, invalidate } from "@react-three/fiber";
 import { Environment } from "@react-three/drei";
 import * as THREE from "three";
 import type { ThemeColors } from "@/lib/theme";
@@ -73,10 +73,19 @@ function DesignHalf({
   }, [geometry, wireIndices]);
 
   const wireGeo = useMemo(() => new THREE.WireframeGeometry(subGeo), [subGeo]);
+  const materialRef = useRef<THREE.LineBasicMaterial>(null);
+
+  useEffect(() => {
+    if (!materialRef.current) return;
+    console.log("[design-half] applying wireframeColor", wireframeColor);
+    materialRef.current.color.set(wireframeColor);
+    invalidate();
+  }, [wireframeColor]);
 
   return (
     <lineSegments geometry={wireGeo}>
       <lineBasicMaterial
+        ref={materialRef}
         color={wireframeColor}
         transparent
         opacity={1}
@@ -106,9 +115,19 @@ function DevelopmentHalf({
     return g;
   }, [geometry, solidIndices]);
 
+  const materialRef = useRef<THREE.MeshStandardMaterial>(null);
+
+  useEffect(() => {
+    if (!materialRef.current) return;
+    console.log("[dev-half] applying solidColor", solidColor);
+    materialRef.current.color.set(solidColor);
+    invalidate();
+  }, [solidColor]);
+
   return (
     <mesh geometry={subGeo}>
       <meshStandardMaterial
+        ref={materialRef}
         color={solidColor}
         roughness={0.35}
         metalness={0.12}
@@ -131,10 +150,19 @@ function SeamGlow({
     () => new THREE.WireframeGeometry(geometry),
     [geometry]
   );
+  const materialRef = useRef<THREE.LineBasicMaterial>(null);
+
+  useEffect(() => {
+    if (!materialRef.current) return;
+    console.log("[seam-glow] applying seamColor", seamColor);
+    materialRef.current.color.set(seamColor);
+    invalidate();
+  }, [seamColor]);
 
   return (
     <lineSegments geometry={wireGeo}>
       <lineBasicMaterial
+        ref={materialRef}
         color={seamColor}
         transparent
         opacity={0.14}
@@ -206,6 +234,11 @@ interface HeroSceneProps {
  * - Respects `prefers-reduced-motion` via the `staticPose` prop.
  */
 export function HeroScene({ staticPose = false, colors }: HeroSceneProps) {
+  console.log("[hero-scene] mount/render", {
+    wireframe: colors.wireframe,
+    solid: colors.solid,
+    seam: colors.seam,
+  });
   return (
     <div
       aria-hidden="true"
