@@ -1,18 +1,27 @@
 "use client";
 
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import {
   type ThemePreference,
   type ResolvedTheme,
   THEME_STORAGE_KEY,
   resolveTheme,
   applyTheme,
+  applyThemeWithTransition,
 } from "@/lib/theme";
 
 interface UseThemeReturn {
   preference: ThemePreference;
   resolved: ResolvedTheme;
-  setPreference: (pref: ThemePreference) => void;
+  setPreference: (pref: ThemePreference, origin?: { x: number; y: number }) => void;
+}
+
+function readStoredPreference(): ThemePreference {
+  if (typeof window === "undefined") return "system";
+  const stored = localStorage.getItem(THEME_STORAGE_KEY);
+  return stored === "light" || stored === "dark" || stored === "system"
+    ? stored
+    : "system";
 }
 
 /**
@@ -24,21 +33,20 @@ interface UseThemeReturn {
  * inherit colors from CSS custom properties on <html>.
  */
 export function useTheme(): UseThemeReturn {
-  const [preference, setPreferenceState] = useState<ThemePreference>("system");
-  const [resolved, setResolved] = useState<ResolvedTheme>("light");
+  // Lazy initializers run only on the client after hydration.
+  const [preference, setPreferenceState] = useState<ThemePreference>(readStoredPreference);
+  const [resolved, setResolved] = useState<ResolvedTheme>(() =>
+    resolveTheme(readStoredPreference())
+  );
 
+  // Sync the DOM once on mount (covers the case where ThemeScript set a
+  // different value than the SSR default before React hydrated).
+  const mountSynced = useRef(false);
   useEffect(() => {
-    const stored = localStorage.getItem(THEME_STORAGE_KEY) as ThemePreference | null;
-    const pref: ThemePreference =
-      stored === "light" || stored === "dark" || stored === "system"
-        ? stored
-        : "system";
-
-    const res = resolveTheme(pref);
-    applyTheme(res);
-    setPreferenceState(pref);
-    setResolved(res);
-  }, []);
+    if (mountSynced.current) return;
+    mountSynced.current = true;
+    applyTheme(resolved);
+  }, [resolved]);
 
   useEffect(() => {
     if (preference !== "system") return;
@@ -54,17 +62,24 @@ export function useTheme(): UseThemeReturn {
     return () => mq.removeEventListener("change", handler);
   }, [preference]);
 
-  const setPreference = useCallback((pref: ThemePreference) => {
-    try {
-      localStorage.setItem(THEME_STORAGE_KEY, pref);
-    } catch {
-      // localStorage unavailable (private mode, quota) — still apply theme in-memory
-    }
-    const res = resolveTheme(pref);
-    applyTheme(res);
-    setPreferenceState(pref);
-    setResolved(res);
-  }, []);
+  const setPreference = useCallback(
+    (pref: ThemePreference, origin?: { x: number; y: number }) => {
+      try {
+        localStorage.setItem(THEME_STORAGE_KEY, pref);
+      } catch {
+        // localStorage unavailable (private mode, quota) — still apply theme in-memory
+      }
+      const res = resolveTheme(pref);
+      if (origin) {
+        applyThemeWithTransition(res, origin);
+      } else {
+        applyTheme(res);
+      }
+      setPreferenceState(pref);
+      setResolved(res);
+    },
+    []
+  );
 
   return { preference, resolved, setPreference };
 }

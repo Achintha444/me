@@ -393,6 +393,48 @@ img {
   outline-offset: 1px;
 }
 
+/* ─── Theme Transition ─────────────────────────────────────────────────── */
+/*
+ * Circular reveal on theme change. Uses the View Transitions API.
+ * OLD snapshot stays put; NEW snapshot is clipped to an expanding circle
+ * originating from the clicked button's center (via --theme-x/y/r on <html>).
+ */
+
+/* Register the radius as a typed length so keyframes interpolate reliably. */
+@property --theme-r {
+  syntax: "<length>";
+  inherits: true;
+  initial-value: 0px;
+}
+
+::view-transition-old(root) {
+  animation: none;
+  z-index: 0;
+}
+
+::view-transition-new(root) {
+  animation: theme-circle-reveal 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 1;
+  /* Isolate the new snapshot so sticky/fixed elements don't break compositing */
+  mix-blend-mode: normal;
+}
+
+@keyframes theme-circle-reveal {
+  from {
+    clip-path: circle(0px at var(--theme-x, 50%) var(--theme-y, 50%));
+  }
+  to {
+    clip-path: circle(var(--theme-r, 150vmax) at var(--theme-x, 50%) var(--theme-y, 50%));
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  ::view-transition-old(root),
+  ::view-transition-new(root) {
+    animation: none;
+  }
+}
+
 /* ─── Experience Timeline ────────────────────────────────────────────────── */
 /*
  * On mobile the two-column grid (dot | content) collapses naturally since

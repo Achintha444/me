@@ -45,6 +45,47 @@ export function applyTheme(resolved: ResolvedTheme): void {
   }
 }
 
+/**
+ * Applies the resolved theme with a circular "spread" reveal animation
+ * originating from `origin` (viewport coordinates of the clicked button's center).
+ *
+ * Falls back to `applyTheme` immediately when:
+ *   - `document.startViewTransition` is not supported (Firefox today).
+ *   - The user prefers reduced motion.
+ *
+ * CSS custom properties written to <html>:
+ *   --theme-x  click origin X (px)
+ *   --theme-y  click origin Y (px)
+ *   --theme-r  max radius needed to cover the viewport from that point (px)
+ */
+export function applyThemeWithTransition(
+  resolved: ResolvedTheme,
+  origin: { x: number; y: number }
+): void {
+  if (typeof document === "undefined") return;
+
+  const prefersReduced =
+    window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  if (!document.startViewTransition || prefersReduced) {
+    applyTheme(resolved);
+    return;
+  }
+
+  const { x, y } = origin;
+  const maxRadius = Math.hypot(
+    Math.max(x, window.innerWidth - x),
+    Math.max(y, window.innerHeight - y)
+  );
+
+  const root = document.documentElement;
+  root.style.setProperty("--theme-x", `${x}px`);
+  root.style.setProperty("--theme-y", `${y}px`);
+  root.style.setProperty("--theme-r", `${maxRadius}px`);
+
+  document.startViewTransition(() => applyTheme(resolved));
+}
+
 // ─── Three.js color map ───────────────────────────────────────────────────────
 
 export interface ThemeColors {

@@ -36,7 +36,14 @@ export function ThemeToggle() {
           key={value}
           type="button"
           aria-pressed={preference === value}
-          onClick={() => setPreference(value)}
+          onClick={(e) => {
+            const rect = e.currentTarget.getBoundingClientRect();
+            const origin = {
+              x: rect.left + rect.width / 2,
+              y: rect.top + rect.height / 2,
+            };
+            setPreference(value, origin);
+          }}
           className="theme-toggle-btn"
           title={
             value === "system"
