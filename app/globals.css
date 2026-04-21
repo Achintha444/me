@@ -1,16 +1,52 @@
 @import "tailwindcss";
 
-/* ─── Design Tokens ─────────────────────────────────────────────────── */
+/* ─── Primitive Tokens ───────────────────────────────────────────────────────
+ * Raw color values. Theme-independent. Never used directly by components.
+ * ─────────────────────────────────────────────────────────────────────────── */
 :root {
-  /* Color palette */
-  --color-ink:         #0F0E0D;
-  --color-ink-muted:   #6B6560;
-  --color-ink-faint:   #C4BFB9;
-  --color-paper:       #F7F5F2;
-  --color-paper-raised:#FFFFFF;
-  --color-accent:      #C84B31;
-  --color-accent-dim:  #F0E8E5;
-  --color-accent-hover:#A83A23;
+  --terracotta-500: #C84B31;
+  --terracotta-400: #E8714E;
+  --terracotta-300: #F0A080;
+  --terracotta-hover: #A83A23;
+  --terracotta-dim-light: #F0E8E5;
+  --terracotta-dim-dark: rgba(232, 113, 78, 0.15);
+
+  --paper-50: #F7F5F2;
+  --paper-100: #EDE6DD;
+  --paper-white: #FFFFFF;
+
+  --ink-900: #2A2420;
+  --ink-full: #0F0E0D;
+  --ink-mid: #6B6560;
+  --ink-pale: #C4BFB9;
+
+  --espresso-900: #1A1613;
+  --espresso-800: #231E1A;
+  --espresso-700: #2A2623;
+}
+
+/* ─── Semantic Tokens — Light Theme (default) ───────────────────────────────
+ * Purpose-named. The only layer components reference.
+ * ─────────────────────────────────────────────────────────────────────────── */
+:root {
+  /* Surfaces */
+  --color-bg:            var(--paper-50);
+  --color-paper:         var(--paper-50);
+  --color-paper-raised:  var(--paper-white);
+  --color-surface:       var(--paper-white);
+
+  /* Text */
+  --color-ink:           var(--ink-full);
+  --color-ink-muted:     var(--ink-mid);
+  --color-ink-faint:     var(--ink-pale);
+
+  /* Accent */
+  --color-accent:        var(--terracotta-500);
+  --color-accent-hover:  var(--terracotta-hover);
+  --color-accent-dim:    var(--terracotta-dim-light);
+
+  /* Borders */
+  --color-border-faint:  rgba(42, 36, 32, 0.12);
 
   /* Typography — resolved from next/font CSS variables set on <html> */
   --font-display: var(--font-dm-serif), Georgia, serif;
@@ -60,7 +96,32 @@
   --radius-lg:  16px;
 }
 
-/* ─── Tailwind Theme Extension ───────────────────────────────────────── */
+/* ─── Semantic Tokens — Dark Theme ───────────────────────────────────────────
+ * Remaps semantic tokens to warm-dark primitives.
+ * Only color values change — no layout, spacing, or typography overrides.
+ * ─────────────────────────────────────────────────────────────────────────── */
+[data-theme="dark"] {
+  /* Surfaces */
+  --color-bg:            var(--espresso-900);
+  --color-paper:         var(--espresso-900);
+  --color-paper-raised:  var(--espresso-800);
+  --color-surface:       var(--espresso-800);
+
+  /* Text */
+  --color-ink:           var(--paper-100);
+  --color-ink-muted:     rgba(237, 230, 221, 0.65);
+  --color-ink-faint:     rgba(237, 230, 221, 0.35);
+
+  /* Accent — luminance-shifted terracotta for dark bg */
+  --color-accent:        var(--terracotta-400);
+  --color-accent-hover:  var(--terracotta-300);
+  --color-accent-dim:    var(--terracotta-dim-dark);
+
+  /* Borders */
+  --color-border-faint:  rgba(237, 230, 221, 0.12);
+}
+
+/* ─── Tailwind Theme Extension ───────────────────────────────────────────── */
 @theme inline {
   --color-ink:          var(--color-ink);
   --color-ink-muted:    var(--color-ink-muted);
@@ -75,7 +136,7 @@
   --font-mono:          var(--font-mono);
 }
 
-/* ─── Base Styles ────────────────────────────────────────────────────── */
+/* ─── Base Styles ────────────────────────────────────────────────────────── */
 *,
 *::before,
 *::after {
@@ -99,7 +160,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* ─── Typography Defaults ────────────────────────────────────────────── */
+/* ─── Typography Defaults ────────────────────────────────────────────────── */
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-display);
   line-height: 1.15;
@@ -122,20 +183,20 @@ img {
   display: block;
 }
 
-/* ─── Focus Ring ─────────────────────────────────────────────────────── */
+/* ─── Focus Ring ─────────────────────────────────────────────────────────── */
 :focus-visible {
   outline: 2px solid var(--color-accent);
   outline-offset: 3px;
   border-radius: var(--radius-sm);
 }
 
-/* ─── Selection ──────────────────────────────────────────────────────── */
+/* ─── Selection ──────────────────────────────────────────────────────────── */
 ::selection {
   background-color: var(--color-accent-dim);
   color: var(--color-accent);
 }
 
-/* ─── Scroll Reveal Animation ────────────────────────────────────────── */
+/* ─── Scroll Reveal Animation ────────────────────────────────────────────── */
 @keyframes reveal-up {
   from {
     opacity: 0;
@@ -160,7 +221,7 @@ img {
   animation: reveal-up var(--duration-reveal) var(--ease-out-quart) forwards;
 }
 
-/* ─── Reduced Motion ─────────────────────────────────────────────────── */
+/* ─── Reduced Motion ─────────────────────────────────────────────────────── */
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
@@ -178,7 +239,7 @@ img {
   }
 }
 
-/* ─── Unicorn Easter Egg ─────────────────────────────────────────────── */
+/* ─── Unicorn Easter Egg ─────────────────────────────────────────────────── */
 @keyframes unicorn-overlay-in {
   from { opacity: 0; }
   to   { opacity: 1; }
@@ -206,7 +267,7 @@ img {
   }
 }
 
-/* ─── Command Palette ────────────────────────────────────────────────── */
+/* ─── Command Palette ────────────────────────────────────────────────────── */
 @keyframes palette-in {
   from {
     opacity: 0;
@@ -223,7 +284,7 @@ img {
   to   { opacity: 1; }
 }
 
-/* ─── Utility Helpers ────────────────────────────────────────────────── */
+/* ─── Utility Helpers ────────────────────────────────────────────────────── */
 .container-content {
   max-width: var(--content-max);
   margin-inline: auto;
@@ -248,7 +309,7 @@ img {
   border-top: 1px solid var(--color-ink-faint);
 }
 
-/* ─── Hover Link Utilities ───────────────────────────────────────────── */
+/* ─── Hover Link Utilities ───────────────────────────────────────────────── */
 /* Used by server-rendered links that need hover states without JS */
 .hover-accent {
   transition: color var(--duration-base) var(--ease-out-quart);
@@ -266,7 +327,7 @@ img {
   color: var(--color-accent) !important;
 }
 
-/* ─── Project Card Hover ─────────────────────────────────────────────── */
+/* ─── Project Card Hover ─────────────────────────────────────────────────── */
 .project-card {
   transition: border-color var(--duration-base) var(--ease-out-quart),
               transform var(--duration-base) var(--ease-out-quart);
@@ -276,7 +337,7 @@ img {
   transform: translateY(-2px);
 }
 
-/* ─── CTA Button Hover ───────────────────────────────────────────────── */
+/* ─── CTA Button Hover ───────────────────────────────────────────────────── */
 .btn-primary {
   transition: background-color var(--duration-base) var(--ease-out-quart);
 }
@@ -291,7 +352,48 @@ img {
   border-color: var(--color-accent) !important;
 }
 
-/* ─── Experience Timeline ────────────────────────────────────────────── */
+/* ─── Theme Toggle ───────────────────────────────────────────────────────── */
+.theme-toggle {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  padding: 2px;
+  border: 1px solid var(--color-ink-faint);
+  border-radius: var(--radius-md);
+  background: transparent;
+  transition: border-color var(--duration-base) var(--ease-out-quart);
+}
+
+.theme-toggle:focus-within {
+  border-color: var(--color-accent);
+}
+
+.theme-toggle-btn {
+  padding: 0.2rem 0.5rem;
+  border: none;
+  border-radius: calc(var(--radius-md) - 2px);
+  background: transparent;
+  cursor: pointer;
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  color: var(--color-ink-muted);
+  letter-spacing: 0.04em;
+  transition: background-color var(--duration-fast) var(--ease-out-quart),
+              color var(--duration-fast) var(--ease-out-quart);
+  white-space: nowrap;
+}
+
+.theme-toggle-btn[aria-pressed="true"] {
+  background-color: var(--color-accent);
+  color: var(--paper-white);
+}
+
+.theme-toggle-btn:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 1px;
+}
+
+/* ─── Experience Timeline ────────────────────────────────────────────────── */
 /*
  * On mobile the two-column grid (dot | content) collapses naturally since
  * the gutter column (2.5rem) stays — giving the left-edge line on all sizes.
@@ -305,7 +407,7 @@ img {
   }
 }
 
-/* ─── Skip Link ──────────────────────────────────────────────────────── */
+/* ─── Skip Link ──────────────────────────────────────────────────────────── */
 .skip-link {
   position: absolute;
   left: -9999px;
@@ -315,7 +417,7 @@ img {
   overflow: hidden;
   z-index: 9999;
   background-color: var(--color-accent);
-  color: var(--color-paper-raised) !important;
+  color: var(--paper-white) !important;
   padding: 0.75rem 1.5rem;
   font-family: var(--font-body);
   font-weight: 500;
@@ -331,7 +433,7 @@ img {
   overflow: visible;
 }
 
-/* ─── Responsive Nav ─────────────────────────────────────────────────── */
+/* ─── Responsive Nav ─────────────────────────────────────────────────────── */
 .nav-desktop { display: flex; }
 .nav-mobile-btn { display: none; }
 
@@ -340,7 +442,7 @@ img {
   .nav-mobile-btn { display: flex !important; }
 }
 
-/* ─── Blog Grid ──────────────────────────────────────────────────────── */
+/* ─── Blog Grid ──────────────────────────────────────────────────────────── */
 /*
  * Mobile (default): single column.
  * Desktop (≥1024px): 3 columns.
@@ -363,7 +465,7 @@ img {
   }
 }
 
-/* ─── Hero Two-Column Grid ───────────────────────────────────────────── */
+/* ─── Hero Two-Column Grid ───────────────────────────────────────────────── */
 /*
  * Mobile (default): single column, canvas stacks below text.
  * Desktop (≥768px): two equal columns — text left, 3D right.

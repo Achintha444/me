@@ -117,7 +117,7 @@ export function UnicornEasterEgg() {
             justifyContent: "center",
             pointerEvents: "auto",
             // Subtle dark scrim — doesn't block the page read, just frames the card
-            background: "rgba(15, 14, 13, 0.45)",
+            background: "color-mix(in srgb, var(--color-bg) 55%, transparent)",
             animation: "unicorn-overlay-in var(--duration-slow, 400ms) var(--ease-out-quart, ease) forwards",
           }}
         >
@@ -132,7 +132,7 @@ export function UnicornEasterEgg() {
               maxWidth: 380,
               width: "calc(100% - var(--space-8))",
               animation: "unicorn-card-in var(--duration-slow, 400ms) var(--ease-out-quart, ease) forwards",
-              boxShadow: "0 32px 64px -16px rgba(15,14,13,0.18)",
+              boxShadow: "0 32px 64px -16px rgba(0,0,0,0.24)",
             }}
           >
             {/* Glyph — single, restrained */}

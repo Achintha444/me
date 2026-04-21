@@ -5,6 +5,7 @@ import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 import { CommandPalette } from "@/components/CommandPalette";
 import { SkipLink } from "@/components/SkipLink";
+import { ThemeScript } from "@/components/ThemeScript";
 import { getNavData } from "@/lib/content";
 
 /** DM Sans — the humanist body font. Latin subset, swap display. */
@@ -80,6 +81,11 @@ export const metadata: Metadata = {
 /**
  * Root layout — applies DM font family variables, wraps every page with
  * the site header, footer, skip-to-content link, and command palette.
+ *
+ * ThemeScript is rendered as the first child of <body> so it executes
+ * as a blocking inline script before first paint, preventing FOUC.
+ * suppressHydrationWarning on <html> is required because the FOUC script
+ * mutates data-theme before hydration.
  */
 export default function RootLayout({
   children,
@@ -94,7 +100,17 @@ export default function RootLayout({
       className={`${dmSans.variable} ${dmSerifDisplay.variable} ${dmMono.variable}`}
       suppressHydrationWarning
     >
+      <head>
+        {/* color-scheme hint — native UI (scrollbars, form controls) matches theme */}
+        <meta name="color-scheme" content="light dark" />
+      </head>
       <body>
+        {/*
+         * FOUC-prevention script — runs synchronously before first paint.
+         * Sets data-theme on <html> from localStorage + matchMedia.
+         * Must be first in <body> so it executes before any painted content.
+         */}
+        <ThemeScript />
         <SkipLink />
         <SiteHeader navData={navData} />
         <main id="main-content" tabIndex={-1}>

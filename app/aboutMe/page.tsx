@@ -48,8 +48,6 @@ export default function AboutPage() {
     };
   };
 
-  console.log("meData:", meData); // Debug log to verify data structure
-
   const { content } = meData;
 
   return (

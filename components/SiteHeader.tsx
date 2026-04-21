@@ -4,6 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState, useCallback } from "react";
 import type { NavData, NavItem } from "@/lib/types";
+import { ThemeToggle } from "@/components/ThemeToggle";
 
 /** Props for the SiteHeader component. */
 interface SiteHeaderProps {
@@ -88,6 +89,11 @@ export function SiteHeader({ navData }: SiteHeaderProps) {
               />
             ))}
 
+            {/* Theme toggle */}
+            <li style={{ marginLeft: "var(--space-1)" }}>
+              <ThemeToggle />
+            </li>
+
             {/* Command palette hint */}
             <li>
               <button
@@ -100,7 +106,7 @@ export function SiteHeader({ navData }: SiteHeaderProps) {
                   display: "flex",
                   alignItems: "center",
                   gap: "0.25rem",
-                  marginLeft: "var(--space-2)",
+                  marginLeft: "var(--space-1)",
                   padding: "0.375rem 0.625rem",
                   border: "1px solid var(--color-ink-faint)",
                   borderRadius: "var(--radius-md)",
@@ -182,6 +188,31 @@ export function SiteHeader({ navData }: SiteHeaderProps) {
               </li>
             ))}
           </ul>
+
+          {/* Theme row — settings-style, at the bottom of the mobile drawer */}
+          <div
+            style={{
+              marginTop: "var(--space-3)",
+              paddingTop: "var(--space-3)",
+              borderTop: "1px solid var(--color-border-faint)",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "space-between",
+            }}
+          >
+            <span
+              style={{
+                fontFamily: "var(--font-mono)",
+                fontSize: "var(--text-xs)",
+                color: "var(--color-ink-muted)",
+                letterSpacing: "0.08em",
+                textTransform: "uppercase",
+              }}
+            >
+              Theme
+            </span>
+            <ThemeToggle />
+          </div>
         </div>
       )}
 

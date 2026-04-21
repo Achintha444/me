@@ -2,6 +2,8 @@
 
 import dynamic from "next/dynamic";
 import { useEffect, useReducer } from "react";
+import { useTheme } from "@/hooks/useTheme";
+import { themeColors } from "@/lib/theme";
 
 // ─── Dynamic import — never SSR'd ─────────────────────────────────────────
 // Per vercel-react-best-practices `bundle-dynamic-imports`: keep the Three.js
@@ -53,7 +55,7 @@ function resolveSceneState(): SceneState {
 
 /**
  * Fallback shown when WebGL is unavailable.
- * A simple CSS split-circle that echoes the terracotta / off-white metaphor.
+ * Uses semantic color tokens so it respects dark mode.
  */
 function HeroSceneFallback() {
   return (
@@ -71,10 +73,6 @@ function HeroSceneFallback() {
         pointerEvents: "none",
       }}
     >
-      {/*
-       * Split circle: left half terracotta border (design),
-       * right half solid terracotta fill (development).
-       */}
       <div
         style={{
           position: "relative",
@@ -89,7 +87,7 @@ function HeroSceneFallback() {
             position: "absolute",
             inset: 0,
             borderRadius: "50%",
-            border: "2px solid #C84B31",
+            border: "2px solid var(--color-accent)",
             clipPath: "polygon(0 0, 50% 0, 50% 100%, 0 100%)",
           }}
         />
@@ -99,7 +97,7 @@ function HeroSceneFallback() {
             position: "absolute",
             inset: 0,
             borderRadius: "50%",
-            backgroundColor: "#C84B31",
+            backgroundColor: "var(--color-accent)",
             clipPath: "polygon(50% 0, 100% 0, 100% 100%, 50% 100%)",
           }}
         />
@@ -119,11 +117,8 @@ const INITIAL_STATE: SceneState = { status: "pending", staticPose: false };
  * 1. Dynamic import with `ssr: false` (Three.js requires browser APIs)
  * 2. WebGL availability detection — falls back to a CSS visual if absent
  * 3. `prefers-reduced-motion` detection — passes `staticPose` to the canvas
- *    so no animation loop runs
- *
- * Uses `useReducer` so both capability checks resolve into a single state
- * dispatch, avoiding the lint restriction on multiple `setState` calls in
- * a single effect body.
+ * 4. Theme-aware colors via useTheme() — passes current palette to HeroScene
+ *    so materials update reactively without MutationObserver.
  *
  * Applied skill: vercel-react-best-practices — client boundary kept at the
  * leaf, not hoisted to the page.
@@ -134,6 +129,9 @@ export function HeroSceneWrapper() {
     INITIAL_STATE
   );
 
+  const { resolved } = useTheme();
+  const colors = themeColors[resolved];
+
   useEffect(() => {
     dispatch(resolveSceneState());
   }, []);
@@ -141,5 +139,5 @@ export function HeroSceneWrapper() {
   if (state.status === "pending") return null;
   if (state.status === "fallback") return <HeroSceneFallback />;
 
-  return <HeroScene staticPose={state.staticPose} />;
+  return <HeroScene staticPose={state.staticPose} colors={colors} />;
 }

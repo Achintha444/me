@@ -163,7 +163,7 @@ export function CommandPalette({ navItems }: CommandPaletteProps) {
           position: "fixed",
           inset: 0,
           zIndex: 100,
-          backgroundColor: "rgba(15, 14, 13, 0.4)",
+          backgroundColor: "color-mix(in srgb, var(--color-bg) 60%, transparent)",
           backdropFilter: "blur(4px)",
           display: "flex",
           alignItems: "center",
@@ -187,7 +187,7 @@ export function CommandPalette({ navItems }: CommandPaletteProps) {
             border: "1px solid var(--color-ink-faint)",
             borderRadius: "var(--radius-lg)",
             boxShadow:
-              "0 24px 64px rgba(15, 14, 13, 0.16), 0 4px 16px rgba(15, 14, 13, 0.08)",
+              "0 24px 64px rgba(0,0,0,0.22), 0 4px 16px rgba(0,0,0,0.10)",
             overflow: "hidden",
             animation: `palette-in var(--duration-slow) var(--ease-out-quart) forwards`,
           }}

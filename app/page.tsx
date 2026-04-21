@@ -265,7 +265,7 @@ export default async function HomePage() {
                   position: "absolute",
                   inset: 0,
                   background:
-                    "radial-gradient(ellipse 70% 70% at 50% 50%, rgba(200,75,49,0.07) 0%, transparent 70%)",
+                    "radial-gradient(ellipse 70% 70% at 50% 50%, color-mix(in srgb, var(--color-accent) 8%, transparent) 0%, transparent 70%)",
                   pointerEvents: "none",
                 }}
               />

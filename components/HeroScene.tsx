@@ -4,12 +4,7 @@ import { useRef, useMemo } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { Environment } from "@react-three/drei";
 import * as THREE from "three";
-
-// ─── Design constants ──────────────────────────────────────────────────────
-/** Terracotta accent — matches --color-accent in globals.css */
-const COLOR_ACCENT = "#C84B31";
-/** Warm dark ink — matches --color-ink in globals.css */
-const COLOR_INK = "#0F0E0D";
+import type { ThemeColors } from "@/lib/theme";
 
 /** Radius of the icosahedron geometry */
 const GEO_RADIUS = 1.8;
@@ -44,7 +39,6 @@ function partitionIcosahedronIndices(geometry: THREE.BufferGeometry): {
       const b = idx.getX(i + 1);
       const c = idx.getX(i + 2);
 
-      // Centroid x-coordinate of the triangle
       const cx = (pos.getX(a) + pos.getX(b) + pos.getX(c)) / 3;
 
       if (cx >= 0) {
@@ -60,13 +54,14 @@ function partitionIcosahedronIndices(geometry: THREE.BufferGeometry): {
 
 // ─── Sub-mesh: design half (wireframe, terracotta) ────────────────────────
 
-/** The wireframe (design) half of the split icosahedron. */
 function DesignHalf({
   geometry,
   wireIndices,
+  wireframeColor,
 }: {
   geometry: THREE.BufferGeometry;
   wireIndices: number[];
+  wireframeColor: string;
 }) {
   const subGeo = useMemo(() => {
     const g = new THREE.BufferGeometry();
@@ -82,7 +77,7 @@ function DesignHalf({
   return (
     <lineSegments geometry={wireGeo}>
       <lineBasicMaterial
-        color="#A83A23"
+        color={wireframeColor}
         transparent
         opacity={1}
         depthWrite={false}
@@ -93,13 +88,14 @@ function DesignHalf({
 
 // ─── Sub-mesh: development half (solid, warm lit surface) ─────────────────
 
-/** The solid (development) half of the split icosahedron. */
 function DevelopmentHalf({
   geometry,
   solidIndices,
+  solidColor,
 }: {
   geometry: THREE.BufferGeometry;
   solidIndices: number[];
+  solidColor: string;
 }) {
   const subGeo = useMemo(() => {
     const g = new THREE.BufferGeometry();
@@ -113,7 +109,7 @@ function DevelopmentHalf({
   return (
     <mesh geometry={subGeo}>
       <meshStandardMaterial
-        color="#E8E0D6"
+        color={solidColor}
         roughness={0.35}
         metalness={0.12}
         side={THREE.DoubleSide}
@@ -124,11 +120,13 @@ function DevelopmentHalf({
 
 // ─── Seam edge glow (single shared wireframe at low opacity) ──────────────
 
-/**
- * Full wireframe drawn at very low opacity to hint at the complete structure.
- * Gives the seam between halves a subtle lit appearance.
- */
-function SeamGlow({ geometry }: { geometry: THREE.BufferGeometry }) {
+function SeamGlow({
+  geometry,
+  seamColor,
+}: {
+  geometry: THREE.BufferGeometry;
+  seamColor: string;
+}) {
   const wireGeo = useMemo(
     () => new THREE.WireframeGeometry(geometry),
     [geometry]
@@ -137,7 +135,7 @@ function SeamGlow({ geometry }: { geometry: THREE.BufferGeometry }) {
   return (
     <lineSegments geometry={wireGeo}>
       <lineBasicMaterial
-        color={COLOR_INK}
+        color={seamColor}
         transparent
         opacity={0.14}
         depthWrite={false}
@@ -148,20 +146,12 @@ function SeamGlow({ geometry }: { geometry: THREE.BufferGeometry }) {
 
 // ─── Spinning group containing both halves ────────────────────────────────
 
-/** Props for the split icosahedron rig. */
 interface SplitIcosahedronProps {
-  /** If true, the mesh holds a fixed display pose without any animation loop. */
   staticPose: boolean;
+  colors: ThemeColors;
 }
 
-/**
- * Icosahedron split along the x=0 plane:
- * - Negative-x half: wireframe lines in terracotta (#C84B31) — representing design
- * - Positive-x half: solid lit surface in off-white — representing development
- *
- * Rotates slowly so the seam always catches the warm light from the Environment.
- */
-function SplitIcosahedron({ staticPose }: SplitIcosahedronProps) {
+function SplitIcosahedron({ staticPose, colors }: SplitIcosahedronProps) {
   const groupRef = useRef<THREE.Group>(null);
 
   const baseGeo = useMemo(
@@ -180,7 +170,6 @@ function SplitIcosahedron({ staticPose }: SplitIcosahedronProps) {
     groupRef.current.rotation.x += delta * ROT_SPEED_BASE * 0.35;
   });
 
-  // Static starting pose — tilted so both halves are visible on load
   const INITIAL_ROTATION_X = 0.3;
   const INITIAL_ROTATION_Y = 0.6;
 
@@ -189,42 +178,34 @@ function SplitIcosahedron({ staticPose }: SplitIcosahedronProps) {
       ref={groupRef}
       rotation={[INITIAL_ROTATION_X, INITIAL_ROTATION_Y, 0]}
     >
-      <SeamGlow geometry={baseGeo} />
-      <DesignHalf geometry={baseGeo} wireIndices={wireIndices} />
-      <DevelopmentHalf geometry={baseGeo} solidIndices={solidIndices} />
+      <SeamGlow geometry={baseGeo} seamColor={colors.seam} />
+      <DesignHalf geometry={baseGeo} wireIndices={wireIndices} wireframeColor={colors.wireframe} />
+      <DevelopmentHalf geometry={baseGeo} solidIndices={solidIndices} solidColor={colors.solid} />
     </group>
   );
 }
 
 // ─── Exported canvas component ────────────────────────────────────────────
 
-/** Props for the HeroScene canvas wrapper. */
 interface HeroSceneProps {
-  /**
-   * If true, suppress the animation loop. Used when `prefers-reduced-motion`
-   * is active — the mesh renders in a fixed pose instead.
-   */
   staticPose?: boolean;
+  colors: ThemeColors;
 }
 
 /**
  * HeroScene — a Three.js canvas visual for the portfolio hero section.
  *
- * Metaphor: an icosahedron split along its vertical axis. The left (negative-x)
- * half is rendered as a terracotta wireframe, evoking design sketches and
- * Figma frames. The right (positive-x) half is a fully lit solid surface,
- * evoking shipped, engineered product. Both halves are one form — the same
- * geometry — communicating that design and development are unified in a single
- * discipline rather than separate trades.
+ * Accepts theme-aware colors as props so materials update reactively
+ * when the theme changes. No MutationObserver needed — React re-renders
+ * this component when HeroSceneWrapper passes new colors.
  *
  * Technical notes:
  * - Client-only; loaded via `next/dynamic` with `ssr: false` from the page.
  * - `aria-hidden="true"` — decorative; primary content is the surrounding heading.
  * - Pixel ratio capped at 2 for performance.
  * - Respects `prefers-reduced-motion` via the `staticPose` prop.
- * - `frameloop="always"` kept simple; geometry is low-poly (≤80 faces).
  */
-export function HeroScene({ staticPose = false }: HeroSceneProps) {
+export function HeroScene({ staticPose = false, colors }: HeroSceneProps) {
   return (
     <div
       aria-hidden="true"
@@ -244,28 +225,28 @@ export function HeroScene({ staticPose = false }: HeroSceneProps) {
         gl={{ antialias: true, alpha: true }}
         style={{ background: "transparent" }}
       >
-        {/* Warm ambient fill — slightly reduced so the directional key has more contrast */}
-        <ambientLight intensity={0.45} color="#FFF5EE" />
+        {/* Ambient fill — intensity and color vary by theme */}
+        <ambientLight intensity={0.45} color={colors.ambient} />
 
-        {/* Key light from upper-right — strong catch on the solid half */}
+        {/* Key light from upper-right */}
         <directionalLight
           position={[4, 6, 3]}
           intensity={2.2}
-          color="#FFFFFF"
+          color={colors.keyLight}
         />
 
-        {/* Rim light from upper-left — separates the shape from the background */}
+        {/* Rim light from upper-left — separates shape from background */}
         <directionalLight
           position={[-5, 3, 1]}
           intensity={0.6}
-          color="#E8D5C0"
+          color={colors.rimLight}
         />
 
         {/* Terracotta bounce from lower-left — warms the design wireframe half */}
         <pointLight
           position={[-4, -3, 2]}
           intensity={1.2}
-          color={COLOR_ACCENT}
+          color={colors.bounce}
           distance={14}
           decay={2}
         />
@@ -273,7 +254,7 @@ export function HeroScene({ staticPose = false }: HeroSceneProps) {
         {/* Environment for subtle IBL reflections on the solid half */}
         <Environment preset="dawn" />
 
-        <SplitIcosahedron staticPose={staticPose} />
+        <SplitIcosahedron staticPose={staticPose} colors={colors} />
       </Canvas>
     </div>
   );
