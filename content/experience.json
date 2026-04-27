@@ -1,32 +1,100 @@
 {
     "pageTitle": "Experiences",
     "experiences": [
-        {   
+        {
             "title": [
-                "Vertify Technologies",
-                "Front-end Developer/UI-UX Designer",
-                "Oct 2024 - Present"
+                "Oloodi",
+                "Software Engineer (Frontend) · Contract Full-time · Hybrid · Montreal, Quebec, Canada",
+                "Nov 2025 - Present"
             ],
             "content": [
                 {
                     "title": "Technology Stack",
-                    "body": "React JS, Tailwind CSS, GitHub Actions, Figma"
+                    "body": "Flutter, Firebase, Google Cloud Platform, Codemagic"
                 },
                 {
                     "title": "Organization’s Activities",
-                    "body": "Vertify technologies is a startup based in Sri Lanka, whihch is currently developing the countries first appointment booking platform for businesses and individuals. I am a part of the team that is developing this platform from scratch."
+                    "body": "Oloodi builds innovative SaaS platforms that leverage cutting-edge AI and cloud-native architectures, with a strong emphasis on Google Cloud Platform services and advanced prompt engineering for seamless AI integration."
                 },
                 {
                     "title": "My Responsibilities",
                     "body": [
                         {
-                            "body": "Developed and currently maintaining the company website using React, Tailwind CSS, and Aceternity UI."
+                            "body": "Contributing to the development of scalable SaaS products with cloud-native architectures on Google Cloud Platform."
                         },
                         {
-                            "body": "Implemented a CI/CD pipeline with GitHub Actions for the deployment of the application to AWS. Led the UI/UX design for the company’s inaugural product, 'Khrono', Sri Lanka's first appointment booking system."
+                            "body": "Building cross-platform mobile experiences with Flutter and Firebase, integrating AI features through advanced prompt engineering."
                         },
                         {
-                            "body": "Leading the front-end code reviews for Khrono, covering both the React Native mobile app and the React web dashboard"
+                            "body": "Designing and maintaining Codemagic automation pipelines to deliver efficient, reliable releases for the team."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": [
+                "KAST",
+                "Senior Software Engineer (Front-end) · Remote · Montreal, Quebec, Canada",
+                "Dec 2024 - Mar 2026"
+            ],
+            "content": [
+                {
+                    "title": "Technology Stack",
+                    "body": "Next JS, Flutter, Firebase, Figma"
+                },
+                {
+                    "title": "Organization’s Activities",
+                    "body": "KAST is a crypto-based startup backed by Solana, building an internet-banking-like system for crypto currencies including Solana and Ethereum."
+                },
+                {
+                    "title": "My Responsibilities",
+                    "body": [
+                        {
+                            "body": "Developed features such as debit card purchasing for customers in the KAST Admin Application using Next.js with Context API for state management, integrating REST APIs developed in Go and deployed on AWS."
+                        },
+                        {
+                            "body": "Led the implementation of localization for the KAST Crypto Wallet — an app with over 200K downloads on the Apple App Store and Google Play Store, backed by Solana — using Firebase Remote Config."
+                        },
+                        {
+                            "body": "Led the redesign of the KAST Crypto Wallet, working closely with the design team to deliver a pixel-perfect UI."
+                        },
+                        {
+                            "body": "Developed features such as “Debit Card Purchase” and “Debit Card Delivery” by integrating REST APIs built in Go and deployed on AWS, following Clean Architecture principles in the KAST Crypto Wallet application, and collaborating closely with cross-functional teams including backend, DevOps, and QA."
+                        },
+                        {
+                            "body": "Conducted interviews and assessed candidates' technical skills (for Front-end [React] and Flutter roles) and cultural fit for the team."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": [
+                "Vertify Technologies",
+                "Front-end Developer / UI-UX Designer (Volunteer) · Contract Part-time · Remote · Montreal, Quebec, Canada",
+                "Oct 2024 - Dec 2024"
+            ],
+            "content": [
+                {
+                    "title": "Technology Stack",
+                    "body": "React JS, Tailwind CSS, CI/CD, Figma"
+                },
+                {
+                    "title": "Organization’s Activities",
+                    "body": "Vertify Technologies is a startup based in Sri Lanka, developing the country's first appointment booking platform for businesses and individuals. I was part of the team building this platform from scratch."
+                },
+                {
+                    "title": "My Responsibilities",
+                    "body": [
+                        {
+                            "body": "Developed the company website using React, Tailwind CSS, Framer Motion and the Aceternity UI design system. Implemented a CI/CD pipeline with GitHub Actions for deployment to AWS."
+                        },
+                        {
+                            "body": "Led and completed the UI/UX design for the company's first product, “Khrono”, Sri Lanka's first appointment booking system."
+                        },
+                        {
+                            "body": "Implemented authentication for the “Khrono” web dashboard, using Asgardeo as the identity provider (IdP) with React."
                         }
                     ],
                     "links": [
@@ -35,53 +103,6 @@
                             "link": "https://www.v-tfy.com/"
                         }
                     ]
-                },
-                {
-                    "title": "My Accomplishments",
-                    "body": [
-                        {
-                            "body": "I designed the UI/UX design of the Khrono mobile application. I also implemented the authentication feature for the web dashboard of “Khrono”, using Asgardeo with React. I am also leading the front-end code reviews for Khrono, covering both the React Native mobile app and the React web dashboard."
-                        },
-                        {
-                            "body": "Also I am leading the front-end code reviews for Khrono, covering both the React Native mobile app and the React web dashboard."
-                        }
-                    ]
-                },
-                {
-                    "title": "Challenges Faced",
-                    "body": "This was the first time I got this many responsibilities in my profession career and I am considering this as a learning oppurtunity to continue to learn and grow my self."
-                }
-            ]
-        },
-        {   
-            "title": [
-                "KAST",
-                "Senior Mobile Developer",
-                "Dec 2024 - Present"
-            ],
-            "content": [
-                {
-                    "title": "Technology Stack",
-                    "body": "Flutter, Figma"
-                },
-                {
-                    "title": "Organization’s Activities",
-                    "body": "KAST is a crytpo based startup which is backed by the Solana Founders, where we are currently developing and maintaing an internet banking like system for for crypto currencies like Solana, Ethereum, etc."
-                },
-                {
-                    "title": "My Responsibilities",
-                    "body": [
-                        {
-                            "body": "Leading the development of the design revamping effort of the company's main application, KAST Crypto Wallet, which has over 200K+ downloads across both Apple App Store and Google Play Store. I collaborate closely with the design team to develop a pixel-perfect UI."
-                        },
-                        {
-                            "body": "• Implementing features like 'debit card buying' and 'debit card shipping' using the 'clean architecture' for KAST Crypto Wallet application."
-                        }
-                    ]
-                },
-                {
-                    "title": "My Accomplishments",
-                    "body": "I am currently leading the development of the design revamping effort of the company's main application, KAST Crypto Wallet, which has over 200K+ downloads across both Apple App Store and Google Play Store. I collaborate closely with the design team to develop a pixel-perfect UI."
                 }
             ]
         },
