@@ -2,6 +2,84 @@
     "pageTitle": "Projects",
     "projects": [
         {
+            "key": "star-commit",
+            "name": "Star Commit — VS Code Extension",
+            "role": "Developer",
+            "overview": [
+                {
+                    "title": "Duration",
+                    "body": "2026 Apr - 2026 May",
+                    "key": "duration"
+                },
+                {
+                    "title": "Sector",
+                    "body": "Developer Tools · VS Code Extension",
+                    "key": "sector"
+                },
+                {
+                    "title": "Associated With",
+                    "body": "Oloodi",
+                    "key": "associated"
+                },
+                {
+                    "title": "My Role",
+                    "body": "Developer",
+                    "key": "role"
+                }
+            ],
+            "image": "images/projects/project-star-commit.webp",
+            "cols": 1,
+            "rows": 1.5,
+            "content": [
+                {
+                    "title": "Overview",
+                    "body": "I use Claude Code daily, and the commit messages it writes from the terminal are genuinely good. But I kept hitting the same friction: if I wanted to use a lighter model like Haiku just for the commit, I had to switch models mid-session and lose my working context. Annoying enough that I decided to build a fix — and Star Commit is the result.",
+                    "links": [
+                        {
+                            "title": "View on the VS Code Marketplace",
+                            "link": "https://marketplace.visualstudio.com/items?itemName=AchinthaIsuru.star-commit"
+                        },
+                        {
+                            "title": "GitHub Repository",
+                            "link": "https://github.com/Achintha444/star-commit-ai"
+                        }
+                    ],
+                    "key": "overview"
+                },
+                {
+                    "title": "What It Does",
+                    "body": "Star Commit adds a button to the Source Control panel in VS Code. Click it, and it generates a commit message straight from your git diff using the Claude Code CLI under the hood. You can pick the model — Opus, Sonnet, or Haiku — independently from whatever you're running in your terminal, so there's no context switching and no interrupting your current session.",
+                    "key": "what-it-does"
+                },
+                {
+                    "title": "Features",
+                    "body": [
+                        {
+                            "body": "One-click commit message generation from the Source Control panel, powered by the Claude Code CLI."
+                        },
+                        {
+                            "body": "Per-extension model selection (Opus, Sonnet, or Haiku) that stays separate from your active terminal session — no more losing context just to write a commit."
+                        },
+                        {
+                            "body": "Conventional Commits support out of the box."
+                        },
+                        {
+                            "body": "Works with staged changes or all changes, so it fits whichever workflow you prefer."
+                        },
+                        {
+                            "body": "Free, open source under the MIT license, and already live on the Marketplace."
+                        }
+                    ],
+                    "key": "features"
+                },
+                {
+                    "title": "Outcome",
+                    "body": "Star Commit is published on the Visual Studio Marketplace and the source is on GitHub for anyone who wants to try it, contribute, or fork it. It's a small tool, but it removed a paper-cut I was running into every day — and that on its own felt worth shipping.",
+                    "key": "outcome"
+                }
+            ]
+        },
+        {
             "key": "asgardeo-homepage",
             "name": "Redesign of Asgardeo Homepage and User Registration Flow",
             "role": "UI/UX Designer",
