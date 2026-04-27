@@ -24,46 +24,6 @@ const LERP_EPSILON_SQ = 0.00001;
 // ─── Geometry helpers ──────────────────────────────────────────────────────
 
 /**
- * Partitions an IcosahedronGeometry's faces into two groups based on whether
- * each triangle's centroid falls in the positive-x half or the negative-x half.
- * Returns index arrays for both groups so we can render them as two meshes
- * sharing a single geometry but using different materials.
- *
- * @param geometry - The source BufferGeometry with an index buffer.
- * @returns Object containing solidIndices (positive-x) and wireIndices (negative-x).
- */
-function partitionIcosahedronIndices(geometry: THREE.BufferGeometry): {
-  solidIndices: number[];
-  wireIndices: number[];
-} {
-  const pos = geometry.getAttribute("position") as THREE.BufferAttribute;
-  const idx = geometry.getIndex();
-
-  const solidIndices: number[] = [];
-  const wireIndices: number[] = [];
-
-  if (idx) {
-    // Indexed geometry — iterate the index buffer in triplets
-    for (let i = 0; i < idx.count; i += 3) {
-      const a = idx.getX(i);
-      const b = idx.getX(i + 1);
-      const c = idx.getX(i + 2);
-      const cx = (pos.getX(a) + pos.getX(b) + pos.getX(c)) / 3;
-      (cx >= 0 ? solidIndices : wireIndices).push(a, b, c);
-    }
-  } else {
-    // Non-indexed geometry (PolyhedronGeometry, the source of IcosahedronGeometry,
-    // emits non-indexed buffers). Vertices are laid out face-by-face in groups of 3.
-    for (let i = 0; i < pos.count; i += 3) {
-      const cx = (pos.getX(i) + pos.getX(i + 1) + pos.getX(i + 2)) / 3;
-      (cx >= 0 ? solidIndices : wireIndices).push(i, i + 1, i + 2);
-    }
-  }
-
-  return { solidIndices, wireIndices };
-}
-
-/**
  * Extracts the 12 unique vertex positions from a detail-0 icosahedron.
  * The detail-0 geometry has exactly 12 vertices — the original icosahedron corners.
  * Using detail-0 here (not the shared detail-1 geometry) avoids pulling 42 positions.
@@ -99,35 +59,27 @@ function clearAlphaBuffer(buffer: Float32Array): void {
   }
 }
 
-// ─── Sub-mesh: design half (wireframe, terracotta) ────────────────────────
+// ─── Full-icosahedron wireframe ───────────────────────────────────────────
 
 /**
- * Renders the negative-x half of the icosahedron as a wireframe line mesh.
- * Color changes are applied directly to the material ref for zero-re-render updates.
+ * Renders every edge of the icosahedron as a wireframe line mesh in a single
+ * color. Replaces the previous half-wireframe + seam-glow pair so all visible
+ * borders share one color.
  *
  * @param geometry - Shared base BufferGeometry.
- * @param wireIndices - Index list for the negative-x (design) triangles.
  * @param wireframeColor - CSS/hex color string from the active theme.
  */
-function DesignHalf({
+function FullWireframe({
   geometry,
-  wireIndices,
   wireframeColor,
 }: {
   geometry: THREE.BufferGeometry;
-  wireIndices: number[];
   wireframeColor: string;
 }) {
-  const subGeo = useMemo(() => {
-    const g = new THREE.BufferGeometry();
-    g.setAttribute("position", geometry.getAttribute("position"));
-    g.setAttribute("normal", geometry.getAttribute("normal"));
-    g.setIndex(wireIndices);
-    g.computeBoundingSphere();
-    return g;
-  }, [geometry, wireIndices]);
-
-  const wireGeo = useMemo(() => new THREE.WireframeGeometry(subGeo), [subGeo]);
+  const wireGeo = useMemo(
+    () => new THREE.WireframeGeometry(geometry),
+    [geometry]
+  );
   const materialRef = useRef<THREE.LineBasicMaterial>(null);
 
   useEffect(() => {
@@ -340,47 +292,6 @@ function DevelopmentHalf({
   );
 }
 
-// ─── Seam edge glow (single shared wireframe at low opacity) ──────────────
-
-/**
- * Renders a low-opacity full wireframe overlay over the entire icosahedron
- * to give the seam between design and development halves a subtle glow.
- *
- * @param geometry - Shared base BufferGeometry.
- * @param seamColor - CSS/hex color string from the active theme.
- */
-function SeamGlow({
-  geometry,
-  seamColor,
-}: {
-  geometry: THREE.BufferGeometry;
-  seamColor: string;
-}) {
-  const wireGeo = useMemo(
-    () => new THREE.WireframeGeometry(geometry),
-    [geometry]
-  );
-  const materialRef = useRef<THREE.LineBasicMaterial>(null);
-
-  useEffect(() => {
-    if (!materialRef.current) return;
-    materialRef.current.color.set(seamColor);
-    invalidate();
-  }, [seamColor]);
-
-  return (
-    <lineSegments geometry={wireGeo} raycast={() => null}>
-      <lineBasicMaterial
-        ref={materialRef}
-        color={seamColor}
-        transparent
-        opacity={0.14}
-        depthWrite={false}
-      />
-    </lineSegments>
-  );
-}
-
 // ─── Vertex dots at the 12 original icosahedron corners ───────────────────
 
 /**
@@ -464,15 +375,9 @@ function SplitIcosahedron({ staticPose, colors }: SplitIcosahedronProps) {
     []
   );
 
-  const { wireIndices } = useMemo(
-    () => partitionIcosahedronIndices(baseGeo),
-    [baseGeo]
-  );
-
   /**
    * Indices for every face of the icosahedron. The hover hit-mesh covers the
-   * whole shape so both halves are tintable, even though only the design
-   * (left) half renders visible wireframe lines at rest.
+   * whole shape so any face under the cursor can be tinted.
    */
   const allFaceIndices = useMemo(() => {
     const pos = baseGeo.getAttribute("position") as THREE.BufferAttribute;
@@ -505,12 +410,7 @@ function SplitIcosahedron({ staticPose, colors }: SplitIcosahedronProps) {
       ref={groupRef}
       rotation={[INITIAL_ROTATION_X, INITIAL_ROTATION_Y, 0]}
     >
-      <SeamGlow geometry={baseGeo} seamColor={colors.seam} />
-      <DesignHalf
-        geometry={baseGeo}
-        wireIndices={wireIndices}
-        wireframeColor={colors.wireframe}
-      />
+      <FullWireframe geometry={baseGeo} wireframeColor={colors.wireframe} />
       <DevelopmentHalf
         geometry={baseGeo}
         solidIndices={allFaceIndices}
