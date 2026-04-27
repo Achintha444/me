@@ -1,7 +1,12 @@
 "use client";
 
 import { useRef, useMemo, useEffect } from "react";
-import { Canvas, useFrame, invalidate } from "@react-three/fiber";
+import {
+  Canvas,
+  useFrame,
+  invalidate,
+  type ThreeEvent,
+} from "@react-three/fiber";
 import { Environment } from "@react-three/drei";
 import * as THREE from "three";
 import type { ThemeColors } from "@/lib/theme";
@@ -20,6 +25,14 @@ const VERTEX_DOT_RADIUS = 0.055;
 const HOVER_LERP_FACTOR = 0.12;
 /** Squared color-distance threshold below which lerping stops */
 const LERP_EPSILON_SQ = 0.00001;
+/** Radians of group rotation applied per pixel of pointer drag */
+const DRAG_SENSITIVITY = 0.006;
+/** Per-second exponential decay rate applied to drag-released momentum (higher = quicker stop). */
+const INERTIA_DAMPING = 1.6;
+/** Angular speed (rad/s) below which residual momentum snaps to zero. */
+const VELOCITY_EPSILON = 0.02;
+/** Smoothing weight for new pointer-move samples when computing live velocity. */
+const VELOCITY_SMOOTHING = 0.7;
 
 // ─── Geometry helpers ──────────────────────────────────────────────────────
 
@@ -367,8 +380,16 @@ interface SplitIcosahedronProps {
  */
 function SplitIcosahedron({ staticPose, colors }: SplitIcosahedronProps) {
   const groupRef = useRef<THREE.Group>(null);
-  /** True while the pointer is over the solid half. */
+  /** True while the pointer is over any face of the icosahedron. */
   const isHovered = useRef<boolean>(false);
+  /** True while the user is actively dragging to rotate. */
+  const isDragging = useRef<boolean>(false);
+  /** Last pointer screen position captured during drag. */
+  const lastPointer = useRef<{ x: number; y: number }>({ x: 0, y: 0 });
+  /** Timestamp (ms) of the previous pointer-move sample, used to compute live velocity. */
+  const lastMoveTime = useRef<number>(0);
+  /** Angular velocity (rad/s) carried over after the user releases the drag. */
+  const velocity = useRef<{ x: number; y: number }>({ x: 0, y: 0 });
 
   const baseGeo = useMemo(
     () => new THREE.IcosahedronGeometry(GEO_RADIUS, GEO_DETAIL),
@@ -392,14 +413,76 @@ function SplitIcosahedron({ staticPose, colors }: SplitIcosahedronProps) {
   }, [baseGeo]);
 
   useFrame((_state, delta) => {
-    if (staticPose || isHovered.current || !groupRef.current) return;
-    groupRef.current.rotation.y += delta * ROT_SPEED_BASE * ROT_SPEED_Y_RATIO;
-    groupRef.current.rotation.x += delta * ROT_SPEED_BASE * 0.35;
+    const group = groupRef.current;
+    if (staticPose || isDragging.current || !group) return;
+
+    // Phase 1 — drag-released momentum: apply residual angular velocity and decay it.
+    const speed = Math.hypot(velocity.current.x, velocity.current.y);
+    if (speed > VELOCITY_EPSILON) {
+      group.rotation.x += velocity.current.x * delta;
+      group.rotation.y += velocity.current.y * delta;
+      const damp = Math.exp(-INERTIA_DAMPING * delta);
+      velocity.current.x *= damp;
+      velocity.current.y *= damp;
+      invalidate();
+      return;
+    }
+    // Snap to zero once below threshold so auto-rotation resumes cleanly.
+    velocity.current.x = 0;
+    velocity.current.y = 0;
+
+    // Phase 2 — hover pause (only after momentum has settled).
+    if (isHovered.current) return;
+
+    // Phase 3 — idle auto-rotation.
+    group.rotation.y += delta * ROT_SPEED_BASE * ROT_SPEED_Y_RATIO;
+    group.rotation.x += delta * ROT_SPEED_BASE * 0.35;
   });
 
   /** Callback passed to DevelopmentHalf to synchronise hover state. */
   const handleHoverChange = (hovered: boolean) => {
     isHovered.current = hovered;
+  };
+
+  /** Begin a drag-rotate gesture; captures the pointer so movement persists outside the canvas. */
+  const handlePointerDown = (e: ThreeEvent<PointerEvent>) => {
+    isDragging.current = true;
+    lastPointer.current = { x: e.clientX, y: e.clientY };
+    lastMoveTime.current = performance.now();
+    // Cancel any in-flight momentum the moment a new drag starts.
+    velocity.current.x = 0;
+    velocity.current.y = 0;
+    (e.target as Element | null)?.setPointerCapture?.(e.pointerId);
+  };
+
+  /** End a drag-rotate gesture and release the captured pointer; momentum continues in useFrame. */
+  const handlePointerUp = (e: ThreeEvent<PointerEvent>) => {
+    isDragging.current = false;
+    (e.target as Element | null)?.releasePointerCapture?.(e.pointerId);
+    invalidate();
+  };
+
+  /** Apply pointer movement as group rotation and update the velocity sample. */
+  const handlePointerMove = (e: ThreeEvent<PointerEvent>) => {
+    if (!isDragging.current || !groupRef.current) return;
+    const dx = e.clientX - lastPointer.current.x;
+    const dy = e.clientY - lastPointer.current.y;
+    groupRef.current.rotation.y += dx * DRAG_SENSITIVITY;
+    groupRef.current.rotation.x += dy * DRAG_SENSITIVITY;
+
+    // Compute instantaneous angular velocity (rad/s) and blend with the running estimate.
+    const now = performance.now();
+    const dt = Math.max(0.001, (now - lastMoveTime.current) / 1000);
+    const newVy = (dx * DRAG_SENSITIVITY) / dt;
+    const newVx = (dy * DRAG_SENSITIVITY) / dt;
+    velocity.current.y =
+      velocity.current.y * (1 - VELOCITY_SMOOTHING) + newVy * VELOCITY_SMOOTHING;
+    velocity.current.x =
+      velocity.current.x * (1 - VELOCITY_SMOOTHING) + newVx * VELOCITY_SMOOTHING;
+
+    lastPointer.current = { x: e.clientX, y: e.clientY };
+    lastMoveTime.current = now;
+    invalidate();
   };
 
   const INITIAL_ROTATION_X = 0.3;
@@ -409,6 +492,9 @@ function SplitIcosahedron({ staticPose, colors }: SplitIcosahedronProps) {
     <group
       ref={groupRef}
       rotation={[INITIAL_ROTATION_X, INITIAL_ROTATION_Y, 0]}
+      onPointerDown={handlePointerDown}
+      onPointerUp={handlePointerUp}
+      onPointerMove={handlePointerMove}
     >
       <FullWireframe geometry={baseGeo} wireframeColor={colors.wireframe} />
       <DevelopmentHalf
@@ -464,7 +550,13 @@ export function HeroScene({ staticPose = false, colors }: HeroSceneProps) {
         dpr={[1, 2]}
         camera={{ position: [0, 0, 4.2], fov: 50, near: 0.1, far: 50 }}
         gl={{ antialias: true, alpha: true }}
-        style={{ background: "transparent", pointerEvents: "auto" }}
+        style={{ background: "transparent", pointerEvents: "auto", cursor: "grab" }}
+        onPointerDown={(e) => {
+          (e.currentTarget as HTMLElement).style.cursor = "grabbing";
+        }}
+        onPointerUp={(e) => {
+          (e.currentTarget as HTMLElement).style.cursor = "grab";
+        }}
       >
         {/* Ambient fill — intensity and color vary by theme */}
         <ambientLight intensity={0.45} color={colors.ambient} />
