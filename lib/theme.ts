@@ -156,7 +156,7 @@ export const themeColors: Record<ResolvedTheme, ThemeColors> = {
     rimLight:  "#E8D5C0",
     bounce:    "#C84B31",
     vertexDot: "#C84B31",
-    hoverTint: "#2D5F8F",
+    hoverTint: "#C84B31",
   },
   dark: {
     wireframe: "#E8714E",
@@ -167,6 +167,6 @@ export const themeColors: Record<ResolvedTheme, ThemeColors> = {
     rimLight:  "#C86040",
     bounce:    "#E8714E",
     vertexDot: "#F0A080",
-    hoverTint: "#7FB4E8",
+    hoverTint: "#F0A080",
   },
 };

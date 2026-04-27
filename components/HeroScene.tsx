@@ -464,10 +464,27 @@ function SplitIcosahedron({ staticPose, colors }: SplitIcosahedronProps) {
     []
   );
 
-  const { solidIndices, wireIndices } = useMemo(
+  const { wireIndices } = useMemo(
     () => partitionIcosahedronIndices(baseGeo),
     [baseGeo]
   );
+
+  /**
+   * Indices for every face of the icosahedron. The hover hit-mesh covers the
+   * whole shape so both halves are tintable, even though only the design
+   * (left) half renders visible wireframe lines at rest.
+   */
+  const allFaceIndices = useMemo(() => {
+    const pos = baseGeo.getAttribute("position") as THREE.BufferAttribute;
+    const idx = baseGeo.getIndex();
+    const out: number[] = [];
+    if (idx) {
+      for (let i = 0; i < idx.count; i++) out.push(idx.getX(i));
+    } else {
+      for (let i = 0; i < pos.count; i++) out.push(i);
+    }
+    return out;
+  }, [baseGeo]);
 
   useFrame((_state, delta) => {
     if (staticPose || isHovered.current || !groupRef.current) return;
@@ -496,7 +513,7 @@ function SplitIcosahedron({ staticPose, colors }: SplitIcosahedronProps) {
       />
       <DevelopmentHalf
         geometry={baseGeo}
-        solidIndices={solidIndices}
+        solidIndices={allFaceIndices}
         hoverTint={colors.hoverTint}
         onHoverChange={handleHoverChange}
       />
