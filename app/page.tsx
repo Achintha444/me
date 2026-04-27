@@ -13,14 +13,14 @@ export const metadata: Metadata = {
     "Portfolio of Achintha Isuru — bridging design and development with Flutter, React, and Next.js.",
 };
 
-/** Technology stack chips shown in the hero section. */
-const TECH_STACK = [
-  "React",
-  "Next.js",
-  "Flutter",
-  "TypeScript",
-  "Figma",
-  "Tailwind CSS",
+/**
+ * Hero tech-stack groups — sourced from the `My Interests` section in
+ * `content/index.json`. Each entry pairs an interest group `key` with the
+ * short label rendered above its chip row.
+ */
+const TECH_STACK_GROUPS = [
+  { key: "development-tools-and-technologies", label: "Development" },
+  { key: "design-tools", label: "Design" },
 ] as const;
 
 /** Maximum number of projects shown on the home page. */
@@ -40,7 +40,17 @@ export default async function HomePage() {
   const allPosts = await getMediumPosts();
 
   const aboutSection = indexData.content.find((s) => s.id === 2);
+  const interestsSection = indexData.content.find((s) => s.id === 3);
   const contactSection = indexData.content.find((s) => s.id === 6);
+
+  const techStackGroups = TECH_STACK_GROUPS.map(({ key, label }) => ({
+    key,
+    label,
+    items:
+      interestsSection?.interests
+        ?.find((g) => g.key === key)
+        ?.interests.map((item) => item.title.trim()) ?? [],
+  })).filter((g) => g.items.length > 0);
   const recentProjects = projectsData.projects.slice(0, RECENT_PROJECTS_LIMIT);
   const recentPosts = allPosts.slice(0, RECENT_POSTS_LIMIT);
 
@@ -164,37 +174,71 @@ export default async function HomePage() {
                 </p>
               </div>
 
-              {/* Tech stack chips */}
-              <div className="reveal" style={{ animationDelay: "280ms" }}>
-                <ul
-                  role="list"
-                  aria-label="Technology stack"
-                  style={{
-                    display: "flex",
-                    flexWrap: "wrap",
-                    gap: "0.5rem",
-                    listStyle: "none",
-                  }}
-                >
-                  {TECH_STACK.map((tech) => (
-                    <li key={tech}>
-                      <span
-                        style={{
-                          fontFamily: "var(--font-mono)",
-                          fontSize: "var(--text-xs)",
-                          color: "var(--color-ink-muted)",
-                          backgroundColor: "var(--color-paper-raised)",
-                          border: "1px solid var(--color-ink-faint)",
-                          borderRadius: "var(--radius-sm)",
-                          padding: "0.25rem 0.625rem",
-                          display: "inline-block",
-                        }}
-                      >
-                        {tech}
-                      </span>
-                    </li>
-                  ))}
-                </ul>
+              {/* Tech stack chips, grouped by category */}
+              <div
+                className="reveal"
+                style={{
+                  animationDelay: "280ms",
+                  display: "flex",
+                  flexDirection: "column",
+                  gap: "0.75rem",
+                }}
+              >
+                {techStackGroups.map((group) => (
+                  <div
+                    key={group.key}
+                    style={{
+                      display: "flex",
+                      alignItems: "center",
+                      gap: "0.75rem",
+                      flexWrap: "wrap",
+                    }}
+                  >
+                    <span
+                      style={{
+                        fontFamily: "var(--font-mono)",
+                        fontSize: "var(--text-xs)",
+                        color: "var(--color-ink-faint)",
+                        textTransform: "uppercase",
+                        letterSpacing: "0.08em",
+                        flexShrink: 0,
+                      }}
+                    >
+                      {group.label}
+                    </span>
+                    <ul
+                      role="list"
+                      aria-label={`${group.label} technologies`}
+                      style={{
+                        display: "flex",
+                        flexWrap: "wrap",
+                        gap: "0.5rem",
+                        listStyle: "none",
+                        margin: 0,
+                        padding: 0,
+                      }}
+                    >
+                      {group.items.map((tech) => (
+                        <li key={tech}>
+                          <span
+                            style={{
+                              fontFamily: "var(--font-mono)",
+                              fontSize: "var(--text-xs)",
+                              color: "var(--color-ink-muted)",
+                              backgroundColor: "var(--color-paper-raised)",
+                              border: "1px solid var(--color-ink-faint)",
+                              borderRadius: "var(--radius-sm)",
+                              padding: "0.25rem 0.625rem",
+                              display: "inline-block",
+                            }}
+                          >
+                            {tech}
+                          </span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                ))}
               </div>
 
               {/* CTAs */}

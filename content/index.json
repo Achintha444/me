@@ -102,9 +102,17 @@
                             "key": "android"
                         },
                         {
-                            "title": "Java",
-                            "imageUrl":  "images/index/interests/java.webp",
-                            "key": "java"
+                            "title": "Dart",
+                            "imageUrl":  "images/index/interests/dart.webp",
+                            "key": "dart"
+                        },
+                        {
+                            "title": "TypeScript",
+                            "key": "typescript"
+                        },
+                        {
+                            "title": "Tailwind CSS",
+                            "key": "tailwind-css"
                         }
                     ]
                 },
@@ -117,6 +125,11 @@
                             "title": "Figma",
                             "imageUrl":  "images/index/interests/figma.webp",
                             "key": "figma"
+                        },
+                        {
+                            "title": "Paper",
+                            "imageUrl":  "images/index/interests/paper.webp",
+                            "key": "paper"
                         },
                         {
                             "title": "Adobe XD",
