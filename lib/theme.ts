@@ -140,6 +140,10 @@ export interface ThemeColors {
   rimLight: string;
   /** Terracotta bounce point light color */
   bounce: string;
+  /** Emissive color for the 12 original icosahedron vertex dot spheres */
+  vertexDot: string;
+  /** Hover tint color applied to the solid-half triangle under the cursor */
+  hoverTint: string;
 }
 
 export const themeColors: Record<ResolvedTheme, ThemeColors> = {
@@ -151,6 +155,8 @@ export const themeColors: Record<ResolvedTheme, ThemeColors> = {
     keyLight:  "#FFFFFF",
     rimLight:  "#E8D5C0",
     bounce:    "#C84B31",
+    vertexDot: "#C84B31",
+    hoverTint: "#2D5F8F",
   },
   dark: {
     wireframe: "#E8714E",
@@ -160,5 +166,7 @@ export const themeColors: Record<ResolvedTheme, ThemeColors> = {
     keyLight:  "#FFE8D6",
     rimLight:  "#C86040",
     bounce:    "#E8714E",
+    vertexDot: "#F0A080",
+    hoverTint: "#7FB4E8",
   },
 };

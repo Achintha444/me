@@ -252,15 +252,11 @@ export default async function HomePage() {
               style={{
                 position: "relative",
                 height: "clamp(340px, 65vw, 580px)",
-                // Fade the left edge slightly so the shape blends into the gutter
-                maskImage:
-                  "linear-gradient(to right, transparent 0%, black 12%)",
-                WebkitMaskImage:
-                  "linear-gradient(to right, transparent 0%, black 12%)",
               }}
             >
               {/* Soft radial glow behind the shape — anchors it visually */}
               <div
+                aria-hidden="true"
                 style={{
                   position: "absolute",
                   inset: 0,
@@ -270,6 +266,27 @@ export default async function HomePage() {
                 }}
               />
               <HeroSceneWrapper />
+              {/*
+               * Left-edge fade overlay — kept as a separate decorative sibling
+               * with pointer-events: none so the mask no longer sits on the
+               * canvas column's own box. In WebKit, mask-image on a positioned
+               * ancestor clips the hit-test region of absolutely-positioned
+               * children, which prevented R3F's raycaster from receiving any
+               * DOM pointer events.
+               */}
+              <div
+                aria-hidden="true"
+                style={{
+                  position: "absolute",
+                  inset: 0,
+                  maskImage:
+                    "linear-gradient(to right, black 0%, transparent 12%)",
+                  WebkitMaskImage:
+                    "linear-gradient(to right, black 0%, transparent 12%)",
+                  background: "var(--color-paper)",
+                  pointerEvents: "none",
+                }}
+              />
             </div>
           </div>
           {/* ── end hero grid ── */}

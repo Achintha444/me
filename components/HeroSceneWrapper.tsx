@@ -132,20 +132,9 @@ export function HeroSceneWrapper() {
   const { resolved } = useTheme();
   const colors = themeColors[resolved];
 
-  console.log("[hero-wrapper] render", {
-    resolved,
-    wireframe: colors.wireframe,
-    solid: colors.solid,
-    seam: colors.seam,
-  });
-
   useEffect(() => {
     dispatch(resolveSceneState());
   }, []);
-
-  useEffect(() => {
-    console.log("[hero-wrapper] resolved changed ->", resolved);
-  }, [resolved]);
 
   if (state.status === "pending") return null;
   if (state.status === "fallback") return <HeroSceneFallback />;

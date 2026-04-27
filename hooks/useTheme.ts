@@ -74,7 +74,6 @@ export function useTheme(): UseThemeReturn {
 
   const setPreference = useCallback(
     (pref: ThemePreference, origin?: { x: number; y: number }) => {
-      console.log("[theme] setPreference", { pref, origin });
       try {
         localStorage.setItem(THEME_STORAGE_KEY, pref);
       } catch {
