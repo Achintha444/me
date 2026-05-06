@@ -111,7 +111,7 @@ function SectionHeading({
         display: "flex",
         alignItems: "baseline",
         gap: "0.5em",
-        marginBottom: "0.35em",
+        marginBottom: "0.5em",
       }}
     >
       <h2
@@ -227,9 +227,25 @@ export default function CVPage() {
                 print-color-adjust: exact;
               }
               .cv-wrapper {
-                padding: 12mm 14mm !important;
+                padding: 0 14mm !important;
                 max-width: 100% !important;
+                margin: 0 !important;
               }
+              .cv-margin-top, .cv-margin-bottom {
+                display: block;
+              }
+              .cv-margin-top { height: 15mm; }
+              .cv-margin-bottom { height: 15mm; }
+              .cv-print-table {
+                width: 100%;
+                border-collapse: collapse;
+              }
+              .cv-print-table thead td,
+              .cv-print-table tfoot td {
+                padding: 0; margin: 0; border: none;
+              }
+              .cv-print-table thead td { height: 15mm; }
+              .cv-print-table tfoot td { height: 15mm; }
               .cv-entry { break-inside: avoid; }
               .cv-body a {
                 color: #1a56db !important;
@@ -264,7 +280,11 @@ export default function CVPage() {
         <PrintButton />
       </div>
 
-      {/* ── CV body ────────────────────────────────────────────────────────── */}
+      {/* ── CV body — wrapped in table for per-page print margins ─────── */}
+      <table className="cv-print-table" style={{ width: "100%", borderCollapse: "collapse" }}>
+        <thead><tr><td><div className="cv-margin-top" style={{ display: "none" }} /></td></tr></thead>
+        <tfoot><tr><td><div className="cv-margin-bottom" style={{ display: "none" }} /></td></tr></tfoot>
+        <tbody><tr><td style={{ padding: 0, border: "none" }}>
       <div className="cv-body">
         {/* ── HEADER ─────────────────────────────────────────────────────── */}
         <div
@@ -274,8 +294,8 @@ export default function CVPage() {
             gridTemplateColumns: "1fr auto",
             gap: "1em 2em",
             alignItems: "start",
-            marginBottom: "0.55em",
-            paddingBottom: "0.45em",
+            marginBottom: "0.8em",
+            paddingBottom: "0.5em",
             borderBottom: "2px solid var(--color-accent)",
           }}
         >
@@ -392,7 +412,7 @@ export default function CVPage() {
         </div>
 
         {/* ── PERSONAL SUMMARY ───────────────────────────────────────────── */}
-        <section aria-label="Personal Summary" style={{ marginBottom: "0.5em" }}>
+        <section aria-label="Personal Summary" style={{ marginBottom: "0.9em" }}>
           <SectionHeading>Personal Summary</SectionHeading>
           <p style={{ fontSize: sm, lineHeight: 1.45, margin: 0 }}>
             {cv.summary}
@@ -400,7 +420,7 @@ export default function CVPage() {
         </section>
 
         {/* ── EMPLOYMENT ─────────────────────────────────────────────────── */}
-        <section aria-label="Employment History" style={{ marginBottom: "0.5em" }}>
+        <section aria-label="Employment History" style={{ marginBottom: "0.9em" }}>
           <SectionHeading
             suffix={
               <a
@@ -414,7 +434,7 @@ export default function CVPage() {
             Employment History
           </SectionHeading>
 
-          <div style={{ display: "flex", flexDirection: "column", gap: "0.42em" }}>
+          <div style={{ display: "flex", flexDirection: "column", gap: "0.65em" }}>
             {cv.employment.map((job, i) => (
               <div key={i} className="cv-entry">
                 <EntryRow
@@ -471,7 +491,7 @@ export default function CVPage() {
         </section>
 
         {/* ── SELECTED PROJECTS ──────────────────────────────────────────── */}
-        <section aria-label="Selected Projects" style={{ marginBottom: "0.5em" }}>
+        <section aria-label="Selected Projects" style={{ marginBottom: "0.9em" }}>
           <SectionHeading
             suffix={
               <a
@@ -485,7 +505,7 @@ export default function CVPage() {
             Selected Projects
           </SectionHeading>
 
-          <div style={{ display: "flex", flexDirection: "column", gap: "0.38em" }}>
+          <div style={{ display: "flex", flexDirection: "column", gap: "0.6em" }}>
             {cv.projects.map((proj, i) => (
               <div key={i} className="cv-entry">
                 <EntryRow
@@ -542,7 +562,7 @@ export default function CVPage() {
         </section>
 
         {/* ── LEADERSHIP & AWARDS ────────────────────────────────────────── */}
-        <section aria-label="Leadership and Awards" style={{ marginBottom: "0.5em" }}>
+        <section aria-label="Leadership and Awards" style={{ marginBottom: "0.9em" }}>
           <SectionHeading
             suffix={
               <a
@@ -591,7 +611,7 @@ export default function CVPage() {
         </section>
 
         {/* ── VOLUNTEERING ───────────────────────────────────────────────── */}
-        <section aria-label="Volunteering Experiences" style={{ marginBottom: "0.5em" }}>
+        <section aria-label="Volunteering Experiences" style={{ marginBottom: "0.9em" }}>
           <SectionHeading>Volunteering Experiences</SectionHeading>
 
           {cv.volunteering.map((vol, i) => (
@@ -616,7 +636,7 @@ export default function CVPage() {
         </section>
 
         {/* ── EDUCATION ──────────────────────────────────────────────────── */}
-        <section aria-label="Education" style={{ marginBottom: "0.5em" }}>
+        <section aria-label="Education" style={{ marginBottom: "0.9em" }}>
           <SectionHeading>Education</SectionHeading>
 
           <div className="cv-entry">
@@ -733,6 +753,8 @@ export default function CVPage() {
           </p>
         </section>
       </div>
+      </td></tr></tbody>
+      </table>
     </div>
     </>
   );
