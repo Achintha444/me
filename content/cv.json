@@ -1,0 +1,294 @@
+{
+    "name": "Achintha Isuru",
+    "tagline": "Bridging, Design & Development",
+    "contact": {
+        "email": "achinthaisuru97@gmail.com",
+        "phone": "+1-514-605-7508",
+        "address": "Montréal, QC"
+    },
+    "links": [
+        { "label": "LinkedIn", "url": "https://www.linkedin.com/in/achintha-isuru" },
+        { "label": "GitHub", "url": "https://github.com/achinthaisuru" },
+        { "label": "Medium(110+)", "url": "https://medium.com/@achinthaisuru" },
+        { "label": "YouTube", "url": "https://www.youtube.com/@AchinthaIsuru" },
+        { "label": "Stack Overflow (3350+)", "url": "https://stackoverflow.com/users/10429907/achintha-isuru" },
+        { "label": "Portfolio", "url": "https://achinthaisuru.com" }
+    ],
+    "skills": {
+        "technologies": "React JS, Flutter, Android, Next JS, GitHub, HTML, Tailwind CSS, Firebase",
+        "languages": "JavaScript, TypeScript, Dart, Java, Kotlin",
+        "tools": "Jira, Confluence, GitHub Project",
+        "designTools": "Figma, Adobe XD, Adobe Photoshop",
+        "spokenLanguages": "English, French (actively learning), Sinhala"
+    },
+    "summary": "Creative Frontend Developer and UI/UX Designer with 4+ years of professional experience building responsive web and mobile applications. Known for bridging design and engineering teams through strong UI/UX sensibility and hands-on development expertise. Proven track record of delivering user-centric features for products managing over 1 billion identities globally and apps with 200K+ downloads. Strong communicator, team collaborator, problem solver, and continuous learner — currently advancing in French to better collaborate in multilingual environments.",
+    "employment": [
+        {
+            "company": "Oloodi",
+            "role": "Software Engineer (Frontend)",
+            "type": "Contract Full-time · Hybrid · Montreal, Quebec, Canada",
+            "stack": "Flutter, Firebase, Google Cloud Platform, Codemagic, Claude Code",
+            "duration": "Nov 2025 - Present",
+            "bullets": [
+                "Develop and maintain KROW, a SaaS platform built with Flutter, leveraging Google Cloud Platform services and Firebase for scalable cloud-native architecture.",
+                "Implement advanced AI integrations using prompt engineering techniques, enabling seamless AI-powered features within the platform.",
+                "Design and maintain Codemagic CI/CD automation pipelines, ensuring efficient and reliable build, test, and deployment workflows.",
+                "Utilize Claude Code as an AI-assisted development tool to accelerate feature development and improve code quality across the Flutter codebase."
+            ]
+        },
+        {
+            "company": "KAST",
+            "role": "Senior Software Engineer (Front-end/UI-UX)",
+            "stack": "Next JS, Flutter, Firebase, Figma",
+            "duration": "Dec 2024 - Present",
+            "bullets": [
+                "Develop features like Debit Card Purchase for customers in the KAST Admin Application using Next.js with Context API for state management, integrating REST APIs built in Go and deployed on AWS, while adhering to AODA/WCAG accessibility standards and responsive design best practices.",
+                "Lead the i18n (internationalization) implementation in the KAST Crypto Wallet (200K+ downloads), backed by Solana, using Flutter and Firebase Remote Config — enabling multilingual support and increasing user engagement in key markets.",
+                "Spearhead the development of the redesign of the KAST Crypto Wallet in Flutter, collaborating with design to deliver a pixel-perfect and responsive interface.",
+                "Develop key features like Debit Card Purchase and Debit Card Delivery in the KAST Crypto Wallet by integrating REST APIs and following Clean Architecture principles in Flutter.",
+                "Develop features and implement changes for the company website built on the low-code platform Webflow.",
+                "Interview and evaluate 15+ candidates for React and Flutter roles, ensuring both technical quality and cultural alignment."
+            ]
+        },
+        {
+            "company": "WSO2",
+            "role": "Front-end Developer/UI-UX Designer",
+            "stack": "React, Next JS, Flutter, Android, Cypress, Figma",
+            "duration": "May 2022 – Sep 2024",
+            "bullets": [
+                "Designed the UI/UX, developed frontend functionality, integrated REST APIs written in Java (deployed on Azure), and implemented end-to-end (E2E) test cases using Cypress to build features with React using Context API and Redux. Followed AODA/WCAG accessibility standards and responsive design principles. Key features included \"API Authorization\" for IAM products like Identity Server(IS) and Asgardeo (SaaS), which manage over 1 billion identities globally.",
+                "Designed & developed reusable components like \"Autocomplete\" and \"Chips\" for WSO2's design system, Oxygen-UI, using React and Storybook, improving consistency across WSO2 products.",
+                "Designed Asgardeo's new user registration flow and contributed to AI-first features like \"Login Flow AI\" and \"Branding AI\", aligning with emerging UX trends.",
+                "Developed the B2B demo application to demonstrate the \"B2B(Business-to-Business) feature\" which showcased at global conferences, accelerating enterprise sales and customer onboarding.",
+                "Led the development of an open source SDK for Android to integrate the \"App-native authentication\" of IS and Asgardeo for Android applications.",
+                "Authored integration guides and tutorials for Flutter–Asgardeo, supporting cross-platform devs and reducing onboarding time.",
+                "Achieved Top 20% Employee Recognition and won Rockstar Award 2024 H1 for exceptional technical and content contributions."
+            ],
+            "bulletLinks": {
+                "0": [
+                    { "text": "API Authorization", "url": "https://wso2.com/asgardeo/docs/guides/authorization/api-authorization/api-authorization/" },
+                    { "text": "Identity Server(IS)", "url": "https://wso2.com/identity-server/" },
+                    { "text": "Asgardeo", "url": "https://wso2.com/asgardeo/" }
+                ],
+                "1": [
+                    { "text": "Oxygen-UI", "url": "https://github.com/wso2/oxygen-ui" }
+                ],
+                "2": [
+                    { "text": "Asgardeo's new user registration flow", "url": "https://wso2.com/asgardeo/" },
+                    { "text": "Login Flow AI", "url": "https://wso2.com/asgardeo/" },
+                    { "text": "Branding AI", "url": "https://wso2.com/asgardeo/" }
+                ],
+                "3": [
+                    { "text": "B2B demo application", "url": "https://github.com/wso2/asgardeo-nextjs-b2b-sample-app" },
+                    { "text": "B2B(Business-to-Business) feature", "url": "https://wso2.com/asgardeo/docs/guides/organization-management/manage-b2b-organizations/" }
+                ],
+                "4": [
+                    { "text": "SDK for Android", "url": "https://github.com/asgardeo/mobile-ui-sdks" },
+                    { "text": "App-native authentication", "url": "https://wso2.com/asgardeo/docs/guides/authentication/app-native-authentication/" }
+                ]
+            }
+        },
+        {
+            "company": "Fcode Labs",
+            "role": "Software Engineer Intern (UI/UX, Front-end)",
+            "stack": "Flutter, Figma, React",
+            "duration": "Oct 2020 - May 2021",
+            "bullets": [
+                "Designed and implemented the UI of Workmate, a task scheduling app, using Flutter; improved task management UX for teams."
+            ],
+            "bulletLinks": {
+                "0": [
+                    { "text": "Workmate", "url": "https://www.youtube.com/watch?v=5VPcJP5fuEE" }
+                ]
+            }
+        },
+        {
+            "company": "Department of Computer Science & Engineering, University of Moratuwa",
+            "role": "Visiting Instructor",
+            "courses": "CS 3042 Database Systems & CS 3203 Software Engineering Project",
+            "duration": "Jul 2023 - Nov 2023 & Feb 2022 - Apr 2022",
+            "bullets": [
+                "Delivered lectures and practicals on Git, React, REST APIs, CI/CD, IAM, and UX design; produced tutorial content."
+            ],
+            "bulletLinks": {
+                "0": [
+                    { "text": "tutorial content", "url": "https://www.youtube.com/playlist?list=PLrkEOVQA1S7JQbxOxq7yf3IjH9C5U5dSv" }
+                ]
+            }
+        }
+    ],
+    "projects": [
+        {
+            "name": "Remote MCP Server Authorization using Asgardeo",
+            "type": "Personal Project",
+            "role": null,
+            "stack": "React, Node JS, Express, Figma MCP, Google Gemini LLM API, Asgardeo",
+            "duration": "Jun 2025 - Aug 2025",
+            "bullets": [
+                "Built a remote MCP client — an AI chatbot using the Google Gemini LLM API — and a remote MCP server using Figma MCP, with secure authentication handled via Asgardeo. Additionally, wrote an article series documenting findings throughout the process, and contributed a pull request that was successfully merged into the mcp-typescript-sdk."
+            ],
+            "bulletLinks": {
+                "0": [
+                    { "text": "remote MCP client", "url": "https://github.com/AchinthaIsuru/remote-mcp-client" },
+                    { "text": "article series", "url": "https://medium.com/@achinthaisuru" },
+                    { "text": "pull request", "url": "https://github.com/modelcontextprotocol/typescript-sdk/pull/449" }
+                ]
+            }
+        },
+        {
+            "name": "B2B Demo Application",
+            "type": "WSO2 Project",
+            "role": "Front-end Developer",
+            "stack": "Next JS, Nx MonoRepo, Figma, Asgardeo",
+            "duration": "May 2022 - Oct 2022",
+            "bullets": [
+                "Developed a web application to demonstrate one of the newest features of Asgardeo & IS — the \"B2B (Business to Business) feature\" — at international conferences targeting potential clients and customers. This was developed using Next.js and managed within an Nx monorepo for efficient project structure and scalability."
+            ],
+            "bulletLinks": {
+                "0": [
+                    { "text": "B2B (Business to Business) feature", "url": "https://wso2.com/asgardeo/docs/guides/organization-management/manage-b2b-organizations/" }
+                ]
+            }
+        },
+        {
+            "name": "Streamify",
+            "type": "Personal Project",
+            "role": "Front-end Developer/UI-UX Designer",
+            "stack": "Figma, React, Asgardeo, GitHub Actions, Vercel",
+            "duration": "Nov 2024 – Jan 2025",
+            "bullets": [
+                "Created a React-based analytics dashboard with billboard REST API, featuring secure auth via Asgardeo, interactive charts, and animations. Developed GitHub Actions to automate build validation, lint checking, and app deployment to Vercel."
+            ]
+        },
+        {
+            "name": "A New UI Concept for ATMs To Reduce Excessive Receipt Wastage",
+            "type": "Personal Project",
+            "role": "UI/UX Designer",
+            "stack": "Figma",
+            "duration": "Jan 2021 - Aug 2022",
+            "bullets": [
+                "Designed a new ATM UI to reduce receipt printing by 50% without additional costs, offering a scalable & sustainable solution.",
+                "This project won 1st place in the 'IET 150 & Beyond' competition organized by the Sri Lankan IET Young Professionals chapter."
+            ]
+        },
+        {
+            "name": "Asgardeo Android SDK & Demo Application",
+            "type": "WSO2 Project",
+            "role": "Android Developer",
+            "stack": "Android (Kotlin), Jetpack Compose, Figma, GitHub Actions, Maven, Asgardeo",
+            "duration": "Jun 2024 – Sep 2024",
+            "bullets": [
+                "Led the architectural design & development of an open source SDK for Android called \"asgardeo-android\" to integrate the \"App-native authentication\" feature of IS & Asgardeo for Android applications. This SDK was developed using Kotlin.",
+                "Developed the documentation site for the SDK using VitePress.",
+                "Implemented GitHub Actions to check build issues of a PR & deploy SDK releases to the maven central repository.",
+                "Developed a demo application to demonstrate the SDK at international conferences targeting potential customers & clients."
+            ],
+            "bulletLinks": {
+                "0": [
+                    { "text": "App-native authentication", "url": "https://wso2.com/asgardeo/docs/guides/authentication/app-native-authentication/" }
+                ],
+                "1": [
+                    { "text": "documentation site", "url": "https://asgardeo.github.io/mobile-ui-sdks/" }
+                ],
+                "2": [
+                    { "text": "maven central repository", "url": "https://central.sonatype.com/artifact/io.asgardeo/asgardeo-android" }
+                ],
+                "3": [
+                    { "text": "demo application", "url": "https://github.com/asgardeo/mobile-ui-sdks" }
+                ]
+            }
+        },
+        {
+            "name": "Advanced Column Row: Flutter Package",
+            "type": "Personal Project",
+            "role": "Flutter Developer",
+            "stack": "Flutter",
+            "duration": "Oct 2024",
+            "bullets": [
+                "Published a Column/Row Flutter widget library with over 10+ customizable properties, simplifying complex layouts."
+            ]
+        },
+        {
+            "name": "GPA Cal",
+            "type": "Personal Project",
+            "role": "Flutter Developer",
+            "stack": "Flutter, Figma",
+            "duration": "Oct 2020 - Dec 2020",
+            "bullets": [
+                "Published my first application, 'GPA Cal', on the Google Play Store — a Flutter-based GPA calculator."
+            ]
+        },
+        {
+            "name": "FabVis",
+            "type": "Partnered with the IntelliSense Lab",
+            "role": "UI/UX Designer",
+            "stack": "Figma",
+            "duration": "Jun 2021 - Sep 2021",
+            "bullets": [
+                "Designed a dashboard UI for a textile defect detection system, awarded a Patent Cooperation Treaty (PCT) for innovation; enabled real-time visual analysis and configuration for textile engineers."
+            ],
+            "bulletLinks": {
+                "0": [
+                    { "text": "IntelliSense Lab", "url": "https://uom.lk/cse/research/research-labs/intellisense-lab" }
+                ]
+            }
+        }
+    ],
+    "leadership": [
+        {
+            "text": "Member of the University of Moratuwa Soccer team, second-year colors man",
+            "link": { "text": "More Details", "url": "/aboutMe" }
+        },
+        {
+            "text": "Winner, \"IET 150 & BEYOND\" organised by IET Young Professionals - Sri Lanka.",
+            "link": { "text": "View Project", "url": "/projects/atm" }
+        },
+        {
+            "text": "Top 20% Rockstar, WSO2 Employee Excellence Program (2024)"
+        },
+        {
+            "text": "Certified, \"Problem Solving (Intermediate), Frontend (React), JavaScript (Intermediate)\" by HackerRank.",
+            "link": { "text": "View all", "url": "https://www.hackerrank.com/profile/achinthaisuru97" }
+        },
+        {
+            "text": "Certified, \"WSO2 Certified Identity Server Developer – V5\".",
+            "link": { "text": "View certificate", "url": "https://certification.wso2.com/" }
+        }
+    ],
+    "volunteering": [
+        {
+            "organization": "Rotaract Club of the University of Moratuwa",
+            "link": { "text": "More Details", "url": "/aboutMe" },
+            "bullets": [
+                "Co-chaired the Maestro '18 workshop & contributed to projects like Are You Ready, Manusath Handa, Ceylon Safari 2018, & Ceylon Safari 2019 as a member of the PR team by designing social media posts."
+            ]
+        }
+    ],
+    "education": {
+        "university": "University of Moratuwa, Sri Lanka",
+        "accreditation": "Washington Accord Accredited",
+        "wesLink": { "text": "WES Credential Evaluation", "url": "https://www.wes.org/" },
+        "duration": "2017 - 2022",
+        "degree": "B.Sc. Engineering (Hons) sp. Computer Science & Engineering",
+        "gpa": "GPA: 3.96 out of 4.2 – First Class",
+        "researchLink": { "text": "Research Publications", "url": "https://scholar.google.com/" },
+        "coursera": {
+            "certificatesLink": { "text": "View Certificates", "url": "https://www.coursera.org/" },
+            "courses": [
+                {
+                    "name": "Google UX Design Professional Certificate",
+                    "link": "https://www.coursera.org/professional-certificates/google-ux-design"
+                },
+                {
+                    "name": "UI/UX Specialization from California Institute of the Arts",
+                    "link": "https://www.coursera.org/specializations/ui-ux-design"
+                },
+                {
+                    "name": "Introduction to Psychology from University of Toronto",
+                    "link": "https://www.coursera.org/learn/introduction-psychology"
+                }
+            ]
+        }
+    },
+    "interests": "Soccer (Goalkeeper & Manchester United Fan), Cooking, Community Service, Part time Youtuber, Digital Artwork"
+}
