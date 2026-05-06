@@ -80,6 +80,249 @@
             ]
         },
         {
+            "key": "remote-mcp-server",
+            "name": "Remote MCP Server Authorization using Asgardeo",
+            "role": "Developer",
+            "overview": [
+                {
+                    "title": "Duration",
+                    "body": "2025 Jun - Present",
+                    "key": "duration"
+                },
+                {
+                    "title": "Sector",
+                    "body": "Identity and Access Management · AI · MCP",
+                    "key": "sector"
+                },
+                {
+                    "title": "Associated With",
+                    "body": "Personal Project",
+                    "key": "associated"
+                },
+                {
+                    "title": "My Role",
+                    "body": "Developer",
+                    "key": "role"
+                }
+            ],
+            "image": "images/projects/project-remote-mcp-server.webp",
+            "cols": 2,
+            "rows": 1.5,
+            "content": [
+                {
+                    "title": "Overview",
+                    "body": "I have been working with MCP (Model Context Protocol) quite a bit recently, and one thing that kept coming up was the question of how to properly secure a remote MCP server. Most examples I found either skipped authentication entirely or hand-waved it. So I decided to build the full flow myself — a remote MCP client and server with real OAuth 2.0 authorization handled through Asgardeo. Along the way, I have been writing an article series documenting everything I have learned, and I also contributed a pull request that got merged into the official mcp-typescript-sdk.",
+                    "links": [
+                        {
+                            "title": "MCP Client (React)",
+                            "link": "https://github.com/Achintha444/ai-chatbot-mcp-react"
+                        },
+                        {
+                            "title": "MCP Auth JavaScript SDKs",
+                            "link": "https://github.com/Achintha444/mcp-auth-javascript"
+                        },
+                        {
+                            "title": "Article: Secure Your Remote MCP Server with Asgardeo",
+                            "link": "https://achinthaisuru444.medium.com/how-to-secure-your-remote-mcp-server-with-asgardeo-using-asgardeo-mcp-express-636771e5aa0c"
+                        },
+                        {
+                            "title": "PR merged into mcp-typescript-sdk",
+                            "link": "https://github.com/modelcontextprotocol/typescript-sdk/pull/633"
+                        }
+                    ],
+                    "key": "overview"
+                },
+                {
+                    "title": "What It Does",
+                    "body": "The project has three main pieces. The remote MCP server uses Figma MCP under the hood, which exposes design file context like layout information, components, and variables to AI agents via the Model Context Protocol. The remote MCP client is a React-based AI chatbot powered by the Google Gemini LLM API that connects to the server and lets you interact with Figma designs through natural language. The authorization layer sits in between — Asgardeo acts as the OAuth 2.0 Authorization Server following the MCP Authorization spec, using the @asgardeo/mcp-express middleware to protect the endpoints.",
+                    "key": "what-it-does"
+                },
+                {
+                    "title": "Technology Stack",
+                    "body": "React, Node JS, Express, Figma MCP, Google Gemini LLM API, Asgardeo",
+                    "key": "tech-stack"
+                },
+                {
+                    "title": "Contributions to Open Source",
+                    "body": "While building this project, I ran into a practical issue with CORS when using StreamableHTTP in browser-based MCP clients — the mcp-session-id header was getting blocked. I submitted a pull request to the official mcp-typescript-sdk repository to document this, and it was merged. Small contribution, but it felt good to give back to a project I was actively learning from.",
+                    "key": "open-source"
+                },
+                {
+                    "title": "Outcome",
+                    "body": "This project is still ongoing, and I am continuing to build out the article series as I dig deeper into the MCP authorization spec. It started as a way to scratch my own itch — understanding how remote MCP servers should handle auth properly — and has turned into something I think others in the community can learn from too.",
+                    "key": "outcome"
+                }
+            ]
+        },
+        {
+            "key": "asgardeo-android-sdk",
+            "name": "Asgardeo Android SDK and Demo Application",
+            "role": "Android Developer",
+            "overview": [
+                {
+                    "title": "Duration",
+                    "body": "2024 Jun - 2024 Sep",
+                    "key": "duration"
+                },
+                {
+                    "title": "Sector",
+                    "body": "Identity and Access Management · Mobile Development",
+                    "key": "sector"
+                },
+                {
+                    "title": "Associated With",
+                    "body": "WSO2",
+                    "key": "associated"
+                },
+                {
+                    "title": "My Role",
+                    "body": "Android Developer",
+                    "key": "role"
+                }
+            ],
+            "image": "images/projects/project-asgardeo-android-sdk.webp",
+            "cols": 1,
+            "rows": 1.5,
+            "content": [
+                {
+                    "title": "Overview",
+                    "body": "At WSO2, I led the architectural design and development of an open source SDK for Android called \"asgardeo-android.\" The goal was to let Android developers integrate the \"App-native authentication\" feature of Identity Server and Asgardeo into their applications without having to deal with browser redirects. This was a big deal because app-native auth gives users a seamless login experience that feels native to the app rather than bouncing them to an external browser.",
+                    "links": [
+                        {
+                            "title": "GitHub Repository",
+                            "link": "https://github.com/asgardeo/mobile-ui-sdks"
+                        },
+                        {
+                            "title": "Documentation",
+                            "link": "https://asgardeo.github.io/mobile-ui-sdks/android/introduction.html"
+                        },
+                        {
+                            "title": "Maven Central",
+                            "link": "https://central.sonatype.com/artifact/io.asgardeo/asgardeo-android"
+                        }
+                    ],
+                    "key": "overview"
+                },
+                {
+                    "title": "Architecture",
+                    "body": [
+                        {
+                            "body": "I designed the SDK with a four-layer architecture to keep things clean and maintainable. The Provider Layer is the public API surface — this is what developers actually interact with. The Core Config Layer handles discovery endpoints and manual configuration. The Core Layer contains the actual implementation, including authentication handlers and token lifecycle management through AppAuth. And the Data Layer handles persistent token storage using Android Datastore."
+                        },
+                        {
+                            "body": "The SDK is split into three modules: asgardeo-android (the main dependency aggregator), asgardeo-android-core (core logic without UI), and asgardeo-android-core-auth-direct (the app-native authentication implementation). This modular approach means developers can pull in only what they need."
+                        }
+                    ],
+                    "images": [
+                        {
+                            "image": "/images/projects/asgardeo-android-sdk/asgardeo-android-sdk-1.webp",
+                            "key": "asgardeo-android-sdk-1"
+                        }
+                    ],
+                    "key": "architecture"
+                },
+                {
+                    "title": "Features",
+                    "body": [
+                        {
+                            "body": "App-native authentication — no browser redirects, the entire login flow happens inside the app."
+                        },
+                        {
+                            "body": "OIDC authentication via Asgardeo CIAM with full token management."
+                        },
+                        {
+                            "body": "Passkey support for devices running API 34 and above."
+                        },
+                        {
+                            "body": "Google Credential Manager integration for streamlined sign-in."
+                        },
+                        {
+                            "body": "Client attestation and persistent token storage using Android Datastore."
+                        }
+                    ],
+                    "key": "features"
+                },
+                {
+                    "title": "Technology Stack",
+                    "body": "Android (Kotlin), Jetpack Compose, Figma, GitHub Actions, Maven Central, Asgardeo",
+                    "key": "tech-stack"
+                },
+                {
+                    "title": "Outcome",
+                    "body": "The SDK is published on Maven Central and the documentation site is live. I also built a demo application that was used to showcase the SDK at international conferences targeting potential customers and clients. Beyond the code, I set up GitHub Actions workflows to validate PR builds and automate SDK releases to Maven Central, making the whole release process much smoother for the team going forward.",
+                    "key": "outcome"
+                },
+                {
+                    "title": "View Presentation",
+                    "body": "The presentation below goes into detail about the App-native authentication feature and how the SDK works. You can start from slide 27 for the Android SDK specific content.",
+                    "presentations": [
+                        {
+                            "link": "https://www.slideshare.net/slideshow/embed_code/key/H8yF5URX54k8LZ?startSlide=27"
+                        }
+                    ],
+                    "key": "presentation"
+                }
+            ]
+        },
+        {
+            "key": "b2b-demo",
+            "name": "B2B Demo Application for Asgardeo",
+            "role": "Front-end Developer",
+            "overview": [
+                {
+                    "title": "Duration",
+                    "body": "2022 May - 2022 Oct",
+                    "key": "duration"
+                },
+                {
+                    "title": "Sector",
+                    "body": "Identity and Access Management · Enterprise SaaS",
+                    "key": "sector"
+                },
+                {
+                    "title": "Associated With",
+                    "body": "WSO2",
+                    "key": "associated"
+                },
+                {
+                    "title": "My Role",
+                    "body": "Front-end Developer",
+                    "key": "role"
+                }
+            ],
+            "image": "images/projects/project-b2b-demo.webp",
+            "cols": 1,
+            "rows": 1.5,
+            "content": [
+                {
+                    "title": "Overview",
+                    "body": "One of the biggest features Asgardeo and Identity Server shipped during my time at WSO2 was B2B Organization Management — the ability for SaaS providers to onboard customer businesses as sub-organizations with delegated administration. My job was to build a demo application that could showcase this feature at international conferences like KubeCon North America 2022, where WSO2 was a Platinum Sponsor. The idea was to make the feature tangible for potential clients and customers who needed to see it in action before committing.",
+                    "links": [
+                        {
+                            "title": "Sample Application on GitHub",
+                            "link": "https://github.com/wso2/asgardeo-nextjs-b2b-sample-app"
+                        }
+                    ],
+                    "key": "overview"
+                },
+                {
+                    "title": "What It Does",
+                    "body": "The demo application simulates a fictional company called \"Guardio Insurance\" as the root organization, with child organizations like \"Best Car Mart\" onboarded beneath it. It walks through the entire B2B flow — creating organizations, delegated admin management, email domain-based organization discovery for seamless login routing, and role-based access control. This gave conference attendees a hands-on feel for how B2B org management actually works in practice.",
+                    "key": "what-it-does"
+                },
+                {
+                    "title": "Technology Stack",
+                    "body": "Next JS, Nx MonoRepo, Figma, Asgardeo",
+                    "key": "tech-stack"
+                },
+                {
+                    "title": "Outcome",
+                    "body": "The demo was used at multiple international conferences and played a direct role in accelerating enterprise sales and customer onboarding. Building it taught me a lot about structuring larger applications with Nx monorepos and about how important it is to make complex enterprise features feel approachable through good UX. It was one of those projects where the goal was not just to build something that works, but to build something that sells.",
+                    "key": "outcome"
+                }
+            ]
+        },
+        {
             "key": "asgardeo-homepage",
             "name": "Redesign of Asgardeo Homepage and User Registration Flow",
             "role": "UI/UX Designer",
