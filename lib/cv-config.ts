@@ -9,7 +9,7 @@
  * - `xs`: smallest — used for dates, stack notes, meta labels, section badges
  */
 export const CV_FONT_SIZES = {
-  body: "10.5px",
+  body: "11px",
   sm: "9.5px",
   xs: "8.8px",
 } as const;
