@@ -267,10 +267,8 @@ export default async function HomePage() {
                 >
                   View Work
                 </Link>
-                <a
-                  href="https://drive.google.com/file/d/14g3EqlEhuDKGFSL3x1lwHD5oCHBANBVF/view?usp=sharing"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <Link
+                  href="/cv"
                   className="btn-outline"
                   style={{
                     display: "inline-block",
@@ -284,8 +282,8 @@ export default async function HomePage() {
                     borderRadius: "var(--radius-md)",
                   }}
                 >
-                  Download CV ↗
-                </a>
+                  Download CV →
+                </Link>
               </div>
               {/* ── end text column ── */}
             </div>
