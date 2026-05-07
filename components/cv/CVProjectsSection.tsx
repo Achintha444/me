@@ -1,4 +1,4 @@
-import type { CVProject } from "@/lib/content";
+import type { CVProject, CVSectionLink } from "@/lib/content";
 import { CV_FONT_SIZES } from "@/lib/cv-config";
 import { CVSection } from "./CVSection";
 import { CVEntryRow } from "./CVEntryRow";
@@ -10,6 +10,7 @@ const { sm, xs } = CV_FONT_SIZES;
 interface CVProjectsSectionProps {
   /** Array of project entries from CV data. */
   projects: CVProject[];
+  sectionLink?: CVSectionLink;
 }
 
 /**
@@ -21,18 +22,22 @@ interface CVProjectsSectionProps {
  *
  * Gap between entries is `0.6em` per the calibrated print layout.
  */
-export function CVProjectsSection({ projects }: CVProjectsSectionProps) {
+export function CVProjectsSection({ projects, sectionLink }: CVProjectsSectionProps) {
   return (
     <CVSection
       label="Selected Projects"
       heading="Selected Projects"
       suffix={
-        <a
-          href="/projects"
-          style={{ color: "var(--color-accent)", textDecoration: "underline" }}
-        >
-          (View All Projects)
-        </a>
+        sectionLink && (
+          <a
+            href={sectionLink.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ color: "var(--color-accent)", textDecoration: "underline" }}
+          >
+            ({sectionLink.text})
+          </a>
+        )
       }
     >
       <div style={{ display: "flex", flexDirection: "column", gap: "0.6em" }}>
@@ -71,6 +76,37 @@ export function CVProjectsSection({ projects }: CVProjectsSectionProps) {
                     >
                       | {proj.role}
                     </span>
+                  )}
+
+                  {proj.detailsLink && (
+                    <a
+                      href={proj.detailsLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      style={{
+                        fontSize: xs,
+                        color: "var(--color-accent)",
+                        textDecoration: "underline",
+                        marginLeft: "0.35em",
+                      }}
+                    >
+                      (Details{proj.presentationLink ? "," : ")"}
+                    </a>
+                  )}
+
+                  {proj.presentationLink && (
+                    <a
+                      href={proj.presentationLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      style={{
+                        fontSize: xs,
+                        color: "var(--color-accent)",
+                        textDecoration: "underline",
+                      }}
+                    >
+                      Presentation)
+                    </a>
                   )}
 
                   {proj.stack && (

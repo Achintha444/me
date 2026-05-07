@@ -44,7 +44,7 @@ export function CVVolunteeringSection({
               vol.organization
             )}
           </strong>
-          <CVBulletList bullets={vol.bullets} />
+          <CVBulletList bullets={vol.bullets} bulletLinks={vol.bulletLinks} />
         </div>
       ))}
     </CVSection>

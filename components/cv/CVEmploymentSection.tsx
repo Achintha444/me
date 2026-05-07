@@ -1,4 +1,4 @@
-import type { CVEmployment } from "@/lib/content";
+import type { CVEmployment, CVSectionLink } from "@/lib/content";
 import { CV_FONT_SIZES } from "@/lib/cv-config";
 import { CVSection } from "./CVSection";
 import { CVEntryRow } from "./CVEntryRow";
@@ -10,6 +10,7 @@ const { sm, xs } = CV_FONT_SIZES;
 interface CVEmploymentSectionProps {
   /** Array of employment entries from CV data. */
   employment: CVEmployment[];
+  sectionLink?: CVSectionLink;
 }
 
 /**
@@ -21,18 +22,22 @@ interface CVEmploymentSectionProps {
  *
  * Gap between entries is `0.65em` per the calibrated print layout.
  */
-export function CVEmploymentSection({ employment }: CVEmploymentSectionProps) {
+export function CVEmploymentSection({ employment, sectionLink }: CVEmploymentSectionProps) {
   return (
     <CVSection
       label="Employment History"
       heading="Employment History"
       suffix={
-        <a
-          href="/experiences"
-          style={{ color: "var(--color-accent)", textDecoration: "underline" }}
-        >
-          (View All Experiences)
-        </a>
+        sectionLink && (
+          <a
+            href={sectionLink.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ color: "var(--color-accent)", textDecoration: "underline" }}
+          >
+            ({sectionLink.text})
+          </a>
+        )
       }
     >
       <div style={{ display: "flex", flexDirection: "column", gap: "0.65em" }}>

@@ -9,27 +9,27 @@
     "links": [
         {
             "label": "LinkedIn",
-            "url": "https://www.linkedin.com/in/achintha-isuru"
+            "url": "https://www.linkedin.com/in/achintha-isuru/"
         },
         {
             "label": "GitHub",
-            "url": "https://github.com/achinthaisuru"
+            "url": "https://github.com/Achintha444"
         },
         {
             "label": "Medium(110+)",
-            "url": "https://medium.com/@achinthaisuru"
+            "url": "https://achinthaisuru444.medium.com/"
         },
         {
             "label": "YouTube",
-            "url": "https://www.youtube.com/@AchinthaIsuru"
+            "url": "https://www.youtube.com/channel/UCgoNBM-Ay-jVnzaZjUy9x_A"
         },
         {
             "label": "Stack Overflow (3350+)",
-            "url": "https://stackoverflow.com/users/10429907/achintha-isuru"
+            "url": "https://stackoverflow.com/users/10601286/achintha-isuru"
         },
         {
             "label": "Portfolio",
-            "url": "https://achinthaisuru.com"
+            "url": "https://achintha-isuru.vercel.app/"
         }
     ],
     "skills": {
@@ -40,6 +40,20 @@
         "spokenLanguages": "English, French (actively learning), Sinhala"
     },
     "summary": "Creative Frontend Developer and UI/UX Designer with 4+ years of professional experience building responsive web and mobile applications. Known for bridging design and engineering teams through strong UI/UX sensibility and hands-on development expertise. Proven track record of delivering user-centric features for products managing over 1 billion identities globally and apps with 500K+ downloads. Strong communicator, team collaborator, problem solver, and continuous learner — currently advancing in French to better collaborate in multilingual environments.",
+    "sectionLinks": {
+        "employment": {
+            "text": "View All Experiences",
+            "url": "https://achintha-isuru.vercel.app/experiences"
+        },
+        "projects": {
+            "text": "View All Projects",
+            "url": "https://achintha-isuru.vercel.app/projects"
+        },
+        "leadership": {
+            "text": "View All Awards",
+            "url": "https://www.linkedin.com/in/achintha-isuru/details/honors/"
+        }
+    },
     "employment": [
         {
             "company": "Oloodi",
@@ -66,7 +80,27 @@
                 "Spearheaded the development of the redesign of the KAST Crypto Wallet in Flutter, collaborating with design to deliver a pixel-perfect and responsive interface.",
                 "Developed features and implemented changes for the company website built on the low-code platform Webflow.",
                 "Interviewed and evaluated 20+ candidates for React and Flutter roles, ensuring both technical quality and cultural alignment."
-            ]
+            ],
+            "bulletLinks": {
+                "2": [
+                    {
+                        "text": "KAST Crypto Wallet",
+                        "url": "https://apps.apple.com/sg/app/kast-finance/id6479701765"
+                    }
+                ],
+                "3": [
+                    {
+                        "text": "redesign",
+                        "url": "https://x.com/KASTcard/status/1922207527598424168"
+                    }
+                ],
+                "4": [
+                    {
+                        "text": "company website",
+                        "url": "https://www.kast.xyz/"
+                    }
+                ]
+            }
         },
         {
             "company": "WSO2",
@@ -86,7 +120,7 @@
                 "0": [
                     {
                         "text": "API Authorization",
-                        "url": "https://wso2.com/asgardeo/docs/guides/authorization/api-authorization/api-authorization/"
+                        "url": "https://wso2.com/asgardeo/docs/guides/api-authorization/"
                     },
                     {
                         "text": "Identity Server(IS)",
@@ -106,25 +140,25 @@
                 "2": [
                     {
                         "text": "Asgardeo's new user registration flow",
-                        "url": "https://wso2.com/asgardeo/"
+                        "url": "https://achintha-isuru.vercel.app/projects/Redesign%20of%20Asgardeo%20Homepage%20and%20User%20Registration%20Flow"
                     },
                     {
                         "text": "Login Flow AI",
-                        "url": "https://wso2.com/asgardeo/"
+                        "url": "https://wso2.com/asgardeo/docs/guides/authentication/login-flow-ai/"
                     },
                     {
                         "text": "Branding AI",
-                        "url": "https://wso2.com/asgardeo/"
+                        "url": "https://wso2.com/asgardeo/docs/guides/branding/branding-ai/"
                     }
                 ],
                 "3": [
                     {
                         "text": "B2B demo application",
-                        "url": "https://github.com/wso2/asgardeo-nextjs-b2b-sample-app"
+                        "url": "https://github.com/wso2/samples-is/tree/master/b2b-sample"
                     },
                     {
                         "text": "B2B(Business-to-Business) feature",
-                        "url": "https://wso2.com/asgardeo/docs/guides/organization-management/manage-b2b-organizations/"
+                        "url": "https://wso2.com/asgardeo/docs/guides/organization-management/try-a-b2b-use-case/"
                     }
                 ],
                 "4": [
@@ -134,7 +168,7 @@
                     },
                     {
                         "text": "App-native authentication",
-                        "url": "https://wso2.com/asgardeo/docs/guides/authentication/app-native-authentication/"
+                        "url": "https://wso2.com/asgardeo/docs/references/app-native-authentication/"
                     }
                 ]
             }
@@ -188,15 +222,15 @@
                 "0": [
                     {
                         "text": "remote MCP client",
-                        "url": "https://github.com/AchinthaIsuru/remote-mcp-client"
+                        "url": "https://github.com/Achintha444/ai-chatbot-mcp-react"
                     },
                     {
                         "text": "article series",
-                        "url": "https://medium.com/@achinthaisuru"
+                        "url": "https://achinthaisuru444.medium.com/how-to-secure-your-remote-mcp-server-with-asgardeo-using-asgardeo-mcp-express-636771e5aa0c"
                     },
                     {
                         "text": "pull request",
-                        "url": "https://github.com/modelcontextprotocol/typescript-sdk/pull/449"
+                        "url": "https://github.com/modelcontextprotocol/typescript-sdk/pull/633"
                     }
                 ]
             }
@@ -207,6 +241,7 @@
             "role": "Front-end Developer",
             "stack": "Next JS, Nx MonoRepo, Figma, Asgardeo",
             "duration": "May 2022 - Oct 2022",
+            "detailsLink": "https://github.com/wso2/samples-is/tree/master/b2b-sample#wso2-b2b-business-to-business-samples",
             "bullets": [
                 "Developed a web application to demonstrate one of the newest features of Asgardeo & IS — the \"B2B (Business to Business) feature\" — at international conferences targeting potential clients and customers. This was developed using Next.js and managed within an Nx monorepo for efficient project structure and scalability."
             ],
@@ -214,7 +249,7 @@
                 "0": [
                     {
                         "text": "B2B (Business to Business) feature",
-                        "url": "https://wso2.com/asgardeo/docs/guides/organization-management/manage-b2b-organizations/"
+                        "url": "https://wso2.com/asgardeo/docs/guides/organization-management/try-a-b2b-use-case/"
                     }
                 ]
             }
@@ -225,9 +260,18 @@
             "role": "Front-end Developer/UI-UX Designer",
             "stack": "Figma, React, Asgardeo, GitHub Actions, Vercel",
             "duration": "Nov 2024 – Jan 2025",
+            "detailsLink": "https://streamify-gilt.vercel.app/",
             "bullets": [
                 "Created a React-based analytics dashboard with billboard REST API, featuring secure auth via Asgardeo, interactive charts, and animations. Developed GitHub Actions to automate build validation, lint checking, and app deployment to Vercel."
-            ]
+            ],
+            "bulletLinks": {
+                "0": [
+                    {
+                        "text": "GitHub Actions",
+                        "url": "https://github.com/Achintha444/Streamify/actions"
+                    }
+                ]
+            }
         },
         {
             "name": "A New UI Concept for ATMs To Reduce Excessive Receipt Wastage",
@@ -235,6 +279,7 @@
             "role": "UI/UX Designer",
             "stack": "Figma",
             "duration": "Jan 2021 - Aug 2022",
+            "detailsLink": "https://achintha-isuru.vercel.app/projects/A%20New%20User%20Interface%20Concept%20for%20ATM%E2%80%99s%20to%20Reduce%20Receipt%20Wastage",
             "bullets": [
                 "Designed a new ATM UI to reduce receipt printing by 50% without additional costs, offering a scalable & sustainable solution.",
                 "This project won 1st place in the 'IET 150 & Beyond' competition organized by the Sri Lankan IET Young Professionals chapter."
@@ -246,6 +291,8 @@
             "role": "Android Developer",
             "stack": "Android (Kotlin), Jetpack Compose, Figma, GitHub Actions, Maven, Asgardeo",
             "duration": "Jun 2024 – Sep 2024",
+            "detailsLink": "https://github.com/asgardeo/mobile-ui-sdks",
+            "presentationLink": "https://wso2.com/library/conference/2024/05/navigating-iam-in-the-modern-enterprise/",
             "bullets": [
                 "Led the architectural design & development of an open source SDK for Android called \"asgardeo-android\" to integrate the \"App-native authentication\" feature of IS & Asgardeo for Android applications. This SDK was developed using Kotlin.",
                 "Developed the documentation site for the SDK using VitePress.",
@@ -255,17 +302,25 @@
             "bulletLinks": {
                 "0": [
                     {
+                        "text": "architectural design",
+                        "url": "https://github.com/asgardeo/mobile-ui-sdks/blob/main/android/ARCHITECTURE.md"
+                    },
+                    {
                         "text": "App-native authentication",
-                        "url": "https://wso2.com/asgardeo/docs/guides/authentication/app-native-authentication/"
+                        "url": "https://wso2.com/asgardeo/docs/references/app-native-authentication/"
                     }
                 ],
                 "1": [
                     {
                         "text": "documentation site",
-                        "url": "https://asgardeo.github.io/mobile-ui-sdks/"
+                        "url": "https://asgardeo.github.io/mobile-ui-sdks"
                     }
                 ],
                 "2": [
+                    {
+                        "text": "GitHub Actions",
+                        "url": "https://github.com/asgardeo/mobile-ui-sdks/actions"
+                    },
                     {
                         "text": "maven central repository",
                         "url": "https://central.sonatype.com/artifact/io.asgardeo/asgardeo-android"
@@ -274,7 +329,7 @@
                 "3": [
                     {
                         "text": "demo application",
-                        "url": "https://github.com/asgardeo/mobile-ui-sdks"
+                        "url": "https://github.com/wso2/samples-is/tree/master/petcare-sample/b2c/mobile-app/petcare-with-sdk"
                     }
                 ]
             }
@@ -285,6 +340,7 @@
             "role": "Flutter Developer",
             "stack": "Flutter",
             "duration": "Oct 2024",
+            "detailsLink": "https://pub.dev/packages/advanced_column_row",
             "bullets": [
                 "Published a Column/Row Flutter widget library with over 10+ customizable properties, simplifying complex layouts."
             ]
@@ -295,6 +351,7 @@
             "role": "Flutter Developer",
             "stack": "Flutter, Figma",
             "duration": "Oct 2020 - Dec 2020",
+            "detailsLink": "https://github.com/Achintha444/gpa_cal",
             "bullets": [
                 "Published my first application, 'GPA Cal', on the Google Play Store — a Flutter-based GPA calculator."
             ]
@@ -305,6 +362,7 @@
             "role": "UI/UX Designer",
             "stack": "Figma",
             "duration": "Jun 2021 - Sep 2021",
+            "detailsLink": "https://achintha-isuru.vercel.app/projects/FabVis",
             "bullets": [
                 "Designed a dashboard UI for a textile defect detection system, awarded a Patent Cooperation Treaty (PCT) for innovation; enabled real-time visual analysis and configuration for textile engineers."
             ],
@@ -312,7 +370,7 @@
                 "0": [
                     {
                         "text": "IntelliSense Lab",
-                        "url": "https://uom.lk/cse/research/research-labs/intellisense-lab"
+                        "url": "https://uom.lk/cse/labs/IntelliSense"
                     }
                 ]
             }
@@ -323,14 +381,14 @@
             "text": "Member of the University of Moratuwa Soccer team, second-year colors man",
             "link": {
                 "text": "More Details",
-                "url": "/aboutMe"
+                "url": "https://www.linkedin.com/in/achintha-isuru/details/organizations/"
             }
         },
         {
             "text": "Winner, \"IET 150 & BEYOND\" organised by IET Young Professionals - Sri Lanka.",
             "link": {
                 "text": "View Project",
-                "url": "/projects/atm"
+                "url": "https://achintha-isuru.vercel.app/projects/A%20New%20User%20Interface%20Concept%20for%20ATM%E2%80%99s%20to%20Reduce%20Receipt%20Wastage"
             }
         },
         {
@@ -340,14 +398,14 @@
             "text": "Certified, \"Problem Solving (Intermediate), Frontend (React), JavaScript (Intermediate)\" by HackerRank.",
             "link": {
                 "text": "View all",
-                "url": "https://www.hackerrank.com/profile/achinthaisuru97"
+                "url": "https://www.linkedin.com/in/achintha-isuru/details/certifications/"
             }
         },
         {
             "text": "Certified, \"WSO2 Certified Identity Server Developer – V5\".",
             "link": {
                 "text": "View certificate",
-                "url": "https://certification.wso2.com/"
+                "url": "https://www.linkedin.com/in/achintha-isuru/details/certifications/"
             }
         }
     ],
@@ -356,11 +414,39 @@
             "organization": "Rotaract Club of the University of Moratuwa",
             "link": {
                 "text": "More Details",
-                "url": "/aboutMe"
+                "url": "https://www.linkedin.com/in/achintha-isuru/details/organizations/"
             },
             "bullets": [
                 "Co-chaired the Maestro '18 workshop & contributed to projects like Are You Ready, Manusath Handa, Ceylon Safari 2018, & Ceylon Safari 2019 as a member of the PR team by designing social media posts."
-            ]
+            ],
+            "bulletLinks": {
+                "0": [
+                    {
+                        "text": "Maestro '18",
+                        "url": "https://www.facebook.com/media/set/?set=a.294032247872645&type=3"
+                    },
+                    {
+                        "text": "Are You Ready",
+                        "url": "https://blog.rotaractmora.org/tag/are-you-ready/"
+                    },
+                    {
+                        "text": "Manusath Handa",
+                        "url": "https://manusathhanda.rotaractmora.org/"
+                    },
+                    {
+                        "text": "Ceylon Safari 2018",
+                        "url": "https://blog.rotaractmora.org/an-amazing-journey-to-down-south-ceylon-safari-2018-phase-3/"
+                    },
+                    {
+                        "text": "Ceylon Safari 2019",
+                        "url": "https://www.facebook.com/travelRotaractors/posts/pfbid02cdgvFFxSZxbKyMY3Sev9uayF9Nho4r2tS6UjRE23W85EtuVhASC7rNrAEFjFPu4Ml"
+                    },
+                    {
+                        "text": "social media posts",
+                        "url": "https://www.facebook.com/photo/?fbid=2446353062303831&set=a.1988885291383946"
+                    }
+                ]
+            }
         }
     ],
     "education": {
@@ -368,35 +454,49 @@
         "accreditation": "Washington Accord Accredited",
         "wesLink": {
             "text": "WES Credential Evaluation",
-            "url": "https://www.wes.org/"
+            "url": "https://drive.google.com/file/d/1ktF_B7f58VD4MGvU4mQ-CEqau2-g12Ex/view?usp=sharing"
         },
         "duration": "2017 - 2022",
         "degree": "B.Sc. Engineering (Hons) sp. Computer Science & Engineering",
         "gpa": "GPA: 3.96 out of 4.2 – First Class",
         "researchLink": {
             "text": "Research Publications",
-            "url": "https://scholar.google.com/"
+            "url": "https://www.linkedin.com/in/achintha-isuru/details/publications/"
         },
         "coursera": {
             "certificatesLink": {
                 "text": "View Certificates",
-                "url": "https://www.coursera.org/"
+                "url": "https://www.linkedin.com/in/achintha-isuru/details/certifications/"
             },
             "courses": [
                 {
                     "name": "Google UX Design Professional Certificate",
-                    "link": "https://www.coursera.org/professional-certificates/google-ux-design"
+                    "link": "https://www.coursera.org/account/accomplishments/specialization/certificate/Q0S0DHZUBQOT"
                 },
                 {
                     "name": "UI/UX Specialization from California Institute of the Arts",
-                    "link": "https://www.coursera.org/specializations/ui-ux-design"
+                    "link": "https://www.coursera.org/account/accomplishments/specialization/certificate/HKLK9Z5HHY8H"
                 },
                 {
                     "name": "Introduction to Psychology from University of Toronto",
-                    "link": "https://www.coursera.org/learn/introduction-psychology"
+                    "link": "https://www.coursera.org/account/accomplishments/certificate/44H49UFWH7F5"
                 }
             ]
         }
     },
-    "interests": "Soccer (Goalkeeper & Manchester United Fan), Cooking, Community Service, Part time Youtuber, Digital Artwork"
+    "interests": "Soccer (Goalkeeper & Manchester United Fan), Cooking, Community Service, Part time Youtuber, Digital Artwork",
+    "interestLinks": [
+        {
+            "text": "Goalkeeper",
+            "url": "https://www.youtube.com/live/oNL-MytBC20?si=fsA9T-QbTEBMnvBq&t=7757"
+        },
+        {
+            "text": "Part time Youtuber",
+            "url": "https://www.youtube.com/@AATalksFootball"
+        },
+        {
+            "text": "Digital Artwork",
+            "url": "https://www.instagram.com/fanartboy444/"
+        }
+    ]
 }

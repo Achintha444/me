@@ -1,4 +1,4 @@
-import type { CVLeadershipItem } from "@/lib/content";
+import type { CVLeadershipItem, CVSectionLink } from "@/lib/content";
 import { CV_FONT_SIZES } from "@/lib/cv-config";
 import { CVSection } from "./CVSection";
 
@@ -8,6 +8,7 @@ const { sm, xs } = CV_FONT_SIZES;
 interface CVLeadershipSectionProps {
   /** Array of leadership / award items from CV data. */
   leadership: CVLeadershipItem[];
+  sectionLink?: CVSectionLink;
 }
 
 /**
@@ -18,18 +19,22 @@ interface CVLeadershipSectionProps {
  *
  * Gap between items is `0.13em` per the calibrated print layout.
  */
-export function CVLeadershipSection({ leadership }: CVLeadershipSectionProps) {
+export function CVLeadershipSection({ leadership, sectionLink }: CVLeadershipSectionProps) {
   return (
     <CVSection
       label="Leadership and Awards"
       heading="Leadership & Awards"
       suffix={
-        <a
-          href="/aboutMe"
-          style={{ color: "var(--color-accent)", textDecoration: "underline" }}
-        >
-          (View All Awards)
-        </a>
+        sectionLink && (
+          <a
+            href={sectionLink.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ color: "var(--color-accent)", textDecoration: "underline" }}
+          >
+            ({sectionLink.text})
+          </a>
+        )
       }
     >
       <ul

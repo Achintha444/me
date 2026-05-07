@@ -126,6 +126,8 @@ export interface CVProject {
   role: string | null;
   stack: string;
   duration: string;
+  detailsLink?: string;
+  presentationLink?: string;
   bullets: string[];
   bulletLinks?: CVBulletLinks;
 }
@@ -141,6 +143,7 @@ export interface CVVolunteering {
   organization: string;
   link?: { text: string; url: string };
   bullets: string[];
+  bulletLinks?: CVBulletLinks;
 }
 
 /** Education block. */
@@ -158,6 +161,18 @@ export interface CVEducation {
   };
 }
 
+/** Section heading link (e.g. "View All Experiences"). */
+export interface CVSectionLink {
+  text: string;
+  url: string;
+}
+
+/** Interest link for inline linking within the interests text. */
+export interface CVInterestLink {
+  text: string;
+  url: string;
+}
+
 /** The full CV data shape. */
 export interface CVData {
   name: string;
@@ -172,12 +187,18 @@ export interface CVData {
     spokenLanguages: string;
   };
   summary: string;
+  sectionLinks?: {
+    employment?: CVSectionLink;
+    projects?: CVSectionLink;
+    leadership?: CVSectionLink;
+  };
   employment: CVEmployment[];
   projects: CVProject[];
   leadership: CVLeadershipItem[];
   volunteering: CVVolunteering[];
   education: CVEducation;
   interests: string;
+  interestLinks?: CVInterestLink[];
 }
 
 /**

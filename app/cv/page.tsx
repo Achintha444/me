@@ -109,12 +109,12 @@ export default function CVPage() {
                     </p>
                   </CVSection>
 
-                  <CVEmploymentSection employment={cv.employment} />
-                  <CVProjectsSection projects={cv.projects} />
-                  <CVLeadershipSection leadership={cv.leadership} />
+                  <CVEmploymentSection employment={cv.employment} sectionLink={cv.sectionLinks?.employment} />
+                  <CVProjectsSection projects={cv.projects} sectionLink={cv.sectionLinks?.projects} />
+                  <CVLeadershipSection leadership={cv.leadership} sectionLink={cv.sectionLinks?.leadership} />
                   <CVVolunteeringSection volunteering={cv.volunteering} />
                   <CVEducationSection education={cv.education} />
-                  <CVInterestsSection interests={cv.interests} />
+                  <CVInterestsSection interests={cv.interests} interestLinks={cv.interestLinks} />
 
                 </div>
               </td>
