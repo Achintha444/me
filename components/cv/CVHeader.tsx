@@ -37,7 +37,6 @@ export function CVHeader({ cv }: CVHeaderProps) {
         alignItems: "start",
         marginBottom: "0.8em",
         paddingBottom: "0.5em",
-        borderBottom: "2px solid var(--color-accent)",
       }}
     >
       {/* ── Left: name, tagline, contact ──────────────────────────── */}
