@@ -140,7 +140,7 @@
                 "2": [
                     {
                         "text": "Asgardeo's new user registration flow",
-                        "url": "https://achintha-isuru.vercel.app/projects/Redesign%20of%20Asgardeo%20Homepage%20and%20User%20Registration%20Flow"
+                        "url": "https://achintha-isuru.vercel.app/projects/asgardeo-homepage"
                     },
                     {
                         "text": "Login Flow AI",
@@ -279,7 +279,7 @@
             "role": "UI/UX Designer",
             "stack": "Figma",
             "duration": "Jan 2021 - Aug 2022",
-            "detailsLink": "https://achintha-isuru.vercel.app/projects/A%20New%20User%20Interface%20Concept%20for%20ATM%E2%80%99s%20to%20Reduce%20Receipt%20Wastage",
+            "detailsLink": "https://achintha-isuru.vercel.app/projects/atm",
             "bullets": [
                 "Designed a new ATM UI to reduce receipt printing by 50% without additional costs, offering a scalable & sustainable solution.",
                 "This project won 1st place in the 'IET 150 & Beyond' competition organized by the Sri Lankan IET Young Professionals chapter."
@@ -362,7 +362,7 @@
             "role": "UI/UX Designer",
             "stack": "Figma",
             "duration": "Jun 2021 - Sep 2021",
-            "detailsLink": "https://achintha-isuru.vercel.app/projects/FabVis",
+            "detailsLink": "https://achintha-isuru.vercel.app/projects/fabvis",
             "bullets": [
                 "Designed a dashboard UI for a textile defect detection system, awarded a Patent Cooperation Treaty (PCT) for innovation; enabled real-time visual analysis and configuration for textile engineers."
             ],
@@ -388,7 +388,7 @@
             "text": "Winner, \"IET 150 & BEYOND\" organised by IET Young Professionals - Sri Lanka.",
             "link": {
                 "text": "View Project",
-                "url": "https://achintha-isuru.vercel.app/projects/A%20New%20User%20Interface%20Concept%20for%20ATM%E2%80%99s%20to%20Reduce%20Receipt%20Wastage"
+                "url": "https://achintha-isuru.vercel.app/projects/atm"
             }
         },
         {
