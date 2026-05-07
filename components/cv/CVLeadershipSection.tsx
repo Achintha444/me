@@ -2,7 +2,7 @@ import type { CVLeadershipItem, CVSectionLink } from "@/lib/content";
 import { CV_FONT_SIZES } from "@/lib/cv-config";
 import { CVSection } from "./CVSection";
 
-const { sm, xs } = CV_FONT_SIZES;
+const { section, xs } = CV_FONT_SIZES;
 
 /** Props for CVLeadershipSection. */
 interface CVLeadershipSectionProps {
@@ -47,7 +47,7 @@ export function CVLeadershipSection({ leadership, sectionLink }: CVLeadershipSec
         }}
       >
         {leadership.map((item, i) => (
-          <li key={i} style={{ fontSize: sm, lineHeight: 1.38 }}>
+          <li key={i} style={{ fontSize: section, lineHeight: 1.38 }}>
             {item.text}
             {item.link && (
               <>

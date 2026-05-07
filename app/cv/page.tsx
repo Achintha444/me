@@ -100,7 +100,7 @@ export default function CVPage() {
                   <CVSection label="Personal Summary" heading="Personal Summary">
                     <p
                       style={{
-                        fontSize: CV_FONT_SIZES.sm,
+                        fontSize: CV_FONT_SIZES.section,
                         lineHeight: 1.45,
                         margin: 0,
                       }}

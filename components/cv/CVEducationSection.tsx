@@ -3,7 +3,7 @@ import { CV_FONT_SIZES } from "@/lib/cv-config";
 import { CVSection } from "./CVSection";
 import { CVEntryRow } from "./CVEntryRow";
 
-const { sm, xs } = CV_FONT_SIZES;
+const { section, xs } = CV_FONT_SIZES;
 
 /** Props for CVEducationSection. */
 interface CVEducationSectionProps {
@@ -25,7 +25,7 @@ export function CVEducationSection({ education }: CVEducationSectionProps) {
         <CVEntryRow
           left={
             <>
-              <strong style={{ fontSize: sm, fontWeight: 700 }}>
+              <strong style={{ fontSize: section, fontWeight: 700 }}>
                 {education.university}
               </strong>
               <span
@@ -57,7 +57,7 @@ export function CVEducationSection({ education }: CVEducationSectionProps) {
         />
 
         {/* Degree + GPA + optional research link */}
-        <p style={{ fontSize: sm, margin: "0.1em 0 0" }}>
+        <p style={{ fontSize: section, margin: "0.1em 0 0" }}>
           {education.degree}
           <span
             style={{
