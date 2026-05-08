@@ -129,7 +129,7 @@ export function CVHeader({ cv }: CVHeaderProps) {
       </div>
 
       {/* ── Right: Skills block ────────────────────────────────────── */}
-      <div style={{ minWidth: "240px", maxWidth: "320px" }}>
+      <div style={{ minWidth: "240px", maxWidth: "340px" }}>
         <p
           style={{
             fontFamily: "var(--font-mono)",
