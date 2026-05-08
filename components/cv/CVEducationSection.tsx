@@ -57,7 +57,7 @@ export function CVEducationSection({ education }: CVEducationSectionProps) {
         />
 
         {/* Degree + GPA + optional research link */}
-        <p style={{ fontSize: section, margin: "0.1em 0 0" }}>
+        <p style={{ fontSize: section, margin: "0.1em 0 0", paddingBottom: "0.3em" }}>
           {education.degree}
           <span
             style={{
