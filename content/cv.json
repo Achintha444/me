@@ -62,8 +62,8 @@
             "stack": "Flutter, Firebase, Google Cloud Platform, Codemagic, Claude Code",
             "duration": "Nov 2025 - Present",
             "bullets": [
-                "Developing and maintaining KROW multi-sided workforce management ecosystem that digitizes the lifecycle of temporary staffing, which is built with Flutter, using Google Cloud Platform services and Firebase for scalable cloud-native architecture.",
-                "Implement advanced AI integrations using prompt engineering techniques, enabling AI-powered features within the platform.",
+                "Developing and maintaining KROW ; a multi-sided workforce management ecosystem that digitizes the lifecycle of temporary staffing, which is built with Flutter, React, using Google Cloud Platform services and Firebase for scalable cloud-native architecture.",
+                "Implement advanced AI integrations using prompt engineering techniques like Rapid Order, enabling AI-powered features within the platform.",
                 "Design and maintain Codemagic CI/CD automation pipelines, ensuring efficient and reliable build, test, and deployment workflows.",
                 "Utilize Claude Code as an AI-assisted development tool to accelerate feature development and improve code quality across the entire codebase."
             ]
