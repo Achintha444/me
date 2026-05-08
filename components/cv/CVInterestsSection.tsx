@@ -13,7 +13,7 @@ interface CVInterestsSectionProps {
 export function CVInterestsSection({ interests, interestLinks }: CVInterestsSectionProps) {
   return (
     <CVSection label="Interests" heading="Interests" last>
-      <p style={{ fontSize: section, margin: 0, color: "var(--color-ink-muted)" }}>
+      <p style={{ fontSize: section, margin: 0, color: "var(--color-ink)" }}>
         {interestLinks && interestLinks.length > 0
           ? renderBulletWithLinks(interests, interestLinks)
           : interests}

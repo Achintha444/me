@@ -67,7 +67,7 @@ export function CVHeader({ cv }: CVHeaderProps) {
           {cv.tagline}
         </p>
 
-        {/* Contact + links — all on one line, dot-separated */}
+        {/* Contact row */}
         <p
           style={{
             fontSize: xs,
@@ -86,24 +86,50 @@ export function CVHeader({ cv }: CVHeaderProps) {
           </a>
           <span style={{ margin: "0 0.4em", opacity: 0.5 }}>·</span>
           <span>{cv.contact.phone}</span>
-          {cv.links.map((l, i) => (
-            <span key={i}>
-              <span style={{ margin: "0 0.4em", opacity: 0.5 }}>·</span>
-              <a
-                href={l.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                style={{ color: "inherit", textDecoration: "underline" }}
-              >
-                {l.label}
-              </a>
-            </span>
-          ))}
         </p>
+
+        {/* Links — split into two rows */}
+        {(() => {
+          const row1 = cv.links.filter((l) =>
+            ["LinkedIn", "GitHub", "Portfolio"].includes(l.label)
+          );
+          const row2 = cv.links.filter(
+            (l) => !["LinkedIn", "GitHub", "Portfolio"].includes(l.label)
+          );
+          const renderRow = (links: typeof cv.links) =>
+            links.map((l, i) => (
+              <span key={l.label}>
+                {i > 0 && (
+                  <span style={{ margin: "0 0.4em", opacity: 0.5 }}>·</span>
+                )}
+                <a
+                  href={l.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ color: "inherit", textDecoration: "underline" }}
+                >
+                  {l.label}
+                </a>
+              </span>
+            ));
+          return (
+            <div
+              style={{
+                fontSize: xs,
+                color: "var(--color-ink-muted)",
+                lineHeight: 1.5,
+                marginTop: "0.15em",
+              }}
+            >
+              <p style={{ margin: 0 }}>{renderRow(row1)}</p>
+              <p style={{ margin: 0 }}>{renderRow(row2)}</p>
+            </div>
+          );
+        })()}
       </div>
 
       {/* ── Right: Skills block ────────────────────────────────────── */}
-      <div style={{ minWidth: "200px", maxWidth: "240px" }}>
+      <div style={{ minWidth: "240px", maxWidth: "320px" }}>
         <p
           style={{
             fontFamily: "var(--font-mono)",
@@ -130,7 +156,7 @@ export function CVHeader({ cv }: CVHeaderProps) {
                 fontWeight: 600,
                 color: "var(--color-ink)",
                 whiteSpace: "nowrap",
-                minWidth: "70px",
+                minWidth: "90px",
               }}
             >
               {label}:
