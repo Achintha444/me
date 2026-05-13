@@ -21,6 +21,19 @@ export function CVPrintStyles() {
         __html: `
           @media print {
             @page { size: A4; margin: 0; }
+            :root, [data-theme="dark"] {
+              --color-bg: #F7F5F2 !important;
+              --color-paper: #F7F5F2 !important;
+              --color-paper-raised: #FFFFFF !important;
+              --color-surface: #FFFFFF !important;
+              --color-ink: #0F0E0D !important;
+              --color-ink-muted: #6B6560 !important;
+              --color-ink-faint: #C4BFB9 !important;
+              --color-accent: #C84B31 !important;
+              --color-accent-hover: #A83A23 !important;
+              --color-accent-dim: #F0E8E5 !important;
+              --color-border-faint: rgba(42, 36, 32, 0.12) !important;
+            }
             header, footer, .skip-link, .cv-print-btn, [data-command-palette] {
               display: none !important;
             }
