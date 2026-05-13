@@ -382,17 +382,6 @@
                     }
                 ]
             }
-        },
-        {
-            "name": "GPA Cal",
-            "type": "Personal Project",
-            "role": "Flutter Developer",
-            "stack": "Flutter, Figma",
-            "duration": "Oct 2020 - Dec 2020",
-            "detailsLink": "https://github.com/Achintha444/gpa_cal",
-            "bullets": [
-                "Published my first application, 'GPA Cal', on the Google Play Store — a Flutter-based GPA calculator."
-            ]
         }
     ],
     "leadership": [
