@@ -210,6 +210,25 @@
     ],
     "projects": [
         {
+            "name": "Star Commit — VS Code Extension",
+            "type": "Personal Project",
+            "role": "Developer",
+            "stack": "TypeScript, VS Code Extension API, Claude Code CLI",
+            "duration": "Apr 2026 - May 2026",
+            "detailsLink": "projects/star-commit",
+            "bullets": [
+                "Built and published a VS Code extension that generates commit messages using the Claude Code CLI directly from the Source Control panel, with per-extension model selection (Opus, Sonnet, or Haiku) independent from the active terminal session — supporting Conventional Commits and both staged and unstaged changes."
+            ],
+            "bulletLinks": {
+                "0": [
+                    {
+                        "text": "VS Code extension",
+                        "url": "https://marketplace.visualstudio.com/items?itemName=AchinthaIsuru.star-commit"
+                    }
+                ]
+            }
+        },
+        {
             "name": "Remote MCP Server Authorization using Asgardeo",
             "type": "Personal Project",
             "role": null,
