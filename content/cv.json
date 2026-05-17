@@ -109,12 +109,12 @@
             "duration": "May 2022 – Sep 2024",
             "bullets": [
                 "Designed the UI/UX, developed frontend functionality, integrated REST APIs written in Java (deployed on Azure), and implemented end-to-end (E2E) test cases using Cypress to build features with React using Context API and Redux. Followed AODA/WCAG accessibility standards and responsive design principles. Key features included \"API Authorization\" for IAM products like Identity Server(IS) and Asgardeo (SaaS), which manage over 1 billion identities globally.",
-                "Designed & developed reusable components like \"Autocomplete\" and \"Chips\" for WSO2's design system, Oxygen-UI, using React and Storybook, improving consistency across WSO2 products.",
+                "Designed & developed reusable components like \"Autocomplete\" and \"Chips\" for WSO2's design system, Oxygen-UI, using React and Storybook.",
                 "Designed Asgardeo's new user registration flow and contributed to AI-first features like \"Login Flow AI\" and \"Branding AI\", aligning with emerging UX trends.",
-                "Developed the B2B demo application to demonstrate the \"B2B(Business-to-Business) feature\" which showcased at global conferences, accelerating enterprise sales and customer onboarding.",
+                "Developed the B2B demo application to demonstrate the \"B2B(Business-to-Business) feature\" which showcased at global conferences like Gartner IAM Summit, accelerating enterprise sales and customer onboarding.",
                 "Led the development of an open source SDK for Android to integrate the \"App-native authentication\" of IS and Asgardeo for Android applications.",
                 "Authored integration guides and tutorials for Flutter–Asgardeo, supporting cross-platform devs and reducing onboarding time.",
-                "Achieved Top 20% Employee Recognition and won Rockstar Award 2024 H1 for exceptional technical and content contributions."
+                "Achieved Top 20% Employee Recognition and won Rockstar Award 2024 H1 for exceptional contributions."
             ],
             "bulletLinks": {
                 "0": [
@@ -209,6 +209,25 @@
         }
     ],
     "projects": [
+        {
+            "name": "Prompt Planning",
+            "type": "Personal Project",
+            "role": "Developer",
+            "stack": "React, Tauri, Remotion, Claude Code",
+            "duration": "May 2026",
+            "detailsLink": "projects/prompt-planning",
+            "bullets": [
+                "Built a notebook-style app designed specifically for planning AI prompts during AI-first development workflows — featuring a rich editor, token estimation, reusable templates, context snippets, and drag-to-reorder. All data stored locally in the browser with no sign-up required, plus a desktop version via Tauri."
+            ],
+            "bulletLinks": {
+                "0": [
+                    {
+                        "text": "notebook-style app",
+                        "url": "https://prompt-planning.vercel.app/"
+                    }
+                ]
+            }
+        },
         {
             "name": "Star Commit — VS Code Extension",
             "type": "Personal Project",
@@ -315,8 +334,7 @@
             "bullets": [
                 "Led the architectural design & development of an open source SDK for Android called \"asgardeo-android\" to integrate the \"App-native authentication\" feature of IS & Asgardeo for Android applications. This SDK was developed using Kotlin.",
                 "Developed the documentation site for the SDK using VitePress.",
-                "Implemented GitHub Actions to check build issues of a PR & deploy SDK releases to the maven central repository.",
-                "Developed a demo application to demonstrate the SDK at international conferences targeting potential customers & clients."
+                "Implemented GitHub Actions to check build issues of a PR & deploy SDK releases to the maven central repository."
             ],
             "bulletLinks": {
                 "0": [
@@ -401,13 +419,6 @@
         },
         {
             "text": "Top 20% Rockstar, WSO2 Employee Excellence Program (2024)"
-        },
-        {
-            "text": "Certified, \"Problem Solving (Intermediate), Frontend (React), JavaScript (Intermediate)\" by HackerRank.",
-            "link": {
-                "text": "View all",
-                "url": "https://www.linkedin.com/in/achintha-isuru/details/certifications/"
-            }
         },
         {
             "text": "Certified, \"WSO2 Certified Identity Server Developer – V5\".",

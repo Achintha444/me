@@ -2,6 +2,78 @@
     "pageTitle": "Projects",
     "projects": [
         {
+            "key": "prompt-planning",
+            "name": "Prompt Planning",
+            "role": "Developer",
+            "overview": [
+                {
+                    "title": "Duration",
+                    "body": "2026 May - 2026 May",
+                    "key": "duration"
+                },
+                {
+                    "title": "Sector",
+                    "body": "Developer Tools · AI Workflow",
+                    "key": "sector"
+                },
+                {
+                    "title": "Associated With",
+                    "body": "Personal",
+                    "key": "associated"
+                },
+                {
+                    "title": "My Role",
+                    "body": "Developer",
+                    "key": "role"
+                }
+            ],
+            "image": "images/projects/project-prompt-planning.webp",
+            "cols": 1,
+            "rows": 1.5,
+            "content": [
+                {
+                    "title": "Overview",
+                    "body": "When doing AI-first development, I found myself waiting for the AI to finish executing and started planning the next prompt in generic markdown editors. But those editors had no specialization for prompt planning. So I built Prompt Planning — a notebook-style app designed specifically for planning AI prompts, with a rich editor, token estimation, templates, context snippets, and drag-to-reorder.",
+                    "links": [
+                        {
+                            "title": "Try Prompt Planning",
+                            "link": "https://prompt-planning.vercel.app/"
+                        }
+                    ],
+                    "key": "overview"
+                },
+                {
+                    "title": "Features",
+                    "body": [
+                        {
+                            "body": "Rich markdown editor optimized for writing and structuring AI prompts."
+                        },
+                        {
+                            "body": "Token estimation to help stay within model context limits."
+                        },
+                        {
+                            "body": "Reusable templates and context snippets for common prompt patterns."
+                        },
+                        {
+                            "body": "Drag-to-reorder for organizing prompt sections."
+                        },
+                        {
+                            "body": "All data stored locally in the browser — no sign-up, no cloud, no friction."
+                        },
+                        {
+                            "body": "Desktop version available via Tauri for native performance."
+                        }
+                    ],
+                    "key": "features"
+                },
+                {
+                    "title": "Outcome",
+                    "body": "Prompt Planning is live and free to use. It removes the friction of switching between generic text editors and AI tools, keeping developers one step ahead of their AI workflow.",
+                    "key": "outcome"
+                }
+            ]
+        },
+        {
             "key": "star-commit",
             "name": "Star Commit — VS Code Extension",
             "role": "Developer",

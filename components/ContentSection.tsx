@@ -263,6 +263,32 @@ function BodyRenderer({ body }: { body: string | BodyItem[] }) {
     );
   }
 
+  const isSimpleList = body.every(
+    (item) => !item.title && !item.images && !item.links && !item.presentations && typeof item.body === "string"
+  );
+
+  if (isSimpleList) {
+    return (
+      <ul
+        style={{
+          fontFamily: "var(--font-body)",
+          fontSize: "var(--text-base)",
+          color: "var(--color-ink-muted)",
+          lineHeight: 1.8,
+          paddingLeft: "1.25rem",
+          listStyle: "disc",
+          display: "flex",
+          flexDirection: "column",
+          gap: "var(--space-2)",
+        }}
+      >
+        {body.map((item, i) => (
+          <li key={i}>{item.body as string}</li>
+        ))}
+      </ul>
+    );
+  }
+
   return (
     <div
       style={{
