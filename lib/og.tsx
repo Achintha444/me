@@ -1,10 +1,17 @@
 import { readFile } from "node:fs/promises";
 import { join } from "node:path";
 import { ImageResponse } from "next/og";
-import { SITE_NAME, SITE_URL } from "./site";
+import { SITE_NAME } from "./site";
 
-/** Open Graph image dimensions recommended by Facebook, LinkedIn and X. */
-export const OG_IMAGE_SIZE = { width: 1200, height: 630 };
+/**
+ * Render scale. Cards are laid out on the standard 1200×630 grid and rendered
+ * at 2×: LinkedIn treats 1200×627 as a minimum and recompresses/upscales
+ * previews on high-density screens, which blurs a 1× image.
+ */
+const OG_SCALE = 2;
+
+/** Open Graph image dimensions: 1.91:1, rendered at {@link OG_SCALE}×. */
+export const OG_IMAGE_SIZE = { width: 1200 * OG_SCALE, height: 630 * OG_SCALE };
 
 /** Generated share images are PNG, which every social platform supports. */
 export const OG_IMAGE_CONTENT_TYPE = "image/png";
@@ -29,8 +36,18 @@ const OG_TOKENS = {
 /** Directory holding the TTF files used to render share images. */
 const FONT_DIR = join(process.cwd(), "assets/og-fonts");
 
-/** Horizontal/vertical padding of the card, in pixels. */
-const CARD_PADDING = 72;
+/**
+ * Converts a length on the 1200×630 layout grid to rendered pixels.
+ *
+ * @param value - Length in layout pixels.
+ * @returns Length in rendered pixels.
+ */
+function px(value: number): number {
+  return value * OG_SCALE;
+}
+
+/** Padding of the card, in layout pixels. */
+const CARD_PADDING = 80;
 
 /** Inputs for {@link renderOgImage}. */
 interface OgImageInput {
@@ -44,14 +61,15 @@ interface OgImageInput {
 
 /**
  * Picks a title font size that keeps long project names within three lines.
+ * Sizes stay large because feeds show the card at a fraction of its width.
  *
  * @param title - The headline text.
- * @returns Font size in pixels.
+ * @returns Font size in layout pixels.
  */
 function titleFontSize(title: string): number {
-  if (title.length <= 32) return 84;
-  if (title.length <= 60) return 68;
-  return 54;
+  if (title.length <= 32) return 96;
+  if (title.length <= 44) return 80;
+  return 64;
 }
 
 /**
@@ -75,9 +93,10 @@ async function loadFonts() {
 }
 
 /**
- * Renders a 1200×630 PNG share card in the portfolio's editorial style:
- * paper background, mono eyebrow, serif headline, sans subtitle and a
- * terracotta accent rule above the site name and domain.
+ * Renders a 1.91:1 PNG share card in the portfolio's editorial style: paper
+ * background, mono eyebrow, serif headline, sans subtitle, and a terracotta
+ * accent rule above the site name. The domain is omitted because LinkedIn,
+ * X and Slack print it under the card themselves.
  *
  * @param input - Eyebrow, title and optional subtitle text.
  * @returns An ImageResponse suitable as an `opengraph-image` route's result.
@@ -87,8 +106,6 @@ export async function renderOgImage({
   title,
   subtitle,
 }: OgImageInput): Promise<ImageResponse> {
-  const domain = new URL(SITE_URL).host;
-
   return new ImageResponse(
     (
       <div
@@ -98,19 +115,19 @@ export async function renderOgImage({
           display: "flex",
           flexDirection: "column",
           justifyContent: "space-between",
-          padding: CARD_PADDING,
+          padding: px(CARD_PADDING),
           backgroundColor: OG_TOKENS.paper,
           color: OG_TOKENS.ink,
           fontFamily: "DM Sans",
         }}
       >
-        <div style={{ display: "flex", flexDirection: "column", gap: 28 }}>
+        <div style={{ display: "flex", flexDirection: "column", gap: px(24) }}>
           <div
             style={{
               display: "flex",
               fontFamily: "DM Mono",
-              fontSize: 24,
-              letterSpacing: "0.12em",
+              fontSize: px(30),
+              letterSpacing: "0.1em",
               textTransform: "uppercase",
               color: OG_TOKENS.accent,
             }}
@@ -121,9 +138,9 @@ export async function renderOgImage({
             style={{
               display: "flex",
               fontFamily: "DM Serif Display",
-              fontSize: titleFontSize(title),
-              lineHeight: 1.08,
-              maxWidth: 1000,
+              fontSize: px(titleFontSize(title)),
+              lineHeight: 1.05,
+              maxWidth: px(1040),
             }}
           >
             {title}
@@ -132,10 +149,10 @@ export async function renderOgImage({
             <div
               style={{
                 display: "flex",
-                fontSize: 32,
-                lineHeight: 1.35,
+                fontSize: px(38),
+                lineHeight: 1.3,
                 color: OG_TOKENS.inkMuted,
-                maxWidth: 1000,
+                maxWidth: px(1040),
               }}
             >
               {subtitle}
@@ -143,28 +160,10 @@ export async function renderOgImage({
           )}
         </div>
 
-        <div style={{ display: "flex", flexDirection: "column", gap: 24 }}>
-          <div style={{ display: "flex", width: 96, height: 6, backgroundColor: OG_TOKENS.accent }} />
-          <div
-            style={{
-              display: "flex",
-              justifyContent: "space-between",
-              alignItems: "baseline",
-            }}
-          >
-            <div style={{ display: "flex", fontFamily: "DM Serif Display", fontSize: 36 }}>
-              {SITE_NAME}
-            </div>
-            <div
-              style={{
-                display: "flex",
-                fontFamily: "DM Mono",
-                fontSize: 22,
-                color: OG_TOKENS.inkMuted,
-              }}
-            >
-              {domain}
-            </div>
+        <div style={{ display: "flex", alignItems: "center", gap: px(24) }}>
+          <div style={{ display: "flex", width: px(64), height: px(6), backgroundColor: OG_TOKENS.accent }} />
+          <div style={{ display: "flex", fontFamily: "DM Serif Display", fontSize: px(44) }}>
+            {SITE_NAME}
           </div>
         </div>
       </div>

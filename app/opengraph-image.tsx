@@ -16,6 +16,6 @@ export default function Image() {
   return renderOgImage({
     eyebrow: "Portfolio · Montréal, QC",
     title: "Bridging design and development",
-    subtitle: `${SITE_HEADLINE} building web and mobile products with React, Next.js, and Flutter.`,
+    subtitle: `${SITE_HEADLINE} · React, Next.js, Flutter`,
   });
 }

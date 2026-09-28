@@ -35,6 +35,6 @@ export default async function Image({ params }: FeatureImageProps) {
   return renderOgImage({
     eyebrow: "Feature idea",
     title: feature?.name ?? "Feature Ideas",
-    subtitle: "UI/UX concept analysis — research, wireframes, and design proposal",
+    subtitle: "UI/UX concept analysis",
   });
 }
