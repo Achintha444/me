@@ -21,6 +21,9 @@ export const SITE_DESCRIPTION =
 /** X (Twitter) handle used for `twitter:creator`. */
 export const TWITTER_HANDLE = "@AchinthaIs47441";
 
+/** Route of the site-wide generated share image (`app/opengraph-image.tsx`). */
+const DEFAULT_OG_IMAGE_PATH = "/opengraph-image";
+
 /** Portrait used as the Person image in structured data. */
 export const PROFILE_IMAGE_PATH = "/images/me/me-1.webp";
 
@@ -45,8 +48,11 @@ interface PageMetadataInput {
   description: string;
   /** Site-relative path of the page, used for the canonical and og:url. */
   path: string;
-  /** Optional site-relative image path used for og:image / twitter:image. */
-  image?: string;
+  /**
+   * Set when the page's segment has its own `opengraph-image.tsx`, so the
+   * default share image is not emitted over it.
+   */
+  hasSegmentImage?: boolean;
   /** Open Graph object type. Defaults to `website`. */
   type?: "website" | "article" | "profile";
 }
@@ -59,21 +65,29 @@ interface PageMetadataInput {
  * always emits the full `openGraph` and `twitter` objects together with a
  * canonical URL, so each page is self-describing to search and AI engines.
  *
- * @param input - Page title, description, path and optional image.
+ * Share images default to the site-wide card from `app/opengraph-image.tsx`,
+ * because the shallow merge would otherwise drop it from nested pages.
+ * Segments with their own `opengraph-image.tsx` must pass
+ * `hasSegmentImage`: an explicit `images` value here would replace the
+ * segment's generated image.
+ *
+ * @param input - Page title, description, path, image source and Open Graph type.
  * @returns A Metadata object ready to export from a page.
  */
 export function buildPageMetadata({
   title,
   description,
   path,
-  image,
+  hasSegmentImage = false,
   type = "website",
 }: PageMetadataInput): Metadata {
   // The root `title.template` only applies to <title>, so the share title
   // carries the site name explicitly.
   const hasSiteName = title.includes(SITE_NAME);
   const shareTitle = hasSiteName ? title : `${title} | ${SITE_NAME}`;
-  const images = image ? [{ url: image, alt: title }] : undefined;
+  // The key must be omitted, not set to undefined: Next.js treats a present
+  // `images` key as an override of the segment's generated image.
+  const images = hasSegmentImage ? {} : { images: [DEFAULT_OG_IMAGE_PATH] };
 
   return {
     title: hasSiteName ? { absolute: title } : title,
@@ -86,14 +100,14 @@ export function buildPageMetadata({
       url: path,
       title: shareTitle,
       description,
-      images,
+      ...images,
     },
     twitter: {
-      card: image ? "summary_large_image" : "summary",
+      card: "summary_large_image",
       title: shareTitle,
       description,
       creator: TWITTER_HANDLE,
-      images: image ? [image] : undefined,
+      ...images,
     },
   };
 }

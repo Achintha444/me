@@ -61,7 +61,7 @@ export async function generateMetadata({
     title: project.name,
     description: getProjectDescription(project),
     path: `/projects/${project.key}`,
-    image: project.image,
+    hasSegmentImage: true,
     type: "article",
   });
 }
