@@ -42,7 +42,7 @@ export async function generateMetadata({
     description:
       getEntrySummary(feature) ?? `Feature concept analysis: ${feature.name}`,
     path: `/feature-ideas/${feature.key}`,
-    image: feature.image,
+    hasSegmentImage: true,
     type: "article",
   });
 }
