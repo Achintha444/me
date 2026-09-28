@@ -8,6 +8,8 @@ import {
 } from "@/lib/content";
 import { ScrollReveal } from "@/components/ScrollReveal";
 import { ContentSection } from "@/components/ContentSection";
+import { buildPageMetadata } from "@/lib/site";
+import { getEntrySummary } from "@/lib/structured-data";
 
 /** Route params for feature idea detail pages. */
 interface FeatureDetailParams {
@@ -35,10 +37,14 @@ export async function generateMetadata({
     return { title: "Feature Idea not found" };
   }
 
-  return {
+  return buildPageMetadata({
     title: feature.name,
-    description: `Feature concept analysis: ${feature.name}`,
-  };
+    description:
+      getEntrySummary(feature) ?? `Feature concept analysis: ${feature.name}`,
+    path: `/feature-ideas/${feature.key}`,
+    image: feature.image,
+    type: "article",
+  });
 }
 
 /**

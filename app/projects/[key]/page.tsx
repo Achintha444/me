@@ -5,6 +5,14 @@ import { notFound } from "next/navigation";
 import { getProjectsData, getProjectByKey } from "@/lib/content";
 import { ScrollReveal } from "@/components/ScrollReveal";
 import { ContentSection } from "@/components/ContentSection";
+import { JsonLd } from "@/components/JsonLd";
+import { buildPageMetadata } from "@/lib/site";
+import {
+  buildJsonLdGraph,
+  buildProjectJsonLd,
+  getEntrySummary,
+} from "@/lib/structured-data";
+import type { Project } from "@/lib/types";
 
 /** Route params for project detail pages. */
 interface ProjectDetailParams {
@@ -22,6 +30,20 @@ export async function generateStaticParams() {
 }
 
 /**
+ * Builds the page description for a project: the opening sentence(s) of the
+ * case study, falling back to the project name and role.
+ *
+ * @param project - The project entry.
+ * @returns A plain-text description of at most ~160 characters.
+ */
+function getProjectDescription(project: Project): string {
+  return (
+    getEntrySummary(project) ??
+    `Case study: ${project.name}${project.role ? ` — ${project.role}` : ""}`
+  );
+}
+
+/**
  * Generates dynamic page metadata per project.
  * Applied skill: nextjs — generateMetadata with async params.
  */
@@ -35,10 +57,13 @@ export async function generateMetadata({
     return { title: "Project not found" };
   }
 
-  return {
+  return buildPageMetadata({
     title: project.name,
-    description: `Case study: ${project.name}${project.role ? ` — ${project.role}` : ""}`,
-  };
+    description: getProjectDescription(project),
+    path: `/projects/${project.key}`,
+    image: project.image,
+    type: "article",
+  });
 }
 
 /**
@@ -55,8 +80,13 @@ export default async function ProjectDetailPage({
     notFound();
   }
 
+  const projectJsonLd = buildJsonLdGraph([
+    buildProjectJsonLd(project, getProjectDescription(project)),
+  ]);
+
   return (
     <>
+      <JsonLd data={projectJsonLd} />
       {/* ── Back navigation ────────────────────────────────────────────── */}
       <div
         style={{

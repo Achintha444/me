@@ -1,13 +1,15 @@
 import type { Metadata } from "next";
+import { buildPageMetadata } from "@/lib/site";
 import Image from "next/image";
 import { getMediumPosts } from "@/lib/medium";
 import { ScrollReveal } from "@/components/ScrollReveal";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildPageMetadata({
   title: "Blog",
   description:
     "Writing by Achintha Isuru on design, engineering, and the craft of building thoughtful digital products.",
-};
+  path: "/blog",
+});
 
 /**
  * Blog list page — server component.

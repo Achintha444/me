@@ -4,14 +4,20 @@ import { getIndexData, getProjectsData } from "@/lib/content";
 import { getMediumPosts } from "@/lib/medium";
 import type { ContactIcon } from "@/lib/types";
 import type { Metadata } from "next";
+import {
+  SITE_DESCRIPTION,
+  SITE_HEADLINE,
+  SITE_NAME,
+  buildPageMetadata,
+} from "@/lib/site";
 import Image from "next/image";
 import Link from "next/link";
 
-export const metadata: Metadata = {
-  title: "Achintha Isuru — Bridging Design and Development",
-  description:
-    "Portfolio of Achintha Isuru — bridging design and development with Flutter, React, and Next.js.",
-};
+export const metadata: Metadata = buildPageMetadata({
+  title: `${SITE_NAME} — ${SITE_HEADLINE}`,
+  description: SITE_DESCRIPTION,
+  path: "/",
+});
 
 /**
  * Hero tech-stack groups — sourced from the `My Interests` section in

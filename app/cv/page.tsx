@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { buildPageMetadata } from "@/lib/site";
 import { getCVData } from "@/lib/content";
 import { CV_FONT_SIZES } from "@/lib/cv-config";
 import { PrintButton } from "./PrintButton";
@@ -12,11 +13,13 @@ import { CVVolunteeringSection } from "@/components/cv/CVVolunteeringSection";
 import { CVEducationSection } from "@/components/cv/CVEducationSection";
 import { CVInterestsSection } from "@/components/cv/CVInterestsSection";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildPageMetadata({
   title: "CV",
   description:
     "Curriculum vitae of Achintha Isuru — Front-end Developer and UI/UX Designer with 4+ years of experience building responsive web and mobile applications.",
-};
+  path: "/cv",
+  type: "profile",
+});
 
 /**
  * CVPage — server component. Reads all CV data from `content/cv.json` and

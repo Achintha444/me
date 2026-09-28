@@ -1,13 +1,15 @@
 import type { Metadata } from "next";
+import { buildPageMetadata } from "@/lib/site";
 import { getProjectsData } from "@/lib/content";
 import { ScrollReveal } from "@/components/ScrollReveal";
 import { ProjectsFilter } from "@/components/ProjectsFilter";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildPageMetadata({
   title: "Projects",
   description:
     "Design and development projects by Achintha Isuru — UI/UX case studies, mobile apps, Flutter packages, and front-end work.",
-};
+  path: "/projects",
+});
 
 /**
  * Projects list page — server component.

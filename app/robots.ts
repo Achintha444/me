@@ -1,11 +1,12 @@
 import type { MetadataRoute } from "next";
-
-/** Base URL for the production site. */
-const BASE_URL = "https://achintha.dev";
+import { absoluteUrl } from "@/lib/site";
 
 /**
  * Generates robots.txt for the portfolio.
- * Allows all crawlers and references the sitemap.
+ * Allows all crawlers — including AI crawlers such as GPTBot, ClaudeBot and
+ * PerplexityBot, which honour the `*` rule — and references the sitemap.
+ *
+ * @returns The robots.txt rules.
  */
 export default function robots(): MetadataRoute.Robots {
   return {
@@ -13,6 +14,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: `${BASE_URL}/sitemap.xml`,
+    sitemap: absoluteUrl("/sitemap.xml"),
   };
 }

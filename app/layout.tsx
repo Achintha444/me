@@ -6,7 +6,20 @@ import { SiteFooter } from "@/components/SiteFooter";
 import { CommandPalette } from "@/components/CommandPalette";
 import { SkipLink } from "@/components/SkipLink";
 import { ThemeScript } from "@/components/ThemeScript";
-import { getNavData } from "@/lib/content";
+import { JsonLd } from "@/components/JsonLd";
+import { getCVData, getNavData } from "@/lib/content";
+import {
+  SITE_DESCRIPTION,
+  SITE_HEADLINE,
+  SITE_NAME,
+  SITE_URL,
+  TWITTER_HANDLE,
+} from "@/lib/site";
+import {
+  buildJsonLdGraph,
+  buildPersonJsonLd,
+  buildWebsiteJsonLd,
+} from "@/lib/structured-data";
 
 /** DM Sans — the humanist body font. Latin subset, swap display. */
 const dmSans = DM_Sans({
@@ -34,12 +47,12 @@ const dmMono = DM_Mono({
 
 /** Site-wide base metadata. Individual pages extend this via generateMetadata. */
 export const metadata: Metadata = {
+  metadataBase: new URL(SITE_URL),
   title: {
-    default: "Achintha Isuru — Front-end Developer & UI/UX Designer",
-    template: "%s | Achintha Isuru",
+    default: `${SITE_NAME} — ${SITE_HEADLINE}`,
+    template: `%s | ${SITE_NAME}`,
   },
-  description:
-    "Portfolio of Achintha Isuru — a front-end developer and UI/UX designer bridging design and development with Flutter, React, and Next.js.",
+  description: SITE_DESCRIPTION,
   keywords: [
     "Achintha Isuru",
     "Front-end Developer",
@@ -53,22 +66,20 @@ export const metadata: Metadata = {
     "Quebec",
     "Toronto",
   ],
-  authors: [{ name: "Achintha Isuru" }],
-  creator: "Achintha Isuru",
+  authors: [{ name: SITE_NAME, url: SITE_URL }],
+  creator: SITE_NAME,
   openGraph: {
     type: "website",
     locale: "en_US",
-    siteName: "Achintha Isuru",
-    title: "Achintha Isuru — Front-end Developer & UI/UX Designer",
-    description:
-      "Portfolio of Achintha Isuru — bridging design and development.",
+    siteName: SITE_NAME,
+    title: `${SITE_NAME} — ${SITE_HEADLINE}`,
+    description: SITE_DESCRIPTION,
   },
   twitter: {
-    card: "summary_large_image",
-    title: "Achintha Isuru — Front-end Developer & UI/UX Designer",
-    description:
-      "Portfolio of Achintha Isuru — bridging design and development.",
-    creator: "@AchinthaIs47441",
+    card: "summary",
+    title: `${SITE_NAME} — ${SITE_HEADLINE}`,
+    description: SITE_DESCRIPTION,
+    creator: TWITTER_HANDLE,
   },
   robots: { index: true, follow: true },
   icons: {
@@ -86,6 +97,9 @@ export const metadata: Metadata = {
  * as a blocking inline script before first paint, preventing FOUC.
  * suppressHydrationWarning on <html> is required because the FOUC script
  * mutates data-theme before hydration.
+ *
+ * The site-wide Person + WebSite JSON-LD graph is emitted here so every page
+ * identifies its author to search and AI engines.
  */
 export default function RootLayout({
   children,
@@ -93,6 +107,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   const navData = getNavData();
+  const siteJsonLd = buildJsonLdGraph([
+    buildPersonJsonLd(getCVData()),
+    buildWebsiteJsonLd(),
+  ]);
 
   return (
     <html
@@ -111,6 +129,7 @@ export default function RootLayout({
          * Must be first in <body> so it executes before any painted content.
          */}
         <ThemeScript />
+        <JsonLd data={siteJsonLd} />
         <SkipLink />
         <SiteHeader navData={navData} />
         <main id="main-content" tabIndex={-1}>
