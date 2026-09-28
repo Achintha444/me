@@ -1,14 +1,16 @@
 import type { Metadata } from "next";
+import { buildPageMetadata } from "@/lib/site";
 import Link from "next/link";
 import Image from "next/image";
 import { getFeatureIdeasData } from "@/lib/content";
 import { ScrollReveal } from "@/components/ScrollReveal";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildPageMetadata({
   title: "Feature Ideas",
   description:
     "UI/UX feature concept analyses by Achintha Isuru — user research, wireframes, and design proposals for real-world products.",
-};
+  path: "/feature-ideas",
+});
 
 /**
  * Feature Ideas list page — server component.

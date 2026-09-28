@@ -1,13 +1,15 @@
 import type { Metadata } from "next";
+import { buildPageMetadata } from "@/lib/site";
 import { getExperienceData } from "@/lib/content";
 import { ScrollReveal } from "@/components/ScrollReveal";
 import { ExperienceTimeline } from "@/components/ExperienceTimeline";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildPageMetadata({
   title: "Experiences",
   description:
     "Work history of Achintha Isuru — front-end developer and UI/UX designer with experience at WSO2, KAST, Vertify Technologies, and more.",
-};
+  path: "/experiences",
+});
 
 /**
  * Experiences page — server component.

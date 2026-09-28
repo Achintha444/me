@@ -1,14 +1,17 @@
 import type { Metadata } from "next";
+import { buildPageMetadata } from "@/lib/site";
 import { getMeData } from "@/lib/content";
 import { ScrollReveal } from "@/components/ScrollReveal";
 import { ContentSection } from "@/components/ContentSection";
 import { UnicornEasterEgg } from "@/components/UnicornEasterEgg";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildPageMetadata({
   title: "About",
   description:
     "Learn about Achintha Isuru — his background, education, hobbies, and approach to bridging design and development.",
-};
+  path: "/aboutMe",
+  type: "profile",
+});
 
 /** Shape of a paragraph item in me.json firstPara. */
 interface MeParagraph {
